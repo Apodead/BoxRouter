@@ -98,6 +98,7 @@ CDesign::CDesign()
 
 	m_iNumPreRoutedNet	=	0;
 	m_iPreRoutedWL		=	0;
+	IsLUTup				= 	0;
 }
 
 CDesign::~CDesign()
@@ -599,6 +600,8 @@ int	CDesign::Initialize(char* pName)
 		*/
 #endif
 
+	}else{
+		IsLUTup=1;
 	}
 
 	while (fgets(cLine,sizeof(cLine),pInput_File))
@@ -814,7 +817,7 @@ int	CDesign::Initialize(char* pName)
 		pNet->AddPin(&PinList);
 //		pNet->m_iMinVia	+=	PinList.size();
 
-		if(IsLUTup())
+		if(IsLUTup)
 		{
 			if(pNet->GetNumPin()<2)
 			{

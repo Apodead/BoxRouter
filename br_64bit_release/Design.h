@@ -163,6 +163,7 @@ protected:
 	CNet**				m_ppNet;
 	int					m_iMaxCapacity;				//maximum routing capaciity among all the layers
 //	int					m_iTargetCapacity;			//target routing capacity among all the layers
+	int 				IsLUTup;
 };		
 		
 #endif // !defined(AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_)
