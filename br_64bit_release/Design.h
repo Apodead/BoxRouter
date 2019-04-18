@@ -163,6 +163,7 @@ protected:
 	CNet**				m_ppNet;
 	int					m_iMaxCapacity;				//maximum routing capaciity among all the layers
 //	int					m_iTargetCapacity;			//target routing capacity among all the layers
+
 	int 				IsLUTup;
 };		
 		
