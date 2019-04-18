@@ -103,16 +103,17 @@ using namespace std;
 #include <hash_set>
 using namespace std;
 #else
-#include <vector.h>
-#include <map.h>
-#include <multimap.h>
-#include <set.h>
-#include <queue.h>
-#include <deque.h>
+#include <vector>
+#include <map>
+//#include <multimap>
+#include <set>
+#include <queue>
+#include <deque>
 #include <algorithm>
-#include <hash_map.h>
-#include <list.h>
-#include <stack.h>
+#include <hash_map>
+#include <list>
+#include <stack>
+using namespace std;
 #endif
 #define	KEY						long long
 #define STRICMP						strcasecmp
