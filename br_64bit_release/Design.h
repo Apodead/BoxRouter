@@ -63,12 +63,10 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_)
-#define AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+//#if !defined(AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_)
+//#define AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_
+#ifndef DESIGN_H
+#define DESIGN_H
 
 #include "Object.h"
 #include "Net.h"

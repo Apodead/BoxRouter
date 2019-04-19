@@ -62,15 +62,18 @@
 // GRouter.h: interface for the CGRouter class.
 //
 //////////////////////////////////////////////////////////////////////
-
+/*
 #if !defined(AFX_GROUTER_H__D649F435_754A_45CA_A69B_987FB2033510__INCLUDED_)
 #define AFX_GROUTER_H__D649F435_754A_45CA_A69B_987FB2033510__INCLUDED_
-
-#include "Design.h"
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+*/
+#ifndef GROUTER_H
+#define GROUTER_H
+
+#include "Design.h"
 
 typedef int				FP_MAZECOST(CDesign* pDesign, CGrid* pGrid, CGrid* pNGrid,/* CNet* pNet*/ CBBox* pBBox);
 

@@ -62,13 +62,16 @@
 // Layer.h: interface for the CLayer class.
 //
 //////////////////////////////////////////////////////////////////////
-
+/*
 #if !defined(AFX_LAYER_H__A6C1DF41_F5B0_446B_8A8D_331D245331DA__INCLUDED_)
 #define AFX_LAYER_H__A6C1DF41_F5B0_446B_8A8D_331D245331DA__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+*/
+#ifndef LAYER_H
+#define LAYER_H
 
 #include "Object.h"
 #include "Grid.h"

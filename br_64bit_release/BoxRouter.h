@@ -59,8 +59,8 @@
  *  from loss of use, data, or profits.
  *
  *----------------------------------------------------------------------------*/
-#ifndef __BOX_ROUTER_H__
-#define __BOX_ROUTER_H__
+#ifndef BOX_ROUTER_H
+#define BOX_ROUTER_H
 
 #include <stdio.h>
 #include <stdlib.h>

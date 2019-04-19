@@ -59,8 +59,12 @@
  *  from loss of use, data, or profits.
  *
  *----------------------------------------------------------------------------*/
+/*
 #if !defined(AFX_MAZEHEAP_H__DFE2F4_754A_45CA_A69B_9FDD394510__INCLUDED_)
 #define AFX_MAZEHEAP_H__DFE2F4_754A_45CA_A69B_9FDD394510__INCLUDED_
+*/
+#ifndef MAZEHEAP_H
+#define MAZEHEAP_H
 
 
 #include "BoxRouter.h"

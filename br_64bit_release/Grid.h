@@ -63,12 +63,17 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+/*
 #if !defined(AFX_GRID_H__836598E7_1724_4B7D_A043_7251988FE56B__INCLUDED_)
 #define AFX_GRID_H__836598E7_1724_4B7D_A043_7251988FE56B__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+*/
+
+#ifndef GRID_H
+#define GRID_H
 
 #include "Boundary.h"
 

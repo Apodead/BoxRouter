@@ -63,12 +63,16 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+/*
 #if !defined(AFX_ILPSOLVER_H__2C943DAA_6F90_46D5_A9A9_76A18F28190B__INCLUDED_)
 #define AFX_ILPSOLVER_H__2C943DAA_6F90_46D5_A9A9_76A18F28190B__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+*/
+#ifndef ILPSOLVER_H
+#define ILPSOLVER_H
 
 #include <assert.h>
 

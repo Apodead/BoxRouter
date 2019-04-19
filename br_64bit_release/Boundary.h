@@ -63,12 +63,10 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_BOUNDARY_H__6A1EA5A6_08C5_4B38_B51F_72D78F9C1AC8__INCLUDED_)
-#define AFX_BOUNDARY_H__6A1EA5A6_08C5_4B38_B51F_72D78F9C1AC8__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+//#if !defined(AFX_BOUNDARY_H__6A1EA5A6_08C5_4B38_B51F_72D78F9C1AC8__INCLUDED_)
+//#define AFX_BOUNDARY_H__6A1EA5A6_08C5_4B38_B51F_72D78F9C1AC8__INCLUDED_
+#ifndef BOUNDARY_H
+#define BOUNDARY_H
 
 #include "Point.h"
 #include "Wire.h"

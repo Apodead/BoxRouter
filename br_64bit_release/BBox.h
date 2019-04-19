@@ -63,13 +63,12 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_BBOX_H__C2EA4446_83B2_4CA5_BA60_E4785EE23989__INCLUDED_)
-#define AFX_BBOX_H__C2EA4446_83B2_4CA5_BA60_E4785EE23989__INCLUDED_
+//#if !defined(AFX_BBOX_H__C2EA4446_83B2_4CA5_BA60_E4785EE23989__INCLUDED_)
+//#define AFX_BBOX_H__C2EA4446_83B2_4CA5_BA60_E4785EE23989__INCLUDED_
+#ifndef BBOX_H
+#define BBOX_H
 
 #include "Point.h"	// Added by ClassView
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
 
 class CBBox
 {
