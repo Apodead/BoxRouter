@@ -63,12 +63,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_NET_H__ADE7C9A3_045E_4689_B565_EFB29577C237__INCLUDED_)
-#define AFX_NET_H__ADE7C9A3_045E_4689_B565_EFB29577C237__INCLUDED_
+#ifndef NET_H
+#define NET_H
 
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
 
 #include "Object.h"
 #include "Pin.h"

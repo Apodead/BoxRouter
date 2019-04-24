@@ -1,0 +1,203 @@
+\hypertarget{classCGrid}{}\section{C\+Grid Class Reference}
+\label{classCGrid}\index{CGrid@{CGrid}}
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+Inheritance diagram for C\+Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCGrid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCGrid_a061e223431ef4fb00b020539f34d1289}{C\+Grid}} ()
+\item 
+virtual \mbox{\hyperlink{classCGrid_a80640e70ebece5aab78c8445d7aef7a4}{$\sim$\+C\+Grid}} ()
+\item 
+virtual void \mbox{\hyperlink{classCGrid_ac56d94ad7df38d3908ff3b12670d9812}{Initialize}} (int iX, int iY, int iZ, \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$p\+Parent)
+\item 
+int \mbox{\hyperlink{classCGrid_a773d780808e0bd62f3f5867ca4fe102f}{Get\+Maze}} ()
+\item 
+void \mbox{\hyperlink{classCGrid_ab8f8f688a787fb740321dd53bdcb3f00}{Set\+Maze}} (int i\+Maze)
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ \mbox{\hyperlink{classCGrid_a49c151fb13b2fa36acb3530a8d477893}{Get\+Maze\+Grid}} ()
+\item 
+void \mbox{\hyperlink{classCGrid_aec202544655ecef4303ab81e2d386e27}{Set\+Maze\+Cost\+Grid}} (int i\+Cost, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid)
+\item 
+void \mbox{\hyperlink{classCGrid_aad3dff7adb72d18a6038718c1f02993a}{Set\+Maze\+Cost\+Grid}} (int i\+Cost, int i\+P\+Cost, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid)
+\item 
+int \mbox{\hyperlink{classCGrid_aba82d88e217d71278fce3d7ed35a9b03}{Get\+Maze\+Cost}} ()
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ \mbox{\hyperlink{classCGrid_a01a71c7e09d8dee33ef570b40120c3d3}{Get\+Adj\+Grid}} (int i\+Index)
+\item 
+virtual void \mbox{\hyperlink{classCGrid_a6462a8c5f7d7b6cbba02bac1d82dcbba}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCGrid_af44b06db6a18bd3ae28cc4cfecfeb396}{Get\+Parent}} ()
+\item 
+int \mbox{\hyperlink{classCGrid_a8cc04f0ad9e054d50ad79e1acd398509}{Get\+Heap\+Cost}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCGrid_a57166c24c1b0525e425a747636831c79}{m\+\_\+i\+Heap\+Pos}}
+\item 
+int \mbox{\hyperlink{classCGrid_a1bf1fef7c4ac3f2b3b63bf3c70e0b876}{m\+\_\+i\+Maze\+P\+Cost}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{classCGrid_afcbc0f78cba690a48e1db6e54365acd9}{m\+\_\+p\+Maze}}
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ \mbox{\hyperlink{classCGrid_aa46a2d46372fef4d8ac13c61f575ea89}{m\+\_\+p\+Maze\+Grid}}
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ \mbox{\hyperlink{classCGrid_a95af50152ecab2a3b8c1c58a4cd1f854}{m\+\_\+p\+Adj\+Grid}} \mbox{[}\mbox{\hyperlink{BoxRouter_8h_a128a23fb1a65ac37f6c65d9ce0e6beeb}{M\+A\+X\+\_\+\+A\+D\+J\+\_\+\+G\+R\+ID}}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCGrid_a7cc4d31573956cc6792fa6757cc49219}{C\+Layer}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCGrid_a061e223431ef4fb00b020539f34d1289}\label{classCGrid_a061e223431ef4fb00b020539f34d1289}} 
+\index{CGrid@{CGrid}!CGrid@{CGrid}}
+\index{CGrid@{CGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{CGrid()}{CGrid()}}
+{\footnotesize\ttfamily C\+Grid\+::\+C\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCGrid_a80640e70ebece5aab78c8445d7aef7a4}\label{classCGrid_a80640e70ebece5aab78c8445d7aef7a4}} 
+\index{CGrid@{CGrid}!````~CGrid@{$\sim$CGrid}}
+\index{````~CGrid@{$\sim$CGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{$\sim$CGrid()}{~CGrid()}}
+{\footnotesize\ttfamily C\+Grid\+::$\sim$\+C\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCGrid_a01a71c7e09d8dee33ef570b40120c3d3}\label{classCGrid_a01a71c7e09d8dee33ef570b40120c3d3}} 
+\index{CGrid@{CGrid}!GetAdjGrid@{GetAdjGrid}}
+\index{GetAdjGrid@{GetAdjGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetAdjGrid()}{GetAdjGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ C\+Grid\+::\+Get\+Adj\+Grid (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCGrid_a8cc04f0ad9e054d50ad79e1acd398509}\label{classCGrid_a8cc04f0ad9e054d50ad79e1acd398509}} 
+\index{CGrid@{CGrid}!GetHeapCost@{GetHeapCost}}
+\index{GetHeapCost@{GetHeapCost}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetHeapCost()}{GetHeapCost()}}
+{\footnotesize\ttfamily int C\+Grid\+::\+Get\+Heap\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_a773d780808e0bd62f3f5867ca4fe102f}\label{classCGrid_a773d780808e0bd62f3f5867ca4fe102f}} 
+\index{CGrid@{CGrid}!GetMaze@{GetMaze}}
+\index{GetMaze@{GetMaze}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetMaze()}{GetMaze()}}
+{\footnotesize\ttfamily int C\+Grid\+::\+Get\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_aba82d88e217d71278fce3d7ed35a9b03}\label{classCGrid_aba82d88e217d71278fce3d7ed35a9b03}} 
+\index{CGrid@{CGrid}!GetMazeCost@{GetMazeCost}}
+\index{GetMazeCost@{GetMazeCost}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetMazeCost()}{GetMazeCost()}}
+{\footnotesize\ttfamily int C\+Grid\+::\+Get\+Maze\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_a49c151fb13b2fa36acb3530a8d477893}\label{classCGrid_a49c151fb13b2fa36acb3530a8d477893}} 
+\index{CGrid@{CGrid}!GetMazeGrid@{GetMazeGrid}}
+\index{GetMazeGrid@{GetMazeGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetMazeGrid()}{GetMazeGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ C\+Grid\+::\+Get\+Maze\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_af44b06db6a18bd3ae28cc4cfecfeb396}\label{classCGrid_af44b06db6a18bd3ae28cc4cfecfeb396}} 
+\index{CGrid@{CGrid}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ C\+Grid\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCGrid_ac56d94ad7df38d3908ff3b12670d9812}\label{classCGrid_ac56d94ad7df38d3908ff3b12670d9812}} 
+\index{CGrid@{CGrid}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C\+Grid\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ,  }\item[{\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCBoundary_a17bf8019eff54892a398e4b13c3ff264}{C\+Boundary}}.
+
+\mbox{\Hypertarget{classCGrid_a6462a8c5f7d7b6cbba02bac1d82dcbba}\label{classCGrid_a6462a8c5f7d7b6cbba02bac1d82dcbba}} 
+\index{CGrid@{CGrid}!Print@{Print}}
+\index{Print@{Print}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Grid\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCBoundary_a12a1e37297bd35f915544d02bd8c0cf1}{C\+Boundary}}.
+
+\mbox{\Hypertarget{classCGrid_ab8f8f688a787fb740321dd53bdcb3f00}\label{classCGrid_ab8f8f688a787fb740321dd53bdcb3f00}} 
+\index{CGrid@{CGrid}!SetMaze@{SetMaze}}
+\index{SetMaze@{SetMaze}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{SetMaze()}{SetMaze()}}
+{\footnotesize\ttfamily void C\+Grid\+::\+Set\+Maze (\begin{DoxyParamCaption}\item[{int}]{i\+Maze }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_aec202544655ecef4303ab81e2d386e27}\label{classCGrid_aec202544655ecef4303ab81e2d386e27}} 
+\index{CGrid@{CGrid}!SetMazeCostGrid@{SetMazeCostGrid}}
+\index{SetMazeCostGrid@{SetMazeCostGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{SetMazeCostGrid()}{SetMazeCostGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Grid\+::\+Set\+Maze\+Cost\+Grid (\begin{DoxyParamCaption}\item[{int}]{i\+Cost,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCGrid_aad3dff7adb72d18a6038718c1f02993a}\label{classCGrid_aad3dff7adb72d18a6038718c1f02993a}} 
+\index{CGrid@{CGrid}!SetMazeCostGrid@{SetMazeCostGrid}}
+\index{SetMazeCostGrid@{SetMazeCostGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{SetMazeCostGrid()}{SetMazeCostGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Grid\+::\+Set\+Maze\+Cost\+Grid (\begin{DoxyParamCaption}\item[{int}]{i\+Cost,  }\item[{int}]{i\+P\+Cost,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCGrid_a7cc4d31573956cc6792fa6757cc49219}\label{classCGrid_a7cc4d31573956cc6792fa6757cc49219}} 
+\index{CGrid@{CGrid}!CLayer@{CLayer}}
+\index{CLayer@{CLayer}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{CLayer}{CLayer}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCLayer}{C\+Layer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCGrid_a57166c24c1b0525e425a747636831c79}\label{classCGrid_a57166c24c1b0525e425a747636831c79}} 
+\index{CGrid@{CGrid}!m\_iHeapPos@{m\_iHeapPos}}
+\index{m\_iHeapPos@{m\_iHeapPos}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{m\_iHeapPos}{m\_iHeapPos}}
+{\footnotesize\ttfamily int C\+Grid\+::m\+\_\+i\+Heap\+Pos}
+
+\mbox{\Hypertarget{classCGrid_a1bf1fef7c4ac3f2b3b63bf3c70e0b876}\label{classCGrid_a1bf1fef7c4ac3f2b3b63bf3c70e0b876}} 
+\index{CGrid@{CGrid}!m\_iMazePCost@{m\_iMazePCost}}
+\index{m\_iMazePCost@{m\_iMazePCost}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{m\_iMazePCost}{m\_iMazePCost}}
+{\footnotesize\ttfamily int C\+Grid\+::m\+\_\+i\+Maze\+P\+Cost}
+
+\mbox{\Hypertarget{classCGrid_a95af50152ecab2a3b8c1c58a4cd1f854}\label{classCGrid_a95af50152ecab2a3b8c1c58a4cd1f854}} 
+\index{CGrid@{CGrid}!m\_pAdjGrid@{m\_pAdjGrid}}
+\index{m\_pAdjGrid@{m\_pAdjGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{m\_pAdjGrid}{m\_pAdjGrid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}}$\ast$ C\+Grid\+::m\+\_\+p\+Adj\+Grid\mbox{[}\mbox{\hyperlink{BoxRouter_8h_a128a23fb1a65ac37f6c65d9ce0e6beeb}{M\+A\+X\+\_\+\+A\+D\+J\+\_\+\+G\+R\+ID}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCGrid_afcbc0f78cba690a48e1db6e54365acd9}\label{classCGrid_afcbc0f78cba690a48e1db6e54365acd9}} 
+\index{CGrid@{CGrid}!m\_pMaze@{m\_pMaze}}
+\index{m\_pMaze@{m\_pMaze}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{m\_pMaze}{m\_pMaze}}
+{\footnotesize\ttfamily unsigned char$\ast$ C\+Grid\+::m\+\_\+p\+Maze\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCGrid_aa46a2d46372fef4d8ac13c61f575ea89}\label{classCGrid_aa46a2d46372fef4d8ac13c61f575ea89}} 
+\index{CGrid@{CGrid}!m\_pMazeGrid@{m\_pMazeGrid}}
+\index{m\_pMazeGrid@{m\_pMazeGrid}!CGrid@{CGrid}}
+\subsubsection{\texorpdfstring{m\_pMazeGrid}{m\_pMazeGrid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}}$\ast$ C\+Grid\+::m\+\_\+p\+Maze\+Grid\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Grid_8h}{Grid.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Grid_8cpp}{Grid.\+cpp}}\end{DoxyCompactItemize}

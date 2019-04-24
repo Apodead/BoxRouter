@@ -63,18 +63,13 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_SEGMENT_H__04E906EB_43ED_4ADB_AB06_FB9AD19133B2__INCLUDED_)
-#define AFX_SEGMENT_H__04E906EB_43ED_4ADB_AB06_FB9AD19133B2__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+#ifndef SEGMENT_H
+#define SEGMENT_H
 
 #include "Object.h"
 #include "Point.h"
 
 class CWire;
-
 class CSegment : public CObject  
 {
 public:
@@ -108,6 +103,6 @@ public:
 
 };
 
-#endif // !defined(AFX_SEGMENT_H__04E906EB_43ED_4ADB_AB06_FB9AD19133B2__INCLUDED_)
+#endif // ifndef SEGMENT_H
 
 

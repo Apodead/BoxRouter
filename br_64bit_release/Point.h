@@ -72,6 +72,9 @@
 
 class CWire;
 
+/**
+ * CPoint 类实现了布线网络中“点”的基本属性和方法。
+ */
 class CPoint : public CObject  
 {
 public:
@@ -109,24 +112,24 @@ public:
 	static int			Z(KEY Key);
 	
 protected:
-	short				m_iY;
-	short				m_iX;
-	char				m_cZ;
+	short				m_iY; //!< Y position of this point.
+	short				m_iX; //!< X position of this point.
+	char				m_cZ; //!< Z position of this point.
 };
 
-// get m_iX;
+//! get m_iX;
 inline int CPoint::X()
 {
 	return	m_iX;
 }
 
-// get m_iY;
+//! get m_iY;
 inline int CPoint::Y()
 {
 	return	m_iY;
 }
 
-// get m_cZ;
+//! get m_cZ;
 inline int CPoint::Z()
 {
 	return	m_cZ;

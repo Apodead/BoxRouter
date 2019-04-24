@@ -1,0 +1,127 @@
+\hypertarget{Util_8h}{}\section{br\+\_\+64bit\+\_\+release/\+Util.h File Reference}
+\label{Util_8h}\index{br\_64bit\_release/Util.h@{br\_64bit\_release/Util.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/procfs.\+h$>$}\newline
+{\ttfamily \#include $<$sys/resource.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$curses.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Util_8h_a15a5ca06933e2c77a113438c68bacdbe}{S\+T\+O\+P\+W\+A\+T\+C\+H\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+ET}}~(0)
+\item 
+\#define \mbox{\hyperlink{Util_8h_a08ae6665aa93f6102d77ad975ff528ac}{S\+T\+O\+P\+W\+A\+T\+C\+H\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+R\+E\+S\+ET}}~(1)
+\item 
+\#define \mbox{\hyperlink{Util_8h_ad428e9da85a3b5ed480313d425c00bbe}{T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+U\+R\+R\+E\+NT}}~(1)
+\item 
+\#define \mbox{\hyperlink{Util_8h_a74a4b1efb0e9a139bddb67f833d95d38}{T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+K\+E\+R\+N\+EL}}~(2)
+\item 
+\#define \mbox{\hyperlink{Util_8h_a7cc44d145950821aa6d2261cd235b345}{T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+ER}}~(3)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Util_8h_ae08df04e596f3b160adf409a6b428a64}{Run\+Thread}} (int $\ast$p\+Handle, void($\ast$initialcode)(void $\ast$), void $\ast$argument)
+\item 
+void \mbox{\hyperlink{Util_8h_acee1eb8d3f4c1b4670cb40069c034a83}{Wait\+Thread}} (int i\+Handle)
+\item 
+void \mbox{\hyperlink{Util_8h_adb46c8be2393e248230b174fc6434cf8}{Create\+And\+Wait}} (char $\ast$p\+Command)
+\item 
+void \mbox{\hyperlink{Util_8h_aec883d6905b8cd88bc5da326c7f57212}{Get\+Time}} (char $\ast$p\+Time, int i\+Option=\mbox{\hyperlink{Util_8h_ad428e9da85a3b5ed480313d425c00bbe}{T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+U\+R\+R\+E\+NT}})
+\item 
+double \mbox{\hyperlink{Util_8h_aeff107e67c5a493c88c7bbb868107530}{Stop\+Watch}} (int i\+Option)
+\item 
+int \mbox{\hyperlink{Util_8h_aa86fa663a8afdb8919c4f0db01a9c6ce}{Get\+Memory}} ()
+\item 
+int \mbox{\hyperlink{Util_8h_adaf015a9a61c29654fee45495211d6a1}{K\+B\+Hit}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Util_8h_a08ae6665aa93f6102d77ad975ff528ac}\label{Util_8h_a08ae6665aa93f6102d77ad975ff528ac}} 
+\index{Util.h@{Util.h}!STOPWATCH\_OPTION\_RESET@{STOPWATCH\_OPTION\_RESET}}
+\index{STOPWATCH\_OPTION\_RESET@{STOPWATCH\_OPTION\_RESET}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{STOPWATCH\_OPTION\_RESET}{STOPWATCH\_OPTION\_RESET}}
+{\footnotesize\ttfamily \#define S\+T\+O\+P\+W\+A\+T\+C\+H\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+R\+E\+S\+ET~(1)}
+
+\mbox{\Hypertarget{Util_8h_a15a5ca06933e2c77a113438c68bacdbe}\label{Util_8h_a15a5ca06933e2c77a113438c68bacdbe}} 
+\index{Util.h@{Util.h}!STOPWATCH\_OPTION\_SET@{STOPWATCH\_OPTION\_SET}}
+\index{STOPWATCH\_OPTION\_SET@{STOPWATCH\_OPTION\_SET}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{STOPWATCH\_OPTION\_SET}{STOPWATCH\_OPTION\_SET}}
+{\footnotesize\ttfamily \#define S\+T\+O\+P\+W\+A\+T\+C\+H\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+ET~(0)}
+
+\mbox{\Hypertarget{Util_8h_ad428e9da85a3b5ed480313d425c00bbe}\label{Util_8h_ad428e9da85a3b5ed480313d425c00bbe}} 
+\index{Util.h@{Util.h}!TIME\_OPTION\_CURRENT@{TIME\_OPTION\_CURRENT}}
+\index{TIME\_OPTION\_CURRENT@{TIME\_OPTION\_CURRENT}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{TIME\_OPTION\_CURRENT}{TIME\_OPTION\_CURRENT}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+U\+R\+R\+E\+NT~(1)}
+
+\mbox{\Hypertarget{Util_8h_a74a4b1efb0e9a139bddb67f833d95d38}\label{Util_8h_a74a4b1efb0e9a139bddb67f833d95d38}} 
+\index{Util.h@{Util.h}!TIME\_OPTION\_KERNEL@{TIME\_OPTION\_KERNEL}}
+\index{TIME\_OPTION\_KERNEL@{TIME\_OPTION\_KERNEL}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{TIME\_OPTION\_KERNEL}{TIME\_OPTION\_KERNEL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+K\+E\+R\+N\+EL~(2)}
+
+\mbox{\Hypertarget{Util_8h_a7cc44d145950821aa6d2261cd235b345}\label{Util_8h_a7cc44d145950821aa6d2261cd235b345}} 
+\index{Util.h@{Util.h}!TIME\_OPTION\_USER@{TIME\_OPTION\_USER}}
+\index{TIME\_OPTION\_USER@{TIME\_OPTION\_USER}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{TIME\_OPTION\_USER}{TIME\_OPTION\_USER}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+ER~(3)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Util_8h_adb46c8be2393e248230b174fc6434cf8}\label{Util_8h_adb46c8be2393e248230b174fc6434cf8}} 
+\index{Util.h@{Util.h}!CreateAndWait@{CreateAndWait}}
+\index{CreateAndWait@{CreateAndWait}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{CreateAndWait()}{CreateAndWait()}}
+{\footnotesize\ttfamily void Create\+And\+Wait (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_aa86fa663a8afdb8919c4f0db01a9c6ce}\label{Util_8h_aa86fa663a8afdb8919c4f0db01a9c6ce}} 
+\index{Util.h@{Util.h}!GetMemory@{GetMemory}}
+\index{GetMemory@{GetMemory}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{GetMemory()}{GetMemory()}}
+{\footnotesize\ttfamily int Get\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_aec883d6905b8cd88bc5da326c7f57212}\label{Util_8h_aec883d6905b8cd88bc5da326c7f57212}} 
+\index{Util.h@{Util.h}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily void Get\+Time (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Time,  }\item[{int}]{i\+Option = {\ttfamily \mbox{\hyperlink{Util_8h_ad428e9da85a3b5ed480313d425c00bbe}{T\+I\+M\+E\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+U\+R\+R\+E\+NT}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_adaf015a9a61c29654fee45495211d6a1}\label{Util_8h_adaf015a9a61c29654fee45495211d6a1}} 
+\index{Util.h@{Util.h}!KBHit@{KBHit}}
+\index{KBHit@{KBHit}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{KBHit()}{KBHit()}}
+{\footnotesize\ttfamily int K\+B\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_ae08df04e596f3b160adf409a6b428a64}\label{Util_8h_ae08df04e596f3b160adf409a6b428a64}} 
+\index{Util.h@{Util.h}!RunThread@{RunThread}}
+\index{RunThread@{RunThread}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{RunThread()}{RunThread()}}
+{\footnotesize\ttfamily int Run\+Thread (\begin{DoxyParamCaption}\item[{int $\ast$}]{p\+Handle,  }\item[{void($\ast$)(void $\ast$)}]{initialcode,  }\item[{void $\ast$}]{argument }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_aeff107e67c5a493c88c7bbb868107530}\label{Util_8h_aeff107e67c5a493c88c7bbb868107530}} 
+\index{Util.h@{Util.h}!StopWatch@{StopWatch}}
+\index{StopWatch@{StopWatch}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{StopWatch()}{StopWatch()}}
+{\footnotesize\ttfamily double Stop\+Watch (\begin{DoxyParamCaption}\item[{int}]{i\+Option }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8h_acee1eb8d3f4c1b4670cb40069c034a83}\label{Util_8h_acee1eb8d3f4c1b4670cb40069c034a83}} 
+\index{Util.h@{Util.h}!WaitThread@{WaitThread}}
+\index{WaitThread@{WaitThread}!Util.h@{Util.h}}
+\subsubsection{\texorpdfstring{WaitThread()}{WaitThread()}}
+{\footnotesize\ttfamily void Wait\+Thread (\begin{DoxyParamCaption}\item[{int}]{i\+Handle }\end{DoxyParamCaption})}
+

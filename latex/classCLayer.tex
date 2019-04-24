@@ -1,0 +1,455 @@
+\hypertarget{classCLayer}{}\section{C\+Layer Class Reference}
+\label{classCLayer}\index{CLayer@{CLayer}}
+
+
+{\ttfamily \#include $<$Layer.\+h$>$}
+
+Inheritance diagram for C\+Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCLayer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCLayer_aae29339458f6708296c4c05a36924760}{Get\+Over\+Flow\+Boundary}} (vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$p\+Boundary\+List)
+\item 
+void \mbox{\hyperlink{classCLayer_a4b4499ed47902f08d9100e2c22d09144}{Get\+Start\+Box}} (vector$<$ int $>$ $\ast$pX, vector$<$ int $>$ $\ast$pY)
+\item 
+int \mbox{\hyperlink{classCLayer_a47bb48736ac93a95148807e67ec279f1}{Add\+Penalty}} (int i\+Penalty)
+\item 
+int \mbox{\hyperlink{classCLayer_a157ea79e4063c434c0c3df09dc9fd8cc}{Get\+Num\+Track}} (int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCLayer_aa24a4614c4584721a8d10e43952c5af2}{Get\+Wire\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Wire\+List)
+\item 
+int \mbox{\hyperlink{classCLayer_a4d36fe6154f539a253380daf5ed0bedc}{Get\+Net\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Net\+List)
+\item 
+void \mbox{\hyperlink{classCLayer_aa4c718690f42ddb1adb4ace397264efc}{Get\+Congested\+Box}} (\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+int \mbox{\hyperlink{classCLayer_a4e139423a04a8dd850ded7e9185c0a89}{Get\+Length}} ()
+\item 
+void \mbox{\hyperlink{classCLayer_a38b1b0ee3e7884ef63fd439070c37e17}{Get\+Boundary}} (\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid, \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$$\ast$pp\+Boundary1, \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$$\ast$pp\+Boundary2)
+\item 
+int \mbox{\hyperlink{classCLayer_a402e96f6e8f284e145062e85caf73588}{Get\+Num\+Boundary}} ()
+\item 
+int \mbox{\hyperlink{classCLayer_a7e041ae4b69adbf606236ce0cd4f35a6}{Get\+Capacity}} (int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCLayer_a94c6bfa99e46d919a415b00fd80964b3}{Get\+Num\+Grid}} ()
+\item 
+void \mbox{\hyperlink{classCLayer_aa7ddbec19acf0970615b187540d6bad0}{Get\+Adj\+Grid}} ()
+\item 
+double \mbox{\hyperlink{classCLayer_a1cf9df5ef7dbe809239709f04e0a0cad}{Get\+Congestion}} (int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCLayer_aef7ab8aa370e9133096e2a66788b7ead}{Get\+Over\+Flow}} (int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCLayer_a50d4ff62846c5c7f438a0b9e1b3b54e7}{Get\+Direction}} ()
+\item 
+\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ \mbox{\hyperlink{classCLayer_a823b6e80c3ab3f60f7e86cde75c8dec8}{Get\+Parent}} ()
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ \mbox{\hyperlink{classCLayer_a1c81a1fe85a0ad9fa4a7cc6a86fec146}{Get\+Grid}} (int iX, int iY)
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_a652cae101ce82d66873c9c8cae3f24a4}{Get\+Max\+C\+Boundary}} ()
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_a7d13386d2796be6a0380cba598df5882}{Get\+Min\+C\+Boundary}} ()
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_abd9462b68d39534ab18b80c89b083f6c}{Get\+Boundary}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point1, int iX, int iY)
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_a7e70b99323a1449834f7ba6a66f27d30}{Get\+Boundary}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point1, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point2)
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_ad69f17c6c80810ffa1527544bc3fc6a7}{Get\+Boundary}} (int i\+X1, int i\+Y1, int i\+X2, int i\+Y2)
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ \mbox{\hyperlink{classCLayer_a695927bf07f0de927ac6326fbd3f1d00}{Get\+Boundary}} (int iX, int iY)
+\item 
+void \mbox{\hyperlink{classCLayer_afff67e1cbe36c1bbf689505f3f03064c}{Track\+Congestion}} (\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$p\+Boundary, int i\+OldC, int i\+NewC)
+\item 
+void \mbox{\hyperlink{classCLayer_a3b389c13f895286dbe16df369a4f7787}{Track\+Wire\+Length}} (int i\+Length)
+\item 
+void \mbox{\hyperlink{classCLayer_a7f89eaebcbf57737b1522bcec4ca8bbd}{Reset\+Maze}} ()
+\item 
+void \mbox{\hyperlink{classCLayer_a3d0413e4f025d57639ae6bbd6d34955f}{Configure}} (int i\+Index, int i\+Max\+Capacity, int i\+Direction, int i\+Min\+Wire\+Width, int i\+Min\+Wire\+Spacing, int i\+Min\+Via\+Spacing, \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Parent)
+\item 
+virtual void \mbox{\hyperlink{classCLayer_af987bec19614f92ca98bb9e492aecac0}{Initialize}} ()
+\item 
+virtual void \mbox{\hyperlink{classCLayer_a5bba2c50c546b8e5301370f08e963ee6}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCLayer_a3e1df9f2cdde24028b52418e2c3b09a3}{Is\+Vertical}} ()
+\item 
+int \mbox{\hyperlink{classCLayer_a0660beda10939c898dce3991dc2a1194}{Is\+Horizontal}} ()
+\item 
+int \mbox{\hyperlink{classCLayer_a141f6d1ca53bf7ad0d39ad5caec04afb}{Z}} ()
+\item 
+void \mbox{\hyperlink{classCLayer_ab33982ec157f1aa3fd4543a160574a1a}{Create\+Boundary}} ()
+\item 
+void \mbox{\hyperlink{classCLayer_a6d9a84c543b8c2b4f5fd555d24a567f2}{Create\+Grid}} ()
+\item 
+\mbox{\hyperlink{classCLayer_a6156e0a33ab7511c751d8ddc8975c9a3}{C\+Layer}} ()
+\item 
+virtual \mbox{\hyperlink{classCLayer_a78d56eb9fffa4188383cdc0ca91ee67c}{$\sim$\+C\+Layer}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+multimap$<$ int, \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ \mbox{\hyperlink{classCLayer_a92dce7beca8ec4fa0ad07a46114c1f68}{m\+\_\+\+C\+Boundary\+Bucket}}
+\item 
+hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, multimap$<$ int, \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$\+::iterator $>$ \mbox{\hyperlink{classCLayer_afe3a156ca744d73f927f19fb320d50c3}{m\+\_\+\+C\+Boundary\+Bucket\+Itr}}
+\item 
+int \mbox{\hyperlink{classCLayer_a8129c42ff6ec606bf17c77c4d2b110ee}{m\+\_\+i\+Max\+Capacity}}
+\item 
+int \mbox{\hyperlink{classCLayer_a7455370559666eeca28d7418991cb7d9}{m\+\_\+i\+Max\+BY}}
+\item 
+int \mbox{\hyperlink{classCLayer_a294e5e06e21df7cd7c80aba99c22eacd}{m\+\_\+i\+Max\+BX}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCLayer_a28f4f5a3f5f01db3e32e18b65bf9f3f9}{m\+\_\+i\+Min\+Wire\+Width}}
+\item 
+int \mbox{\hyperlink{classCLayer_afd0e4e879b3d329c009e0a5acd7dc81d}{m\+\_\+i\+Min\+Wire\+Spacing}}
+\item 
+int \mbox{\hyperlink{classCLayer_a6b5e909e6de7ce5ffe49441bda5724e5}{m\+\_\+i\+Min\+Via\+Spacing}}
+\item 
+int \mbox{\hyperlink{classCLayer_a32c10bee607b233b00c80a0c32fc2c49}{m\+\_\+i\+Direction}}
+\item 
+int \mbox{\hyperlink{classCLayer_aa204da6df07e358de097e9cb3688561e}{m\+\_\+i\+Sum\+WL}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{classCLayer_a21ed1da429a1e39ceba329c636a14339}{m\+\_\+p\+Maze}}
+\item 
+\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$$\ast$ \mbox{\hyperlink{classCLayer_acaee54a8cb6a0dc8a924ad8dc7800f78}{m\+\_\+pp\+Grid}}
+\item 
+\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$$\ast$ \mbox{\hyperlink{classCLayer_a0af07548ed6901bfa6cb07df6bb61d05}{m\+\_\+pp\+Boundary}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCLayer_a456d9ce965c42b2974ac760295a30cc6}{C\+Design}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCLayer_a6156e0a33ab7511c751d8ddc8975c9a3}\label{classCLayer_a6156e0a33ab7511c751d8ddc8975c9a3}} 
+\index{CLayer@{CLayer}!CLayer@{CLayer}}
+\index{CLayer@{CLayer}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{CLayer()}{CLayer()}}
+{\footnotesize\ttfamily C\+Layer\+::\+C\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a78d56eb9fffa4188383cdc0ca91ee67c}\label{classCLayer_a78d56eb9fffa4188383cdc0ca91ee67c}} 
+\index{CLayer@{CLayer}!````~CLayer@{$\sim$CLayer}}
+\index{````~CLayer@{$\sim$CLayer}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{$\sim$CLayer()}{~CLayer()}}
+{\footnotesize\ttfamily C\+Layer\+::$\sim$\+C\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCLayer_a47bb48736ac93a95148807e67ec279f1}\label{classCLayer_a47bb48736ac93a95148807e67ec279f1}} 
+\index{CLayer@{CLayer}!AddPenalty@{AddPenalty}}
+\index{AddPenalty@{AddPenalty}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{AddPenalty()}{AddPenalty()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Add\+Penalty (\begin{DoxyParamCaption}\item[{int}]{i\+Penalty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a3d0413e4f025d57639ae6bbd6d34955f}\label{classCLayer_a3d0413e4f025d57639ae6bbd6d34955f}} 
+\index{CLayer@{CLayer}!Configure@{Configure}}
+\index{Configure@{Configure}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{Configure()}{Configure()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Configure (\begin{DoxyParamCaption}\item[{int}]{i\+Index,  }\item[{int}]{i\+Max\+Capacity,  }\item[{int}]{i\+Direction,  }\item[{int}]{i\+Min\+Wire\+Width,  }\item[{int}]{i\+Min\+Wire\+Spacing,  }\item[{int}]{i\+Min\+Via\+Spacing,  }\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_ab33982ec157f1aa3fd4543a160574a1a}\label{classCLayer_ab33982ec157f1aa3fd4543a160574a1a}} 
+\index{CLayer@{CLayer}!CreateBoundary@{CreateBoundary}}
+\index{CreateBoundary@{CreateBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{CreateBoundary()}{CreateBoundary()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Create\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a6d9a84c543b8c2b4f5fd555d24a567f2}\label{classCLayer_a6d9a84c543b8c2b4f5fd555d24a567f2}} 
+\index{CLayer@{CLayer}!CreateGrid@{CreateGrid}}
+\index{CreateGrid@{CreateGrid}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{CreateGrid()}{CreateGrid()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Create\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_aa7ddbec19acf0970615b187540d6bad0}\label{classCLayer_aa7ddbec19acf0970615b187540d6bad0}} 
+\index{CLayer@{CLayer}!GetAdjGrid@{GetAdjGrid}}
+\index{GetAdjGrid@{GetAdjGrid}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetAdjGrid()}{GetAdjGrid()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Get\+Adj\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a38b1b0ee3e7884ef63fd439070c37e17}\label{classCLayer_a38b1b0ee3e7884ef63fd439070c37e17}} 
+\index{CLayer@{CLayer}!GetBoundary@{GetBoundary}}
+\index{GetBoundary@{GetBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetBoundary()}{GetBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Get\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid,  }\item[{\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$$\ast$}]{pp\+Boundary1,  }\item[{\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$$\ast$}]{pp\+Boundary2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_abd9462b68d39534ab18b80c89b083f6c}\label{classCLayer_abd9462b68d39534ab18b80c89b083f6c}} 
+\index{CLayer@{CLayer}!GetBoundary@{GetBoundary}}
+\index{GetBoundary@{GetBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetBoundary()}{GetBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point1,  }\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a7e70b99323a1449834f7ba6a66f27d30}\label{classCLayer_a7e70b99323a1449834f7ba6a66f27d30}} 
+\index{CLayer@{CLayer}!GetBoundary@{GetBoundary}}
+\index{GetBoundary@{GetBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetBoundary()}{GetBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point1,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCLayer_ad69f17c6c80810ffa1527544bc3fc6a7}\label{classCLayer_ad69f17c6c80810ffa1527544bc3fc6a7}} 
+\index{CLayer@{CLayer}!GetBoundary@{GetBoundary}}
+\index{GetBoundary@{GetBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetBoundary()}{GetBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Boundary (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCLayer_a695927bf07f0de927ac6326fbd3f1d00}\label{classCLayer_a695927bf07f0de927ac6326fbd3f1d00}} 
+\index{CLayer@{CLayer}!GetBoundary@{GetBoundary}}
+\index{GetBoundary@{GetBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetBoundary()}{GetBoundary()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Boundary (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a7e041ae4b69adbf606236ce0cd4f35a6}\label{classCLayer_a7e041ae4b69adbf606236ce0cd4f35a6}} 
+\index{CLayer@{CLayer}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_aa4c718690f42ddb1adb4ace397264efc}\label{classCLayer_aa4c718690f42ddb1adb4ace397264efc}} 
+\index{CLayer@{CLayer}!GetCongestedBox@{GetCongestedBox}}
+\index{GetCongestedBox@{GetCongestedBox}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetCongestedBox()}{GetCongestedBox()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Get\+Congested\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a1cf9df5ef7dbe809239709f04e0a0cad}\label{classCLayer_a1cf9df5ef7dbe809239709f04e0a0cad}} 
+\index{CLayer@{CLayer}!GetCongestion@{GetCongestion}}
+\index{GetCongestion@{GetCongestion}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetCongestion()}{GetCongestion()}}
+{\footnotesize\ttfamily double C\+Layer\+::\+Get\+Congestion (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a50d4ff62846c5c7f438a0b9e1b3b54e7}\label{classCLayer_a50d4ff62846c5c7f438a0b9e1b3b54e7}} 
+\index{CLayer@{CLayer}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a1c81a1fe85a0ad9fa4a7cc6a86fec146}\label{classCLayer_a1c81a1fe85a0ad9fa4a7cc6a86fec146}} 
+\index{CLayer@{CLayer}!GetGrid@{GetGrid}}
+\index{GetGrid@{GetGrid}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetGrid()}{GetGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ C\+Layer\+::\+Get\+Grid (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a4e139423a04a8dd850ded7e9185c0a89}\label{classCLayer_a4e139423a04a8dd850ded7e9185c0a89}} 
+\index{CLayer@{CLayer}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a652cae101ce82d66873c9c8cae3f24a4}\label{classCLayer_a652cae101ce82d66873c9c8cae3f24a4}} 
+\index{CLayer@{CLayer}!GetMaxCBoundary@{GetMaxCBoundary}}
+\index{GetMaxCBoundary@{GetMaxCBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetMaxCBoundary()}{GetMaxCBoundary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Max\+C\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a7d13386d2796be6a0380cba598df5882}\label{classCLayer_a7d13386d2796be6a0380cba598df5882}} 
+\index{CLayer@{CLayer}!GetMinCBoundary@{GetMinCBoundary}}
+\index{GetMinCBoundary@{GetMinCBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetMinCBoundary()}{GetMinCBoundary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ C\+Layer\+::\+Get\+Min\+C\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a4d36fe6154f539a253380daf5ed0bedc}\label{classCLayer_a4d36fe6154f539a253380daf5ed0bedc}} 
+\index{CLayer@{CLayer}!GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}}
+\index{GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetNetInOverFlowBoundary()}{GetNetInOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Net\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a402e96f6e8f284e145062e85caf73588}\label{classCLayer_a402e96f6e8f284e145062e85caf73588}} 
+\index{CLayer@{CLayer}!GetNumBoundary@{GetNumBoundary}}
+\index{GetNumBoundary@{GetNumBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetNumBoundary()}{GetNumBoundary()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Num\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a94c6bfa99e46d919a415b00fd80964b3}\label{classCLayer_a94c6bfa99e46d919a415b00fd80964b3}} 
+\index{CLayer@{CLayer}!GetNumGrid@{GetNumGrid}}
+\index{GetNumGrid@{GetNumGrid}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetNumGrid()}{GetNumGrid()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Num\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a157ea79e4063c434c0c3df09dc9fd8cc}\label{classCLayer_a157ea79e4063c434c0c3df09dc9fd8cc}} 
+\index{CLayer@{CLayer}!GetNumTrack@{GetNumTrack}}
+\index{GetNumTrack@{GetNumTrack}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetNumTrack()}{GetNumTrack()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Num\+Track (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_aef7ab8aa370e9133096e2a66788b7ead}\label{classCLayer_aef7ab8aa370e9133096e2a66788b7ead}} 
+\index{CLayer@{CLayer}!GetOverFlow@{GetOverFlow}}
+\index{GetOverFlow@{GetOverFlow}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetOverFlow()}{GetOverFlow()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Over\+Flow (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_aae29339458f6708296c4c05a36924760}\label{classCLayer_aae29339458f6708296c4c05a36924760}} 
+\index{CLayer@{CLayer}!GetOverFlowBoundary@{GetOverFlowBoundary}}
+\index{GetOverFlowBoundary@{GetOverFlowBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetOverFlowBoundary()}{GetOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$}]{p\+Boundary\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a823b6e80c3ab3f60f7e86cde75c8dec8}\label{classCLayer_a823b6e80c3ab3f60f7e86cde75c8dec8}} 
+\index{CLayer@{CLayer}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ C\+Layer\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a4b4499ed47902f08d9100e2c22d09144}\label{classCLayer_a4b4499ed47902f08d9100e2c22d09144}} 
+\index{CLayer@{CLayer}!GetStartBox@{GetStartBox}}
+\index{GetStartBox@{GetStartBox}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetStartBox()}{GetStartBox()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Get\+Start\+Box (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ $\ast$}]{pX,  }\item[{vector$<$ int $>$ $\ast$}]{pY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_aa24a4614c4584721a8d10e43952c5af2}\label{classCLayer_aa24a4614c4584721a8d10e43952c5af2}} 
+\index{CLayer@{CLayer}!GetWireInOverFlowBoundary@{GetWireInOverFlowBoundary}}
+\index{GetWireInOverFlowBoundary@{GetWireInOverFlowBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{GetWireInOverFlowBoundary()}{GetWireInOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Get\+Wire\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Wire\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_af987bec19614f92ca98bb9e492aecac0}\label{classCLayer_af987bec19614f92ca98bb9e492aecac0}} 
+\index{CLayer@{CLayer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCLayer_a0660beda10939c898dce3991dc2a1194}\label{classCLayer_a0660beda10939c898dce3991dc2a1194}} 
+\index{CLayer@{CLayer}!IsHorizontal@{IsHorizontal}}
+\index{IsHorizontal@{IsHorizontal}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{IsHorizontal()}{IsHorizontal()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Is\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a3e1df9f2cdde24028b52418e2c3b09a3}\label{classCLayer_a3e1df9f2cdde24028b52418e2c3b09a3}} 
+\index{CLayer@{CLayer}!IsVertical@{IsVertical}}
+\index{IsVertical@{IsVertical}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{IsVertical()}{IsVertical()}}
+{\footnotesize\ttfamily int C\+Layer\+::\+Is\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a5bba2c50c546b8e5301370f08e963ee6}\label{classCLayer_a5bba2c50c546b8e5301370f08e963ee6}} 
+\index{CLayer@{CLayer}!Print@{Print}}
+\index{Print@{Print}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+\mbox{\Hypertarget{classCLayer_a7f89eaebcbf57737b1522bcec4ca8bbd}\label{classCLayer_a7f89eaebcbf57737b1522bcec4ca8bbd}} 
+\index{CLayer@{CLayer}!ResetMaze@{ResetMaze}}
+\index{ResetMaze@{ResetMaze}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{ResetMaze()}{ResetMaze()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Reset\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_afff67e1cbe36c1bbf689505f3f03064c}\label{classCLayer_afff67e1cbe36c1bbf689505f3f03064c}} 
+\index{CLayer@{CLayer}!TrackCongestion@{TrackCongestion}}
+\index{TrackCongestion@{TrackCongestion}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{TrackCongestion()}{TrackCongestion()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Track\+Congestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$}]{p\+Boundary,  }\item[{int}]{i\+OldC,  }\item[{int}]{i\+NewC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a3b389c13f895286dbe16df369a4f7787}\label{classCLayer_a3b389c13f895286dbe16df369a4f7787}} 
+\index{CLayer@{CLayer}!TrackWireLength@{TrackWireLength}}
+\index{TrackWireLength@{TrackWireLength}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{TrackWireLength()}{TrackWireLength()}}
+{\footnotesize\ttfamily void C\+Layer\+::\+Track\+Wire\+Length (\begin{DoxyParamCaption}\item[{int}]{i\+Length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCLayer_a141f6d1ca53bf7ad0d39ad5caec04afb}\label{classCLayer_a141f6d1ca53bf7ad0d39ad5caec04afb}} 
+\index{CLayer@{CLayer}!Z@{Z}}
+\index{Z@{Z}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{Z()}{Z()}}
+{\footnotesize\ttfamily int C\+Layer\+::Z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCLayer_a456d9ce965c42b2974ac760295a30cc6}\label{classCLayer_a456d9ce965c42b2974ac760295a30cc6}} 
+\index{CLayer@{CLayer}!CDesign@{CDesign}}
+\index{CDesign@{CDesign}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{CDesign}{CDesign}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCDesign}{C\+Design}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCLayer_a92dce7beca8ec4fa0ad07a46114c1f68}\label{classCLayer_a92dce7beca8ec4fa0ad07a46114c1f68}} 
+\index{CLayer@{CLayer}!m\_CBoundaryBucket@{m\_CBoundaryBucket}}
+\index{m\_CBoundaryBucket@{m\_CBoundaryBucket}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_CBoundaryBucket}{m\_CBoundaryBucket}}
+{\footnotesize\ttfamily multimap$<$int, \mbox{\hyperlink{classCBoundary}{C\+Boundary}}$\ast$$>$ C\+Layer\+::m\+\_\+\+C\+Boundary\+Bucket}
+
+\mbox{\Hypertarget{classCLayer_afe3a156ca744d73f927f19fb320d50c3}\label{classCLayer_afe3a156ca744d73f927f19fb320d50c3}} 
+\index{CLayer@{CLayer}!m\_CBoundaryBucketItr@{m\_CBoundaryBucketItr}}
+\index{m\_CBoundaryBucketItr@{m\_CBoundaryBucketItr}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_CBoundaryBucketItr}{m\_CBoundaryBucketItr}}
+{\footnotesize\ttfamily hash\+\_\+map$<$\mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, multimap$<$int,\mbox{\hyperlink{classCBoundary}{C\+Boundary}}$\ast$ $>$\+::iterator$>$ C\+Layer\+::m\+\_\+\+C\+Boundary\+Bucket\+Itr}
+
+\mbox{\Hypertarget{classCLayer_a32c10bee607b233b00c80a0c32fc2c49}\label{classCLayer_a32c10bee607b233b00c80a0c32fc2c49}} 
+\index{CLayer@{CLayer}!m\_iDirection@{m\_iDirection}}
+\index{m\_iDirection@{m\_iDirection}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iDirection}{m\_iDirection}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Direction\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_a294e5e06e21df7cd7c80aba99c22eacd}\label{classCLayer_a294e5e06e21df7cd7c80aba99c22eacd}} 
+\index{CLayer@{CLayer}!m\_iMaxBX@{m\_iMaxBX}}
+\index{m\_iMaxBX@{m\_iMaxBX}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMaxBX}{m\_iMaxBX}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Max\+BX}
+
+\mbox{\Hypertarget{classCLayer_a7455370559666eeca28d7418991cb7d9}\label{classCLayer_a7455370559666eeca28d7418991cb7d9}} 
+\index{CLayer@{CLayer}!m\_iMaxBY@{m\_iMaxBY}}
+\index{m\_iMaxBY@{m\_iMaxBY}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMaxBY}{m\_iMaxBY}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Max\+BY}
+
+\mbox{\Hypertarget{classCLayer_a8129c42ff6ec606bf17c77c4d2b110ee}\label{classCLayer_a8129c42ff6ec606bf17c77c4d2b110ee}} 
+\index{CLayer@{CLayer}!m\_iMaxCapacity@{m\_iMaxCapacity}}
+\index{m\_iMaxCapacity@{m\_iMaxCapacity}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMaxCapacity}{m\_iMaxCapacity}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Max\+Capacity}
+
+\mbox{\Hypertarget{classCLayer_a6b5e909e6de7ce5ffe49441bda5724e5}\label{classCLayer_a6b5e909e6de7ce5ffe49441bda5724e5}} 
+\index{CLayer@{CLayer}!m\_iMinViaSpacing@{m\_iMinViaSpacing}}
+\index{m\_iMinViaSpacing@{m\_iMinViaSpacing}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMinViaSpacing}{m\_iMinViaSpacing}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Min\+Via\+Spacing\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_afd0e4e879b3d329c009e0a5acd7dc81d}\label{classCLayer_afd0e4e879b3d329c009e0a5acd7dc81d}} 
+\index{CLayer@{CLayer}!m\_iMinWireSpacing@{m\_iMinWireSpacing}}
+\index{m\_iMinWireSpacing@{m\_iMinWireSpacing}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMinWireSpacing}{m\_iMinWireSpacing}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Min\+Wire\+Spacing\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_a28f4f5a3f5f01db3e32e18b65bf9f3f9}\label{classCLayer_a28f4f5a3f5f01db3e32e18b65bf9f3f9}} 
+\index{CLayer@{CLayer}!m\_iMinWireWidth@{m\_iMinWireWidth}}
+\index{m\_iMinWireWidth@{m\_iMinWireWidth}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iMinWireWidth}{m\_iMinWireWidth}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Min\+Wire\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_aa204da6df07e358de097e9cb3688561e}\label{classCLayer_aa204da6df07e358de097e9cb3688561e}} 
+\index{CLayer@{CLayer}!m\_iSumWL@{m\_iSumWL}}
+\index{m\_iSumWL@{m\_iSumWL}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_iSumWL}{m\_iSumWL}}
+{\footnotesize\ttfamily int C\+Layer\+::m\+\_\+i\+Sum\+WL\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_a21ed1da429a1e39ceba329c636a14339}\label{classCLayer_a21ed1da429a1e39ceba329c636a14339}} 
+\index{CLayer@{CLayer}!m\_pMaze@{m\_pMaze}}
+\index{m\_pMaze@{m\_pMaze}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_pMaze}{m\_pMaze}}
+{\footnotesize\ttfamily unsigned char$\ast$ C\+Layer\+::m\+\_\+p\+Maze\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_a0af07548ed6901bfa6cb07df6bb61d05}\label{classCLayer_a0af07548ed6901bfa6cb07df6bb61d05}} 
+\index{CLayer@{CLayer}!m\_ppBoundary@{m\_ppBoundary}}
+\index{m\_ppBoundary@{m\_ppBoundary}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_ppBoundary}{m\_ppBoundary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBoundary}{C\+Boundary}}$\ast$$\ast$ C\+Layer\+::m\+\_\+pp\+Boundary\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCLayer_acaee54a8cb6a0dc8a924ad8dc7800f78}\label{classCLayer_acaee54a8cb6a0dc8a924ad8dc7800f78}} 
+\index{CLayer@{CLayer}!m\_ppGrid@{m\_ppGrid}}
+\index{m\_ppGrid@{m\_ppGrid}!CLayer@{CLayer}}
+\subsubsection{\texorpdfstring{m\_ppGrid}{m\_ppGrid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGrid}{C\+Grid}}$\ast$$\ast$ C\+Layer\+::m\+\_\+pp\+Grid\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Layer_8h}{Layer.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Layer_8cpp}{Layer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,357 @@
+\hypertarget{classCPoint}{}\section{C\+Point Class Reference}
+\label{classCPoint}\index{CPoint@{CPoint}}
+
+
+{\ttfamily \#include $<$Point.\+h$>$}
+
+Inheritance diagram for C\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCPoint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPoint_afce98ba89f4a9283c9d1c94571ca70f2}{C\+Point}} ()
+\item 
+virtual \mbox{\hyperlink{classCPoint_a1f368b093ec85c9ee8ec3da805aa1d47}{$\sim$\+C\+Point}} ()
+\item 
+virtual void \mbox{\hyperlink{classCPoint_a763a48a1efdcdaea63cfa4a9be8c4c48}{Initialize}} (int iX, int iY, int iZ, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Parent)
+\item 
+int \mbox{\hyperlink{classCPoint_a888633c67f146c390bd3434850497f1f}{Is\+Vertical}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em If has same X and Z but different Y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a44e549d9e95bb88d0abbe614ab5f1435}{Is\+Horizontal}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em If has same Y and Z but different X. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a8177f7cd02cfad8b3ac91ebf0b7c8eee}{Is\+Flat}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em Is\+Vertical $\vert$$\vert$ Is\+Horizontal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a5a759d36a6b0bb0e8300077f53924362}{Is\+Same3D}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em compare with given point. 3D version. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_ad6ed4f9141fd7ec648cb508bffe7edc2}{Is\+Same3D}} (int iX, int iY, int iZ)
+\begin{DoxyCompactList}\small\item\em compare with given position. 3D version. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a723515e5fe780b2bc7c4357f210ff6ac}{Is\+Same2D}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em compare with given point. 2D version. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a42c0cc1723520246e543073a13a2c45a}{Is\+Same2D}} (int iX, int iY)
+\begin{DoxyCompactList}\small\item\em compare with given position. 2D version. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_a280126da62c6a79238c2511639d58786}{Is\+Pin}} ()
+\item 
+int \mbox{\hyperlink{classCPoint_a9ae0796ca1d732df8bf718c07e998e41}{Is\+Perpendicular}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em If has same X and Y but different Z. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_add1e7b0b591f46026f281758a263da73}{Get\+Direction}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+int \mbox{\hyperlink{classCPoint_a46b97b169fa384088ee36894fdf4c40d}{Get\+M\+Distance}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em get Manhattan Distance with given point. 3D version. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPoint_ab6f68628b53f852dc41210196464c004}{Get\+M\+Distance2D}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\begin{DoxyCompactList}\small\item\em get Manhattan Distance with given position. 2D version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{Create\+Key}} ()
+\begin{DoxyCompactList}\small\item\em call \mbox{\hyperlink{classCPoint_aa93327a1be5e5d9df55f3eb9750af25d}{C\+Point\+::\+Make\+Key}} and store key in m\+\_\+\+Key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCPoint_ac87cc89b531011be9c848630da1343b7}{Get\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em get parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPoint_a1610463f19b7ff508ed229791dd6335d}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCPoint_aeb92159e1d1045ceab79eea735d22af2}{X}} ()
+\item 
+int \mbox{\hyperlink{classCPoint_a6d03d17763a148af852d10a9a410167e}{Z}} ()
+\item 
+int \mbox{\hyperlink{classCPoint_a8543d7ba2b9d1f9ec3373bd8258a66d0}{Y}} ()
+\item 
+void \mbox{\hyperlink{classCPoint_ac9557dddaefffd4c7cc0a20090ef5324}{SetX}} (int iX)
+\item 
+void \mbox{\hyperlink{classCPoint_a984d81a6620d3bcf3df8dc14c42f2a1d}{SetY}} (int iY)
+\item 
+void \mbox{\hyperlink{classCPoint_abc4fb18e1e3ca6545e6f6e4c7cb0e555}{SetZ}} (int iZ)
+\item 
+void \mbox{\hyperlink{classCPoint_ae8364b4fc6b31f4a844f38a13f2251c7}{Set\+X\+YZ}} (int iX, int iY, int iZ)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} \mbox{\hyperlink{classCPoint_aa93327a1be5e5d9df55f3eb9750af25d}{Make\+Key}} (int iX, int iY, int iZ)
+\item 
+static int \mbox{\hyperlink{classCPoint_aa748e36b6641c6259ca45e1cb7017f58}{X}} (\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} Key)
+\begin{DoxyCompactList}\small\item\em get X position from given Key \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classCPoint_a2760f11ef7f482c28c0385ef402faa9f}{Y}} (\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} Key)
+\begin{DoxyCompactList}\small\item\em get Y position from given Key \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classCPoint_a896823777dbcd50cceec722a9fee6ddb}{Z}} (\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} Key)
+\begin{DoxyCompactList}\small\item\em get Z position from given Key \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}{m\+\_\+iY}}
+\item 
+short \mbox{\hyperlink{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}{m\+\_\+iX}}
+\item 
+char \mbox{\hyperlink{classCPoint_af5bd6bd96c41a2f050fe2f5f2d6595de}{m\+\_\+cZ}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPoint_afce98ba89f4a9283c9d1c94571ca70f2}\label{classCPoint_afce98ba89f4a9283c9d1c94571ca70f2}} 
+\index{CPoint@{CPoint}!CPoint@{CPoint}}
+\index{CPoint@{CPoint}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{CPoint()}{CPoint()}}
+{\footnotesize\ttfamily C\+Point\+::\+C\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default value\+: m\+\_\+iX = m\+\_\+iY = m\+\_\+cZ = -\/1 \mbox{\Hypertarget{classCPoint_a1f368b093ec85c9ee8ec3da805aa1d47}\label{classCPoint_a1f368b093ec85c9ee8ec3da805aa1d47}} 
+\index{CPoint@{CPoint}!````~CPoint@{$\sim$CPoint}}
+\index{````~CPoint@{$\sim$CPoint}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{$\sim$CPoint()}{~CPoint()}}
+{\footnotesize\ttfamily C\+Point\+::$\sim$\+C\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPoint_adff246311a759e9c7eaa5f5374dd3643}\label{classCPoint_adff246311a759e9c7eaa5f5374dd3643}} 
+\index{CPoint@{CPoint}!CreateKey@{CreateKey}}
+\index{CreateKey@{CreateKey}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{CreateKey()}{CreateKey()}}
+{\footnotesize\ttfamily void C\+Point\+::\+Create\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+call \mbox{\hyperlink{classCPoint_aa93327a1be5e5d9df55f3eb9750af25d}{C\+Point\+::\+Make\+Key}} and store key in m\+\_\+\+Key. 
+
+\mbox{\Hypertarget{classCPoint_add1e7b0b591f46026f281758a263da73}\label{classCPoint_add1e7b0b591f46026f281758a263da73}} 
+\index{CPoint@{CPoint}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Get\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+get the direction of given point. return D\+I\+R\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL or D\+I\+R\+\_\+\+V\+E\+R\+T\+I\+C\+AL or D\+I\+R\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR or D\+I\+R\+\_\+\+D\+I\+A\+G\+O\+N\+AL \mbox{\Hypertarget{classCPoint_a46b97b169fa384088ee36894fdf4c40d}\label{classCPoint_a46b97b169fa384088ee36894fdf4c40d}} 
+\index{CPoint@{CPoint}!GetMDistance@{GetMDistance}}
+\index{GetMDistance@{GetMDistance}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{GetMDistance()}{GetMDistance()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Get\+M\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+get Manhattan Distance with given point. 3D version. 
+
+\mbox{\Hypertarget{classCPoint_ab6f68628b53f852dc41210196464c004}\label{classCPoint_ab6f68628b53f852dc41210196464c004}} 
+\index{CPoint@{CPoint}!GetMDistance2D@{GetMDistance2D}}
+\index{GetMDistance2D@{GetMDistance2D}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{GetMDistance2D()}{GetMDistance2D()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Get\+M\+Distance2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+get Manhattan Distance with given position. 2D version. 
+
+\mbox{\Hypertarget{classCPoint_ac87cc89b531011be9c848630da1343b7}\label{classCPoint_ac87cc89b531011be9c848630da1343b7}} 
+\index{CPoint@{CPoint}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Point\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parent. 
+
+\mbox{\Hypertarget{classCPoint_a763a48a1efdcdaea63cfa4a9be8c4c48}\label{classCPoint_a763a48a1efdcdaea63cfa4a9be8c4c48}} 
+\index{CPoint@{CPoint}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C\+Point\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Initialize this point; call \mbox{\hyperlink{classCPoint_ae8364b4fc6b31f4a844f38a13f2251c7}{C\+Point\+::\+Set\+X\+YZ}} and C\+Point\+::\+Creat\+Key. \mbox{\Hypertarget{classCPoint_a8177f7cd02cfad8b3ac91ebf0b7c8eee}\label{classCPoint_a8177f7cd02cfad8b3ac91ebf0b7c8eee}} 
+\index{CPoint@{CPoint}!IsFlat@{IsFlat}}
+\index{IsFlat@{IsFlat}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsFlat()}{IsFlat()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Flat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+Is\+Vertical $\vert$$\vert$ Is\+Horizontal. 
+
+\mbox{\Hypertarget{classCPoint_a44e549d9e95bb88d0abbe614ab5f1435}\label{classCPoint_a44e549d9e95bb88d0abbe614ab5f1435}} 
+\index{CPoint@{CPoint}!IsHorizontal@{IsHorizontal}}
+\index{IsHorizontal@{IsHorizontal}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsHorizontal()}{IsHorizontal()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Horizontal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+If has same Y and Z but different X. 
+
+\mbox{\Hypertarget{classCPoint_a9ae0796ca1d732df8bf718c07e998e41}\label{classCPoint_a9ae0796ca1d732df8bf718c07e998e41}} 
+\index{CPoint@{CPoint}!IsPerpendicular@{IsPerpendicular}}
+\index{IsPerpendicular@{IsPerpendicular}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsPerpendicular()}{IsPerpendicular()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Perpendicular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+If has same X and Y but different Z. 
+
+\mbox{\Hypertarget{classCPoint_a280126da62c6a79238c2511639d58786}\label{classCPoint_a280126da62c6a79238c2511639d58786}} 
+\index{CPoint@{CPoint}!IsPin@{IsPin}}
+\index{IsPin@{IsPin}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsPin()}{IsPin()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Pin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Search the net which this point belong to, and compare each pin with the point. \mbox{\Hypertarget{classCPoint_a723515e5fe780b2bc7c4357f210ff6ac}\label{classCPoint_a723515e5fe780b2bc7c4357f210ff6ac}} 
+\index{CPoint@{CPoint}!IsSame2D@{IsSame2D}}
+\index{IsSame2D@{IsSame2D}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsSame2D()}{IsSame2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Same2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+compare with given point. 2D version. 
+
+\mbox{\Hypertarget{classCPoint_a42c0cc1723520246e543073a13a2c45a}\label{classCPoint_a42c0cc1723520246e543073a13a2c45a}} 
+\index{CPoint@{CPoint}!IsSame2D@{IsSame2D}}
+\index{IsSame2D@{IsSame2D}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsSame2D()}{IsSame2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Same2D (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+
+
+compare with given position. 2D version. 
+
+\mbox{\Hypertarget{classCPoint_a5a759d36a6b0bb0e8300077f53924362}\label{classCPoint_a5a759d36a6b0bb0e8300077f53924362}} 
+\index{CPoint@{CPoint}!IsSame3D@{IsSame3D}}
+\index{IsSame3D@{IsSame3D}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsSame3D()}{IsSame3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Same3D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+compare with given point. 3D version. 
+
+\mbox{\Hypertarget{classCPoint_ad6ed4f9141fd7ec648cb508bffe7edc2}\label{classCPoint_ad6ed4f9141fd7ec648cb508bffe7edc2}} 
+\index{CPoint@{CPoint}!IsSame3D@{IsSame3D}}
+\index{IsSame3D@{IsSame3D}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsSame3D()}{IsSame3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Same3D (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+
+
+compare with given position. 3D version. 
+
+\mbox{\Hypertarget{classCPoint_a888633c67f146c390bd3434850497f1f}\label{classCPoint_a888633c67f146c390bd3434850497f1f}} 
+\index{CPoint@{CPoint}!IsVertical@{IsVertical}}
+\index{IsVertical@{IsVertical}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{IsVertical()}{IsVertical()}}
+{\footnotesize\ttfamily int C\+Point\+::\+Is\+Vertical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+
+
+If has same X and Z but different Y. 
+
+\mbox{\Hypertarget{classCPoint_aa93327a1be5e5d9df55f3eb9750af25d}\label{classCPoint_aa93327a1be5e5d9df55f3eb9750af25d}} 
+\index{CPoint@{CPoint}!MakeKey@{MakeKey}}
+\index{MakeKey@{MakeKey}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{MakeKey()}{MakeKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} C\+Point\+::\+Make\+Key (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate this object\textquotesingle{}s key with its position. from lowest bit, 1 -\/ 8 is Z, 9 -\/ 20 is Y, 21 -\/ 32 is X. \mbox{\Hypertarget{classCPoint_a1610463f19b7ff508ed229791dd6335d}\label{classCPoint_a1610463f19b7ff508ed229791dd6335d}} 
+\index{CPoint@{CPoint}!Print@{Print}}
+\index{Print@{Print}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Point\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Print information of this point to p\+File. i\+Mode\+: P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+OT $\vert$ P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+O\+T3D $\vert$ P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+AB $\vert$ P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+A\+B3D $\vert$ P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT 
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+\mbox{\Hypertarget{classCPoint_ac9557dddaefffd4c7cc0a20090ef5324}\label{classCPoint_ac9557dddaefffd4c7cc0a20090ef5324}} 
+\index{CPoint@{CPoint}!SetX@{SetX}}
+\index{SetX@{SetX}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void C\+Point\+::\+SetX (\begin{DoxyParamCaption}\item[{int}]{iX }\end{DoxyParamCaption})}
+
+Set X value in m\+\_\+iX. This function would call \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{C\+Point\+::\+Create\+Key}}. \mbox{\Hypertarget{classCPoint_ae8364b4fc6b31f4a844f38a13f2251c7}\label{classCPoint_ae8364b4fc6b31f4a844f38a13f2251c7}} 
+\index{CPoint@{CPoint}!SetXYZ@{SetXYZ}}
+\index{SetXYZ@{SetXYZ}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{SetXYZ()}{SetXYZ()}}
+{\footnotesize\ttfamily void C\+Point\+::\+Set\+X\+YZ (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+set X\+YZ in m\+\_\+iX, m\+\_\+iY and m\+\_\+cZ this function would not call \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{C\+Point\+::\+Create\+Key}}. \mbox{\Hypertarget{classCPoint_a984d81a6620d3bcf3df8dc14c42f2a1d}\label{classCPoint_a984d81a6620d3bcf3df8dc14c42f2a1d}} 
+\index{CPoint@{CPoint}!SetY@{SetY}}
+\index{SetY@{SetY}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void C\+Point\+::\+SetY (\begin{DoxyParamCaption}\item[{int}]{iY }\end{DoxyParamCaption})}
+
+Set Y value in m\+\_\+iY. This function would call \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{C\+Point\+::\+Create\+Key}}. \mbox{\Hypertarget{classCPoint_abc4fb18e1e3ca6545e6f6e4c7cb0e555}\label{classCPoint_abc4fb18e1e3ca6545e6f6e4c7cb0e555}} 
+\index{CPoint@{CPoint}!SetZ@{SetZ}}
+\index{SetZ@{SetZ}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{SetZ()}{SetZ()}}
+{\footnotesize\ttfamily void C\+Point\+::\+SetZ (\begin{DoxyParamCaption}\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+Set Z value in m\+\_\+cZ. This function would call \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{C\+Point\+::\+Create\+Key}}. \mbox{\Hypertarget{classCPoint_aeb92159e1d1045ceab79eea735d22af2}\label{classCPoint_aeb92159e1d1045ceab79eea735d22af2}} 
+\index{CPoint@{CPoint}!X@{X}}
+\index{X@{X}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{X()}{X()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Point\+::X (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCPoint_aa748e36b6641c6259ca45e1cb7017f58}\label{classCPoint_aa748e36b6641c6259ca45e1cb7017f58}} 
+\index{CPoint@{CPoint}!X@{X}}
+\index{X@{X}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{X()}{X()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Point\+::X (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}}]{Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get X position from given Key 
+
+\mbox{\Hypertarget{classCPoint_a8543d7ba2b9d1f9ec3373bd8258a66d0}\label{classCPoint_a8543d7ba2b9d1f9ec3373bd8258a66d0}} 
+\index{CPoint@{CPoint}!Y@{Y}}
+\index{Y@{Y}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Y()}{Y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Point\+::Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCPoint_a2760f11ef7f482c28c0385ef402faa9f}\label{classCPoint_a2760f11ef7f482c28c0385ef402faa9f}} 
+\index{CPoint@{CPoint}!Y@{Y}}
+\index{Y@{Y}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Y()}{Y()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Point\+::Y (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}}]{Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get Y position from given Key 
+
+\mbox{\Hypertarget{classCPoint_a6d03d17763a148af852d10a9a410167e}\label{classCPoint_a6d03d17763a148af852d10a9a410167e}} 
+\index{CPoint@{CPoint}!Z@{Z}}
+\index{Z@{Z}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Z()}{Z()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Point\+::Z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCPoint_a896823777dbcd50cceec722a9fee6ddb}\label{classCPoint_a896823777dbcd50cceec722a9fee6ddb}} 
+\index{CPoint@{CPoint}!Z@{Z}}
+\index{Z@{Z}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{Z()}{Z()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Point\+::Z (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}}]{Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get Z position from given Key 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCPoint_af5bd6bd96c41a2f050fe2f5f2d6595de}\label{classCPoint_af5bd6bd96c41a2f050fe2f5f2d6595de}} 
+\index{CPoint@{CPoint}!m\_cZ@{m\_cZ}}
+\index{m\_cZ@{m\_cZ}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{m\_cZ}{m\_cZ}}
+{\footnotesize\ttfamily char C\+Point\+::m\+\_\+cZ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}\label{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}} 
+\index{CPoint@{CPoint}!m\_iX@{m\_iX}}
+\index{m\_iX@{m\_iX}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{m\_iX}{m\_iX}}
+{\footnotesize\ttfamily short C\+Point\+::m\+\_\+iX\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}\label{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}} 
+\index{CPoint@{CPoint}!m\_iY@{m\_iY}}
+\index{m\_iY@{m\_iY}!CPoint@{CPoint}}
+\subsubsection{\texorpdfstring{m\_iY}{m\_iY}}
+{\footnotesize\ttfamily short C\+Point\+::m\+\_\+iY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Point_8h}{Point.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Point_8cpp}{Point.\+cpp}}\end{DoxyCompactItemize}

@@ -59,12 +59,8 @@
  *  from loss of use, data, or profits.
  *
  *----------------------------------------------------------------------------*/
-#if !defined(AFX_PARAM_H__B4454535A_75C1_6654_8632_91A6G6D879EC__INCLUDED_)
-#define AFX_PARAM_H__B4454535A_75C1_6654_8632_91A6G6D879EC__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+#ifndef PARAM_H
+#define PARAM_H
 
 #include "BoxRouter.h"
 class CParam

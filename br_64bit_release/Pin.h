@@ -63,12 +63,8 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_PIN_H__231C469E_1B99_4A63_95EE_770EB70A0949__INCLUDED_)
-#define AFX_PIN_H__231C469E_1B99_4A63_95EE_770EB70A0949__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+#ifndef PIN_H
+#define PIN_H
 
 #include "Point.h"
 #include "Net.h"
@@ -87,5 +83,5 @@ public:
 	CNet*				GetParent();
 };
 
-#endif // !defined(AFX_PIN_H__231C469E_1B99_4A63_95EE_770EB70A0949__INCLUDED_)
+#endif // ifndef PIN_H
 

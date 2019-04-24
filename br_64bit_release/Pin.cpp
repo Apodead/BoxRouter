@@ -80,6 +80,10 @@ CPin::~CPin()
 
 }
 
+/*!
+ * Initialize the pin with given param and check if it's out of range.
+ * note: the first param iIndex is unused.
+ */
 void CPin::Initialize(int iIndex, int iX, int iY, int iZ, CNet *pParent)
 {
 	SetXYZ(iX,iY,iZ);

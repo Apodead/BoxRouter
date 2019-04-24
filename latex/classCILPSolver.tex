@@ -1,0 +1,259 @@
+\hypertarget{classCILPSolver}{}\section{C\+I\+L\+P\+Solver Class Reference}
+\label{classCILPSolver}\index{CILPSolver@{CILPSolver}}
+
+
+{\ttfamily \#include $<$I\+L\+P\+Solver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCILPSolver_a3551534866ccdc50262d2294157dae84}{Round\+Up}} (double d\+Threshold)
+\item 
+int \mbox{\hyperlink{classCILPSolver_a17d4b786fa8f12b2dc51e8d53d75fc4b}{Get\+Num\+Constraint}} ()
+\item 
+int \mbox{\hyperlink{classCILPSolver_a3a49add202ea4a77052dad9527c2d7cb}{Get\+Num\+Variable}} ()
+\item 
+void \mbox{\hyperlink{classCILPSolver_a028cb4889ef3dce3535ba3a5db62aaf4}{Set\+Coeff}} (int i\+Index, int i\+Value)
+\item 
+void \mbox{\hyperlink{classCILPSolver_ace812eaf28da94b99150bfd3f76f9e25}{Set\+Coeff}} (int i\+Index, double d\+Value)
+\item 
+void \mbox{\hyperlink{classCILPSolver_a546c06e42c5a767dd6d0c7ff03232f32}{Set\+Coeff\+Index}} (int i\+Index, int i\+Value)
+\item 
+double \mbox{\hyperlink{classCILPSolver_a29b0d08d626ff554d4d21911f3da0583}{Get\+Solution}} (int i\+Index)
+\item 
+int \mbox{\hyperlink{classCILPSolver_a1de0df19fea8757e39642457f35fb693}{Solve}} (int i\+Option, double $\ast$p\+Object\+Value)
+\item 
+void \mbox{\hyperlink{classCILPSolver_ac1ebb76c21b3ccaf3b12eca39cab42a6}{Print}} (char $\ast$p\+File\+Name, int i\+Optioin)
+\item 
+void \mbox{\hyperlink{classCILPSolver_a4dd20e9187f4fb9934bd13535941b9a1}{Read}} (char $\ast$p\+File\+Name, int i\+Option=\mbox{\hyperlink{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX}})
+\item 
+int \mbox{\hyperlink{classCILPSolver_a47313561701dd5a8a0588ed8ecca2ad0}{Write}} (char $\ast$p\+File\+Name, int i\+Option=\mbox{\hyperlink{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX}})
+\item 
+void \mbox{\hyperlink{classCILPSolver_a1d1ea568feb782e04e1b0125fc6e5259}{Sample}} ()
+\item 
+void \mbox{\hyperlink{classCILPSolver_a0317f6476130a3e99e2f771ce9dddb5e}{Sample2}} ()
+\item 
+int \mbox{\hyperlink{classCILPSolver_a36ff606e74d53c1f27af593ffff7286d}{Solve}} (int i\+Option, double $\ast$p\+Object\+Value, double $\ast$p\+Variable\+Value)
+\item 
+int \mbox{\hyperlink{classCILPSolver_ac111a6eb92be7ff2b128e4da4ff6b17e}{Add\+Constraint}} (char $\ast$p\+Name, int i\+Num\+Coeff, int i\+Lower\+Bound, double d\+Lower\+Bound, int i\+Upper\+Bound, double d\+Upper\+Bound)
+\item 
+int \mbox{\hyperlink{classCILPSolver_a2bfa174a9617174504df71cff757c085}{Add\+Constraint}} (char $\ast$p\+Name, int $\ast$p\+Coeff\+Index, double $\ast$p\+Coeff, int i\+Num\+Coeff, int i\+Lower\+Bound, double d\+Lower\+Bound, int i\+Upper\+Bound, double d\+Upper\+Bound)
+\item 
+int \mbox{\hyperlink{classCILPSolver_afd9a2ce4366c08b46c70c14edc3fe140}{Add\+Variable}} (char $\ast$p\+Name, double d\+Coeff, int i\+Lower\+Bound, double d\+Lower\+Bound, int i\+Upper\+Bound, double d\+Upper\+Bound)
+\item 
+int \mbox{\hyperlink{classCILPSolver_ad6f7b432268e09326cb78d6a38656dc8}{Is\+Created}} ()
+\item 
+void \mbox{\hyperlink{classCILPSolver_a470b31f458be6d7584828e7656f65f75}{Delete}} ()
+\item 
+void \mbox{\hyperlink{classCILPSolver_ade3a95ce07777f2eff2b4e2fd4b7d8a1}{Create}} (char $\ast$p\+Name=0x00)
+\item 
+\mbox{\hyperlink{classCILPSolver_aa2e61e2697edcf8f2962a7402538390f}{C\+I\+L\+P\+Solver}} ()
+\item 
+virtual \mbox{\hyperlink{classCILPSolver_a5c6e432973cafaf8fbab69f3d9bbdafb}{$\sim$\+C\+I\+L\+P\+Solver}} ()
+\item 
+void \mbox{\hyperlink{classCILPSolver_a82a1cd2f0982ada9139b952b5e1b034e}{Prepare\+Coeff\+Buffer}} (int i\+Num\+Coeff, int i\+Num\+Variable=0)
+\item 
+void \mbox{\hyperlink{classCILPSolver_a590eb1701b92960296dd583bd5dc41b6}{Prepare\+Solution\+Buffer}} (int i\+Num\+Solution)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCILPSolver_ab1336a8c01cf275603252a8a9eaa17bc}{m\+\_\+i\+Num\+Solution}}
+\item 
+int \mbox{\hyperlink{classCILPSolver_a5577f02fe4b0afe41cc69c5ca1939f21}{m\+\_\+i\+Num\+Coeff}}
+\item 
+int $\ast$ \mbox{\hyperlink{classCILPSolver_a4a83cb1c09f07dcceaa1aeaf5ad99c45}{m\+\_\+p\+Coeff\+Index}}
+\item 
+double $\ast$ \mbox{\hyperlink{classCILPSolver_ab0682f23781fd54a978f5e705f57a93e}{m\+\_\+p\+Coeff}}
+\item 
+double $\ast$ \mbox{\hyperlink{classCILPSolver_a83e5070fff7375cd96ee4a2212ee041c}{m\+\_\+p\+Solution}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCILPSolver_aa2e61e2697edcf8f2962a7402538390f}\label{classCILPSolver_aa2e61e2697edcf8f2962a7402538390f}} 
+\index{CILPSolver@{CILPSolver}!CILPSolver@{CILPSolver}}
+\index{CILPSolver@{CILPSolver}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{CILPSolver()}{CILPSolver()}}
+{\footnotesize\ttfamily C\+I\+L\+P\+Solver\+::\+C\+I\+L\+P\+Solver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a5c6e432973cafaf8fbab69f3d9bbdafb}\label{classCILPSolver_a5c6e432973cafaf8fbab69f3d9bbdafb}} 
+\index{CILPSolver@{CILPSolver}!````~CILPSolver@{$\sim$CILPSolver}}
+\index{````~CILPSolver@{$\sim$CILPSolver}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{$\sim$CILPSolver()}{~CILPSolver()}}
+{\footnotesize\ttfamily C\+I\+L\+P\+Solver\+::$\sim$\+C\+I\+L\+P\+Solver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCILPSolver_ac111a6eb92be7ff2b128e4da4ff6b17e}\label{classCILPSolver_ac111a6eb92be7ff2b128e4da4ff6b17e}} 
+\index{CILPSolver@{CILPSolver}!AddConstraint@{AddConstraint}}
+\index{AddConstraint@{AddConstraint}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{AddConstraint()}{AddConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Add\+Constraint (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name,  }\item[{int}]{i\+Num\+Coeff,  }\item[{int}]{i\+Lower\+Bound,  }\item[{double}]{d\+Lower\+Bound,  }\item[{int}]{i\+Upper\+Bound,  }\item[{double}]{d\+Upper\+Bound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a2bfa174a9617174504df71cff757c085}\label{classCILPSolver_a2bfa174a9617174504df71cff757c085}} 
+\index{CILPSolver@{CILPSolver}!AddConstraint@{AddConstraint}}
+\index{AddConstraint@{AddConstraint}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{AddConstraint()}{AddConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Add\+Constraint (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name,  }\item[{int $\ast$}]{p\+Coeff\+Index,  }\item[{double $\ast$}]{p\+Coeff,  }\item[{int}]{i\+Num\+Coeff,  }\item[{int}]{i\+Lower\+Bound,  }\item[{double}]{d\+Lower\+Bound,  }\item[{int}]{i\+Upper\+Bound,  }\item[{double}]{d\+Upper\+Bound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_afd9a2ce4366c08b46c70c14edc3fe140}\label{classCILPSolver_afd9a2ce4366c08b46c70c14edc3fe140}} 
+\index{CILPSolver@{CILPSolver}!AddVariable@{AddVariable}}
+\index{AddVariable@{AddVariable}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{AddVariable()}{AddVariable()}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Add\+Variable (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name,  }\item[{double}]{d\+Coeff,  }\item[{int}]{i\+Lower\+Bound,  }\item[{double}]{d\+Lower\+Bound,  }\item[{int}]{i\+Upper\+Bound,  }\item[{double}]{d\+Upper\+Bound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_ade3a95ce07777f2eff2b4e2fd4b7d8a1}\label{classCILPSolver_ade3a95ce07777f2eff2b4e2fd4b7d8a1}} 
+\index{CILPSolver@{CILPSolver}!Create@{Create}}
+\index{Create@{Create}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Create (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name = {\ttfamily 0x00} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a470b31f458be6d7584828e7656f65f75}\label{classCILPSolver_a470b31f458be6d7584828e7656f65f75}} 
+\index{CILPSolver@{CILPSolver}!Delete@{Delete}}
+\index{Delete@{Delete}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a17d4b786fa8f12b2dc51e8d53d75fc4b}\label{classCILPSolver_a17d4b786fa8f12b2dc51e8d53d75fc4b}} 
+\index{CILPSolver@{CILPSolver}!GetNumConstraint@{GetNumConstraint}}
+\index{GetNumConstraint@{GetNumConstraint}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{GetNumConstraint()}{GetNumConstraint()}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Get\+Num\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a3a49add202ea4a77052dad9527c2d7cb}\label{classCILPSolver_a3a49add202ea4a77052dad9527c2d7cb}} 
+\index{CILPSolver@{CILPSolver}!GetNumVariable@{GetNumVariable}}
+\index{GetNumVariable@{GetNumVariable}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{GetNumVariable()}{GetNumVariable()}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Get\+Num\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a29b0d08d626ff554d4d21911f3da0583}\label{classCILPSolver_a29b0d08d626ff554d4d21911f3da0583}} 
+\index{CILPSolver@{CILPSolver}!GetSolution@{GetSolution}}
+\index{GetSolution@{GetSolution}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{GetSolution()}{GetSolution()}}
+{\footnotesize\ttfamily double C\+I\+L\+P\+Solver\+::\+Get\+Solution (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_ad6f7b432268e09326cb78d6a38656dc8}\label{classCILPSolver_ad6f7b432268e09326cb78d6a38656dc8}} 
+\index{CILPSolver@{CILPSolver}!IsCreated@{IsCreated}}
+\index{IsCreated@{IsCreated}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{IsCreated()}{IsCreated()}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Is\+Created (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a82a1cd2f0982ada9139b952b5e1b034e}\label{classCILPSolver_a82a1cd2f0982ada9139b952b5e1b034e}} 
+\index{CILPSolver@{CILPSolver}!PrepareCoeffBuffer@{PrepareCoeffBuffer}}
+\index{PrepareCoeffBuffer@{PrepareCoeffBuffer}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{PrepareCoeffBuffer()}{PrepareCoeffBuffer()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Prepare\+Coeff\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i\+Num\+Coeff,  }\item[{int}]{i\+Num\+Variable = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a590eb1701b92960296dd583bd5dc41b6}\label{classCILPSolver_a590eb1701b92960296dd583bd5dc41b6}} 
+\index{CILPSolver@{CILPSolver}!PrepareSolutionBuffer@{PrepareSolutionBuffer}}
+\index{PrepareSolutionBuffer@{PrepareSolutionBuffer}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{PrepareSolutionBuffer()}{PrepareSolutionBuffer()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Prepare\+Solution\+Buffer (\begin{DoxyParamCaption}\item[{int}]{i\+Num\+Solution }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_ac1ebb76c21b3ccaf3b12eca39cab42a6}\label{classCILPSolver_ac1ebb76c21b3ccaf3b12eca39cab42a6}} 
+\index{CILPSolver@{CILPSolver}!Print@{Print}}
+\index{Print@{Print}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Print (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+File\+Name,  }\item[{int}]{i\+Optioin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a4dd20e9187f4fb9934bd13535941b9a1}\label{classCILPSolver_a4dd20e9187f4fb9934bd13535941b9a1}} 
+\index{CILPSolver@{CILPSolver}!Read@{Read}}
+\index{Read@{Read}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+File\+Name,  }\item[{int}]{i\+Option = {\ttfamily \mbox{\hyperlink{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a3551534866ccdc50262d2294157dae84}\label{classCILPSolver_a3551534866ccdc50262d2294157dae84}} 
+\index{CILPSolver@{CILPSolver}!RoundUp@{RoundUp}}
+\index{RoundUp@{RoundUp}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{RoundUp()}{RoundUp()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Round\+Up (\begin{DoxyParamCaption}\item[{double}]{d\+Threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a1d1ea568feb782e04e1b0125fc6e5259}\label{classCILPSolver_a1d1ea568feb782e04e1b0125fc6e5259}} 
+\index{CILPSolver@{CILPSolver}!Sample@{Sample}}
+\index{Sample@{Sample}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Sample()}{Sample()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a0317f6476130a3e99e2f771ce9dddb5e}\label{classCILPSolver_a0317f6476130a3e99e2f771ce9dddb5e}} 
+\index{CILPSolver@{CILPSolver}!Sample2@{Sample2}}
+\index{Sample2@{Sample2}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Sample2()}{Sample2()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Sample2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a028cb4889ef3dce3535ba3a5db62aaf4}\label{classCILPSolver_a028cb4889ef3dce3535ba3a5db62aaf4}} 
+\index{CILPSolver@{CILPSolver}!SetCoeff@{SetCoeff}}
+\index{SetCoeff@{SetCoeff}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{SetCoeff()}{SetCoeff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Set\+Coeff (\begin{DoxyParamCaption}\item[{int}]{i\+Index,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_ace812eaf28da94b99150bfd3f76f9e25}\label{classCILPSolver_ace812eaf28da94b99150bfd3f76f9e25}} 
+\index{CILPSolver@{CILPSolver}!SetCoeff@{SetCoeff}}
+\index{SetCoeff@{SetCoeff}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{SetCoeff()}{SetCoeff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Set\+Coeff (\begin{DoxyParamCaption}\item[{int}]{i\+Index,  }\item[{double}]{d\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a546c06e42c5a767dd6d0c7ff03232f32}\label{classCILPSolver_a546c06e42c5a767dd6d0c7ff03232f32}} 
+\index{CILPSolver@{CILPSolver}!SetCoeffIndex@{SetCoeffIndex}}
+\index{SetCoeffIndex@{SetCoeffIndex}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{SetCoeffIndex()}{SetCoeffIndex()}}
+{\footnotesize\ttfamily void C\+I\+L\+P\+Solver\+::\+Set\+Coeff\+Index (\begin{DoxyParamCaption}\item[{int}]{i\+Index,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a1de0df19fea8757e39642457f35fb693}\label{classCILPSolver_a1de0df19fea8757e39642457f35fb693}} 
+\index{CILPSolver@{CILPSolver}!Solve@{Solve}}
+\index{Solve@{Solve}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Solve (\begin{DoxyParamCaption}\item[{int}]{i\+Option,  }\item[{double $\ast$}]{p\+Object\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a36ff606e74d53c1f27af593ffff7286d}\label{classCILPSolver_a36ff606e74d53c1f27af593ffff7286d}} 
+\index{CILPSolver@{CILPSolver}!Solve@{Solve}}
+\index{Solve@{Solve}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Solve (\begin{DoxyParamCaption}\item[{int}]{i\+Option,  }\item[{double $\ast$}]{p\+Object\+Value,  }\item[{double $\ast$}]{p\+Variable\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCILPSolver_a47313561701dd5a8a0588ed8ecca2ad0}\label{classCILPSolver_a47313561701dd5a8a0588ed8ecca2ad0}} 
+\index{CILPSolver@{CILPSolver}!Write@{Write}}
+\index{Write@{Write}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::\+Write (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+File\+Name,  }\item[{int}]{i\+Option = {\ttfamily \mbox{\hyperlink{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX}}} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCILPSolver_a5577f02fe4b0afe41cc69c5ca1939f21}\label{classCILPSolver_a5577f02fe4b0afe41cc69c5ca1939f21}} 
+\index{CILPSolver@{CILPSolver}!m\_iNumCoeff@{m\_iNumCoeff}}
+\index{m\_iNumCoeff@{m\_iNumCoeff}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{m\_iNumCoeff}{m\_iNumCoeff}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::m\+\_\+i\+Num\+Coeff}
+
+\mbox{\Hypertarget{classCILPSolver_ab1336a8c01cf275603252a8a9eaa17bc}\label{classCILPSolver_ab1336a8c01cf275603252a8a9eaa17bc}} 
+\index{CILPSolver@{CILPSolver}!m\_iNumSolution@{m\_iNumSolution}}
+\index{m\_iNumSolution@{m\_iNumSolution}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{m\_iNumSolution}{m\_iNumSolution}}
+{\footnotesize\ttfamily int C\+I\+L\+P\+Solver\+::m\+\_\+i\+Num\+Solution}
+
+\mbox{\Hypertarget{classCILPSolver_ab0682f23781fd54a978f5e705f57a93e}\label{classCILPSolver_ab0682f23781fd54a978f5e705f57a93e}} 
+\index{CILPSolver@{CILPSolver}!m\_pCoeff@{m\_pCoeff}}
+\index{m\_pCoeff@{m\_pCoeff}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{m\_pCoeff}{m\_pCoeff}}
+{\footnotesize\ttfamily double$\ast$ C\+I\+L\+P\+Solver\+::m\+\_\+p\+Coeff}
+
+\mbox{\Hypertarget{classCILPSolver_a4a83cb1c09f07dcceaa1aeaf5ad99c45}\label{classCILPSolver_a4a83cb1c09f07dcceaa1aeaf5ad99c45}} 
+\index{CILPSolver@{CILPSolver}!m\_pCoeffIndex@{m\_pCoeffIndex}}
+\index{m\_pCoeffIndex@{m\_pCoeffIndex}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{m\_pCoeffIndex}{m\_pCoeffIndex}}
+{\footnotesize\ttfamily int$\ast$ C\+I\+L\+P\+Solver\+::m\+\_\+p\+Coeff\+Index}
+
+\mbox{\Hypertarget{classCILPSolver_a83e5070fff7375cd96ee4a2212ee041c}\label{classCILPSolver_a83e5070fff7375cd96ee4a2212ee041c}} 
+\index{CILPSolver@{CILPSolver}!m\_pSolution@{m\_pSolution}}
+\index{m\_pSolution@{m\_pSolution}!CILPSolver@{CILPSolver}}
+\subsubsection{\texorpdfstring{m\_pSolution}{m\_pSolution}}
+{\footnotesize\ttfamily double$\ast$ C\+I\+L\+P\+Solver\+::m\+\_\+p\+Solution}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{ILPSolver_8h}{I\+L\+P\+Solver.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{ILPSolver_8cpp}{I\+L\+P\+Solver.\+cpp}}\end{DoxyCompactItemize}

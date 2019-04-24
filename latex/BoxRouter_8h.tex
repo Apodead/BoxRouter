@@ -1,0 +1,1219 @@
+\hypertarget{BoxRouter_8h}{}\section{br\+\_\+64bit\+\_\+release/\+Box\+Router.h File Reference}
+\label{BoxRouter_8h}\index{br\_64bit\_release/BoxRouter.h@{br\_64bit\_release/BoxRouter.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$hash\+\_\+map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct____gnu__cxx_1_1hash_3_01KEY_01_4}{\+\_\+\+\_\+gnu\+\_\+cxx\+::hash$<$ K\+E\+Y $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace____gnu__cxx}{\+\_\+\+\_\+gnu\+\_\+cxx}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}~long long
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3d0afca01d5835b8319e970dc5ba9f50}{S\+T\+R\+I\+C\+MP}}~strcasecmp
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aedda2fea033b013ec6f88e5fee1ed048}{S\+T\+R\+N\+I\+C\+MP}}~strncasecmp
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a45c4925ad8e0a442ffb713e3f91fd4b3}{\+\_\+\+\_\+64\+B\+I\+T\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}~\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}}~(0)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}}~(1)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8e4ff1be9df93e25b23e87d9042634e4}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+TR}}~(512)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a1d5dab30b404fab91608086105afc78c}{M\+A\+X\+\_\+\+B\+U\+F\+F\+ER}}~(1024$\ast$8)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a128a23fb1a65ac37f6c65d9ce0e6beeb}{M\+A\+X\+\_\+\+A\+D\+J\+\_\+\+G\+R\+ID}}~(4)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ac5fd473f13cc6b7473d4cad23d3d495a}{M\+A\+X\+\_\+\+N\+U\+M\+B\+ER}}~(0x7f7f7f7f)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a31d93436097cf5fd2cd6f278a2c8a651}{M\+A\+X\+\_\+\+P\+E\+N\+A\+L\+TY}}~(10000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a5a0bf94f9a3b55bed4f605e88f631fdf}{D\+I\+R\+\_\+\+D\+I\+A\+G\+O\+N\+AL}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab31de9bfdd44a250d67ecc8cd2cc06fd}{D\+I\+R\+\_\+\+T\+OP}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a85ae9767b23edf40871541d23962784b}{D\+I\+R\+\_\+\+R\+I\+G\+HT}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa8116fa3b84c06c2419683806a072321}{D\+I\+R\+\_\+\+B\+O\+T\+T\+OM}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a788d3497514ea05602fd974d7bdcdbde}{D\+I\+R\+\_\+\+L\+E\+FT}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae886b9e6ec5e905f7ada9cebeaa98dd3}{D\+I\+R\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_ab31de9bfdd44a250d67ecc8cd2cc06fd}{D\+I\+R\+\_\+\+T\+OP}}$\vert$\mbox{\hyperlink{BoxRouter_8h_aa8116fa3b84c06c2419683806a072321}{D\+I\+R\+\_\+\+B\+O\+T\+T\+OM}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aace1cb874706fbe1f413a78d21f9e194}{D\+I\+R\+\_\+\+V\+E\+R\+T\+I\+C\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_a788d3497514ea05602fd974d7bdcdbde}{D\+I\+R\+\_\+\+L\+E\+FT}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a85ae9767b23edf40871541d23962784b}{D\+I\+R\+\_\+\+R\+I\+G\+HT}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab333514c54b31ceb9f9a5cc2a232912e}{D\+I\+R\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}}~(0x0000010)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a578a16a699dfb5c2456b6e9ab0047490}{L\+A\+Y\+E\+R\+\_\+\+D\+E\+V\+I\+CE}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3ebf8e00802a21d683786f285c5ce18b}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L1}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aac4d287de0de92dc48bdd0edbf5a1e08}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L2}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa31b4fec25d81492a60db60bc5d407fe}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L3}}~(0x0000003)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_af9f696e5bef028ee042fd55f7a29b148}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L4}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3b62efbf63417418485b1a043cfe8d91}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L5}}~(0x0000005)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aed7006c73bd91a727fb4d0bccf54d1cc}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L6}}~(0x0000006)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a55b43d136861ee03fa9403b2f9425663}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L7}}~(0x0000007)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a66e3ffb1c2e410f5f320c6f96fbaf087}{L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L8}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a010cf1e8d909e1f0dd7675e2f7460845}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+AB}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a2b5ab726b07e93e73b2e87f34ca4755e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+P\+L\+OT}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a930f9f15e7e4e3500a447e91c3c4290d}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+G\+M\+E\+NT}}~(0x0000010)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a52b44c564643f65de7bc9f73bc4377fc}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+N\+G\+ET}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae60f96fcfa02c3936d880866eac5a110}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a315b8b167b95208d7efae86f7d63e9eb}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+A\+B3D}}~(0x0000080)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_afb767051c779be247820a6b773a18605}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+OT}}~(0x0000100)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_afcc03fd36a14e2648330d74b973daf43}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+O\+T3D}}~(0x0000200)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a243632f881920e9e47181f45dab01c19}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+F\+D\+U\+MP}}~(0x0000400)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a14f894b8df089dfb578316a93f589b24}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+G\+D\+U\+MP}}~(0x0000800)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_acd969a10916178f6e900adad50e601f3}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+IN}}~(0x0001000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad74f47cda5fdc5e651786c2b94f7c404}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+D\+U\+MP}}~(0x0002000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa15c2e2114bb003d4d311c372f49a708}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+G\+M\+AP}}~(0x0004000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3f0439c7a2d7839fedfd2b9b62250067}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a01ef8260e911e4d7fa25921792938e97}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+E\+R\+RO}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad6c054b4e66b42d63231d008fd7662e6}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+P\+A\+RM}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a7b435c29e2be8b9b9a26efd1fd3c32c1}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+W\+A\+RN}}~(0x0000003)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a9e9abef341b7aeb97b8e7e8e2bcb2384}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+E\+X\+EC}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a4c8872ba1040171ec6450df90a78197b}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+NE}}~(0x0000005)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab896fc9d06654adae7d14dff6bf85912}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+L}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a22ab617a0e9e456eab75d81f94376e8a}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+Z}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a234a92d6f8e3f6f11b7b84451f5fdb7c}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+\+LZ}}~(\mbox{\hyperlink{BoxRouter_8h_ab896fc9d06654adae7d14dff6bf85912}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+L}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a22ab617a0e9e456eab75d81f94376e8a}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+Z}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa1697f846eab0bd7ffa7fca1f9c58cc1}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+VG}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a236055275172ab006504c45e52b87192}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a5b9ba1c6a63ea07e182d8a3a8a93b4fa}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+IN}}~(0x0000080)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aef3dafda6f81349a21e2d550f8e21cd5}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+C\+AP}}~(0x0001000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ac6cabd36061f72806fb7eb8965be9711}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+C\+AP}}~(0x0002000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a446d752da707ae38076dbee1e035a24e}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+B\+C\+AP}}~(0x0004000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a84cc76b9d42ef7011b92cac25a2d0eea}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+L\+E\+N\+G\+TH}}~(0x0008000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a99afe67abd7586527f36941d7fa64943}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+L\+A\+Y\+ER}}~(0x0100000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a6b6923f10552b71dc271f19bac65d517}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+UM}}~(0x0400000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a2675adf9c4b7c477e4a85507b9a1f23a}{D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+R\+M\+AP}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad7603259b9016f2febc2ae8616c177d2}{D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+M\+AP}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a335d369beb9eefb97ec9bd4e18a8a14a}{U\+P\+B\+O\+U\+N\+D\+\_\+\+M\+O\+D\+E\+\_\+\+A\+DD}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae4fed94688f86d4b404d7ad824a787dc}{U\+P\+B\+O\+U\+N\+D\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EL}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8dfb12fd078523522d914b41e38b4050}{S\+T\+A\+T\+E\+\_\+\+I\+N\+V\+A\+L\+ID}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_af13359da4b1eada1eb574f7963f6c74f}{S\+T\+A\+T\+E\+\_\+\+P\+O\+I\+N\+T\+\_\+\+P\+IN}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a035f44e69a8495ae1702448f485a0bee}{S\+T\+A\+T\+E\+\_\+\+B\+O\+D\+R\+\_\+\+A\+NY}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}~(\mbox{\hyperlink{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a347e389393e4939276366553adf8bf52}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+S\+S\+G\+N\+ED}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_acbbda0f06461007db223ed15c75f09ef}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+N\+O\+T\+A\+S\+S\+G\+N\+ED}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa4275fd8d032f3ef4d44948b3e5f84c4}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+E\+R\+O\+U\+T\+ED}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa76c5b619c5be84450d89c066fdfe236}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+R\+O\+U\+T\+ED}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a9a50b42e74d383f9091f53e9d66d6706}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+U\+N\+R\+O\+U\+T\+ED}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY}}~(\mbox{\hyperlink{BoxRouter_8h_aa76c5b619c5be84450d89c066fdfe236}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+R\+O\+U\+T\+ED}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a9a50b42e74d383f9091f53e9d66d6706}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a4564e8408831ee17fc9088ad9db2e2a7}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+B\+B\+O\+X\+D\+I\+R\+TY}}~(0x0000010)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ace0ebffecddc750aff4578c7b33f706d}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+B\+B\+O\+X\+C\+L\+E\+AN}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a81d44af4e8ebf5c6c4e731710a717cc6}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+P\+R\+E\+R\+O\+U\+T\+ED}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a579dfbf2e3984e287a64d1f9e9c8a43c}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+O\+V\+E\+R\+F\+L\+OW}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a5de1700c6e5d23e5102e531251ed5abc}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+ED}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab58666b0511f146ae13cf4f61d9c9023}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+ED}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a18ec13851d871ba8112af491e0146086}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+I\+NG}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa342bc4be60f00ef48c08aa32776e3fc}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+I\+NG}}~(0x0000010)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3852f0f09c2a11a8e92dc1270184e7d3}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+U\+C\+C\+E\+SS}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae626cad7b1c5ac2934e84716779519a3}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+T\+U\+CK}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a00e740d21b23f6398aeb67df80eda860}{S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED}}~(0x0000080)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a74015a2d0ff30541ce9716b5d00c9fd4}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+N\+U\+LL}}~(0x00)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_afdbb8e0fcd5963c4bb1f8d5ddfcafab4}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+S\+O\+U\+R\+CE}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_af26cd05a9780400914e3f48e9fb6fa66}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+T\+A\+R\+G\+ET}}~(0x02)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a697859693d35fe2680be8183c87dbd23}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+B\+R\+I\+D\+GE}}~(0x04)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a071caadb7089b625e25c41a26a8a6fa2}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+F\+L\+O\+O\+D\+ED}}~(0x08)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_add5bb1f2dbcdd5fbf8fafebba1d61a13}{M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+B\+O\+U\+ND}}~(0x80)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a2ddcc0f2355d7a205211d9d9fb3ff998}{P\+R\+O\+P\+\_\+\+I\+N\+V\+A\+L\+ID}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a51f9ca83dfe8785488cd2bce81dce45f}{P\+R\+O\+P\+\_\+\+B\+O\+D\+R\+\_\+\+A\+NY}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_ae886b9e6ec5e905f7ada9cebeaa98dd3}{D\+I\+R\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_aace1cb874706fbe1f413a78d21f9e194}{D\+I\+R\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT}}~(\mbox{\hyperlink{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a2b8505f848cb343b1958a80281604726}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+B\+E\+ND}}~(0x0000100)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a288211353526a39f2fc7448976bccbe9}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+O\+I\+NT}}~(0x0000200)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}~(\mbox{\hyperlink{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a2b8505f848cb343b1958a80281604726}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+B\+E\+ND}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a288211353526a39f2fc7448976bccbe9}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+O\+I\+NT}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a384b6ce138e1ed1d04bca0a1a19d9d92}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+S\+P\+E\+C\+I\+AL}}~(0x0000800)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a81489623ffd32c1a5978bc0ad659a421}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}}~(\mbox{\hyperlink{BoxRouter_8h_ab333514c54b31ceb9f9a5cc2a232912e}{D\+I\+R\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a01a6d543e1ebeccc8069a2793428ace5}{P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a56e5cc70a262b6bbfd33447bc035b070}{P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+V\+E\+R\+T\+I\+C\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a20741d182e2070b2cf5f33450e2f31fa}{P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+F\+L\+AT}}~(\mbox{\hyperlink{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a318a4b0ffe19f2cda4a24d282c96eced}{P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}}~(\mbox{\hyperlink{BoxRouter_8h_a81489623ffd32c1a5978bc0ad659a421}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae0fcb8939e9b3d6b65571069e1b26da2}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+T\+W\+O\+P\+IN}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a44e0c3491cf5fd4c55aa5df5c20cf106}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+S\+I\+G\+N\+AL}}~(\mbox{\hyperlink{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa61f2199782e0ad49222a8cb6786281b}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+F\+L\+AT}}~(0x1000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a43fd696d871187ef6d13c0140de0842d}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+A\+NY}}~(\mbox{\hyperlink{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a78f6c2de127139f8501bbd436546dcb4}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+R\+ER}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a51dd80c0caea61084d33859be4dbee1c}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+XR}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aebc574365d43b3ac4245ce777e6a44fc}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+IN}}~(0x0000004)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8c4fbc097eaad3ae04c2682304315a01}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+AX}}~(0x0000008)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a8ab0fa40f70cbcc1c30f927e43a0558d}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+H\+YD}}~(0x0000010)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_abb3f864e6d579f5edfc7ba875c77fdf4}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+LP}}~(\mbox{\hyperlink{BoxRouter_8h_aebc574365d43b3ac4245ce777e6a44fc}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+IN}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8c4fbc097eaad3ae04c2682304315a01}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+AX}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8ab0fa40f70cbcc1c30f927e43a0558d}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+H\+YD}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a1b5b9f134be6aa8a53be873dbc5cd952}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+\_\+\+R\+N\+D\+UP}}~(0x0000020)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab07caa8317351543d49bb56807a2d7ae}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+M\+A\+ZE}}~(0x0000040)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad0c15f6efa2df6da6bb795725ab5f528}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+P\+A\+T\+T\+E\+RN}}~(0x0000080)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a0c0eeb68de1c34038bac84cafd171142}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+ER}}~(0x0000100)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a60efd4d8b6ef628cd7f7c665a0cf8f9f}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+P\+\_\+\+O\+FF}}~(0x0000200)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a1728896c0e8cbfe4ef8d1f7039587261}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+U\+L\+T\+I\+L\+A\+Y\+ER}}~(0x0000400)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad84e59b45f478c16629cf72e1a80626f}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+R\+P\+IN}}~(0x0000800)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a4910c1a14f1c621adbc5ff4661c406c0}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+O\+L\+V\+E\+R\+\_\+\+G\+L\+PK}}~(0x0001000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a7af720aa1b7eddceb549527053aa461c}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+O\+L\+V\+E\+R\+\_\+\+M\+O\+S\+EK}}~(0x0002000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_adc69fed632782007547d00ab89b673c7}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+L\+A\+Y\+E\+R\+I\+NG}}~(0x0004000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aa06ba1b4237d8c4e129f150bfa0137a2}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+\+N\+O\+NE}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a6ac120bb1845f5a7ea3c5f830f45ad37}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+S}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ae31ec41509b470484f874a4e72157e48}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+E}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a4f164794fa0c2eb12a71b264ec98aef6}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+\+SE}}~(\mbox{\hyperlink{BoxRouter_8h_a6ac120bb1845f5a7ea3c5f830f45ad37}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+S}}$\vert$\mbox{\hyperlink{BoxRouter_8h_ae31ec41509b470484f874a4e72157e48}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+E}})
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+AX}}(a,  b)~(((a) $>$ (b)) ? (a) \+: (b))
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{M\+IN}}(a,  b)~(((a) $<$ (b)) ? (a) \+: (b))
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a22cecad9c0a7fb23d5b5147686092cc2}{S\+A\+F\+E\+\_\+\+D\+EL}}(p)~\{if(p) \{delete p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a5e87e6912c0a4767fbe29eaaffff95d2}{S\+A\+F\+E\+\_\+\+D\+E\+LA}}(p)~\{if(p) \{delete\mbox{[}$\,$\mbox{]} p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ad1bc7f7eb64b54da23a6f54798ce5d4d}{S\+A\+F\+E\+\_\+\+D\+E\+L\+AC}}(q,  p)~\{if(q\&\&p) \{delete\mbox{[}$\,$\mbox{]} p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a6f0b3ad09b40d659b84d0fa2f03e1e28}{S\+A\+F\+E\+\_\+\+F\+C\+L\+O\+SE}}(p)~\{if(p) \{fclose(p); p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_abec110b2c37d63cb981bbd7d6a5adac2}{Z\+E\+RO}}(a)~((fabs(a)$<$1e-\/8)? (0)\+:(a))
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_ab2423cb440fa856f7cc2ea28e1fbea30}{E\+Q\+UL}}(a,  b)~(fabs((a)-\/(b))$<$1e-\/8? 1\+:0)
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_a70aa5d72f956d7593c202dc2ab1f507d}{S\+Q\+RE}}(a)~((a)$\ast$(a))
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aef6f064aebfd0357fae775c33ce0a523}{T\+R\+PL}}(a)~((a)$\ast$(a)$\ast$(a))
+\item 
+\#define \mbox{\hyperlink{BoxRouter_8h_aad9cc64d45a76ba0d37c00f8cd9caa37}{T\+R\+A\+CE}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{BoxRouter_8h_a45c4925ad8e0a442ffb713e3f91fd4b3}\label{BoxRouter_8h_a45c4925ad8e0a442ffb713e3f91fd4b3}} 
+\index{BoxRouter.h@{BoxRouter.h}!\_\_64BIT\_\_@{\_\_64BIT\_\_}}
+\index{\_\_64BIT\_\_@{\_\_64BIT\_\_}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{\_\_64BIT\_\_}{\_\_64BIT\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+64\+B\+I\+T\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}\label{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}} 
+\index{BoxRouter.h@{BoxRouter.h}!ADDRESS@{ADDRESS}}
+\index{ADDRESS@{ADDRESS}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{ADDRESS}{ADDRESS}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+E\+SS~\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}}
+
+\mbox{\Hypertarget{BoxRouter_8h_a2675adf9c4b7c477e4a85507b9a1f23a}\label{BoxRouter_8h_a2675adf9c4b7c477e4a85507b9a1f23a}} 
+\index{BoxRouter.h@{BoxRouter.h}!DELWIRE\_MODE\_FRMAP@{DELWIRE\_MODE\_FRMAP}}
+\index{DELWIRE\_MODE\_FRMAP@{DELWIRE\_MODE\_FRMAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DELWIRE\_MODE\_FRMAP}{DELWIRE\_MODE\_FRMAP}}
+{\footnotesize\ttfamily \#define D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+R\+M\+AP~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad7603259b9016f2febc2ae8616c177d2}\label{BoxRouter_8h_ad7603259b9016f2febc2ae8616c177d2}} 
+\index{BoxRouter.h@{BoxRouter.h}!DELWIRE\_MODE\_NOMAP@{DELWIRE\_MODE\_NOMAP}}
+\index{DELWIRE\_MODE\_NOMAP@{DELWIRE\_MODE\_NOMAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DELWIRE\_MODE\_NOMAP}{DELWIRE\_MODE\_NOMAP}}
+{\footnotesize\ttfamily \#define D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+M\+AP~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa8116fa3b84c06c2419683806a072321}\label{BoxRouter_8h_aa8116fa3b84c06c2419683806a072321}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_BOTTOM@{DIR\_BOTTOM}}
+\index{DIR\_BOTTOM@{DIR\_BOTTOM}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_BOTTOM}{DIR\_BOTTOM}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+B\+O\+T\+T\+OM~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a5a0bf94f9a3b55bed4f605e88f631fdf}\label{BoxRouter_8h_a5a0bf94f9a3b55bed4f605e88f631fdf}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_DIAGONAL@{DIR\_DIAGONAL}}
+\index{DIR\_DIAGONAL@{DIR\_DIAGONAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_DIAGONAL}{DIR\_DIAGONAL}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+D\+I\+A\+G\+O\+N\+AL~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae886b9e6ec5e905f7ada9cebeaa98dd3}\label{BoxRouter_8h_ae886b9e6ec5e905f7ada9cebeaa98dd3}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_HORIZONTAL@{DIR\_HORIZONTAL}}
+\index{DIR\_HORIZONTAL@{DIR\_HORIZONTAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_HORIZONTAL}{DIR\_HORIZONTAL}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL~(\mbox{\hyperlink{BoxRouter_8h_ab31de9bfdd44a250d67ecc8cd2cc06fd}{D\+I\+R\+\_\+\+T\+OP}}$\vert$\mbox{\hyperlink{BoxRouter_8h_aa8116fa3b84c06c2419683806a072321}{D\+I\+R\+\_\+\+B\+O\+T\+T\+OM}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a788d3497514ea05602fd974d7bdcdbde}\label{BoxRouter_8h_a788d3497514ea05602fd974d7bdcdbde}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_LEFT@{DIR\_LEFT}}
+\index{DIR\_LEFT@{DIR\_LEFT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_LEFT}{DIR\_LEFT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+L\+E\+FT~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab333514c54b31ceb9f9a5cc2a232912e}\label{BoxRouter_8h_ab333514c54b31ceb9f9a5cc2a232912e}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_PERPENDICULAR@{DIR\_PERPENDICULAR}}
+\index{DIR\_PERPENDICULAR@{DIR\_PERPENDICULAR}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_PERPENDICULAR}{DIR\_PERPENDICULAR}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR~(0x0000010)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a85ae9767b23edf40871541d23962784b}\label{BoxRouter_8h_a85ae9767b23edf40871541d23962784b}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_RIGHT@{DIR\_RIGHT}}
+\index{DIR\_RIGHT@{DIR\_RIGHT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_RIGHT}{DIR\_RIGHT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+R\+I\+G\+HT~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab31de9bfdd44a250d67ecc8cd2cc06fd}\label{BoxRouter_8h_ab31de9bfdd44a250d67ecc8cd2cc06fd}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_TOP@{DIR\_TOP}}
+\index{DIR\_TOP@{DIR\_TOP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_TOP}{DIR\_TOP}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+T\+OP~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aace1cb874706fbe1f413a78d21f9e194}\label{BoxRouter_8h_aace1cb874706fbe1f413a78d21f9e194}} 
+\index{BoxRouter.h@{BoxRouter.h}!DIR\_VERTICAL@{DIR\_VERTICAL}}
+\index{DIR\_VERTICAL@{DIR\_VERTICAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DIR\_VERTICAL}{DIR\_VERTICAL}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+V\+E\+R\+T\+I\+C\+AL~(\mbox{\hyperlink{BoxRouter_8h_a788d3497514ea05602fd974d7bdcdbde}{D\+I\+R\+\_\+\+L\+E\+FT}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a85ae9767b23edf40871541d23962784b}{D\+I\+R\+\_\+\+R\+I\+G\+HT}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a01ef8260e911e4d7fa25921792938e97}\label{BoxRouter_8h_a01ef8260e911e4d7fa25921792938e97}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_ERRO@{DISPLAY\_MODE\_ERRO}}
+\index{DISPLAY\_MODE\_ERRO@{DISPLAY\_MODE\_ERRO}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_ERRO}{DISPLAY\_MODE\_ERRO}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+E\+R\+RO~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a9e9abef341b7aeb97b8e7e8e2bcb2384}\label{BoxRouter_8h_a9e9abef341b7aeb97b8e7e8e2bcb2384}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_EXEC@{DISPLAY\_MODE\_EXEC}}
+\index{DISPLAY\_MODE\_EXEC@{DISPLAY\_MODE\_EXEC}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_EXEC}{DISPLAY\_MODE\_EXEC}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+E\+X\+EC~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3f0439c7a2d7839fedfd2b9b62250067}\label{BoxRouter_8h_a3f0439c7a2d7839fedfd2b9b62250067}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_INFO@{DISPLAY\_MODE\_INFO}}
+\index{DISPLAY\_MODE\_INFO@{DISPLAY\_MODE\_INFO}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_INFO}{DISPLAY\_MODE\_INFO}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a4c8872ba1040171ec6450df90a78197b}\label{BoxRouter_8h_a4c8872ba1040171ec6450df90a78197b}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_NONE@{DISPLAY\_MODE\_NONE}}
+\index{DISPLAY\_MODE\_NONE@{DISPLAY\_MODE\_NONE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_NONE}{DISPLAY\_MODE\_NONE}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+NE~(0x0000005)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad6c054b4e66b42d63231d008fd7662e6}\label{BoxRouter_8h_ad6c054b4e66b42d63231d008fd7662e6}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_PARM@{DISPLAY\_MODE\_PARM}}
+\index{DISPLAY\_MODE\_PARM@{DISPLAY\_MODE\_PARM}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_PARM}{DISPLAY\_MODE\_PARM}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+P\+A\+RM~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a7b435c29e2be8b9b9a26efd1fd3c32c1}\label{BoxRouter_8h_a7b435c29e2be8b9b9a26efd1fd3c32c1}} 
+\index{BoxRouter.h@{BoxRouter.h}!DISPLAY\_MODE\_WARN@{DISPLAY\_MODE\_WARN}}
+\index{DISPLAY\_MODE\_WARN@{DISPLAY\_MODE\_WARN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{DISPLAY\_MODE\_WARN}{DISPLAY\_MODE\_WARN}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+M\+O\+D\+E\+\_\+\+W\+A\+RN~(0x0000003)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab896fc9d06654adae7d14dff6bf85912}\label{BoxRouter_8h_ab896fc9d06654adae7d14dff6bf85912}} 
+\index{BoxRouter.h@{BoxRouter.h}!ENUM\_MODE\_L@{ENUM\_MODE\_L}}
+\index{ENUM\_MODE\_L@{ENUM\_MODE\_L}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{ENUM\_MODE\_L}{ENUM\_MODE\_L}}
+{\footnotesize\ttfamily \#define E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+L~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a234a92d6f8e3f6f11b7b84451f5fdb7c}\label{BoxRouter_8h_a234a92d6f8e3f6f11b7b84451f5fdb7c}} 
+\index{BoxRouter.h@{BoxRouter.h}!ENUM\_MODE\_LZ@{ENUM\_MODE\_LZ}}
+\index{ENUM\_MODE\_LZ@{ENUM\_MODE\_LZ}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{ENUM\_MODE\_LZ}{ENUM\_MODE\_LZ}}
+{\footnotesize\ttfamily \#define E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+\+LZ~(\mbox{\hyperlink{BoxRouter_8h_ab896fc9d06654adae7d14dff6bf85912}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+L}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a22ab617a0e9e456eab75d81f94376e8a}{E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+Z}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a22ab617a0e9e456eab75d81f94376e8a}\label{BoxRouter_8h_a22ab617a0e9e456eab75d81f94376e8a}} 
+\index{BoxRouter.h@{BoxRouter.h}!ENUM\_MODE\_Z@{ENUM\_MODE\_Z}}
+\index{ENUM\_MODE\_Z@{ENUM\_MODE\_Z}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{ENUM\_MODE\_Z}{ENUM\_MODE\_Z}}
+{\footnotesize\ttfamily \#define E\+N\+U\+M\+\_\+\+M\+O\+D\+E\+\_\+Z~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab2423cb440fa856f7cc2ea28e1fbea30}\label{BoxRouter_8h_ab2423cb440fa856f7cc2ea28e1fbea30}} 
+\index{BoxRouter.h@{BoxRouter.h}!EQUL@{EQUL}}
+\index{EQUL@{EQUL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{EQUL}{EQUL}}
+{\footnotesize\ttfamily \#define E\+Q\+UL(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(fabs((a)-\/(b))$<$1e-\/8? 1\+:0)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{BoxRouter_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{BoxRouter.h@{BoxRouter.h}!FALSE@{FALSE}}
+\index{FALSE@{FALSE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{FALSE}{FALSE}}
+{\footnotesize\ttfamily \#define F\+A\+L\+SE~(0)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aef3dafda6f81349a21e2d550f8e21cd5}\label{BoxRouter_8h_aef3dafda6f81349a21e2d550f8e21cd5}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_ACAP@{GET\_MODE\_ACAP}}
+\index{GET\_MODE\_ACAP@{GET\_MODE\_ACAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_ACAP}{GET\_MODE\_ACAP}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+C\+AP~(0x0001000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa1697f846eab0bd7ffa7fca1f9c58cc1}\label{BoxRouter_8h_aa1697f846eab0bd7ffa7fca1f9c58cc1}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_AVG@{GET\_MODE\_AVG}}
+\index{GET\_MODE\_AVG@{GET\_MODE\_AVG}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_AVG}{GET\_MODE\_AVG}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+VG~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a446d752da707ae38076dbee1e035a24e}\label{BoxRouter_8h_a446d752da707ae38076dbee1e035a24e}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_BCAP@{GET\_MODE\_BCAP}}
+\index{GET\_MODE\_BCAP@{GET\_MODE\_BCAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_BCAP}{GET\_MODE\_BCAP}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+B\+C\+AP~(0x0004000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a99afe67abd7586527f36941d7fa64943}\label{BoxRouter_8h_a99afe67abd7586527f36941d7fa64943}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_LAYER@{GET\_MODE\_LAYER}}
+\index{GET\_MODE\_LAYER@{GET\_MODE\_LAYER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_LAYER}{GET\_MODE\_LAYER}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+L\+A\+Y\+ER~(0x0100000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a84cc76b9d42ef7011b92cac25a2d0eea}\label{BoxRouter_8h_a84cc76b9d42ef7011b92cac25a2d0eea}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_LENGTH@{GET\_MODE\_LENGTH}}
+\index{GET\_MODE\_LENGTH@{GET\_MODE\_LENGTH}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_LENGTH}{GET\_MODE\_LENGTH}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+L\+E\+N\+G\+TH~(0x0008000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a236055275172ab006504c45e52b87192}\label{BoxRouter_8h_a236055275172ab006504c45e52b87192}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_MAX@{GET\_MODE\_MAX}}
+\index{GET\_MODE\_MAX@{GET\_MODE\_MAX}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_MAX}{GET\_MODE\_MAX}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a5b9ba1c6a63ea07e182d8a3a8a93b4fa}\label{BoxRouter_8h_a5b9ba1c6a63ea07e182d8a3a8a93b4fa}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_MIN@{GET\_MODE\_MIN}}
+\index{GET\_MODE\_MIN@{GET\_MODE\_MIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_MIN}{GET\_MODE\_MIN}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+IN~(0x0000080)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ac6cabd36061f72806fb7eb8965be9711}\label{BoxRouter_8h_ac6cabd36061f72806fb7eb8965be9711}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_OCAP@{GET\_MODE\_OCAP}}
+\index{GET\_MODE\_OCAP@{GET\_MODE\_OCAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_OCAP}{GET\_MODE\_OCAP}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+C\+AP~(0x0002000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}\label{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_PROP@{GET\_MODE\_PROP}}
+\index{GET\_MODE\_PROP@{GET\_MODE\_PROP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_PROP}{GET\_MODE\_PROP}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}\label{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_STATE@{GET\_MODE\_STATE}}
+\index{GET\_MODE\_STATE@{GET\_MODE\_STATE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_STATE}{GET\_MODE\_STATE}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a6b6923f10552b71dc271f19bac65d517}\label{BoxRouter_8h_a6b6923f10552b71dc271f19bac65d517}} 
+\index{BoxRouter.h@{BoxRouter.h}!GET\_MODE\_SUM@{GET\_MODE\_SUM}}
+\index{GET\_MODE\_SUM@{GET\_MODE\_SUM}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{GET\_MODE\_SUM}{GET\_MODE\_SUM}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+UM~(0x0400000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8ae9d53f33f46cfcfcb9736e6351452a}\label{BoxRouter_8h_a8ae9d53f33f46cfcfcb9736e6351452a}} 
+\index{BoxRouter.h@{BoxRouter.h}!KEY@{KEY}}
+\index{KEY@{KEY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{KEY}{KEY}}
+{\footnotesize\ttfamily \#define K\+EY~long long}
+
+\mbox{\Hypertarget{BoxRouter_8h_a578a16a699dfb5c2456b6e9ab0047490}\label{BoxRouter_8h_a578a16a699dfb5c2456b6e9ab0047490}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_DEVICE@{LAYER\_DEVICE}}
+\index{LAYER\_DEVICE@{LAYER\_DEVICE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_DEVICE}{LAYER\_DEVICE}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+D\+E\+V\+I\+CE~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3ebf8e00802a21d683786f285c5ce18b}\label{BoxRouter_8h_a3ebf8e00802a21d683786f285c5ce18b}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL1@{LAYER\_METAL1}}
+\index{LAYER\_METAL1@{LAYER\_METAL1}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL1}{LAYER\_METAL1}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L1~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aac4d287de0de92dc48bdd0edbf5a1e08}\label{BoxRouter_8h_aac4d287de0de92dc48bdd0edbf5a1e08}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL2@{LAYER\_METAL2}}
+\index{LAYER\_METAL2@{LAYER\_METAL2}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL2}{LAYER\_METAL2}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L2~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa31b4fec25d81492a60db60bc5d407fe}\label{BoxRouter_8h_aa31b4fec25d81492a60db60bc5d407fe}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL3@{LAYER\_METAL3}}
+\index{LAYER\_METAL3@{LAYER\_METAL3}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL3}{LAYER\_METAL3}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L3~(0x0000003)}
+
+\mbox{\Hypertarget{BoxRouter_8h_af9f696e5bef028ee042fd55f7a29b148}\label{BoxRouter_8h_af9f696e5bef028ee042fd55f7a29b148}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL4@{LAYER\_METAL4}}
+\index{LAYER\_METAL4@{LAYER\_METAL4}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL4}{LAYER\_METAL4}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L4~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3b62efbf63417418485b1a043cfe8d91}\label{BoxRouter_8h_a3b62efbf63417418485b1a043cfe8d91}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL5@{LAYER\_METAL5}}
+\index{LAYER\_METAL5@{LAYER\_METAL5}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL5}{LAYER\_METAL5}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L5~(0x0000005)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aed7006c73bd91a727fb4d0bccf54d1cc}\label{BoxRouter_8h_aed7006c73bd91a727fb4d0bccf54d1cc}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL6@{LAYER\_METAL6}}
+\index{LAYER\_METAL6@{LAYER\_METAL6}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL6}{LAYER\_METAL6}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L6~(0x0000006)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a55b43d136861ee03fa9403b2f9425663}\label{BoxRouter_8h_a55b43d136861ee03fa9403b2f9425663}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL7@{LAYER\_METAL7}}
+\index{LAYER\_METAL7@{LAYER\_METAL7}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL7}{LAYER\_METAL7}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L7~(0x0000007)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a66e3ffb1c2e410f5f320c6f96fbaf087}\label{BoxRouter_8h_a66e3ffb1c2e410f5f320c6f96fbaf087}} 
+\index{BoxRouter.h@{BoxRouter.h}!LAYER\_METAL8@{LAYER\_METAL8}}
+\index{LAYER\_METAL8@{LAYER\_METAL8}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{LAYER\_METAL8}{LAYER\_METAL8}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+M\+E\+T\+A\+L8~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}\label{BoxRouter_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX@{MAX}}
+\index{MAX@{MAX}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define M\+AX(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(((a) $>$ (b)) ? (a) \+: (b))}
+
+\mbox{\Hypertarget{BoxRouter_8h_a128a23fb1a65ac37f6c65d9ce0e6beeb}\label{BoxRouter_8h_a128a23fb1a65ac37f6c65d9ce0e6beeb}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX\_ADJ\_GRID@{MAX\_ADJ\_GRID}}
+\index{MAX\_ADJ\_GRID@{MAX\_ADJ\_GRID}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX\_ADJ\_GRID}{MAX\_ADJ\_GRID}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+A\+D\+J\+\_\+\+G\+R\+ID~(4)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a1d5dab30b404fab91608086105afc78c}\label{BoxRouter_8h_a1d5dab30b404fab91608086105afc78c}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX\_BUFFER@{MAX\_BUFFER}}
+\index{MAX\_BUFFER@{MAX\_BUFFER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX\_BUFFER}{MAX\_BUFFER}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+U\+F\+F\+ER~(1024$\ast$8)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8e4ff1be9df93e25b23e87d9042634e4}\label{BoxRouter_8h_a8e4ff1be9df93e25b23e87d9042634e4}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX\_BUFFER\_STR@{MAX\_BUFFER\_STR}}
+\index{MAX\_BUFFER\_STR@{MAX\_BUFFER\_STR}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX\_BUFFER\_STR}{MAX\_BUFFER\_STR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+TR~(512)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ac5fd473f13cc6b7473d4cad23d3d495a}\label{BoxRouter_8h_ac5fd473f13cc6b7473d4cad23d3d495a}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX\_NUMBER@{MAX\_NUMBER}}
+\index{MAX\_NUMBER@{MAX\_NUMBER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX\_NUMBER}{MAX\_NUMBER}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+N\+U\+M\+B\+ER~(0x7f7f7f7f)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a31d93436097cf5fd2cd6f278a2c8a651}\label{BoxRouter_8h_a31d93436097cf5fd2cd6f278a2c8a651}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAX\_PENALTY@{MAX\_PENALTY}}
+\index{MAX\_PENALTY@{MAX\_PENALTY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAX\_PENALTY}{MAX\_PENALTY}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+E\+N\+A\+L\+TY~(10000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_add5bb1f2dbcdd5fbf8fafebba1d61a13}\label{BoxRouter_8h_add5bb1f2dbcdd5fbf8fafebba1d61a13}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_BOUND@{MAZE\_GRID\_BOUND}}
+\index{MAZE\_GRID\_BOUND@{MAZE\_GRID\_BOUND}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_BOUND}{MAZE\_GRID\_BOUND}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+B\+O\+U\+ND~(0x80)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a697859693d35fe2680be8183c87dbd23}\label{BoxRouter_8h_a697859693d35fe2680be8183c87dbd23}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_BRIDGE@{MAZE\_GRID\_BRIDGE}}
+\index{MAZE\_GRID\_BRIDGE@{MAZE\_GRID\_BRIDGE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_BRIDGE}{MAZE\_GRID\_BRIDGE}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+B\+R\+I\+D\+GE~(0x04)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a071caadb7089b625e25c41a26a8a6fa2}\label{BoxRouter_8h_a071caadb7089b625e25c41a26a8a6fa2}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_FLOODED@{MAZE\_GRID\_FLOODED}}
+\index{MAZE\_GRID\_FLOODED@{MAZE\_GRID\_FLOODED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_FLOODED}{MAZE\_GRID\_FLOODED}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+F\+L\+O\+O\+D\+ED~(0x08)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a74015a2d0ff30541ce9716b5d00c9fd4}\label{BoxRouter_8h_a74015a2d0ff30541ce9716b5d00c9fd4}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_NULL@{MAZE\_GRID\_NULL}}
+\index{MAZE\_GRID\_NULL@{MAZE\_GRID\_NULL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_NULL}{MAZE\_GRID\_NULL}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+N\+U\+LL~(0x00)}
+
+\mbox{\Hypertarget{BoxRouter_8h_afdbb8e0fcd5963c4bb1f8d5ddfcafab4}\label{BoxRouter_8h_afdbb8e0fcd5963c4bb1f8d5ddfcafab4}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_SOURCE@{MAZE\_GRID\_SOURCE}}
+\index{MAZE\_GRID\_SOURCE@{MAZE\_GRID\_SOURCE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_SOURCE}{MAZE\_GRID\_SOURCE}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+S\+O\+U\+R\+CE~(0x01)}
+
+\mbox{\Hypertarget{BoxRouter_8h_af26cd05a9780400914e3f48e9fb6fa66}\label{BoxRouter_8h_af26cd05a9780400914e3f48e9fb6fa66}} 
+\index{BoxRouter.h@{BoxRouter.h}!MAZE\_GRID\_TARGET@{MAZE\_GRID\_TARGET}}
+\index{MAZE\_GRID\_TARGET@{MAZE\_GRID\_TARGET}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MAZE\_GRID\_TARGET}{MAZE\_GRID\_TARGET}}
+{\footnotesize\ttfamily \#define M\+A\+Z\+E\+\_\+\+G\+R\+I\+D\+\_\+\+T\+A\+R\+G\+ET~(0x02)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{BoxRouter_8h_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\index{BoxRouter.h@{BoxRouter.h}!MIN@{MIN}}
+\index{MIN@{MIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~(((a) $<$ (b)) ? (a) \+: (b))}
+
+\mbox{\Hypertarget{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{BoxRouter.h@{BoxRouter.h}!NULL@{NULL}}
+\index{NULL@{NULL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define N\+U\+LL~(0x00)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a14f894b8df089dfb578316a93f589b24}\label{BoxRouter_8h_a14f894b8df089dfb578316a93f589b24}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_CGDUMP@{PRINT\_MODE\_CGDUMP}}
+\index{PRINT\_MODE\_CGDUMP@{PRINT\_MODE\_CGDUMP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_CGDUMP}{PRINT\_MODE\_CGDUMP}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+G\+D\+U\+MP~(0x0000800)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa15c2e2114bb003d4d311c372f49a708}\label{BoxRouter_8h_aa15c2e2114bb003d4d311c372f49a708}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_CGMAP@{PRINT\_MODE\_CGMAP}}
+\index{PRINT\_MODE\_CGMAP@{PRINT\_MODE\_CGMAP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_CGMAP}{PRINT\_MODE\_CGMAP}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+G\+M\+AP~(0x0004000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a52b44c564643f65de7bc9f73bc4377fc}\label{BoxRouter_8h_a52b44c564643f65de7bc9f73bc4377fc}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_CONGET@{PRINT\_MODE\_CONGET}}
+\index{PRINT\_MODE\_CONGET@{PRINT\_MODE\_CONGET}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_CONGET}{PRINT\_MODE\_CONGET}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+C\+O\+N\+G\+ET~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad74f47cda5fdc5e651786c2b94f7c404}\label{BoxRouter_8h_ad74f47cda5fdc5e651786c2b94f7c404}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_DUMP@{PRINT\_MODE\_DUMP}}
+\index{PRINT\_MODE\_DUMP@{PRINT\_MODE\_DUMP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_DUMP}{PRINT\_MODE\_DUMP}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+D\+U\+MP~(0x0002000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_afb767051c779be247820a6b773a18605}\label{BoxRouter_8h_afb767051c779be247820a6b773a18605}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_GNUPLOT@{PRINT\_MODE\_GNUPLOT}}
+\index{PRINT\_MODE\_GNUPLOT@{PRINT\_MODE\_GNUPLOT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_GNUPLOT}{PRINT\_MODE\_GNUPLOT}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+OT~(0x0000100)}
+
+\mbox{\Hypertarget{BoxRouter_8h_afcc03fd36a14e2648330d74b973daf43}\label{BoxRouter_8h_afcc03fd36a14e2648330d74b973daf43}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_GNUPLOT3D@{PRINT\_MODE\_GNUPLOT3D}}
+\index{PRINT\_MODE\_GNUPLOT3D@{PRINT\_MODE\_GNUPLOT3D}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_GNUPLOT3D}{PRINT\_MODE\_GNUPLOT3D}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+N\+U\+P\+L\+O\+T3D~(0x0000200)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a2b5ab726b07e93e73b2e87f34ca4755e}\label{BoxRouter_8h_a2b5ab726b07e93e73b2e87f34ca4755e}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_GPLOT@{PRINT\_MODE\_GPLOT}}
+\index{PRINT\_MODE\_GPLOT@{PRINT\_MODE\_GPLOT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_GPLOT}{PRINT\_MODE\_GPLOT}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+G\+P\+L\+OT~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a010cf1e8d909e1f0dd7675e2f7460845}\label{BoxRouter_8h_a010cf1e8d909e1f0dd7675e2f7460845}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_MATLAB@{PRINT\_MODE\_MATLAB}}
+\index{PRINT\_MODE\_MATLAB@{PRINT\_MODE\_MATLAB}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_MATLAB}{PRINT\_MODE\_MATLAB}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+AB~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a315b8b167b95208d7efae86f7d63e9eb}\label{BoxRouter_8h_a315b8b167b95208d7efae86f7d63e9eb}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_MATLAB3D@{PRINT\_MODE\_MATLAB3D}}
+\index{PRINT\_MODE\_MATLAB3D@{PRINT\_MODE\_MATLAB3D}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_MATLAB3D}{PRINT\_MODE\_MATLAB3D}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+T\+L\+A\+B3D~(0x0000080)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a243632f881920e9e47181f45dab01c19}\label{BoxRouter_8h_a243632f881920e9e47181f45dab01c19}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_OFDUMP@{PRINT\_MODE\_OFDUMP}}
+\index{PRINT\_MODE\_OFDUMP@{PRINT\_MODE\_OFDUMP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_OFDUMP}{PRINT\_MODE\_OFDUMP}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+F\+D\+U\+MP~(0x0000400)}
+
+\mbox{\Hypertarget{BoxRouter_8h_acd969a10916178f6e900adad50e601f3}\label{BoxRouter_8h_acd969a10916178f6e900adad50e601f3}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_PIN@{PRINT\_MODE\_PIN}}
+\index{PRINT\_MODE\_PIN@{PRINT\_MODE\_PIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_PIN}{PRINT\_MODE\_PIN}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+IN~(0x0001000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae60f96fcfa02c3936d880866eac5a110}\label{BoxRouter_8h_ae60f96fcfa02c3936d880866eac5a110}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_RESULT@{PRINT\_MODE\_RESULT}}
+\index{PRINT\_MODE\_RESULT@{PRINT\_MODE\_RESULT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_RESULT}{PRINT\_MODE\_RESULT}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+R\+E\+S\+U\+LT~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a930f9f15e7e4e3500a447e91c3c4290d}\label{BoxRouter_8h_a930f9f15e7e4e3500a447e91c3c4290d}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_SEGMENT@{PRINT\_MODE\_SEGMENT}}
+\index{PRINT\_MODE\_SEGMENT@{PRINT\_MODE\_SEGMENT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_SEGMENT}{PRINT\_MODE\_SEGMENT}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+G\+M\+E\+NT~(0x0000010)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}\label{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}} 
+\index{BoxRouter.h@{BoxRouter.h}!PRINT\_MODE\_TEXT@{PRINT\_MODE\_TEXT}}
+\index{PRINT\_MODE\_TEXT@{PRINT\_MODE\_TEXT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PRINT\_MODE\_TEXT}{PRINT\_MODE\_TEXT}}
+{\footnotesize\ttfamily \#define P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a51f9ca83dfe8785488cd2bce81dce45f}\label{BoxRouter_8h_a51f9ca83dfe8785488cd2bce81dce45f}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_BODR\_ANY@{PROP\_BODR\_ANY}}
+\index{PROP\_BODR\_ANY@{PROP\_BODR\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_BODR\_ANY}{PROP\_BODR\_ANY}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+B\+O\+D\+R\+\_\+\+A\+NY~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a2ddcc0f2355d7a205211d9d9fb3ff998}\label{BoxRouter_8h_a2ddcc0f2355d7a205211d9d9fb3ff998}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_INVALID@{PROP\_INVALID}}
+\index{PROP\_INVALID@{PROP\_INVALID}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_INVALID}{PROP\_INVALID}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+I\+N\+V\+A\+L\+ID~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a43fd696d871187ef6d13c0140de0842d}\label{BoxRouter_8h_a43fd696d871187ef6d13c0140de0842d}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_ANY@{PROP\_NET\_ANY}}
+\index{PROP\_NET\_ANY@{PROP\_NET\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_ANY}{PROP\_NET\_ANY}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+A\+NY~(\mbox{\hyperlink{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa61f2199782e0ad49222a8cb6786281b}\label{BoxRouter_8h_aa61f2199782e0ad49222a8cb6786281b}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_FLAT@{PROP\_NET\_FLAT}}
+\index{PROP\_NET\_FLAT@{PROP\_NET\_FLAT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_FLAT}{PROP\_NET\_FLAT}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+F\+L\+AT~(0x1000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}\label{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_GLOBAL@{PROP\_NET\_GLOBAL}}
+\index{PROP\_NET\_GLOBAL@{PROP\_NET\_GLOBAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_GLOBAL}{PROP\_NET\_GLOBAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}\label{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_LOCAL@{PROP\_NET\_LOCAL}}
+\index{PROP\_NET\_LOCAL@{PROP\_NET\_LOCAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_LOCAL}{PROP\_NET\_LOCAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a44e0c3491cf5fd4c55aa5df5c20cf106}\label{BoxRouter_8h_a44e0c3491cf5fd4c55aa5df5c20cf106}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_SIGNAL@{PROP\_NET\_SIGNAL}}
+\index{PROP\_NET\_SIGNAL@{PROP\_NET\_SIGNAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_SIGNAL}{PROP\_NET\_SIGNAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+S\+I\+G\+N\+AL~(\mbox{\hyperlink{BoxRouter_8h_aec6991c492f6a0778a0f20bce80b9879}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+L\+O\+C\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8958189659a1a9e83671de81239dad82}{P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+G\+L\+O\+B\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae0fcb8939e9b3d6b65571069e1b26da2}\label{BoxRouter_8h_ae0fcb8939e9b3d6b65571069e1b26da2}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_NET\_TWOPIN@{PROP\_NET\_TWOPIN}}
+\index{PROP\_NET\_TWOPIN@{PROP\_NET\_TWOPIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_NET\_TWOPIN}{PROP\_NET\_TWOPIN}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+N\+E\+T\+\_\+\+T\+W\+O\+P\+IN~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a51dd80c0caea61084d33859be4dbee1c}\label{BoxRouter_8h_a51dd80c0caea61084d33859be4dbee1c}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR@{PROP\_PARAM\_BOXR}}
+\index{PROP\_PARAM\_BOXR@{PROP\_PARAM\_BOXR}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR}{PROP\_PARAM\_BOXR}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+XR~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_abb3f864e6d579f5edfc7ba875c77fdf4}\label{BoxRouter_8h_abb3f864e6d579f5edfc7ba875c77fdf4}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_ILP@{PROP\_PARAM\_BOXR\_ILP}}
+\index{PROP\_PARAM\_BOXR\_ILP@{PROP\_PARAM\_BOXR\_ILP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_ILP}{PROP\_PARAM\_BOXR\_ILP}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+LP~(\mbox{\hyperlink{BoxRouter_8h_aebc574365d43b3ac4245ce777e6a44fc}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+IN}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8c4fbc097eaad3ae04c2682304315a01}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+AX}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a8ab0fa40f70cbcc1c30f927e43a0558d}{P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+H\+YD}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a1b5b9f134be6aa8a53be873dbc5cd952}\label{BoxRouter_8h_a1b5b9f134be6aa8a53be873dbc5cd952}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_ILP\_RNDUP@{PROP\_PARAM\_BOXR\_ILP\_RNDUP}}
+\index{PROP\_PARAM\_BOXR\_ILP\_RNDUP@{PROP\_PARAM\_BOXR\_ILP\_RNDUP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_ILP\_RNDUP}{PROP\_PARAM\_BOXR\_ILP\_RNDUP}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+\_\+\+R\+N\+D\+UP~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8ab0fa40f70cbcc1c30f927e43a0558d}\label{BoxRouter_8h_a8ab0fa40f70cbcc1c30f927e43a0558d}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_ILPHYD@{PROP\_PARAM\_BOXR\_ILPHYD}}
+\index{PROP\_PARAM\_BOXR\_ILPHYD@{PROP\_PARAM\_BOXR\_ILPHYD}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_ILPHYD}{PROP\_PARAM\_BOXR\_ILPHYD}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+H\+YD~(0x0000010)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8c4fbc097eaad3ae04c2682304315a01}\label{BoxRouter_8h_a8c4fbc097eaad3ae04c2682304315a01}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_ILPMAX@{PROP\_PARAM\_BOXR\_ILPMAX}}
+\index{PROP\_PARAM\_BOXR\_ILPMAX@{PROP\_PARAM\_BOXR\_ILPMAX}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_ILPMAX}{PROP\_PARAM\_BOXR\_ILPMAX}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+AX~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aebc574365d43b3ac4245ce777e6a44fc}\label{BoxRouter_8h_aebc574365d43b3ac4245ce777e6a44fc}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_ILPMIN@{PROP\_PARAM\_BOXR\_ILPMIN}}
+\index{PROP\_PARAM\_BOXR\_ILPMIN@{PROP\_PARAM\_BOXR\_ILPMIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_ILPMIN}{PROP\_PARAM\_BOXR\_ILPMIN}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+I\+L\+P\+M\+IN~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab07caa8317351543d49bb56807a2d7ae}\label{BoxRouter_8h_ab07caa8317351543d49bb56807a2d7ae}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_MAZE@{PROP\_PARAM\_BOXR\_MAZE}}
+\index{PROP\_PARAM\_BOXR\_MAZE@{PROP\_PARAM\_BOXR\_MAZE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_MAZE}{PROP\_PARAM\_BOXR\_MAZE}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+M\+A\+ZE~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad0c15f6efa2df6da6bb795725ab5f528}\label{BoxRouter_8h_ad0c15f6efa2df6da6bb795725ab5f528}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_BOXR\_PATTERN@{PROP\_PARAM\_BOXR\_PATTERN}}
+\index{PROP\_PARAM\_BOXR\_PATTERN@{PROP\_PARAM\_BOXR\_PATTERN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_BOXR\_PATTERN}{PROP\_PARAM\_BOXR\_PATTERN}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+O\+X\+R\+\_\+\+P\+A\+T\+T\+E\+RN~(0x0000080)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a60efd4d8b6ef628cd7f7c665a0cf8f9f}\label{BoxRouter_8h_a60efd4d8b6ef628cd7f7c665a0cf8f9f}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_DISP\_OFF@{PROP\_PARAM\_DISP\_OFF}}
+\index{PROP\_PARAM\_DISP\_OFF@{PROP\_PARAM\_DISP\_OFF}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_DISP\_OFF}{PROP\_PARAM\_DISP\_OFF}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+P\+\_\+\+O\+FF~(0x0000200)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a1728896c0e8cbfe4ef8d1f7039587261}\label{BoxRouter_8h_a1728896c0e8cbfe4ef8d1f7039587261}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_MULTILAYER@{PROP\_PARAM\_MULTILAYER}}
+\index{PROP\_PARAM\_MULTILAYER@{PROP\_PARAM\_MULTILAYER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_MULTILAYER}{PROP\_PARAM\_MULTILAYER}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+U\+L\+T\+I\+L\+A\+Y\+ER~(0x0000400)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad84e59b45f478c16629cf72e1a80626f}\label{BoxRouter_8h_ad84e59b45f478c16629cf72e1a80626f}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_OUTPUT\_RPIN@{PROP\_PARAM\_OUTPUT\_RPIN}}
+\index{PROP\_PARAM\_OUTPUT\_RPIN@{PROP\_PARAM\_OUTPUT\_RPIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_OUTPUT\_RPIN}{PROP\_PARAM\_OUTPUT\_RPIN}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+R\+P\+IN~(0x0000800)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a78f6c2de127139f8501bbd436546dcb4}\label{BoxRouter_8h_a78f6c2de127139f8501bbd436546dcb4}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_PRER@{PROP\_PARAM\_PRER}}
+\index{PROP\_PARAM\_PRER@{PROP\_PARAM\_PRER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_PRER}{PROP\_PARAM\_PRER}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+R\+ER~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_adc69fed632782007547d00ab89b673c7}\label{BoxRouter_8h_adc69fed632782007547d00ab89b673c7}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_RELAYERING@{PROP\_PARAM\_RELAYERING}}
+\index{PROP\_PARAM\_RELAYERING@{PROP\_PARAM\_RELAYERING}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_RELAYERING}{PROP\_PARAM\_RELAYERING}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+L\+A\+Y\+E\+R\+I\+NG~(0x0004000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a0c0eeb68de1c34038bac84cafd171142}\label{BoxRouter_8h_a0c0eeb68de1c34038bac84cafd171142}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_RER@{PROP\_PARAM\_RER}}
+\index{PROP\_PARAM\_RER@{PROP\_PARAM\_RER}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_RER}{PROP\_PARAM\_RER}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+ER~(0x0000100)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a4910c1a14f1c621adbc5ff4661c406c0}\label{BoxRouter_8h_a4910c1a14f1c621adbc5ff4661c406c0}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_SOLVER\_GLPK@{PROP\_PARAM\_SOLVER\_GLPK}}
+\index{PROP\_PARAM\_SOLVER\_GLPK@{PROP\_PARAM\_SOLVER\_GLPK}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_SOLVER\_GLPK}{PROP\_PARAM\_SOLVER\_GLPK}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+O\+L\+V\+E\+R\+\_\+\+G\+L\+PK~(0x0001000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a7af720aa1b7eddceb549527053aa461c}\label{BoxRouter_8h_a7af720aa1b7eddceb549527053aa461c}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_PARAM\_SOLVER\_MOSEK@{PROP\_PARAM\_SOLVER\_MOSEK}}
+\index{PROP\_PARAM\_SOLVER\_MOSEK@{PROP\_PARAM\_SOLVER\_MOSEK}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_PARAM\_SOLVER\_MOSEK}{PROP\_PARAM\_SOLVER\_MOSEK}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+O\+L\+V\+E\+R\+\_\+\+M\+O\+S\+EK~(0x0002000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a20741d182e2070b2cf5f33450e2f31fa}\label{BoxRouter_8h_a20741d182e2070b2cf5f33450e2f31fa}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_SEG\_FLAT@{PROP\_SEG\_FLAT}}
+\index{PROP\_SEG\_FLAT@{PROP\_SEG\_FLAT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_SEG\_FLAT}{PROP\_SEG\_FLAT}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+F\+L\+AT~(\mbox{\hyperlink{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a01a6d543e1ebeccc8069a2793428ace5}\label{BoxRouter_8h_a01a6d543e1ebeccc8069a2793428ace5}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_SEG\_HORIZONTAL@{PROP\_SEG\_HORIZONTAL}}
+\index{PROP\_SEG\_HORIZONTAL@{PROP\_SEG\_HORIZONTAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_SEG\_HORIZONTAL}{PROP\_SEG\_HORIZONTAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL~(\mbox{\hyperlink{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a318a4b0ffe19f2cda4a24d282c96eced}\label{BoxRouter_8h_a318a4b0ffe19f2cda4a24d282c96eced}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_SEG\_PERPENDICULAR@{PROP\_SEG\_PERPENDICULAR}}
+\index{PROP\_SEG\_PERPENDICULAR@{PROP\_SEG\_PERPENDICULAR}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_SEG\_PERPENDICULAR}{PROP\_SEG\_PERPENDICULAR}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR~(\mbox{\hyperlink{BoxRouter_8h_a81489623ffd32c1a5978bc0ad659a421}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a56e5cc70a262b6bbfd33447bc035b070}\label{BoxRouter_8h_a56e5cc70a262b6bbfd33447bc035b070}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_SEG\_VERTICAL@{PROP\_SEG\_VERTICAL}}
+\index{PROP\_SEG\_VERTICAL@{PROP\_SEG\_VERTICAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_SEG\_VERTICAL}{PROP\_SEG\_VERTICAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+S\+E\+G\+\_\+\+V\+E\+R\+T\+I\+C\+AL~(\mbox{\hyperlink{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}\label{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_ANY@{PROP\_WIRE\_ANY}}
+\index{PROP\_WIRE\_ANY@{PROP\_WIRE\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_ANY}{PROP\_WIRE\_ANY}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY~(\mbox{\hyperlink{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a2b8505f848cb343b1958a80281604726}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+B\+E\+ND}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a288211353526a39f2fc7448976bccbe9}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+O\+I\+NT}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a2b8505f848cb343b1958a80281604726}\label{BoxRouter_8h_a2b8505f848cb343b1958a80281604726}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_BEND@{PROP\_WIRE\_BEND}}
+\index{PROP\_WIRE\_BEND@{PROP\_WIRE\_BEND}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_BEND}{PROP\_WIRE\_BEND}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+B\+E\+ND~(0x0000100)}
+
+\mbox{\Hypertarget{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}\label{BoxRouter_8h_acf0225c7e026e8d2fc059bdc8ee70886}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_FLAT@{PROP\_WIRE\_FLAT}}
+\index{PROP\_WIRE\_FLAT@{PROP\_WIRE\_FLAT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_FLAT}{PROP\_WIRE\_FLAT}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+F\+L\+AT~(\mbox{\hyperlink{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}}$\vert$\mbox{\hyperlink{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}\label{BoxRouter_8h_a574d175d75adc571d5e5a4c50ecb04df}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_HORIZONTAL@{PROP\_WIRE\_HORIZONTAL}}
+\index{PROP\_WIRE\_HORIZONTAL@{PROP\_WIRE\_HORIZONTAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_HORIZONTAL}{PROP\_WIRE\_HORIZONTAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL~(\mbox{\hyperlink{BoxRouter_8h_ae886b9e6ec5e905f7ada9cebeaa98dd3}{D\+I\+R\+\_\+\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a81489623ffd32c1a5978bc0ad659a421}\label{BoxRouter_8h_a81489623ffd32c1a5978bc0ad659a421}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_PERPENDICULAR@{PROP\_WIRE\_PERPENDICULAR}}
+\index{PROP\_WIRE\_PERPENDICULAR@{PROP\_WIRE\_PERPENDICULAR}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_PERPENDICULAR}{PROP\_WIRE\_PERPENDICULAR}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR~(\mbox{\hyperlink{BoxRouter_8h_ab333514c54b31ceb9f9a5cc2a232912e}{D\+I\+R\+\_\+\+P\+E\+R\+P\+E\+N\+D\+I\+C\+U\+L\+AR}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a288211353526a39f2fc7448976bccbe9}\label{BoxRouter_8h_a288211353526a39f2fc7448976bccbe9}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_POINT@{PROP\_WIRE\_POINT}}
+\index{PROP\_WIRE\_POINT@{PROP\_WIRE\_POINT}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_POINT}{PROP\_WIRE\_POINT}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+P\+O\+I\+NT~(0x0000200)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a384b6ce138e1ed1d04bca0a1a19d9d92}\label{BoxRouter_8h_a384b6ce138e1ed1d04bca0a1a19d9d92}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_SPECIAL@{PROP\_WIRE\_SPECIAL}}
+\index{PROP\_WIRE\_SPECIAL@{PROP\_WIRE\_SPECIAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_SPECIAL}{PROP\_WIRE\_SPECIAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+S\+P\+E\+C\+I\+AL~(0x0000800)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}\label{BoxRouter_8h_aa40f883746b987e0eddb4f6b3d06c8ee}} 
+\index{BoxRouter.h@{BoxRouter.h}!PROP\_WIRE\_VERTICAL@{PROP\_WIRE\_VERTICAL}}
+\index{PROP\_WIRE\_VERTICAL@{PROP\_WIRE\_VERTICAL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{PROP\_WIRE\_VERTICAL}{PROP\_WIRE\_VERTICAL}}
+{\footnotesize\ttfamily \#define P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+V\+E\+R\+T\+I\+C\+AL~(\mbox{\hyperlink{BoxRouter_8h_aace1cb874706fbe1f413a78d21f9e194}{D\+I\+R\+\_\+\+V\+E\+R\+T\+I\+C\+AL}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae31ec41509b470484f874a4e72157e48}\label{BoxRouter_8h_ae31ec41509b470484f874a4e72157e48}} 
+\index{BoxRouter.h@{BoxRouter.h}!RET\_WIRE\_E@{RET\_WIRE\_E}}
+\index{RET\_WIRE\_E@{RET\_WIRE\_E}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{RET\_WIRE\_E}{RET\_WIRE\_E}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+E~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa06ba1b4237d8c4e129f150bfa0137a2}\label{BoxRouter_8h_aa06ba1b4237d8c4e129f150bfa0137a2}} 
+\index{BoxRouter.h@{BoxRouter.h}!RET\_WIRE\_NONE@{RET\_WIRE\_NONE}}
+\index{RET\_WIRE\_NONE@{RET\_WIRE\_NONE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{RET\_WIRE\_NONE}{RET\_WIRE\_NONE}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+\+N\+O\+NE~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a6ac120bb1845f5a7ea3c5f830f45ad37}\label{BoxRouter_8h_a6ac120bb1845f5a7ea3c5f830f45ad37}} 
+\index{BoxRouter.h@{BoxRouter.h}!RET\_WIRE\_S@{RET\_WIRE\_S}}
+\index{RET\_WIRE\_S@{RET\_WIRE\_S}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{RET\_WIRE\_S}{RET\_WIRE\_S}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+S~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a4f164794fa0c2eb12a71b264ec98aef6}\label{BoxRouter_8h_a4f164794fa0c2eb12a71b264ec98aef6}} 
+\index{BoxRouter.h@{BoxRouter.h}!RET\_WIRE\_SE@{RET\_WIRE\_SE}}
+\index{RET\_WIRE\_SE@{RET\_WIRE\_SE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{RET\_WIRE\_SE}{RET\_WIRE\_SE}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+\+SE~(\mbox{\hyperlink{BoxRouter_8h_a6ac120bb1845f5a7ea3c5f830f45ad37}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+S}}$\vert$\mbox{\hyperlink{BoxRouter_8h_ae31ec41509b470484f874a4e72157e48}{R\+E\+T\+\_\+\+W\+I\+R\+E\+\_\+E}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a22cecad9c0a7fb23d5b5147686092cc2}\label{BoxRouter_8h_a22cecad9c0a7fb23d5b5147686092cc2}} 
+\index{BoxRouter.h@{BoxRouter.h}!SAFE\_DEL@{SAFE\_DEL}}
+\index{SAFE\_DEL@{SAFE\_DEL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{SAFE\_DEL}{SAFE\_DEL}}
+{\footnotesize\ttfamily \#define S\+A\+F\+E\+\_\+\+D\+EL(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{if(p) \{delete p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}}
+
+\mbox{\Hypertarget{BoxRouter_8h_a5e87e6912c0a4767fbe29eaaffff95d2}\label{BoxRouter_8h_a5e87e6912c0a4767fbe29eaaffff95d2}} 
+\index{BoxRouter.h@{BoxRouter.h}!SAFE\_DELA@{SAFE\_DELA}}
+\index{SAFE\_DELA@{SAFE\_DELA}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{SAFE\_DELA}{SAFE\_DELA}}
+{\footnotesize\ttfamily \#define S\+A\+F\+E\+\_\+\+D\+E\+LA(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{if(p) \{delete\mbox{[}$\,$\mbox{]} p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}}
+
+\mbox{\Hypertarget{BoxRouter_8h_ad1bc7f7eb64b54da23a6f54798ce5d4d}\label{BoxRouter_8h_ad1bc7f7eb64b54da23a6f54798ce5d4d}} 
+\index{BoxRouter.h@{BoxRouter.h}!SAFE\_DELAC@{SAFE\_DELAC}}
+\index{SAFE\_DELAC@{SAFE\_DELAC}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{SAFE\_DELAC}{SAFE\_DELAC}}
+{\footnotesize\ttfamily \#define S\+A\+F\+E\+\_\+\+D\+E\+L\+AC(\begin{DoxyParamCaption}\item[{}]{q,  }\item[{}]{p }\end{DoxyParamCaption})~\{if(q\&\&p) \{delete\mbox{[}$\,$\mbox{]} p; p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}}
+
+\mbox{\Hypertarget{BoxRouter_8h_a6f0b3ad09b40d659b84d0fa2f03e1e28}\label{BoxRouter_8h_a6f0b3ad09b40d659b84d0fa2f03e1e28}} 
+\index{BoxRouter.h@{BoxRouter.h}!SAFE\_FCLOSE@{SAFE\_FCLOSE}}
+\index{SAFE\_FCLOSE@{SAFE\_FCLOSE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{SAFE\_FCLOSE}{SAFE\_FCLOSE}}
+{\footnotesize\ttfamily \#define S\+A\+F\+E\+\_\+\+F\+C\+L\+O\+SE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{if(p) \{fclose(p); p=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}};\}\}}
+
+\mbox{\Hypertarget{BoxRouter_8h_a70aa5d72f956d7593c202dc2ab1f507d}\label{BoxRouter_8h_a70aa5d72f956d7593c202dc2ab1f507d}} 
+\index{BoxRouter.h@{BoxRouter.h}!SQRE@{SQRE}}
+\index{SQRE@{SQRE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{SQRE}{SQRE}}
+{\footnotesize\ttfamily \#define S\+Q\+RE(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~((a)$\ast$(a))}
+
+\mbox{\Hypertarget{BoxRouter_8h_a035f44e69a8495ae1702448f485a0bee}\label{BoxRouter_8h_a035f44e69a8495ae1702448f485a0bee}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_BODR\_ANY@{STATE\_BODR\_ANY}}
+\index{STATE\_BODR\_ANY@{STATE\_BODR\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_BODR\_ANY}{STATE\_BODR\_ANY}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+B\+O\+D\+R\+\_\+\+A\+NY~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a00e740d21b23f6398aeb67df80eda860}\label{BoxRouter_8h_a00e740d21b23f6398aeb67df80eda860}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_COMPLETED@{STATE\_DESN\_COMPLETED}}
+\index{STATE\_DESN\_COMPLETED@{STATE\_DESN\_COMPLETED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_COMPLETED}{STATE\_DESN\_COMPLETED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED~(0x0000080)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a579dfbf2e3984e287a64d1f9e9c8a43c}\label{BoxRouter_8h_a579dfbf2e3984e287a64d1f9e9c8a43c}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_OVERFLOW@{STATE\_DESN\_OVERFLOW}}
+\index{STATE\_DESN\_OVERFLOW@{STATE\_DESN\_OVERFLOW}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_OVERFLOW}{STATE\_DESN\_OVERFLOW}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+O\+V\+E\+R\+F\+L\+OW~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ab58666b0511f146ae13cf4f61d9c9023}\label{BoxRouter_8h_ab58666b0511f146ae13cf4f61d9c9023}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_REROUTED@{STATE\_DESN\_REROUTED}}
+\index{STATE\_DESN\_REROUTED@{STATE\_DESN\_REROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_REROUTED}{STATE\_DESN\_REROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+ED~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa342bc4be60f00ef48c08aa32776e3fc}\label{BoxRouter_8h_aa342bc4be60f00ef48c08aa32776e3fc}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_REROUTING@{STATE\_DESN\_REROUTING}}
+\index{STATE\_DESN\_REROUTING@{STATE\_DESN\_REROUTING}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_REROUTING}{STATE\_DESN\_REROUTING}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+I\+NG~(0x0000010)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a5de1700c6e5d23e5102e531251ed5abc}\label{BoxRouter_8h_a5de1700c6e5d23e5102e531251ed5abc}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_ROUTED@{STATE\_DESN\_ROUTED}}
+\index{STATE\_DESN\_ROUTED@{STATE\_DESN\_ROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_ROUTED}{STATE\_DESN\_ROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+ED~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a18ec13851d871ba8112af491e0146086}\label{BoxRouter_8h_a18ec13851d871ba8112af491e0146086}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_ROUTING@{STATE\_DESN\_ROUTING}}
+\index{STATE\_DESN\_ROUTING@{STATE\_DESN\_ROUTING}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_ROUTING}{STATE\_DESN\_ROUTING}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+I\+NG~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae626cad7b1c5ac2934e84716779519a3}\label{BoxRouter_8h_ae626cad7b1c5ac2934e84716779519a3}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_STUCK@{STATE\_DESN\_STUCK}}
+\index{STATE\_DESN\_STUCK@{STATE\_DESN\_STUCK}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_STUCK}{STATE\_DESN\_STUCK}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+T\+U\+CK~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3852f0f09c2a11a8e92dc1270184e7d3}\label{BoxRouter_8h_a3852f0f09c2a11a8e92dc1270184e7d3}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_DESN\_SUCCESS@{STATE\_DESN\_SUCCESS}}
+\index{STATE\_DESN\_SUCCESS@{STATE\_DESN\_SUCCESS}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_DESN\_SUCCESS}{STATE\_DESN\_SUCCESS}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+U\+C\+C\+E\+SS~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a8dfb12fd078523522d914b41e38b4050}\label{BoxRouter_8h_a8dfb12fd078523522d914b41e38b4050}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_INVALID@{STATE\_INVALID}}
+\index{STATE\_INVALID@{STATE\_INVALID}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_INVALID}{STATE\_INVALID}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+I\+N\+V\+A\+L\+ID~(0x0000000)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}\label{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_ANY@{STATE\_NET\_ANY}}
+\index{STATE\_NET\_ANY@{STATE\_NET\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_ANY}{STATE\_NET\_ANY}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY~(\mbox{\hyperlink{BoxRouter_8h_aa76c5b619c5be84450d89c066fdfe236}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+R\+O\+U\+T\+ED}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a9a50b42e74d383f9091f53e9d66d6706}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_ace0ebffecddc750aff4578c7b33f706d}\label{BoxRouter_8h_ace0ebffecddc750aff4578c7b33f706d}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_BBOXCLEAN@{STATE\_NET\_BBOXCLEAN}}
+\index{STATE\_NET\_BBOXCLEAN@{STATE\_NET\_BBOXCLEAN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_BBOXCLEAN}{STATE\_NET\_BBOXCLEAN}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+B\+B\+O\+X\+C\+L\+E\+AN~(0x0000020)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a4564e8408831ee17fc9088ad9db2e2a7}\label{BoxRouter_8h_a4564e8408831ee17fc9088ad9db2e2a7}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_BBOXDIRTY@{STATE\_NET\_BBOXDIRTY}}
+\index{STATE\_NET\_BBOXDIRTY@{STATE\_NET\_BBOXDIRTY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_BBOXDIRTY}{STATE\_NET\_BBOXDIRTY}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+B\+B\+O\+X\+D\+I\+R\+TY~(0x0000010)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a81d44af4e8ebf5c6c4e731710a717cc6}\label{BoxRouter_8h_a81d44af4e8ebf5c6c4e731710a717cc6}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_PREROUTED@{STATE\_NET\_PREROUTED}}
+\index{STATE\_NET\_PREROUTED@{STATE\_NET\_PREROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_PREROUTED}{STATE\_NET\_PREROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+P\+R\+E\+R\+O\+U\+T\+ED~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa76c5b619c5be84450d89c066fdfe236}\label{BoxRouter_8h_aa76c5b619c5be84450d89c066fdfe236}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_ROUTED@{STATE\_NET\_ROUTED}}
+\index{STATE\_NET\_ROUTED@{STATE\_NET\_ROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_ROUTED}{STATE\_NET\_ROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+R\+O\+U\+T\+ED~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a9a50b42e74d383f9091f53e9d66d6706}\label{BoxRouter_8h_a9a50b42e74d383f9091f53e9d66d6706}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_NET\_UNROUTED@{STATE\_NET\_UNROUTED}}
+\index{STATE\_NET\_UNROUTED@{STATE\_NET\_UNROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_NET\_UNROUTED}{STATE\_NET\_UNROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+U\+N\+R\+O\+U\+T\+ED~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_af13359da4b1eada1eb574f7963f6c74f}\label{BoxRouter_8h_af13359da4b1eada1eb574f7963f6c74f}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_POINT\_PIN@{STATE\_POINT\_PIN}}
+\index{STATE\_POINT\_PIN@{STATE\_POINT\_PIN}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_POINT\_PIN}{STATE\_POINT\_PIN}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+P\+O\+I\+N\+T\+\_\+\+P\+IN~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a1b285251edd87e1423189470586cc719}\label{BoxRouter_8h_a1b285251edd87e1423189470586cc719}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_ANY@{STATE\_WIRE\_ANY}}
+\index{STATE\_WIRE\_ANY@{STATE\_WIRE\_ANY}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_ANY}{STATE\_WIRE\_ANY}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY~(\mbox{\hyperlink{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED}}$\vert$\mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})}
+
+\mbox{\Hypertarget{BoxRouter_8h_a347e389393e4939276366553adf8bf52}\label{BoxRouter_8h_a347e389393e4939276366553adf8bf52}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_ASSGNED@{STATE\_WIRE\_ASSGNED}}
+\index{STATE\_WIRE\_ASSGNED@{STATE\_WIRE\_ASSGNED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_ASSGNED}{STATE\_WIRE\_ASSGNED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+S\+S\+G\+N\+ED~(0x0000004)}
+
+\mbox{\Hypertarget{BoxRouter_8h_acbbda0f06461007db223ed15c75f09ef}\label{BoxRouter_8h_acbbda0f06461007db223ed15c75f09ef}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_NOTASSGNED@{STATE\_WIRE\_NOTASSGNED}}
+\index{STATE\_WIRE\_NOTASSGNED@{STATE\_WIRE\_NOTASSGNED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_NOTASSGNED}{STATE\_WIRE\_NOTASSGNED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+N\+O\+T\+A\+S\+S\+G\+N\+ED~(0x0000008)}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa4275fd8d032f3ef4d44948b3e5f84c4}\label{BoxRouter_8h_aa4275fd8d032f3ef4d44948b3e5f84c4}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_REROUTED@{STATE\_WIRE\_REROUTED}}
+\index{STATE\_WIRE\_REROUTED@{STATE\_WIRE\_REROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_REROUTED}{STATE\_WIRE\_REROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+E\+R\+O\+U\+T\+ED~(0x0000040)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}\label{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_ROUTED@{STATE\_WIRE\_ROUTED}}
+\index{STATE\_WIRE\_ROUTED@{STATE\_WIRE\_ROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_ROUTED}{STATE\_WIRE\_ROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}\label{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}} 
+\index{BoxRouter.h@{BoxRouter.h}!STATE\_WIRE\_UNROUTED@{STATE\_WIRE\_UNROUTED}}
+\index{STATE\_WIRE\_UNROUTED@{STATE\_WIRE\_UNROUTED}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STATE\_WIRE\_UNROUTED}{STATE\_WIRE\_UNROUTED}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a3d0afca01d5835b8319e970dc5ba9f50}\label{BoxRouter_8h_a3d0afca01d5835b8319e970dc5ba9f50}} 
+\index{BoxRouter.h@{BoxRouter.h}!STRICMP@{STRICMP}}
+\index{STRICMP@{STRICMP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STRICMP}{STRICMP}}
+{\footnotesize\ttfamily \#define S\+T\+R\+I\+C\+MP~strcasecmp}
+
+\mbox{\Hypertarget{BoxRouter_8h_aedda2fea033b013ec6f88e5fee1ed048}\label{BoxRouter_8h_aedda2fea033b013ec6f88e5fee1ed048}} 
+\index{BoxRouter.h@{BoxRouter.h}!STRNICMP@{STRNICMP}}
+\index{STRNICMP@{STRNICMP}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{STRNICMP}{STRNICMP}}
+{\footnotesize\ttfamily \#define S\+T\+R\+N\+I\+C\+MP~strncasecmp}
+
+\mbox{\Hypertarget{BoxRouter_8h_aad9cc64d45a76ba0d37c00f8cd9caa37}\label{BoxRouter_8h_aad9cc64d45a76ba0d37c00f8cd9caa37}} 
+\index{BoxRouter.h@{BoxRouter.h}!TRACE@{TRACE}}
+\index{TRACE@{TRACE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{TRACE}{TRACE}}
+{\footnotesize\ttfamily \#define T\+R\+A\+CE}
+
+\mbox{\Hypertarget{BoxRouter_8h_aef6f064aebfd0357fae775c33ce0a523}\label{BoxRouter_8h_aef6f064aebfd0357fae775c33ce0a523}} 
+\index{BoxRouter.h@{BoxRouter.h}!TRPL@{TRPL}}
+\index{TRPL@{TRPL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{TRPL}{TRPL}}
+{\footnotesize\ttfamily \#define T\+R\+PL(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~((a)$\ast$(a)$\ast$(a))}
+
+\mbox{\Hypertarget{BoxRouter_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{BoxRouter_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{BoxRouter.h@{BoxRouter.h}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~(1)}
+
+\mbox{\Hypertarget{BoxRouter_8h_a335d369beb9eefb97ec9bd4e18a8a14a}\label{BoxRouter_8h_a335d369beb9eefb97ec9bd4e18a8a14a}} 
+\index{BoxRouter.h@{BoxRouter.h}!UPBOUND\_MODE\_ADD@{UPBOUND\_MODE\_ADD}}
+\index{UPBOUND\_MODE\_ADD@{UPBOUND\_MODE\_ADD}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{UPBOUND\_MODE\_ADD}{UPBOUND\_MODE\_ADD}}
+{\footnotesize\ttfamily \#define U\+P\+B\+O\+U\+N\+D\+\_\+\+M\+O\+D\+E\+\_\+\+A\+DD~(0x0000001)}
+
+\mbox{\Hypertarget{BoxRouter_8h_ae4fed94688f86d4b404d7ad824a787dc}\label{BoxRouter_8h_ae4fed94688f86d4b404d7ad824a787dc}} 
+\index{BoxRouter.h@{BoxRouter.h}!UPBOUND\_MODE\_DEL@{UPBOUND\_MODE\_DEL}}
+\index{UPBOUND\_MODE\_DEL@{UPBOUND\_MODE\_DEL}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{UPBOUND\_MODE\_DEL}{UPBOUND\_MODE\_DEL}}
+{\footnotesize\ttfamily \#define U\+P\+B\+O\+U\+N\+D\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EL~(0x0000002)}
+
+\mbox{\Hypertarget{BoxRouter_8h_abec110b2c37d63cb981bbd7d6a5adac2}\label{BoxRouter_8h_abec110b2c37d63cb981bbd7d6a5adac2}} 
+\index{BoxRouter.h@{BoxRouter.h}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!BoxRouter.h@{BoxRouter.h}}
+\subsubsection{\texorpdfstring{ZERO}{ZERO}}
+{\footnotesize\ttfamily \#define Z\+E\+RO(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~((fabs(a)$<$1e-\/8)? (0)\+:(a))}
+

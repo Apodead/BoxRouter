@@ -1,0 +1,211 @@
+\hypertarget{classCObject}{}\section{C\+Object Class Reference}
+\label{classCObject}\index{CObject@{CObject}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Inheritance diagram for C\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCObject_ac44111d5ac75248a616df61b038c4153}{C\+Object}} ()
+\item 
+virtual \mbox{\hyperlink{classCObject_a93a3c3bc7d9a6462ef00e25404d9b0eb}{$\sim$\+C\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}})
+\item 
+void \mbox{\hyperlink{classCObject_a6946fc7b7c10ee357b77dad0466650d2}{Print\+File}} (char $\ast$p\+File\+Name, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}})
+\item 
+void \mbox{\hyperlink{classCObject_aa98c9f97492a83c6397a7d8f98c63bba}{Print\+Log}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}})
+\item 
+void \mbox{\hyperlink{classCObject_a3bf81b5d5af59f8b8a6a716591d0f355}{Print\+Msg}} (int i\+Mode)
+\item 
+\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} \mbox{\hyperlink{classCObject_af40e7f490ecf17319ce70f9b0ee723c7}{Get\+Key}} ()
+\item 
+int \mbox{\hyperlink{classCObject_a94f72fd4b4155dc18decb9d53f42dc99}{Get\+State}} ()
+\item 
+int \mbox{\hyperlink{classCObject_afc32a8e7c4450a95c2a6333d7e3319b4}{Get\+Prop}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classCObject_a6894a565969879762f30ef73f70cbbc0}{Print\+File2}} (char $\ast$p\+File\+Name, char $\ast$p\+F\+MT,...)
+\item 
+static void \mbox{\hyperlink{classCObject_afbef6034e527bf408a93e1ee2d0675e0}{Print\+Log2}} (char $\ast$p\+F\+MT,...)
+\item 
+static void \mbox{\hyperlink{classCObject_ad03905456a69ab270896976b3dd69e05}{Print\+Msg2}} (char $\ast$p\+F\+MT,...)
+\item 
+static void \mbox{\hyperlink{classCObject_ade0e58d8dab14d912ec5465aecf74b10}{Display}} (int i\+Mode, char $\ast$p\+F\+MT,...)
+\item 
+static \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ \mbox{\hyperlink{classCObject_a8a45a96cdd9a089b518c93fd29b50a7e}{Get\+Design}} ()
+\item 
+static int \mbox{\hyperlink{classCObject_af7d0080ca4135e9bbe9e92abfe9f904a}{Is\+Design\+Loaded}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} \mbox{\hyperlink{classCObject_ac0b3eb770527a6b1a964999b193023d1}{m\+\_\+\+Key}}
+\item 
+int \mbox{\hyperlink{classCObject_a6613f95f1c296f056907e6f64599cdc9}{m\+\_\+i\+Prop}}
+\item 
+int \mbox{\hyperlink{classCObject_a4574fff4aca175e5988c1fd2f8cb02a3}{m\+\_\+i\+State}}
+\item 
+\mbox{\hyperlink{classCObject}{C\+Object}} $\ast$ \mbox{\hyperlink{classCObject_abebf5132e588b7f64c93c510e719f0e7}{m\+\_\+p\+Parent}}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static F\+I\+LE $\ast$ \mbox{\hyperlink{classCObject_a631eaaa45d48157e9cb650e56e393218}{m\+\_\+p\+Log}} = \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}
+\item 
+static \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ \mbox{\hyperlink{classCObject_a8ad5af56e21ecd62bbcb9543a3eb88f1}{m\+\_\+p\+Design}} = \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCObject_ac44111d5ac75248a616df61b038c4153}\label{classCObject_ac44111d5ac75248a616df61b038c4153}} 
+\index{CObject@{CObject}!CObject@{CObject}}
+\index{CObject@{CObject}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{CObject()}{CObject()}}
+{\footnotesize\ttfamily C\+Object\+::\+C\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCObject_a93a3c3bc7d9a6462ef00e25404d9b0eb}\label{classCObject_a93a3c3bc7d9a6462ef00e25404d9b0eb}} 
+\index{CObject@{CObject}!````~CObject@{$\sim$CObject}}
+\index{````~CObject@{$\sim$CObject}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{$\sim$CObject()}{~CObject()}}
+{\footnotesize\ttfamily C\+Object\+::$\sim$\+C\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCObject_ade0e58d8dab14d912ec5465aecf74b10}\label{classCObject_ade0e58d8dab14d912ec5465aecf74b10}} 
+\index{CObject@{CObject}!Display@{Display}}
+\index{Display@{Display}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Display (\begin{DoxyParamCaption}\item[{int}]{i\+Mode,  }\item[{char $\ast$}]{p\+F\+MT,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCObject_a8a45a96cdd9a089b518c93fd29b50a7e}\label{classCObject_a8a45a96cdd9a089b518c93fd29b50a7e}} 
+\index{CObject@{CObject}!GetDesign@{GetDesign}}
+\index{GetDesign@{GetDesign}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{GetDesign()}{GetDesign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ C\+Object\+::\+Get\+Design (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCObject_af40e7f490ecf17319ce70f9b0ee723c7}\label{classCObject_af40e7f490ecf17319ce70f9b0ee723c7}} 
+\index{CObject@{CObject}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} C\+Object\+::\+Get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCObject_afc32a8e7c4450a95c2a6333d7e3319b4}\label{classCObject_afc32a8e7c4450a95c2a6333d7e3319b4}} 
+\index{CObject@{CObject}!GetProp@{GetProp}}
+\index{GetProp@{GetProp}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{GetProp()}{GetProp()}}
+{\footnotesize\ttfamily int C\+Object\+::\+Get\+Prop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCObject_a94f72fd4b4155dc18decb9d53f42dc99}\label{classCObject_a94f72fd4b4155dc18decb9d53f42dc99}} 
+\index{CObject@{CObject}!GetState@{GetState}}
+\index{GetState@{GetState}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{GetState()}{GetState()}}
+{\footnotesize\ttfamily int C\+Object\+::\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCObject_af7d0080ca4135e9bbe9e92abfe9f904a}\label{classCObject_af7d0080ca4135e9bbe9e92abfe9f904a}} 
+\index{CObject@{CObject}!IsDesignLoaded@{IsDesignLoaded}}
+\index{IsDesignLoaded@{IsDesignLoaded}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{IsDesignLoaded()}{IsDesignLoaded()}}
+{\footnotesize\ttfamily int C\+Object\+::\+Is\+Design\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCObject_a75afd905b2d14ed374c75d90f079a389}\label{classCObject_a75afd905b2d14ed374c75d90f079a389}} 
+\index{CObject@{CObject}!Print@{Print}}
+\index{Print@{Print}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}{C\+Wire}}, \mbox{\hyperlink{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}{C\+Design}}, \mbox{\hyperlink{classCLayer_a5bba2c50c546b8e5301370f08e963ee6}{C\+Layer}}, \mbox{\hyperlink{classCBoundary_a12a1e37297bd35f915544d02bd8c0cf1}{C\+Boundary}}, \mbox{\hyperlink{classCNet_a94a51f1ccadf689a3bcfa167f37e12f5}{C\+Net}}, \mbox{\hyperlink{classCGrid_a6462a8c5f7d7b6cbba02bac1d82dcbba}{C\+Grid}}, \mbox{\hyperlink{classCSegment_af1e339a0f89697ab0d851858aab13b89}{C\+Segment}}, and \mbox{\hyperlink{classCPoint_a1610463f19b7ff508ed229791dd6335d}{C\+Point}}.
+
+\mbox{\Hypertarget{classCObject_a6946fc7b7c10ee357b77dad0466650d2}\label{classCObject_a6946fc7b7c10ee357b77dad0466650d2}} 
+\index{CObject@{CObject}!PrintFile@{PrintFile}}
+\index{PrintFile@{PrintFile}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintFile()}{PrintFile()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+File\+Name,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCObject_a6894a565969879762f30ef73f70cbbc0}\label{classCObject_a6894a565969879762f30ef73f70cbbc0}} 
+\index{CObject@{CObject}!PrintFile2@{PrintFile2}}
+\index{PrintFile2@{PrintFile2}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintFile2()}{PrintFile2()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+File2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+File\+Name,  }\item[{char $\ast$}]{p\+F\+MT,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCObject_aa98c9f97492a83c6397a7d8f98c63bba}\label{classCObject_aa98c9f97492a83c6397a7d8f98c63bba}} 
+\index{CObject@{CObject}!PrintLog@{PrintLog}}
+\index{PrintLog@{PrintLog}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintLog()}{PrintLog()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+Log (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a57a837ae96ef88ba334045a535dd3b8e}{P\+R\+I\+N\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+E\+XT}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCObject_afbef6034e527bf408a93e1ee2d0675e0}\label{classCObject_afbef6034e527bf408a93e1ee2d0675e0}} 
+\index{CObject@{CObject}!PrintLog2@{PrintLog2}}
+\index{PrintLog2@{PrintLog2}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintLog2()}{PrintLog2()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+Log2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+F\+MT,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCObject_a3bf81b5d5af59f8b8a6a716591d0f355}\label{classCObject_a3bf81b5d5af59f8b8a6a716591d0f355}} 
+\index{CObject@{CObject}!PrintMsg@{PrintMsg}}
+\index{PrintMsg@{PrintMsg}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintMsg()}{PrintMsg()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+Msg (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCObject_ad03905456a69ab270896976b3dd69e05}\label{classCObject_ad03905456a69ab270896976b3dd69e05}} 
+\index{CObject@{CObject}!PrintMsg2@{PrintMsg2}}
+\index{PrintMsg2@{PrintMsg2}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{PrintMsg2()}{PrintMsg2()}}
+{\footnotesize\ttfamily void C\+Object\+::\+Print\+Msg2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+F\+MT,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCObject_a6613f95f1c296f056907e6f64599cdc9}\label{classCObject_a6613f95f1c296f056907e6f64599cdc9}} 
+\index{CObject@{CObject}!m\_iProp@{m\_iProp}}
+\index{m\_iProp@{m\_iProp}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_iProp}{m\_iProp}}
+{\footnotesize\ttfamily int C\+Object\+::m\+\_\+i\+Prop\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCObject_a4574fff4aca175e5988c1fd2f8cb02a3}\label{classCObject_a4574fff4aca175e5988c1fd2f8cb02a3}} 
+\index{CObject@{CObject}!m\_iState@{m\_iState}}
+\index{m\_iState@{m\_iState}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_iState}{m\_iState}}
+{\footnotesize\ttfamily int C\+Object\+::m\+\_\+i\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCObject_ac0b3eb770527a6b1a964999b193023d1}\label{classCObject_ac0b3eb770527a6b1a964999b193023d1}} 
+\index{CObject@{CObject}!m\_Key@{m\_Key}}
+\index{m\_Key@{m\_Key}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_Key}{m\_Key}}
+{\footnotesize\ttfamily \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} C\+Object\+::m\+\_\+\+Key\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCObject_a8ad5af56e21ecd62bbcb9543a3eb88f1}\label{classCObject_a8ad5af56e21ecd62bbcb9543a3eb88f1}} 
+\index{CObject@{CObject}!m\_pDesign@{m\_pDesign}}
+\index{m\_pDesign@{m\_pDesign}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_pDesign}{m\_pDesign}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ C\+Object\+::m\+\_\+p\+Design = \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCObject_a631eaaa45d48157e9cb650e56e393218}\label{classCObject_a631eaaa45d48157e9cb650e56e393218}} 
+\index{CObject@{CObject}!m\_pLog@{m\_pLog}}
+\index{m\_pLog@{m\_pLog}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_pLog}{m\_pLog}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ C\+Object\+::m\+\_\+p\+Log = \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCObject_abebf5132e588b7f64c93c510e719f0e7}\label{classCObject_abebf5132e588b7f64c93c510e719f0e7}} 
+\index{CObject@{CObject}!m\_pParent@{m\_pParent}}
+\index{m\_pParent@{m\_pParent}!CObject@{CObject}}
+\subsubsection{\texorpdfstring{m\_pParent}{m\_pParent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCObject}{C\+Object}}$\ast$ C\+Object\+::m\+\_\+p\+Parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Object_8h}{Object.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Object_8cpp}{Object.\+cpp}}\end{DoxyCompactItemize}

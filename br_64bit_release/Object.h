@@ -63,12 +63,8 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_OBJECT_H__0C7C8E91_33B6_4849_80B0_4F47CA03D786__INCLUDED_)
-#define AFX_OBJECT_H__0C7C8E91_33B6_4849_80B0_4F47CA03D786__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+#ifndef OBJECT_H
+#define OBJECT_H
 
 #include "BoxRouter.h"
 
@@ -123,5 +119,5 @@ inline int CObject::GetState()
 	return	m_iState;
 }
 
-#endif // !defined(AFX_OBJECT_H__0C7C8E91_33B6_4849_80B0_4F47CA03D786__INCLUDED_)
+#endif // ifndef OBJECT_H
 

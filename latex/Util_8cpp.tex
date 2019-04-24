@@ -1,0 +1,87 @@
+\hypertarget{Util_8cpp}{}\section{br\+\_\+64bit\+\_\+release/\+Util.cpp File Reference}
+\label{Util_8cpp}\index{br\_64bit\_release/Util.cpp@{br\_64bit\_release/Util.cpp}}
+{\ttfamily \#include \char`\"{}Util.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Util_8cpp_a1b684c7ec799b4b347d66cd376d5e04f}{M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+ND}}~512
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Util_8cpp_adaf015a9a61c29654fee45495211d6a1}{K\+B\+Hit}} ()
+\item 
+int \mbox{\hyperlink{Util_8cpp_ae08df04e596f3b160adf409a6b428a64}{Run\+Thread}} (int $\ast$p\+Handle, void($\ast$initialcode)(void $\ast$), void $\ast$argument)
+\item 
+void \mbox{\hyperlink{Util_8cpp_acee1eb8d3f4c1b4670cb40069c034a83}{Wait\+Thread}} (int i\+Handle)
+\item 
+int \mbox{\hyperlink{Util_8cpp_aa86fa663a8afdb8919c4f0db01a9c6ce}{Get\+Memory}} ()
+\item 
+void \mbox{\hyperlink{Util_8cpp_a043a5943911c627a5ac921362017c08c}{Get\+Time}} (char $\ast$p\+Time, int i\+Option)
+\item 
+double \mbox{\hyperlink{Util_8cpp_aeff107e67c5a493c88c7bbb868107530}{Stop\+Watch}} (int i\+Option)
+\item 
+void \mbox{\hyperlink{Util_8cpp_adb46c8be2393e248230b174fc6434cf8}{Create\+And\+Wait}} (char $\ast$p\+Command)
+\item 
+void \mbox{\hyperlink{Util_8cpp_a460e0d8f4c1c458c70ccad1ec247d745}{trace}} (char $\ast$p\+F\+MT,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Util_8cpp_a1b684c7ec799b4b347d66cd376d5e04f}\label{Util_8cpp_a1b684c7ec799b4b347d66cd376d5e04f}} 
+\index{Util.cpp@{Util.cpp}!MAX\_COMMAND@{MAX\_COMMAND}}
+\index{MAX\_COMMAND@{MAX\_COMMAND}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{MAX\_COMMAND}{MAX\_COMMAND}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+ND~512}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Util_8cpp_adb46c8be2393e248230b174fc6434cf8}\label{Util_8cpp_adb46c8be2393e248230b174fc6434cf8}} 
+\index{Util.cpp@{Util.cpp}!CreateAndWait@{CreateAndWait}}
+\index{CreateAndWait@{CreateAndWait}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{CreateAndWait()}{CreateAndWait()}}
+{\footnotesize\ttfamily void Create\+And\+Wait (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_aa86fa663a8afdb8919c4f0db01a9c6ce}\label{Util_8cpp_aa86fa663a8afdb8919c4f0db01a9c6ce}} 
+\index{Util.cpp@{Util.cpp}!GetMemory@{GetMemory}}
+\index{GetMemory@{GetMemory}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{GetMemory()}{GetMemory()}}
+{\footnotesize\ttfamily int Get\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_a043a5943911c627a5ac921362017c08c}\label{Util_8cpp_a043a5943911c627a5ac921362017c08c}} 
+\index{Util.cpp@{Util.cpp}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily void Get\+Time (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Time,  }\item[{int}]{i\+Option }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_adaf015a9a61c29654fee45495211d6a1}\label{Util_8cpp_adaf015a9a61c29654fee45495211d6a1}} 
+\index{Util.cpp@{Util.cpp}!KBHit@{KBHit}}
+\index{KBHit@{KBHit}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{KBHit()}{KBHit()}}
+{\footnotesize\ttfamily int K\+B\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_ae08df04e596f3b160adf409a6b428a64}\label{Util_8cpp_ae08df04e596f3b160adf409a6b428a64}} 
+\index{Util.cpp@{Util.cpp}!RunThread@{RunThread}}
+\index{RunThread@{RunThread}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{RunThread()}{RunThread()}}
+{\footnotesize\ttfamily int Run\+Thread (\begin{DoxyParamCaption}\item[{int $\ast$}]{p\+Handle,  }\item[{void($\ast$)(void $\ast$)}]{initialcode,  }\item[{void $\ast$}]{argument }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_aeff107e67c5a493c88c7bbb868107530}\label{Util_8cpp_aeff107e67c5a493c88c7bbb868107530}} 
+\index{Util.cpp@{Util.cpp}!StopWatch@{StopWatch}}
+\index{StopWatch@{StopWatch}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{StopWatch()}{StopWatch()}}
+{\footnotesize\ttfamily double Stop\+Watch (\begin{DoxyParamCaption}\item[{int}]{i\+Option }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_a460e0d8f4c1c458c70ccad1ec247d745}\label{Util_8cpp_a460e0d8f4c1c458c70ccad1ec247d745}} 
+\index{Util.cpp@{Util.cpp}!trace@{trace}}
+\index{trace@{trace}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily void trace (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+F\+MT,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Util_8cpp_acee1eb8d3f4c1b4670cb40069c034a83}\label{Util_8cpp_acee1eb8d3f4c1b4670cb40069c034a83}} 
+\index{Util.cpp@{Util.cpp}!WaitThread@{WaitThread}}
+\index{WaitThread@{WaitThread}!Util.cpp@{Util.cpp}}
+\subsubsection{\texorpdfstring{WaitThread()}{WaitThread()}}
+{\footnotesize\ttfamily void Wait\+Thread (\begin{DoxyParamCaption}\item[{int}]{i\+Handle }\end{DoxyParamCaption})}
+

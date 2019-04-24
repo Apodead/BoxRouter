@@ -63,12 +63,8 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_WIRE_H__36BC78F2_A1E4_4265_8D3D_C0123027D62E__INCLUDED_)
-#define AFX_WIRE_H__36BC78F2_A1E4_4265_8D3D_C0123027D62E__INCLUDED_
-
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+#ifndef WIRE_H
+#define WIRE_H
 
 #include "Design.h"
 #include "Net.h"
@@ -177,5 +173,5 @@ public:
 	}
 };
 
-#endif // !defined(AFX_WIRE_H__36BC78F2_A1E4_4265_8D3D_C0123027D62E__INCLUDED_)
+#endif // ifndef WIRE_H
 

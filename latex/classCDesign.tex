@@ -1,0 +1,575 @@
+\hypertarget{classCDesign}{}\section{C\+Design Class Reference}
+\label{classCDesign}\index{CDesign@{CDesign}}
+
+
+{\ttfamily \#include $<$Design.\+h$>$}
+
+Inheritance diagram for C\+Design\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCDesign}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCDesign_a87d140d2c8dbaa85b77f41d7724cc309}{C\+Design}} ()
+\item 
+virtual \mbox{\hyperlink{classCDesign_a230641b0a13390b934de6ff40b869e01}{$\sim$\+C\+Design}} ()
+\item 
+int \mbox{\hyperlink{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}{Get\+Wire\+In\+Direction}} (vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List, vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Pos, int i\+Direction, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCDesign_a569c1b0aa4defe50ebb89a5a4054631c}{Get\+Wire\+In\+Direction}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Pos, int i\+Direction, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+void \mbox{\hyperlink{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}{Report}} (char $\ast$p\+Name)
+\item 
+\mbox{\hyperlink{classCBBox}{C\+B\+Box}} \mbox{\hyperlink{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}{Get\+Congested\+Box}} ()
+\item 
+void \mbox{\hyperlink{classCDesign_a9571bf3353ab819782f0162867e525dc}{Update\+Steiner\+Tree}} ()
+\item 
+virtual int \mbox{\hyperlink{classCDesign_a9a2909717e3b6947c6d685e13088be6d}{Initialize}} (char $\ast$p\+Name)
+\item 
+void \mbox{\hyperlink{classCDesign_a844b18267aad1895dc66e3208b36d21b}{Create\+Net}} (int i\+Num\+Net)
+\item 
+void \mbox{\hyperlink{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}{Create\+Net}} (vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List)
+\item 
+void \mbox{\hyperlink{classCDesign_af116ba8573daa936d633b5ea0b005637}{Create\+Layer}} ()
+\item 
+int \mbox{\hyperlink{classCDesign_af264117726c361d0404dcd97c6da2c35}{Get\+Over\+Flow\+Boundary}} (vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$p\+Boundary\+List)
+\item 
+int \mbox{\hyperlink{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}{Get\+Net\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Net\+List)
+\item 
+int \mbox{\hyperlink{classCDesign_acd4fc20284f55855b4e88d89cc03b058}{Get\+Wire\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Wire\+List)
+\item 
+void \mbox{\hyperlink{classCDesign_a984162e6e0b47da02f4a34e176f0a569}{Write\+Dump}} ()
+\item 
+void \mbox{\hyperlink{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}{Write\+Rel}} ()
+\item 
+int \mbox{\hyperlink{classCDesign_add678d74b22a8bd58dec921656454bdd}{Read\+Dump}} (char $\ast$p\+Name)
+\item 
+void \mbox{\hyperlink{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}{Read\+Param}} (char $\ast$p\+Name)
+\item 
+void \mbox{\hyperlink{classCDesign_a02442687ac58142d9e5b0a5886ee8285}{Del\+Nets}} ()
+\item 
+void \mbox{\hyperlink{classCDesign_afc3a5c7e4453c76a44eec25c38c72135}{Set\+Prop}} (int i\+Prop)
+\item 
+void \mbox{\hyperlink{classCDesign_adda7bcca7062f58a27baa043bd315bfd}{Set\+State}} (int i\+State)
+\item 
+void \mbox{\hyperlink{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+void \mbox{\hyperlink{classCDesign_af1fc7df15f389d8051d74c7867d3d6be}{Print\+Result}} ()
+\item 
+int \mbox{\hyperlink{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}{Get\+Over\+Flow}} (int i\+Mode)
+\item 
+int \mbox{\hyperlink{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}{Get\+Routable\+Layer}} (int i\+Mode)
+\item 
+void \mbox{\hyperlink{classCDesign_a4dda519df38cb104e804522f76d826fe}{Set\+Highest\+Routable\+Layer}} (int i\+Layer)
+\item 
+void \mbox{\hyperlink{classCDesign_af7d386170d501eb471b63b2f663690b0}{Set\+Lowest\+Routable\+Layer}} (int i\+Layer)
+\item 
+\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ \mbox{\hyperlink{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}{Get\+Net}} (int i\+Index)
+\item 
+\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}{Get\+Layer}} (int i\+Layer)
+\item 
+\mbox{\hyperlink{classCBBox}{C\+B\+Box}} \mbox{\hyperlink{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}{Get\+Start\+Box}} (int $\ast$p\+Num\+Edge=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+int \mbox{\hyperlink{classCDesign_a5ab5f93449266153a28914c319626289}{Get\+Net\+In\+B\+Box}} (vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+int \mbox{\hyperlink{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}{Get\+Wire\+In\+B\+Box}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})
+\item 
+int \mbox{\hyperlink{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}{Get\+Num\+Net}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}{Get\+Num\+Wire}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCDesign_a2ff679a94a04886d69604e7d6820830b}{Get\+Length}} (int i\+Mode, int i\+Value)
+\item 
+int \mbox{\hyperlink{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}{Get\+Num\+Via}} ()
+\item 
+int \mbox{\hyperlink{classCDesign_acd0487c3ffd7edf494d4b5d049bd9a3f}{Add\+Penalty}} (int i\+Penalty)
+\item 
+int \mbox{\hyperlink{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}{Get\+Capacity}} (int i\+Mode)
+\item 
+double \mbox{\hyperlink{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}{Get\+Congestion}} (int i\+Mode)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCParam}{C\+Param}} \mbox{\hyperlink{classCDesign_a489d3618699827b5e627a664f2f7d5f5}{m\+\_\+\+Param}}
+\item 
+int \mbox{\hyperlink{classCDesign_a74e65d9fd11c4a039befff9d8e41b01d}{m\+\_\+i\+Num\+B\+Cap}}
+\item 
+int \mbox{\hyperlink{classCDesign_ab1c2cde9f96bb133aa87519650e45bce}{m\+\_\+i\+Best\+OF}}
+\item 
+int \mbox{\hyperlink{classCDesign_aa2e160d691c0b14d8cc87082241bc72f}{m\+\_\+i\+Best\+WL}}
+\item 
+int \mbox{\hyperlink{classCDesign_a63f7490b8edc70d0fce2658acbbeb777}{m\+\_\+i\+Best\+Via}}
+\item 
+int \mbox{\hyperlink{classCDesign_a6bfd1ebd78092c33333828bf515a87fc}{m\+\_\+i\+Best\+M\+OF}}
+\item 
+int \mbox{\hyperlink{classCDesign_ab28a7a221cb19327d59269dfcf5483e9}{m\+\_\+i\+Best\+Loop}}
+\item 
+int \mbox{\hyperlink{classCDesign_a5bea929e13e38c200d2034651457a27e}{m\+\_\+i\+LowX}}
+\item 
+int \mbox{\hyperlink{classCDesign_ab15ef3272b9a059506bbd5adc0f7ef0c}{m\+\_\+i\+LowY}}
+\item 
+int \mbox{\hyperlink{classCDesign_a1f90694498252121b0cf678a5026004d}{m\+\_\+i\+GridX}}
+\item 
+int \mbox{\hyperlink{classCDesign_a30145716f1b1f9150985e1fda92d6241}{m\+\_\+i\+GridY}}
+\item 
+int \mbox{\hyperlink{classCDesign_a302a56631b844951a559379c91f4f131}{m\+\_\+i\+Loop}}
+\item 
+int \mbox{\hyperlink{classCDesign_a49b0509865376bfa3288521a01a765c1}{m\+\_\+i\+Num\+Pre\+Routed\+Net}}
+\item 
+int \mbox{\hyperlink{classCDesign_a0f8b3a9f0579f6dcefd066d4ee4e050d}{m\+\_\+i\+Pre\+Routed\+WL}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCDesign_a73e93c380828f4f6da2a7b4ce0556db2}{m\+\_\+i\+Highest\+Routable\+Layer}}
+\item 
+int \mbox{\hyperlink{classCDesign_a31a49f09c0e01c596c67d5393eda9b8d}{m\+\_\+i\+Lowest\+Routable\+Layer}}
+\item 
+int \mbox{\hyperlink{classCDesign_a7e534936981b8b2b175c7ec6b3ccbb73}{m\+\_\+i\+SizeZ}}
+\item 
+int \mbox{\hyperlink{classCDesign_a8bf3b27f86d457baf3745d9e48428622}{m\+\_\+i\+SizeY}}
+\item 
+int \mbox{\hyperlink{classCDesign_aad52df0bb26b096ff636b6d07b0ac46b}{m\+\_\+i\+SizeX}}
+\item 
+int \mbox{\hyperlink{classCDesign_a8fb5c76e3b7a96e341bbab3083839fed}{m\+\_\+i\+Num\+Net}}
+\item 
+int \mbox{\hyperlink{classCDesign_a058616ab0dcd0cacdd7803c4e8d0e093}{m\+\_\+i\+Num\+Local\+Net}}
+\item 
+\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCDesign_a6fe2e83d890daebc1c45959177e54fc4}{m\+\_\+p\+Layer}}
+\item 
+\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$$\ast$ \mbox{\hyperlink{classCDesign_a444cb73bf4b13f1d192c45a3d264d968}{m\+\_\+pp\+Net}}
+\item 
+int \mbox{\hyperlink{classCDesign_a55bb2e21b5829d2bff1a5f9d8bdd07aa}{m\+\_\+i\+Max\+Capacity}}
+\item 
+int \mbox{\hyperlink{classCDesign_a48f399e2191567a3f33d09181c879051}{Is\+L\+U\+Tup}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCDesign_ae1cd88973d218281880da5599c37d866}{C\+Object}}
+\item 
+class \mbox{\hyperlink{classCDesign_aab1ae13155639bc23234a972a3296244}{C\+Boundary}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCDesign_a87d140d2c8dbaa85b77f41d7724cc309}\label{classCDesign_a87d140d2c8dbaa85b77f41d7724cc309}} 
+\index{CDesign@{CDesign}!CDesign@{CDesign}}
+\index{CDesign@{CDesign}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CDesign()}{CDesign()}}
+{\footnotesize\ttfamily C\+Design\+::\+C\+Design (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a230641b0a13390b934de6ff40b869e01}\label{classCDesign_a230641b0a13390b934de6ff40b869e01}} 
+\index{CDesign@{CDesign}!````~CDesign@{$\sim$CDesign}}
+\index{````~CDesign@{$\sim$CDesign}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{$\sim$CDesign()}{~CDesign()}}
+{\footnotesize\ttfamily C\+Design\+::$\sim$\+C\+Design (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCDesign_acd0487c3ffd7edf494d4b5d049bd9a3f}\label{classCDesign_acd0487c3ffd7edf494d4b5d049bd9a3f}} 
+\index{CDesign@{CDesign}!AddPenalty@{AddPenalty}}
+\index{AddPenalty@{AddPenalty}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{AddPenalty()}{AddPenalty()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Add\+Penalty (\begin{DoxyParamCaption}\item[{int}]{i\+Penalty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_af116ba8573daa936d633b5ea0b005637}\label{classCDesign_af116ba8573daa936d633b5ea0b005637}} 
+\index{CDesign@{CDesign}!CreateLayer@{CreateLayer}}
+\index{CreateLayer@{CreateLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CreateLayer()}{CreateLayer()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Create\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a844b18267aad1895dc66e3208b36d21b}\label{classCDesign_a844b18267aad1895dc66e3208b36d21b}} 
+\index{CDesign@{CDesign}!CreateNet@{CreateNet}}
+\index{CreateNet@{CreateNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CreateNet()}{CreateNet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Design\+::\+Create\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Num\+Net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}\label{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}} 
+\index{CDesign@{CDesign}!CreateNet@{CreateNet}}
+\index{CreateNet@{CreateNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CreateNet()}{CreateNet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Design\+::\+Create\+Net (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a02442687ac58142d9e5b0a5886ee8285}\label{classCDesign_a02442687ac58142d9e5b0a5886ee8285}} 
+\index{CDesign@{CDesign}!DelNets@{DelNets}}
+\index{DelNets@{DelNets}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{DelNets()}{DelNets()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Del\+Nets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}\label{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}} 
+\index{CDesign@{CDesign}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}\label{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}} 
+\index{CDesign@{CDesign}!GetCongestedBox@{GetCongestedBox}}
+\index{GetCongestedBox@{GetCongestedBox}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetCongestedBox()}{GetCongestedBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBBox}{C\+B\+Box}} C\+Design\+::\+Get\+Congested\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}\label{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}} 
+\index{CDesign@{CDesign}!GetCongestion@{GetCongestion}}
+\index{GetCongestion@{GetCongestion}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetCongestion()}{GetCongestion()}}
+{\footnotesize\ttfamily double C\+Design\+::\+Get\+Congestion (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}\label{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}} 
+\index{CDesign@{CDesign}!GetLayer@{GetLayer}}
+\index{GetLayer@{GetLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetLayer()}{GetLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ C\+Design\+::\+Get\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a2ff679a94a04886d69604e7d6820830b}\label{classCDesign_a2ff679a94a04886d69604e7d6820830b}} 
+\index{CDesign@{CDesign}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Length (\begin{DoxyParamCaption}\item[{int}]{i\+Mode,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}\label{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}} 
+\index{CDesign@{CDesign}!GetNet@{GetNet}}
+\index{GetNet@{GetNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNet()}{GetNet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ C\+Design\+::\+Get\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a5ab5f93449266153a28914c319626289}\label{classCDesign_a5ab5f93449266153a28914c319626289}} 
+\index{CDesign@{CDesign}!GetNetInBBox@{GetNetInBBox}}
+\index{GetNetInBBox@{GetNetInBBox}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNetInBBox()}{GetNetInBBox()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Net\+In\+B\+Box (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}\label{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}} 
+\index{CDesign@{CDesign}!GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}}
+\index{GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNetInOverFlowBoundary()}{GetNetInOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Net\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}\label{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}} 
+\index{CDesign@{CDesign}!GetNumNet@{GetNumNet}}
+\index{GetNumNet@{GetNumNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNumNet()}{GetNumNet()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}\label{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}} 
+\index{CDesign@{CDesign}!GetNumVia@{GetNumVia}}
+\index{GetNumVia@{GetNumVia}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNumVia()}{GetNumVia()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Via (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}\label{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}} 
+\index{CDesign@{CDesign}!GetNumWire@{GetNumWire}}
+\index{GetNumWire@{GetNumWire}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetNumWire()}{GetNumWire()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Wire (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}\label{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}} 
+\index{CDesign@{CDesign}!GetOverFlow@{GetOverFlow}}
+\index{GetOverFlow@{GetOverFlow}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetOverFlow()}{GetOverFlow()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Over\+Flow (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_af264117726c361d0404dcd97c6da2c35}\label{classCDesign_af264117726c361d0404dcd97c6da2c35}} 
+\index{CDesign@{CDesign}!GetOverFlowBoundary@{GetOverFlowBoundary}}
+\index{GetOverFlowBoundary@{GetOverFlowBoundary}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetOverFlowBoundary()}{GetOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$}]{p\+Boundary\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}\label{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}} 
+\index{CDesign@{CDesign}!GetRoutableLayer@{GetRoutableLayer}}
+\index{GetRoutableLayer@{GetRoutableLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetRoutableLayer()}{GetRoutableLayer()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Routable\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}\label{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}} 
+\index{CDesign@{CDesign}!GetStartBox@{GetStartBox}}
+\index{GetStartBox@{GetStartBox}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetStartBox()}{GetStartBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBBox}{C\+B\+Box}} C\+Design\+::\+Get\+Start\+Box (\begin{DoxyParamCaption}\item[{int $\ast$}]{p\+Num\+Edge = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}\label{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}} 
+\index{CDesign@{CDesign}!GetWireInBBox@{GetWireInBBox}}
+\index{GetWireInBBox@{GetWireInBBox}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetWireInBBox()}{GetWireInBBox()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+B\+Box (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}\label{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}} 
+\index{CDesign@{CDesign}!GetWireInDirection@{GetWireInDirection}}
+\index{GetWireInDirection@{GetWireInDirection}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetWireInDirection()}{GetWireInDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+Direction (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List,  }\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Pos,  }\item[{int}]{i\+Direction,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a569c1b0aa4defe50ebb89a5a4054631c}\label{classCDesign_a569c1b0aa4defe50ebb89a5a4054631c}} 
+\index{CDesign@{CDesign}!GetWireInDirection@{GetWireInDirection}}
+\index{GetWireInDirection@{GetWireInDirection}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetWireInDirection()}{GetWireInDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+Direction (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Pos,  }\item[{int}]{i\+Direction,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_acd4fc20284f55855b4e88d89cc03b058}\label{classCDesign_acd4fc20284f55855b4e88d89cc03b058}} 
+\index{CDesign@{CDesign}!GetWireInOverFlowBoundary@{GetWireInOverFlowBoundary}}
+\index{GetWireInOverFlowBoundary@{GetWireInOverFlowBoundary}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{GetWireInOverFlowBoundary()}{GetWireInOverFlowBoundary()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Wire\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a9a2909717e3b6947c6d685e13088be6d}\label{classCDesign_a9a2909717e3b6947c6d685e13088be6d}} 
+\index{CDesign@{CDesign}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Initialize (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}\label{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}} 
+\index{CDesign@{CDesign}!Print@{Print}}
+\index{Print@{Print}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+\mbox{\Hypertarget{classCDesign_af1fc7df15f389d8051d74c7867d3d6be}\label{classCDesign_af1fc7df15f389d8051d74c7867d3d6be}} 
+\index{CDesign@{CDesign}!PrintResult@{PrintResult}}
+\index{PrintResult@{PrintResult}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{PrintResult()}{PrintResult()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Print\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_add678d74b22a8bd58dec921656454bdd}\label{classCDesign_add678d74b22a8bd58dec921656454bdd}} 
+\index{CDesign@{CDesign}!ReadDump@{ReadDump}}
+\index{ReadDump@{ReadDump}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{ReadDump()}{ReadDump()}}
+{\footnotesize\ttfamily int C\+Design\+::\+Read\+Dump (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}\label{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}} 
+\index{CDesign@{CDesign}!ReadParam@{ReadParam}}
+\index{ReadParam@{ReadParam}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{ReadParam()}{ReadParam()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Read\+Param (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}\label{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}} 
+\index{CDesign@{CDesign}!Report@{Report}}
+\index{Report@{Report}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{Report()}{Report()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Report (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a4dda519df38cb104e804522f76d826fe}\label{classCDesign_a4dda519df38cb104e804522f76d826fe}} 
+\index{CDesign@{CDesign}!SetHighestRoutableLayer@{SetHighestRoutableLayer}}
+\index{SetHighestRoutableLayer@{SetHighestRoutableLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{SetHighestRoutableLayer()}{SetHighestRoutableLayer()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Set\+Highest\+Routable\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_af7d386170d501eb471b63b2f663690b0}\label{classCDesign_af7d386170d501eb471b63b2f663690b0}} 
+\index{CDesign@{CDesign}!SetLowestRoutableLayer@{SetLowestRoutableLayer}}
+\index{SetLowestRoutableLayer@{SetLowestRoutableLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{SetLowestRoutableLayer()}{SetLowestRoutableLayer()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Set\+Lowest\+Routable\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_afc3a5c7e4453c76a44eec25c38c72135}\label{classCDesign_afc3a5c7e4453c76a44eec25c38c72135}} 
+\index{CDesign@{CDesign}!SetProp@{SetProp}}
+\index{SetProp@{SetProp}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{SetProp()}{SetProp()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Set\+Prop (\begin{DoxyParamCaption}\item[{int}]{i\+Prop }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_adda7bcca7062f58a27baa043bd315bfd}\label{classCDesign_adda7bcca7062f58a27baa043bd315bfd}} 
+\index{CDesign@{CDesign}!SetState@{SetState}}
+\index{SetState@{SetState}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Set\+State (\begin{DoxyParamCaption}\item[{int}]{i\+State }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a9571bf3353ab819782f0162867e525dc}\label{classCDesign_a9571bf3353ab819782f0162867e525dc}} 
+\index{CDesign@{CDesign}!UpdateSteinerTree@{UpdateSteinerTree}}
+\index{UpdateSteinerTree@{UpdateSteinerTree}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{UpdateSteinerTree()}{UpdateSteinerTree()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Update\+Steiner\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a984162e6e0b47da02f4a34e176f0a569}\label{classCDesign_a984162e6e0b47da02f4a34e176f0a569}} 
+\index{CDesign@{CDesign}!WriteDump@{WriteDump}}
+\index{WriteDump@{WriteDump}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{WriteDump()}{WriteDump()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Write\+Dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}\label{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}} 
+\index{CDesign@{CDesign}!WriteRel@{WriteRel}}
+\index{WriteRel@{WriteRel}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{WriteRel()}{WriteRel()}}
+{\footnotesize\ttfamily void C\+Design\+::\+Write\+Rel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCDesign_aab1ae13155639bc23234a972a3296244}\label{classCDesign_aab1ae13155639bc23234a972a3296244}} 
+\index{CDesign@{CDesign}!CBoundary@{CBoundary}}
+\index{CBoundary@{CBoundary}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CBoundary}{CBoundary}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCBoundary}{C\+Boundary}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classCDesign_ae1cd88973d218281880da5599c37d866}\label{classCDesign_ae1cd88973d218281880da5599c37d866}} 
+\index{CDesign@{CDesign}!CObject@{CObject}}
+\index{CObject@{CObject}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{CObject}{CObject}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCObject}{C\+Object}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCDesign_a48f399e2191567a3f33d09181c879051}\label{classCDesign_a48f399e2191567a3f33d09181c879051}} 
+\index{CDesign@{CDesign}!IsLUTup@{IsLUTup}}
+\index{IsLUTup@{IsLUTup}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{IsLUTup}{IsLUTup}}
+{\footnotesize\ttfamily int C\+Design\+::\+Is\+L\+U\+Tup\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_ab28a7a221cb19327d59269dfcf5483e9}\label{classCDesign_ab28a7a221cb19327d59269dfcf5483e9}} 
+\index{CDesign@{CDesign}!m\_iBestLoop@{m\_iBestLoop}}
+\index{m\_iBestLoop@{m\_iBestLoop}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iBestLoop}{m\_iBestLoop}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Best\+Loop}
+
+\mbox{\Hypertarget{classCDesign_a6bfd1ebd78092c33333828bf515a87fc}\label{classCDesign_a6bfd1ebd78092c33333828bf515a87fc}} 
+\index{CDesign@{CDesign}!m\_iBestMOF@{m\_iBestMOF}}
+\index{m\_iBestMOF@{m\_iBestMOF}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iBestMOF}{m\_iBestMOF}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Best\+M\+OF}
+
+\mbox{\Hypertarget{classCDesign_ab1c2cde9f96bb133aa87519650e45bce}\label{classCDesign_ab1c2cde9f96bb133aa87519650e45bce}} 
+\index{CDesign@{CDesign}!m\_iBestOF@{m\_iBestOF}}
+\index{m\_iBestOF@{m\_iBestOF}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iBestOF}{m\_iBestOF}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Best\+OF}
+
+\mbox{\Hypertarget{classCDesign_a63f7490b8edc70d0fce2658acbbeb777}\label{classCDesign_a63f7490b8edc70d0fce2658acbbeb777}} 
+\index{CDesign@{CDesign}!m\_iBestVia@{m\_iBestVia}}
+\index{m\_iBestVia@{m\_iBestVia}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iBestVia}{m\_iBestVia}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Best\+Via}
+
+\mbox{\Hypertarget{classCDesign_aa2e160d691c0b14d8cc87082241bc72f}\label{classCDesign_aa2e160d691c0b14d8cc87082241bc72f}} 
+\index{CDesign@{CDesign}!m\_iBestWL@{m\_iBestWL}}
+\index{m\_iBestWL@{m\_iBestWL}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iBestWL}{m\_iBestWL}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Best\+WL}
+
+\mbox{\Hypertarget{classCDesign_a1f90694498252121b0cf678a5026004d}\label{classCDesign_a1f90694498252121b0cf678a5026004d}} 
+\index{CDesign@{CDesign}!m\_iGridX@{m\_iGridX}}
+\index{m\_iGridX@{m\_iGridX}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iGridX}{m\_iGridX}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+GridX}
+
+\mbox{\Hypertarget{classCDesign_a30145716f1b1f9150985e1fda92d6241}\label{classCDesign_a30145716f1b1f9150985e1fda92d6241}} 
+\index{CDesign@{CDesign}!m\_iGridY@{m\_iGridY}}
+\index{m\_iGridY@{m\_iGridY}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iGridY}{m\_iGridY}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+GridY}
+
+\mbox{\Hypertarget{classCDesign_a73e93c380828f4f6da2a7b4ce0556db2}\label{classCDesign_a73e93c380828f4f6da2a7b4ce0556db2}} 
+\index{CDesign@{CDesign}!m\_iHighestRoutableLayer@{m\_iHighestRoutableLayer}}
+\index{m\_iHighestRoutableLayer@{m\_iHighestRoutableLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iHighestRoutableLayer}{m\_iHighestRoutableLayer}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Highest\+Routable\+Layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a302a56631b844951a559379c91f4f131}\label{classCDesign_a302a56631b844951a559379c91f4f131}} 
+\index{CDesign@{CDesign}!m\_iLoop@{m\_iLoop}}
+\index{m\_iLoop@{m\_iLoop}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iLoop}{m\_iLoop}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Loop}
+
+\mbox{\Hypertarget{classCDesign_a31a49f09c0e01c596c67d5393eda9b8d}\label{classCDesign_a31a49f09c0e01c596c67d5393eda9b8d}} 
+\index{CDesign@{CDesign}!m\_iLowestRoutableLayer@{m\_iLowestRoutableLayer}}
+\index{m\_iLowestRoutableLayer@{m\_iLowestRoutableLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iLowestRoutableLayer}{m\_iLowestRoutableLayer}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Lowest\+Routable\+Layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a5bea929e13e38c200d2034651457a27e}\label{classCDesign_a5bea929e13e38c200d2034651457a27e}} 
+\index{CDesign@{CDesign}!m\_iLowX@{m\_iLowX}}
+\index{m\_iLowX@{m\_iLowX}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iLowX}{m\_iLowX}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+LowX}
+
+\mbox{\Hypertarget{classCDesign_ab15ef3272b9a059506bbd5adc0f7ef0c}\label{classCDesign_ab15ef3272b9a059506bbd5adc0f7ef0c}} 
+\index{CDesign@{CDesign}!m\_iLowY@{m\_iLowY}}
+\index{m\_iLowY@{m\_iLowY}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iLowY}{m\_iLowY}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+LowY}
+
+\mbox{\Hypertarget{classCDesign_a55bb2e21b5829d2bff1a5f9d8bdd07aa}\label{classCDesign_a55bb2e21b5829d2bff1a5f9d8bdd07aa}} 
+\index{CDesign@{CDesign}!m\_iMaxCapacity@{m\_iMaxCapacity}}
+\index{m\_iMaxCapacity@{m\_iMaxCapacity}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iMaxCapacity}{m\_iMaxCapacity}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Max\+Capacity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a74e65d9fd11c4a039befff9d8e41b01d}\label{classCDesign_a74e65d9fd11c4a039befff9d8e41b01d}} 
+\index{CDesign@{CDesign}!m\_iNumBCap@{m\_iNumBCap}}
+\index{m\_iNumBCap@{m\_iNumBCap}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iNumBCap}{m\_iNumBCap}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Num\+B\+Cap}
+
+\mbox{\Hypertarget{classCDesign_a058616ab0dcd0cacdd7803c4e8d0e093}\label{classCDesign_a058616ab0dcd0cacdd7803c4e8d0e093}} 
+\index{CDesign@{CDesign}!m\_iNumLocalNet@{m\_iNumLocalNet}}
+\index{m\_iNumLocalNet@{m\_iNumLocalNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iNumLocalNet}{m\_iNumLocalNet}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Num\+Local\+Net\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a8fb5c76e3b7a96e341bbab3083839fed}\label{classCDesign_a8fb5c76e3b7a96e341bbab3083839fed}} 
+\index{CDesign@{CDesign}!m\_iNumNet@{m\_iNumNet}}
+\index{m\_iNumNet@{m\_iNumNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iNumNet}{m\_iNumNet}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Num\+Net\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a49b0509865376bfa3288521a01a765c1}\label{classCDesign_a49b0509865376bfa3288521a01a765c1}} 
+\index{CDesign@{CDesign}!m\_iNumPreRoutedNet@{m\_iNumPreRoutedNet}}
+\index{m\_iNumPreRoutedNet@{m\_iNumPreRoutedNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iNumPreRoutedNet}{m\_iNumPreRoutedNet}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Num\+Pre\+Routed\+Net}
+
+\mbox{\Hypertarget{classCDesign_a0f8b3a9f0579f6dcefd066d4ee4e050d}\label{classCDesign_a0f8b3a9f0579f6dcefd066d4ee4e050d}} 
+\index{CDesign@{CDesign}!m\_iPreRoutedWL@{m\_iPreRoutedWL}}
+\index{m\_iPreRoutedWL@{m\_iPreRoutedWL}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iPreRoutedWL}{m\_iPreRoutedWL}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+Pre\+Routed\+WL}
+
+\mbox{\Hypertarget{classCDesign_aad52df0bb26b096ff636b6d07b0ac46b}\label{classCDesign_aad52df0bb26b096ff636b6d07b0ac46b}} 
+\index{CDesign@{CDesign}!m\_iSizeX@{m\_iSizeX}}
+\index{m\_iSizeX@{m\_iSizeX}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iSizeX}{m\_iSizeX}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+SizeX\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a8bf3b27f86d457baf3745d9e48428622}\label{classCDesign_a8bf3b27f86d457baf3745d9e48428622}} 
+\index{CDesign@{CDesign}!m\_iSizeY@{m\_iSizeY}}
+\index{m\_iSizeY@{m\_iSizeY}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iSizeY}{m\_iSizeY}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+SizeY\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a7e534936981b8b2b175c7ec6b3ccbb73}\label{classCDesign_a7e534936981b8b2b175c7ec6b3ccbb73}} 
+\index{CDesign@{CDesign}!m\_iSizeZ@{m\_iSizeZ}}
+\index{m\_iSizeZ@{m\_iSizeZ}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_iSizeZ}{m\_iSizeZ}}
+{\footnotesize\ttfamily int C\+Design\+::m\+\_\+i\+SizeZ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a489d3618699827b5e627a664f2f7d5f5}\label{classCDesign_a489d3618699827b5e627a664f2f7d5f5}} 
+\index{CDesign@{CDesign}!m\_Param@{m\_Param}}
+\index{m\_Param@{m\_Param}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_Param}{m\_Param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCParam}{C\+Param}} C\+Design\+::m\+\_\+\+Param}
+
+\mbox{\Hypertarget{classCDesign_a6fe2e83d890daebc1c45959177e54fc4}\label{classCDesign_a6fe2e83d890daebc1c45959177e54fc4}} 
+\index{CDesign@{CDesign}!m\_pLayer@{m\_pLayer}}
+\index{m\_pLayer@{m\_pLayer}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_pLayer}{m\_pLayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}}$\ast$ C\+Design\+::m\+\_\+p\+Layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCDesign_a444cb73bf4b13f1d192c45a3d264d968}\label{classCDesign_a444cb73bf4b13f1d192c45a3d264d968}} 
+\index{CDesign@{CDesign}!m\_ppNet@{m\_ppNet}}
+\index{m\_ppNet@{m\_ppNet}!CDesign@{CDesign}}
+\subsubsection{\texorpdfstring{m\_ppNet}{m\_ppNet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCNet}{C\+Net}}$\ast$$\ast$ C\+Design\+::m\+\_\+pp\+Net\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Design_8h}{Design.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Design_8cpp}{Design.\+cpp}}\end{DoxyCompactItemize}

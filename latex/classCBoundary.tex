@@ -1,0 +1,263 @@
+\hypertarget{classCBoundary}{}\section{C\+Boundary Class Reference}
+\label{classCBoundary}\index{CBoundary@{CBoundary}}
+
+
+{\ttfamily \#include $<$Boundary.\+h$>$}
+
+Inheritance diagram for C\+Boundary\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCBoundary}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCBoundary_a237e626a2043a75be94468425d71d217}{Get\+Congestion}} ()
+\item 
+\mbox{\hyperlink{classCBoundary_a135f0608ca8f6844a4fbcdf3865ada19}{C\+Boundary}} ()
+\item 
+virtual \mbox{\hyperlink{classCBoundary_a6a01f673f30be7b33de734dc36df7797}{$\sim$\+C\+Boundary}} ()
+\item 
+virtual void \mbox{\hyperlink{classCBoundary_a17bf8019eff54892a398e4b13c3ff264}{Initialize}} (int iX, int iY, int iZ, \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$p\+Parent)
+\item 
+int \mbox{\hyperlink{classCBoundary_ab3b3ba7d56c3881511ea7fc38461514e}{Is\+Found}} (\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$p\+Net)
+\item 
+int \mbox{\hyperlink{classCBoundary_a01471d1353c553f1c36d57e41b31fddd}{Is\+Found}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+int \mbox{\hyperlink{classCBoundary_a1b1c06eca11d35d0b6f3b1cc9cd8d299}{Get\+Over\+Flow}} ()
+\item 
+int \mbox{\hyperlink{classCBoundary_ac7a866fd62953129c6940d85d1c57056}{Get\+Capacity}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_aef3dafda6f81349a21e2d550f8e21cd5}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+C\+AP}})
+\item 
+void \mbox{\hyperlink{classCBoundary_a180a2319791010fa59e9a09ffdd2accc}{Add\+Segment\+List}} (vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$p\+Segment)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classCBoundary_a3d96c4869c86bae2cd7bb88df47be984}{Get\+Segment\+List}} (int i\+Index)
+\item 
+void \mbox{\hyperlink{classCBoundary_a3ecfdd0a85d3ca7b3b03e4319bd6b2d1}{Clear\+Segment\+List}} ()
+\item 
+int \mbox{\hyperlink{classCBoundary_ac1b6d9afabe595f1ae4123d4ffd27813}{Get\+Num\+Segment\+List}} ()
+\item 
+int \mbox{\hyperlink{classCBoundary_afbfef3747d340a2a8561c24a9830935a}{Add\+Penalty}} (int i\+Penalty)
+\item 
+int \mbox{\hyperlink{classCBoundary_ad21081690462e7f63ec76aa90db0936b}{Get\+Penalty}} ()
+\item 
+int \mbox{\hyperlink{classCBoundary_a8cd3af613c5651eb65fe697dafc36381}{Add\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+int \mbox{\hyperlink{classCBoundary_a81895020861c7628a3a3a684a558960a}{Adjust\+Capacity}} (int i\+Blockage)
+\item 
+int \mbox{\hyperlink{classCBoundary_afcecb6cf9aae108be1751b34e85e3679}{Get\+Num\+Wire}} ()
+\item 
+void \mbox{\hyperlink{classCBoundary_a44523ce5f37f606ec12459b0a2d6d92a}{Del\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+virtual void \mbox{\hyperlink{classCBoundary_a12a1e37297bd35f915544d02bd8c0cf1}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCBoundary_aaa09500786bfd880681cbd98700cd9f7}{Get\+Parent}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{classCBoundary_aab6fa7d9b76f68b8eb7c20a57469ce9e}{m\+\_\+i\+Num\+O\+Cap}}
+\item 
+short \mbox{\hyperlink{classCBoundary_afded4529a5b69a422d6e15405f024987}{m\+\_\+i\+Num\+A\+Cap}}
+\item 
+short \mbox{\hyperlink{classCBoundary_aba753e35280470559958c2c2d607f6a9}{m\+\_\+i\+Congestion}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperlink{classCBoundary_a2912241d7c318a7733b1efcc82c7cb3a}{m\+\_\+\+Wire}}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ $>$ \mbox{\hyperlink{classCBoundary_af055739711c239aa34367a294ba6dab3}{m\+\_\+\+Segment\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCBoundary_a7cc4d31573956cc6792fa6757cc49219}{C\+Layer}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCBoundary_a135f0608ca8f6844a4fbcdf3865ada19}\label{classCBoundary_a135f0608ca8f6844a4fbcdf3865ada19}} 
+\index{CBoundary@{CBoundary}!CBoundary@{CBoundary}}
+\index{CBoundary@{CBoundary}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{CBoundary()}{CBoundary()}}
+{\footnotesize\ttfamily C\+Boundary\+::\+C\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a6a01f673f30be7b33de734dc36df7797}\label{classCBoundary_a6a01f673f30be7b33de734dc36df7797}} 
+\index{CBoundary@{CBoundary}!````~CBoundary@{$\sim$CBoundary}}
+\index{````~CBoundary@{$\sim$CBoundary}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{$\sim$CBoundary()}{~CBoundary()}}
+{\footnotesize\ttfamily C\+Boundary\+::$\sim$\+C\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCBoundary_afbfef3747d340a2a8561c24a9830935a}\label{classCBoundary_afbfef3747d340a2a8561c24a9830935a}} 
+\index{CBoundary@{CBoundary}!AddPenalty@{AddPenalty}}
+\index{AddPenalty@{AddPenalty}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{AddPenalty()}{AddPenalty()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Add\+Penalty (\begin{DoxyParamCaption}\item[{int}]{i\+Penalty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a180a2319791010fa59e9a09ffdd2accc}\label{classCBoundary_a180a2319791010fa59e9a09ffdd2accc}} 
+\index{CBoundary@{CBoundary}!AddSegmentList@{AddSegmentList}}
+\index{AddSegmentList@{AddSegmentList}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{AddSegmentList()}{AddSegmentList()}}
+{\footnotesize\ttfamily void C\+Boundary\+::\+Add\+Segment\+List (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$}]{p\+Segment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a8cd3af613c5651eb65fe697dafc36381}\label{classCBoundary_a8cd3af613c5651eb65fe697dafc36381}} 
+\index{CBoundary@{CBoundary}!AddWire@{AddWire}}
+\index{AddWire@{AddWire}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{AddWire()}{AddWire()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Add\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a81895020861c7628a3a3a684a558960a}\label{classCBoundary_a81895020861c7628a3a3a684a558960a}} 
+\index{CBoundary@{CBoundary}!AdjustCapacity@{AdjustCapacity}}
+\index{AdjustCapacity@{AdjustCapacity}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{AdjustCapacity()}{AdjustCapacity()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Adjust\+Capacity (\begin{DoxyParamCaption}\item[{int}]{i\+Blockage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a3ecfdd0a85d3ca7b3b03e4319bd6b2d1}\label{classCBoundary_a3ecfdd0a85d3ca7b3b03e4319bd6b2d1}} 
+\index{CBoundary@{CBoundary}!ClearSegmentList@{ClearSegmentList}}
+\index{ClearSegmentList@{ClearSegmentList}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{ClearSegmentList()}{ClearSegmentList()}}
+{\footnotesize\ttfamily void C\+Boundary\+::\+Clear\+Segment\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a44523ce5f37f606ec12459b0a2d6d92a}\label{classCBoundary_a44523ce5f37f606ec12459b0a2d6d92a}} 
+\index{CBoundary@{CBoundary}!DelWire@{DelWire}}
+\index{DelWire@{DelWire}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{DelWire()}{DelWire()}}
+{\footnotesize\ttfamily void C\+Boundary\+::\+Del\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_ac7a866fd62953129c6940d85d1c57056}\label{classCBoundary_ac7a866fd62953129c6940d85d1c57056}} 
+\index{CBoundary@{CBoundary}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_aef3dafda6f81349a21e2d550f8e21cd5}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+C\+AP}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a237e626a2043a75be94468425d71d217}\label{classCBoundary_a237e626a2043a75be94468425d71d217}} 
+\index{CBoundary@{CBoundary}!GetCongestion@{GetCongestion}}
+\index{GetCongestion@{GetCongestion}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetCongestion()}{GetCongestion()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Congestion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_ac1b6d9afabe595f1ae4123d4ffd27813}\label{classCBoundary_ac1b6d9afabe595f1ae4123d4ffd27813}} 
+\index{CBoundary@{CBoundary}!GetNumSegmentList@{GetNumSegmentList}}
+\index{GetNumSegmentList@{GetNumSegmentList}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetNumSegmentList()}{GetNumSegmentList()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Num\+Segment\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_afcecb6cf9aae108be1751b34e85e3679}\label{classCBoundary_afcecb6cf9aae108be1751b34e85e3679}} 
+\index{CBoundary@{CBoundary}!GetNumWire@{GetNumWire}}
+\index{GetNumWire@{GetNumWire}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetNumWire()}{GetNumWire()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Num\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a1b1c06eca11d35d0b6f3b1cc9cd8d299}\label{classCBoundary_a1b1c06eca11d35d0b6f3b1cc9cd8d299}} 
+\index{CBoundary@{CBoundary}!GetOverFlow@{GetOverFlow}}
+\index{GetOverFlow@{GetOverFlow}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetOverFlow()}{GetOverFlow()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Over\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_aaa09500786bfd880681cbd98700cd9f7}\label{classCBoundary_aaa09500786bfd880681cbd98700cd9f7}} 
+\index{CBoundary@{CBoundary}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ C\+Boundary\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_ad21081690462e7f63ec76aa90db0936b}\label{classCBoundary_ad21081690462e7f63ec76aa90db0936b}} 
+\index{CBoundary@{CBoundary}!GetPenalty@{GetPenalty}}
+\index{GetPenalty@{GetPenalty}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetPenalty()}{GetPenalty()}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Get\+Penalty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a3d96c4869c86bae2cd7bb88df47be984}\label{classCBoundary_a3d96c4869c86bae2cd7bb88df47be984}} 
+\index{CBoundary@{CBoundary}!GetSegmentList@{GetSegmentList}}
+\index{GetSegmentList@{GetSegmentList}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{GetSegmentList()}{GetSegmentList()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ C\+Boundary\+::\+Get\+Segment\+List (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a17bf8019eff54892a398e4b13c3ff264}\label{classCBoundary_a17bf8019eff54892a398e4b13c3ff264}} 
+\index{CBoundary@{CBoundary}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C\+Boundary\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ,  }\item[{\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCGrid_ac56d94ad7df38d3908ff3b12670d9812}{C\+Grid}}.
+
+\mbox{\Hypertarget{classCBoundary_ab3b3ba7d56c3881511ea7fc38461514e}\label{classCBoundary_ab3b3ba7d56c3881511ea7fc38461514e}} 
+\index{CBoundary@{CBoundary}!IsFound@{IsFound}}
+\index{IsFound@{IsFound}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{IsFound()}{IsFound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Is\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$}]{p\+Net }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a01471d1353c553f1c36d57e41b31fddd}\label{classCBoundary_a01471d1353c553f1c36d57e41b31fddd}} 
+\index{CBoundary@{CBoundary}!IsFound@{IsFound}}
+\index{IsFound@{IsFound}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{IsFound()}{IsFound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+Boundary\+::\+Is\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBoundary_a12a1e37297bd35f915544d02bd8c0cf1}\label{classCBoundary_a12a1e37297bd35f915544d02bd8c0cf1}} 
+\index{CBoundary@{CBoundary}!Print@{Print}}
+\index{Print@{Print}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Boundary\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classCGrid_a6462a8c5f7d7b6cbba02bac1d82dcbba}{C\+Grid}}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCBoundary_a7cc4d31573956cc6792fa6757cc49219}\label{classCBoundary_a7cc4d31573956cc6792fa6757cc49219}} 
+\index{CBoundary@{CBoundary}!CLayer@{CLayer}}
+\index{CLayer@{CLayer}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{CLayer}{CLayer}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCLayer}{C\+Layer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCBoundary_aba753e35280470559958c2c2d607f6a9}\label{classCBoundary_aba753e35280470559958c2c2d607f6a9}} 
+\index{CBoundary@{CBoundary}!m\_iCongestion@{m\_iCongestion}}
+\index{m\_iCongestion@{m\_iCongestion}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{m\_iCongestion}{m\_iCongestion}}
+{\footnotesize\ttfamily short C\+Boundary\+::m\+\_\+i\+Congestion}
+
+\mbox{\Hypertarget{classCBoundary_afded4529a5b69a422d6e15405f024987}\label{classCBoundary_afded4529a5b69a422d6e15405f024987}} 
+\index{CBoundary@{CBoundary}!m\_iNumACap@{m\_iNumACap}}
+\index{m\_iNumACap@{m\_iNumACap}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{m\_iNumACap}{m\_iNumACap}}
+{\footnotesize\ttfamily short C\+Boundary\+::m\+\_\+i\+Num\+A\+Cap}
+
+\mbox{\Hypertarget{classCBoundary_aab6fa7d9b76f68b8eb7c20a57469ce9e}\label{classCBoundary_aab6fa7d9b76f68b8eb7c20a57469ce9e}} 
+\index{CBoundary@{CBoundary}!m\_iNumOCap@{m\_iNumOCap}}
+\index{m\_iNumOCap@{m\_iNumOCap}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{m\_iNumOCap}{m\_iNumOCap}}
+{\footnotesize\ttfamily short C\+Boundary\+::m\+\_\+i\+Num\+O\+Cap}
+
+\mbox{\Hypertarget{classCBoundary_af055739711c239aa34367a294ba6dab3}\label{classCBoundary_af055739711c239aa34367a294ba6dab3}} 
+\index{CBoundary@{CBoundary}!m\_SegmentList@{m\_SegmentList}}
+\index{m\_SegmentList@{m\_SegmentList}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{m\_SegmentList}{m\_SegmentList}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{classCSegment}{C\+Segment}}$\ast$$>$$\ast$ $>$ C\+Boundary\+::m\+\_\+\+Segment\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBoundary_a2912241d7c318a7733b1efcc82c7cb3a}\label{classCBoundary_a2912241d7c318a7733b1efcc82c7cb3a}} 
+\index{CBoundary@{CBoundary}!m\_Wire@{m\_Wire}}
+\index{m\_Wire@{m\_Wire}!CBoundary@{CBoundary}}
+\subsubsection{\texorpdfstring{m\_Wire}{m\_Wire}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCWire}{C\+Wire}}$\ast$$>$ C\+Boundary\+::m\+\_\+\+Wire\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Boundary_8h}{Boundary.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Boundary_8cpp}{Boundary.\+cpp}}\end{DoxyCompactItemize}

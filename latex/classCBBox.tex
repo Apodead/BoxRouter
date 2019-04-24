@@ -1,0 +1,273 @@
+\hypertarget{classCBBox}{}\section{C\+B\+Box Class Reference}
+\label{classCBBox}\index{CBBox@{CBBox}}
+
+
+{\ttfamily \#include $<$B\+Box.\+h$>$}
+
+Inheritance diagram for C\+B\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCBBox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCBBox_af10fa7fdae936cedadfdb8024a3ea9ec}{C\+B\+Box}} ()
+\item 
+virtual \mbox{\hyperlink{classCBBox_a5c0f90935c24137442e517a96fb6086e}{$\sim$\+C\+B\+Box}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_ae53a02f449d2af63fe2fbf20c77df560}{A}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a437bb0692398b1bb83d662b68beb0f3e}{X}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a5199b3a785f2bd06a53d8cd961c5a749}{Y}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a10a28f06a871f587524102491b9ae566}{Z}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a4224d61560438a2febb4e7e7323e2b08}{H}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a0b95aec1053ef1161c6129d61c8c3144}{W}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a4f032d03aa68e110aa31217cd687c417}{T}} ()
+\item 
+int \mbox{\hyperlink{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}{L}} ()
+\item 
+void \mbox{\hyperlink{classCBBox_a60eff894d9a143099e91277312a8eb4d}{Initialize}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+PointS, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+PointE)
+\item 
+void \mbox{\hyperlink{classCBBox_a14455cfc9abfa1c70b1140d03e8afff2}{Initialize}} (int i\+X1, int i\+Y1, int i\+Z1, int i\+X2, int i\+Y2, int i\+Z2)
+\item 
+int \mbox{\hyperlink{classCBBox_a82263f5b6a58c13943b99140f664ddf0}{Is\+Inside}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+int \mbox{\hyperlink{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}{Is\+Inside}} (int iX, int iY, int iZ)
+\item 
+int \mbox{\hyperlink{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}{Is\+Inside}} (int iX, int iY)
+\item 
+int \mbox{\hyperlink{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}{Is\+Inside}} (\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+int \mbox{\hyperlink{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}{Distance}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+int \mbox{\hyperlink{classCBBox_ae38173ceac641fb233a941299764f519}{Is\+Overlapped}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+int \mbox{\hyperlink{classCBBox_afbd0200a17c5610ec613482020213970}{Is\+Overlapped}} (\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+void \mbox{\hyperlink{classCBBox_a21b22d3678d267b74b7e49e751edd711}{Expand}} (int i\+MaxX, int i\+MaxY, int i\+Step=1)
+\item 
+void \mbox{\hyperlink{classCBBox_a270d6116bfea826678ad54c2ab256a6c}{Add\+Point}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+void \mbox{\hyperlink{classCBBox_a7051785c6750497f2b09d04a7aee82bd}{Add\+Point}} (int iX, int iY, int iZ)
+\item 
+\mbox{\hyperlink{classCPoint}{C\+Point}} \mbox{\hyperlink{classCBBox_a08398476b46cfe26e2c825df2acc29ad}{Get\+Center}} ()
+\item 
+void \mbox{\hyperlink{classCBBox_a596b6427a7047a1827b0dfd2ab767ec3}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{classCBBox_a00c5a1305efcf94cd0b1a4ae04301b46}{m\+\_\+i\+MinX}}
+\item 
+short \mbox{\hyperlink{classCBBox_a183101a7e1ee8719300d68e7193c7a72}{m\+\_\+i\+MaxX}}
+\item 
+short \mbox{\hyperlink{classCBBox_afa02f0bfb935a21e343d172c5031de5d}{m\+\_\+i\+MinY}}
+\item 
+short \mbox{\hyperlink{classCBBox_a0f866a7a53bed98b77528695a5f68209}{m\+\_\+i\+MaxY}}
+\item 
+char \mbox{\hyperlink{classCBBox_afc4b2740aefede4cf451a8420e0ed96d}{m\+\_\+c\+MinZ}}
+\item 
+char \mbox{\hyperlink{classCBBox_a07308cfb95c86172b4d6d530f885ae1d}{m\+\_\+c\+MaxZ}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCBBox_af10fa7fdae936cedadfdb8024a3ea9ec}\label{classCBBox_af10fa7fdae936cedadfdb8024a3ea9ec}} 
+\index{CBBox@{CBBox}!CBBox@{CBBox}}
+\index{CBBox@{CBBox}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{CBBox()}{CBBox()}}
+{\footnotesize\ttfamily C\+B\+Box\+::\+C\+B\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a5c0f90935c24137442e517a96fb6086e}\label{classCBBox_a5c0f90935c24137442e517a96fb6086e}} 
+\index{CBBox@{CBBox}!````~CBBox@{$\sim$CBBox}}
+\index{````~CBBox@{$\sim$CBBox}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{$\sim$CBBox()}{~CBBox()}}
+{\footnotesize\ttfamily C\+B\+Box\+::$\sim$\+C\+B\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCBBox_ae53a02f449d2af63fe2fbf20c77df560}\label{classCBBox_ae53a02f449d2af63fe2fbf20c77df560}} 
+\index{CBBox@{CBBox}!A@{A}}
+\index{A@{A}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::A (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a270d6116bfea826678ad54c2ab256a6c}\label{classCBBox_a270d6116bfea826678ad54c2ab256a6c}} 
+\index{CBBox@{CBBox}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a7051785c6750497f2b09d04a7aee82bd}\label{classCBBox_a7051785c6750497f2b09d04a7aee82bd}} 
+\index{CBBox@{CBBox}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}\label{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}} 
+\index{CBBox@{CBBox}!Distance@{Distance}}
+\index{Distance@{Distance}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a21b22d3678d267b74b7e49e751edd711}\label{classCBBox_a21b22d3678d267b74b7e49e751edd711}} 
+\index{CBBox@{CBBox}!Expand@{Expand}}
+\index{Expand@{Expand}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Expand()}{Expand()}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Expand (\begin{DoxyParamCaption}\item[{int}]{i\+MaxX,  }\item[{int}]{i\+MaxY,  }\item[{int}]{i\+Step = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a08398476b46cfe26e2c825df2acc29ad}\label{classCBBox_a08398476b46cfe26e2c825df2acc29ad}} 
+\index{CBBox@{CBBox}!GetCenter@{GetCenter}}
+\index{GetCenter@{GetCenter}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{GetCenter()}{GetCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPoint}{C\+Point}} C\+B\+Box\+::\+Get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a4224d61560438a2febb4e7e7323e2b08}\label{classCBBox_a4224d61560438a2febb4e7e7323e2b08}} 
+\index{CBBox@{CBBox}!H@{H}}
+\index{H@{H}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{H()}{H()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::H (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a60eff894d9a143099e91277312a8eb4d}\label{classCBBox_a60eff894d9a143099e91277312a8eb4d}} 
+\index{CBBox@{CBBox}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+PointS,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+PointE }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a14455cfc9abfa1c70b1140d03e8afff2}\label{classCBBox_a14455cfc9abfa1c70b1140d03e8afff2}} 
+\index{CBBox@{CBBox}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2,  }\item[{int}]{i\+Z2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a82263f5b6a58c13943b99140f664ddf0}\label{classCBBox_a82263f5b6a58c13943b99140f664ddf0}} 
+\index{CBBox@{CBBox}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}\label{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}} 
+\index{CBBox@{CBBox}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}\label{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}} 
+\index{CBBox@{CBBox}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}\label{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}} 
+\index{CBBox@{CBBox}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_ae38173ceac641fb233a941299764f519}\label{classCBBox_ae38173ceac641fb233a941299764f519}} 
+\index{CBBox@{CBBox}!IsOverlapped@{IsOverlapped}}
+\index{IsOverlapped@{IsOverlapped}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsOverlapped()}{IsOverlapped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Overlapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_afbd0200a17c5610ec613482020213970}\label{classCBBox_afbd0200a17c5610ec613482020213970}} 
+\index{CBBox@{CBBox}!IsOverlapped@{IsOverlapped}}
+\index{IsOverlapped@{IsOverlapped}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{IsOverlapped()}{IsOverlapped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Overlapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}\label{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}} 
+\index{CBBox@{CBBox}!L@{L}}
+\index{L@{L}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{L()}{L()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::L (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a596b6427a7047a1827b0dfd2ab767ec3}\label{classCBBox_a596b6427a7047a1827b0dfd2ab767ec3}} 
+\index{CBBox@{CBBox}!Print@{Print}}
+\index{Print@{Print}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+B\+Box\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCBBox_a4f032d03aa68e110aa31217cd687c417}\label{classCBBox_a4f032d03aa68e110aa31217cd687c417}} 
+\index{CBBox@{CBBox}!T@{T}}
+\index{T@{T}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{T()}{T()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::T (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a0b95aec1053ef1161c6129d61c8c3144}\label{classCBBox_a0b95aec1053ef1161c6129d61c8c3144}} 
+\index{CBBox@{CBBox}!W@{W}}
+\index{W@{W}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{W()}{W()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::W (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a437bb0692398b1bb83d662b68beb0f3e}\label{classCBBox_a437bb0692398b1bb83d662b68beb0f3e}} 
+\index{CBBox@{CBBox}!X@{X}}
+\index{X@{X}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{X()}{X()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::X (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a5199b3a785f2bd06a53d8cd961c5a749}\label{classCBBox_a5199b3a785f2bd06a53d8cd961c5a749}} 
+\index{CBBox@{CBBox}!Y@{Y}}
+\index{Y@{Y}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Y()}{Y()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCBBox_a10a28f06a871f587524102491b9ae566}\label{classCBBox_a10a28f06a871f587524102491b9ae566}} 
+\index{CBBox@{CBBox}!Z@{Z}}
+\index{Z@{Z}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{Z()}{Z()}}
+{\footnotesize\ttfamily int C\+B\+Box\+::Z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCBBox_a07308cfb95c86172b4d6d530f885ae1d}\label{classCBBox_a07308cfb95c86172b4d6d530f885ae1d}} 
+\index{CBBox@{CBBox}!m\_cMaxZ@{m\_cMaxZ}}
+\index{m\_cMaxZ@{m\_cMaxZ}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_cMaxZ}{m\_cMaxZ}}
+{\footnotesize\ttfamily char C\+B\+Box\+::m\+\_\+c\+MaxZ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBBox_afc4b2740aefede4cf451a8420e0ed96d}\label{classCBBox_afc4b2740aefede4cf451a8420e0ed96d}} 
+\index{CBBox@{CBBox}!m\_cMinZ@{m\_cMinZ}}
+\index{m\_cMinZ@{m\_cMinZ}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_cMinZ}{m\_cMinZ}}
+{\footnotesize\ttfamily char C\+B\+Box\+::m\+\_\+c\+MinZ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBBox_a183101a7e1ee8719300d68e7193c7a72}\label{classCBBox_a183101a7e1ee8719300d68e7193c7a72}} 
+\index{CBBox@{CBBox}!m\_iMaxX@{m\_iMaxX}}
+\index{m\_iMaxX@{m\_iMaxX}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_iMaxX}{m\_iMaxX}}
+{\footnotesize\ttfamily short C\+B\+Box\+::m\+\_\+i\+MaxX\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBBox_a0f866a7a53bed98b77528695a5f68209}\label{classCBBox_a0f866a7a53bed98b77528695a5f68209}} 
+\index{CBBox@{CBBox}!m\_iMaxY@{m\_iMaxY}}
+\index{m\_iMaxY@{m\_iMaxY}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_iMaxY}{m\_iMaxY}}
+{\footnotesize\ttfamily short C\+B\+Box\+::m\+\_\+i\+MaxY\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBBox_a00c5a1305efcf94cd0b1a4ae04301b46}\label{classCBBox_a00c5a1305efcf94cd0b1a4ae04301b46}} 
+\index{CBBox@{CBBox}!m\_iMinX@{m\_iMinX}}
+\index{m\_iMinX@{m\_iMinX}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_iMinX}{m\_iMinX}}
+{\footnotesize\ttfamily short C\+B\+Box\+::m\+\_\+i\+MinX\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCBBox_afa02f0bfb935a21e343d172c5031de5d}\label{classCBBox_afa02f0bfb935a21e343d172c5031de5d}} 
+\index{CBBox@{CBBox}!m\_iMinY@{m\_iMinY}}
+\index{m\_iMinY@{m\_iMinY}!CBBox@{CBBox}}
+\subsubsection{\texorpdfstring{m\_iMinY}{m\_iMinY}}
+{\footnotesize\ttfamily short C\+B\+Box\+::m\+\_\+i\+MinY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{BBox_8h}{B\+Box.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{BBox_8cpp}{B\+Box.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\hypertarget{ILPSolver_8h}{}\section{br\+\_\+64bit\+\_\+release/\+I\+L\+P\+Solver.h File Reference}
+\label{ILPSolver_8h}\index{br\_64bit\_release/ILPSolver.h@{br\_64bit\_release/ILPSolver.h}}
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}glpk-\/4.\+10/include/glpk.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCILPSolver}{C\+I\+L\+P\+Solver}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a6da9003c30583cf9bc2a82e6d2419bf4}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+I\+M\+P\+L\+EX}}~(0x0010000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a889a1418322482244011c5624c9de620}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+I\+PT}}~(0x0020000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}~(0x0100000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_ab86b45fb5cbf2c52f087c387ecebf7a8}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+C\+O\+V\+ER}}~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+C\+O\+V\+ER)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a3874fda45a4505da3eac68a50d5bec30}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+C\+L\+I\+Q\+UE}}~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+C\+L\+I\+Q\+UE)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a60eda4f6e57697b07cd5e9fa8456956e}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+G\+O\+M\+O\+RY}}~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+G\+O\+M\+O\+RY)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a02576af592dc8bafaa01584dd5bccb68}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+AX}}~(0x1000000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a2352868f645034dd97ba60fb179c8747}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IN}}~(0x2000000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX}}~(0x0000000)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_ae1a314fb07038bd39b4a0289eb102db4}{S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+F\+R\+E\+E\+M\+PS}}~(0x0000001)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a9547c3cf5dd7d37e45a205716e61fb24}{S\+O\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+P\+RO}}~(0x0000002)
+\item 
+\#define \mbox{\hyperlink{ILPSolver_8h_a64c6bc0f5390c22c515f65257a128b5c}{S\+O\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+S\+OL}}~(0x0000003)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}\label{ILPSolver_8h_acee7a96f3deaccde51231b3aa7c8bcb2}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_FORMAT\_CPLEX@{SOL\_FORMAT\_CPLEX}}
+\index{SOL\_FORMAT\_CPLEX@{SOL\_FORMAT\_CPLEX}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_FORMAT\_CPLEX}{SOL\_FORMAT\_CPLEX}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+C\+P\+L\+EX~(0x0000000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_ae1a314fb07038bd39b4a0289eb102db4}\label{ILPSolver_8h_ae1a314fb07038bd39b4a0289eb102db4}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_FORMAT\_FREEMPS@{SOL\_FORMAT\_FREEMPS}}
+\index{SOL\_FORMAT\_FREEMPS@{SOL\_FORMAT\_FREEMPS}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_FORMAT\_FREEMPS}{SOL\_FORMAT\_FREEMPS}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+F\+R\+E\+E\+M\+PS~(0x0000001)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a889a1418322482244011c5624c9de620}\label{ILPSolver_8h_a889a1418322482244011c5624c9de620}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_IPT@{SOL\_OPTION\_IPT}}
+\index{SOL\_OPTION\_IPT@{SOL\_OPTION\_IPT}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_IPT}{SOL\_OPTION\_IPT}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+I\+PT~(0x0020000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a02576af592dc8bafaa01584dd5bccb68}\label{ILPSolver_8h_a02576af592dc8bafaa01584dd5bccb68}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MAX@{SOL\_OPTION\_MAX}}
+\index{SOL\_OPTION\_MAX@{SOL\_OPTION\_MAX}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MAX}{SOL\_OPTION\_MAX}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+AX~(0x1000000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a2352868f645034dd97ba60fb179c8747}\label{ILPSolver_8h_a2352868f645034dd97ba60fb179c8747}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MIN@{SOL\_OPTION\_MIN}}
+\index{SOL\_OPTION\_MIN@{SOL\_OPTION\_MIN}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MIN}{SOL\_OPTION\_MIN}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IN~(0x2000000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}\label{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MIP@{SOL\_OPTION\_MIP}}
+\index{SOL\_OPTION\_MIP@{SOL\_OPTION\_MIP}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MIP}{SOL\_OPTION\_MIP}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP~(0x0100000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a3874fda45a4505da3eac68a50d5bec30}\label{ILPSolver_8h_a3874fda45a4505da3eac68a50d5bec30}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MIP\_CLIQUE@{SOL\_OPTION\_MIP\_CLIQUE}}
+\index{SOL\_OPTION\_MIP\_CLIQUE@{SOL\_OPTION\_MIP\_CLIQUE}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MIP\_CLIQUE}{SOL\_OPTION\_MIP\_CLIQUE}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+C\+L\+I\+Q\+UE~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+C\+L\+I\+Q\+UE)}
+
+\mbox{\Hypertarget{ILPSolver_8h_ab86b45fb5cbf2c52f087c387ecebf7a8}\label{ILPSolver_8h_ab86b45fb5cbf2c52f087c387ecebf7a8}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MIP\_COVER@{SOL\_OPTION\_MIP\_COVER}}
+\index{SOL\_OPTION\_MIP\_COVER@{SOL\_OPTION\_MIP\_COVER}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MIP\_COVER}{SOL\_OPTION\_MIP\_COVER}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+C\+O\+V\+ER~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+C\+O\+V\+ER)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a60eda4f6e57697b07cd5e9fa8456956e}\label{ILPSolver_8h_a60eda4f6e57697b07cd5e9fa8456956e}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_MIP\_GOMORY@{SOL\_OPTION\_MIP\_GOMORY}}
+\index{SOL\_OPTION\_MIP\_GOMORY@{SOL\_OPTION\_MIP\_GOMORY}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_MIP\_GOMORY}{SOL\_OPTION\_MIP\_GOMORY}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+I\+P\+\_\+\+G\+O\+M\+O\+RY~(\mbox{\hyperlink{ILPSolver_8h_a8ad8b00353207a3733c1978a3047cdc6}{S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+M\+IP}}$\vert$L\+P\+X\+\_\+\+C\+\_\+\+G\+O\+M\+O\+RY)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a6da9003c30583cf9bc2a82e6d2419bf4}\label{ILPSolver_8h_a6da9003c30583cf9bc2a82e6d2419bf4}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_OPTION\_SIMPLEX@{SOL\_OPTION\_SIMPLEX}}
+\index{SOL\_OPTION\_SIMPLEX@{SOL\_OPTION\_SIMPLEX}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_OPTION\_SIMPLEX}{SOL\_OPTION\_SIMPLEX}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+I\+M\+P\+L\+EX~(0x0010000)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a9547c3cf5dd7d37e45a205716e61fb24}\label{ILPSolver_8h_a9547c3cf5dd7d37e45a205716e61fb24}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_PRINT\_PRO@{SOL\_PRINT\_PRO}}
+\index{SOL\_PRINT\_PRO@{SOL\_PRINT\_PRO}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_PRINT\_PRO}{SOL\_PRINT\_PRO}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+P\+RO~(0x0000002)}
+
+\mbox{\Hypertarget{ILPSolver_8h_a64c6bc0f5390c22c515f65257a128b5c}\label{ILPSolver_8h_a64c6bc0f5390c22c515f65257a128b5c}} 
+\index{ILPSolver.h@{ILPSolver.h}!SOL\_PRINT\_SOL@{SOL\_PRINT\_SOL}}
+\index{SOL\_PRINT\_SOL@{SOL\_PRINT\_SOL}!ILPSolver.h@{ILPSolver.h}}
+\subsubsection{\texorpdfstring{SOL\_PRINT\_SOL}{SOL\_PRINT\_SOL}}
+{\footnotesize\ttfamily \#define S\+O\+L\+\_\+\+P\+R\+I\+N\+T\+\_\+\+S\+OL~(0x0000003)}
+

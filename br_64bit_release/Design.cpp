@@ -136,7 +136,7 @@ void CDesign::Report(char* pName)
 	}
 }
 
-// read in parameter file and store the parameters [1/31/2007 thyeros]
+//! read in parameter file and store the parameters [1/31/2007 thyeros]
 void CDesign::ReadParam(char* pName)
 {
 	FILE*	pFile		=	fopen(pName,"rt");
@@ -489,6 +489,16 @@ void CDesign::ReadParam(char* pName)
 	SAFE_FCLOSE(pFile);
 }
 
+/**
+ * Initialize the design.
+ * Read input file and collect all params.
+ * From input file build steiner tree * (use flute),
+ * or read pre-build steiner tree from '.stt' file.
+ * 
+ * It will resolve input datafile format.
+ * 
+ * It will also initialize nets and layers and BBox class.
+ */
 int	CDesign::Initialize(char* pName)
 {
 #ifdef _DEBUG
@@ -574,7 +584,7 @@ int	CDesign::Initialize(char* pName)
 
 
 			pTree_File		=	fopen(m_Param.m_cTree_File,"wt");
-			readLUT();
+			readLUT(); // Before use flute you must init it. Need LUT Data files(provided by flute).
 
 			Display(DISPLAY_MODE_INFO,"building steiner tree by *pure flute\n");
 			//}
@@ -604,6 +614,7 @@ int	CDesign::Initialize(char* pName)
 		IsLUTup=1;
 	}
 
+    // Read basic param of input data.
 	while (fgets(cLine,sizeof(cLine),pInput_File))
 	{
 		if(cLine[0]=='#')	continue;

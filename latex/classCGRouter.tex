@@ -1,0 +1,222 @@
+\hypertarget{classCGRouter}{}\section{C\+G\+Router Class Reference}
+\label{classCGRouter}\index{CGRouter@{CGRouter}}
+
+
+{\ttfamily \#include $<$G\+Router.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCGRouter_a79a96199aa636d536a95118d05721b35}{C\+G\+Router}} ()
+\item 
+virtual \mbox{\hyperlink{classCGRouter_ab96e5ed8e11e1834c47fec6961f01c23}{$\sim$\+C\+G\+Router}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classCGRouter_af52c3a9802eff8e543e13a643e5de83a}{Layering}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design)
+\item 
+static void \mbox{\hyperlink{classCGRouter_ab3aa19892e106aedd7bdceb6ed966200}{Layering}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List)
+\item 
+static int \mbox{\hyperlink{classCGRouter_afc852a0443d502841940332116812f54}{Layering}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Pos, int i\+Direction)
+\item 
+static void \mbox{\hyperlink{classCGRouter_a4c455bc1400005226fcb3a04639c79c7}{Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design)
+\item 
+static void \mbox{\hyperlink{classCGRouter_aef04c6783171f5e9582e7d24b8966a07}{Pre\+Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design)
+\item 
+static void \mbox{\hyperlink{classCGRouter_a831631d047b63b52b1c2a50182abaad6}{Set\+Boundary}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+static void \mbox{\hyperlink{classCGRouter_a65501a12c10da7894dc0e96ce5c449c0}{Box\+Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+BoxS, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+BoxE)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a5c1d10e81773579ad3acbdaf5965725e}{Concurrent\+Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Mode)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a2d4926771b5862045dd154782f478809}{Sequential\+Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box, int i\+Bound)
+\item 
+static void \mbox{\hyperlink{classCGRouter_a1fd03b63f72447aa7085e3320ba6c7ff}{Re\+Routing\+For\+OF}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Object\+List)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a35bb814cd4191e640f1aecde4e5726ea}{Re\+Routing\+For\+WL}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a57a58eb17ab26199bc5ec9d202ecdb80}{Re\+Routing\+For\+OF}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List, int i\+Bound)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a6f3bca0f272874e1ceb57fff94ddf921}{Re\+Routing\+For\+OF}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Bound)
+\item 
+static int \mbox{\hyperlink{classCGRouter_ae04faf8e6971cdf55b7314471369e61e}{Filter\+Routing}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a4bbedf7ca84154f7c153874fb979c068}{Maze\+Routing}} (\mbox{\hyperlink{GRouter_8h_a7bce1c983b0974505feefa8727066acb}{F\+P\+\_\+\+M\+A\+Z\+E\+C\+O\+ST}} $\ast$p\+Maze\+Cost, \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box, int i\+Bound=0)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a175e2e50a21411c968fdd51eb280615a}{Maze\+Cost\+\_\+\+Box}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+N\+Grid, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+static int \mbox{\hyperlink{classCGRouter_ab46ca3eeaf6b0e08300d4fd6c067bb03}{Maze\+Cost\+\_\+\+Box\+Bound}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+N\+Grid, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a2ba5fe73784853f2e71d2b3a04a163ec}{Maze\+Cost\+\_\+\+Penalty}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+N\+Grid, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+static int \mbox{\hyperlink{classCGRouter_a28532892b517c1142198ac3d8fb07583}{Maze\+Cost\+\_\+\+Penalty\+Bound}} (\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Design, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+Grid, \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$p\+N\+Grid, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
+\item 
+static void \mbox{\hyperlink{classCGRouter_a7e4f43c1a3a3ef2727c69e360f5998bf}{Trace\+Back}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire, vector$<$ \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ $>$ $\ast$p\+Trace, vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$p\+Segment\+List)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classCGRouter_a12b269c0de33d520a32e95a731b0d927}{m\+\_\+i\+Via\+Cost}}
+\item 
+static \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} \mbox{\hyperlink{classCGRouter_a86119517e05eaa998f13b7f7bd94c5cf}{m\+\_\+i\+Maze\+Cost}} \mbox{[}\mbox{\hyperlink{GRouter_8h_a11cc413a588fe42da3ade0e0043807fb}{M\+A\+X\+\_\+\+M\+A\+Z\+E\+C\+O\+ST}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCGRouter_a79a96199aa636d536a95118d05721b35}\label{classCGRouter_a79a96199aa636d536a95118d05721b35}} 
+\index{CGRouter@{CGRouter}!CGRouter@{CGRouter}}
+\index{CGRouter@{CGRouter}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{CGRouter()}{CGRouter()}}
+{\footnotesize\ttfamily C\+G\+Router\+::\+C\+G\+Router (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCGRouter_ab96e5ed8e11e1834c47fec6961f01c23}\label{classCGRouter_ab96e5ed8e11e1834c47fec6961f01c23}} 
+\index{CGRouter@{CGRouter}!````~CGRouter@{$\sim$CGRouter}}
+\index{````~CGRouter@{$\sim$CGRouter}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{$\sim$CGRouter()}{~CGRouter()}}
+{\footnotesize\ttfamily C\+G\+Router\+::$\sim$\+C\+G\+Router (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCGRouter_a65501a12c10da7894dc0e96ce5c449c0}\label{classCGRouter_a65501a12c10da7894dc0e96ce5c449c0}} 
+\index{CGRouter@{CGRouter}!BoxRouting@{BoxRouting}}
+\index{BoxRouting@{BoxRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{BoxRouting()}{BoxRouting()}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Box\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+BoxS,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+BoxE }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a5c1d10e81773579ad3acbdaf5965725e}\label{classCGRouter_a5c1d10e81773579ad3acbdaf5965725e}} 
+\index{CGRouter@{CGRouter}!ConcurrentRouting@{ConcurrentRouting}}
+\index{ConcurrentRouting@{ConcurrentRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{ConcurrentRouting()}{ConcurrentRouting()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Concurrent\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_ae04faf8e6971cdf55b7314471369e61e}\label{classCGRouter_ae04faf8e6971cdf55b7314471369e61e}} 
+\index{CGRouter@{CGRouter}!FilterRouting@{FilterRouting}}
+\index{FilterRouting@{FilterRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{FilterRouting()}{FilterRouting()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Filter\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_af52c3a9802eff8e543e13a643e5de83a}\label{classCGRouter_af52c3a9802eff8e543e13a643e5de83a}} 
+\index{CGRouter@{CGRouter}!Layering@{Layering}}
+\index{Layering@{Layering}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{Layering()}{Layering()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Layering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_ab3aa19892e106aedd7bdceb6ed966200}\label{classCGRouter_ab3aa19892e106aedd7bdceb6ed966200}} 
+\index{CGRouter@{CGRouter}!Layering@{Layering}}
+\index{Layering@{Layering}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{Layering()}{Layering()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Layering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_afc852a0443d502841940332116812f54}\label{classCGRouter_afc852a0443d502841940332116812f54}} 
+\index{CGRouter@{CGRouter}!Layering@{Layering}}
+\index{Layering@{Layering}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{Layering()}{Layering()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Layering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Pos,  }\item[{int}]{i\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a175e2e50a21411c968fdd51eb280615a}\label{classCGRouter_a175e2e50a21411c968fdd51eb280615a}} 
+\index{CGRouter@{CGRouter}!MazeCost\_Box@{MazeCost\_Box}}
+\index{MazeCost\_Box@{MazeCost\_Box}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{MazeCost\_Box()}{MazeCost\_Box()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Maze\+Cost\+\_\+\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+N\+Grid,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_ab46ca3eeaf6b0e08300d4fd6c067bb03}\label{classCGRouter_ab46ca3eeaf6b0e08300d4fd6c067bb03}} 
+\index{CGRouter@{CGRouter}!MazeCost\_BoxBound@{MazeCost\_BoxBound}}
+\index{MazeCost\_BoxBound@{MazeCost\_BoxBound}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{MazeCost\_BoxBound()}{MazeCost\_BoxBound()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Maze\+Cost\+\_\+\+Box\+Bound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+N\+Grid,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a2ba5fe73784853f2e71d2b3a04a163ec}\label{classCGRouter_a2ba5fe73784853f2e71d2b3a04a163ec}} 
+\index{CGRouter@{CGRouter}!MazeCost\_Penalty@{MazeCost\_Penalty}}
+\index{MazeCost\_Penalty@{MazeCost\_Penalty}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{MazeCost\_Penalty()}{MazeCost\_Penalty()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Maze\+Cost\+\_\+\+Penalty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+N\+Grid,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a28532892b517c1142198ac3d8fb07583}\label{classCGRouter_a28532892b517c1142198ac3d8fb07583}} 
+\index{CGRouter@{CGRouter}!MazeCost\_PenaltyBound@{MazeCost\_PenaltyBound}}
+\index{MazeCost\_PenaltyBound@{MazeCost\_PenaltyBound}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{MazeCost\_PenaltyBound()}{MazeCost\_PenaltyBound()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Maze\+Cost\+\_\+\+Penalty\+Bound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+Grid,  }\item[{\mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$}]{p\+N\+Grid,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a4bbedf7ca84154f7c153874fb979c068}\label{classCGRouter_a4bbedf7ca84154f7c153874fb979c068}} 
+\index{CGRouter@{CGRouter}!MazeRouting@{MazeRouting}}
+\index{MazeRouting@{MazeRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{MazeRouting()}{MazeRouting()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Maze\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{GRouter_8h_a7bce1c983b0974505feefa8727066acb}{F\+P\+\_\+\+M\+A\+Z\+E\+C\+O\+ST}} $\ast$}]{p\+Maze\+Cost,  }\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box,  }\item[{int}]{i\+Bound = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_aef04c6783171f5e9582e7d24b8966a07}\label{classCGRouter_aef04c6783171f5e9582e7d24b8966a07}} 
+\index{CGRouter@{CGRouter}!PreRouting@{PreRouting}}
+\index{PreRouting@{PreRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{PreRouting()}{PreRouting()}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Pre\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a1fd03b63f72447aa7085e3320ba6c7ff}\label{classCGRouter_a1fd03b63f72447aa7085e3320ba6c7ff}} 
+\index{CGRouter@{CGRouter}!ReRoutingForOF@{ReRoutingForOF}}
+\index{ReRoutingForOF@{ReRoutingForOF}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{ReRoutingForOF()}{ReRoutingForOF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Re\+Routing\+For\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Object\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a57a58eb17ab26199bc5ec9d202ecdb80}\label{classCGRouter_a57a58eb17ab26199bc5ec9d202ecdb80}} 
+\index{CGRouter@{CGRouter}!ReRoutingForOF@{ReRoutingForOF}}
+\index{ReRoutingForOF@{ReRoutingForOF}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{ReRoutingForOF()}{ReRoutingForOF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Re\+Routing\+For\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List,  }\item[{int}]{i\+Bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a6f3bca0f272874e1ceb57fff94ddf921}\label{classCGRouter_a6f3bca0f272874e1ceb57fff94ddf921}} 
+\index{CGRouter@{CGRouter}!ReRoutingForOF@{ReRoutingForOF}}
+\index{ReRoutingForOF@{ReRoutingForOF}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{ReRoutingForOF()}{ReRoutingForOF()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Re\+Routing\+For\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a35bb814cd4191e640f1aecde4e5726ea}\label{classCGRouter_a35bb814cd4191e640f1aecde4e5726ea}} 
+\index{CGRouter@{CGRouter}!ReRoutingForWL@{ReRoutingForWL}}
+\index{ReRoutingForWL@{ReRoutingForWL}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{ReRoutingForWL()}{ReRoutingForWL()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Re\+Routing\+For\+WL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a4c455bc1400005226fcb3a04639c79c7}\label{classCGRouter_a4c455bc1400005226fcb3a04639c79c7}} 
+\index{CGRouter@{CGRouter}!Routing@{Routing}}
+\index{Routing@{Routing}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{Routing()}{Routing()}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a2d4926771b5862045dd154782f478809}\label{classCGRouter_a2d4926771b5862045dd154782f478809}} 
+\index{CGRouter@{CGRouter}!SequentialRouting@{SequentialRouting}}
+\index{SequentialRouting@{SequentialRouting}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{SequentialRouting()}{SequentialRouting()}}
+{\footnotesize\ttfamily int C\+G\+Router\+::\+Sequential\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box,  }\item[{int}]{i\+Bound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a831631d047b63b52b1c2a50182abaad6}\label{classCGRouter_a831631d047b63b52b1c2a50182abaad6}} 
+\index{CGRouter@{CGRouter}!SetBoundary@{SetBoundary}}
+\index{SetBoundary@{SetBoundary}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{SetBoundary()}{SetBoundary()}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Set\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Design,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a7e4f43c1a3a3ef2727c69e360f5998bf}\label{classCGRouter_a7e4f43c1a3a3ef2727c69e360f5998bf}} 
+\index{CGRouter@{CGRouter}!TraceBack@{TraceBack}}
+\index{TraceBack@{TraceBack}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{TraceBack()}{TraceBack()}}
+{\footnotesize\ttfamily void C\+G\+Router\+::\+Trace\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire,  }\item[{vector$<$ \mbox{\hyperlink{classCGrid}{C\+Grid}} $\ast$ $>$ $\ast$}]{p\+Trace,  }\item[{vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$}]{p\+Segment\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCGRouter_a86119517e05eaa998f13b7f7bd94c5cf}\label{classCGRouter_a86119517e05eaa998f13b7f7bd94c5cf}} 
+\index{CGRouter@{CGRouter}!m\_iMazeCost@{m\_iMazeCost}}
+\index{m\_iMazeCost@{m\_iMazeCost}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{m\_iMazeCost}{m\_iMazeCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}} C\+G\+Router\+::m\+\_\+i\+Maze\+Cost\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCGRouter_a12b269c0de33d520a32e95a731b0d927}\label{classCGRouter_a12b269c0de33d520a32e95a731b0d927}} 
+\index{CGRouter@{CGRouter}!m\_iViaCost@{m\_iViaCost}}
+\index{m\_iViaCost@{m\_iViaCost}!CGRouter@{CGRouter}}
+\subsubsection{\texorpdfstring{m\_iViaCost}{m\_iViaCost}}
+{\footnotesize\ttfamily int C\+G\+Router\+::m\+\_\+i\+Via\+Cost\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{GRouter_8h}{G\+Router.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{GRouter_8cpp}{G\+Router.\+cpp}}\end{DoxyCompactItemize}

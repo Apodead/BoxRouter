@@ -1,0 +1,500 @@
+\hypertarget{classCWire}{}\section{C\+Wire Class Reference}
+\label{classCWire}\index{CWire@{CWire}}
+
+
+{\ttfamily \#include $<$Wire.\+h$>$}
+
+Inheritance diagram for C\+Wire\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCWire}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}{Delete}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a1b37fb9ea32af4a838620a368b9f3824}{Is\+Completed}} ()
+\item 
+int \mbox{\hyperlink{classCWire_af22afb5379acf1aa890692416c00b8e4}{Get\+Routable\+Length}} (int i\+Layer)
+\item 
+void \mbox{\hyperlink{classCWire_a36dd73e309fe16428df29220bc161d0e}{Adjust\+Boundary}} (\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$p\+Layer, int i\+Blocakge)
+\item 
+\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCWire_a79a2ddae76fd8d2e0a96309077d5a550}{Clone}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a3db1c3578cdf422a84a1f796460a9f9e}{Is\+Routable}} (int i\+Layer)
+\item 
+int \mbox{\hyperlink{classCWire_a54f754e7404cb275e2eed0e8b281817f}{Get\+Length2D}} ()
+\item 
+void \mbox{\hyperlink{classCWire_aa9ee88d6fd7117d3029c5a910c7957af}{Enumerate}} (int i\+Mode)
+\item 
+void \mbox{\hyperlink{classCWire_a32e6d904a2f532d7b6d489d8ffe4884f}{Initialize}} (int i\+X1, int i\+Y1, int i\+Z1, int i\+X2, int i\+Y2, int i\+Z2)
+\item 
+int \mbox{\hyperlink{classCWire_a89b640e7c8363910006273372e84effa}{Make\+Routed}} (int i\+Layer)
+\item 
+void \mbox{\hyperlink{classCWire_afc0e5cf89e354b121793c11ac460aa52}{Pupate}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a16b47186198867b019f35eac02b6c52e}{Split\+Wire}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$$\ast$pp\+WireS=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$$\ast$pp\+WireE=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCWire_ac285ab926f7318d97773bbf31e00d4be}{Merge\+Wire}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+virtual void \mbox{\hyperlink{classCWire_abda250d5147d4fcf3721d4d89d238606}{Initialize}} (int i\+X1, int i\+Y1, int i\+X2, int i\+Y2, int iZ, \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperlink{classCWire_a164104850603ca31076daf202401b77b}{Adjust\+By\+Boundary}} ()
+\item 
+int \mbox{\hyperlink{classCWire_aa724c8a82464a69ae346ca284f166754}{Is\+Perpendicular}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a095a9358f9fe790d5010fef23a8a209e}{Get\+Num\+Pin\+On}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a961f580e533277ae6c618f52f4c105e0}{Is\+Crossing}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+int \mbox{\hyperlink{classCWire_a4f6c29e13aad894c7bb57e59ae555421}{Is\+On3D}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+int \mbox{\hyperlink{classCWire_aa0addc021fd850f888ec7c703ffe91d7}{Is\+On2D}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point)
+\item 
+int \mbox{\hyperlink{classCWire_a8edc31661e3d037da712ad64cd7b8b5b}{Is\+Routed}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a47047894df3b85fb3f5af6755002b4f6}{Is\+Point}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a5459f08bfd3912aae672915a05bcfb38}{Is\+Vertical}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a24f10d80a124f5929fcca8fb026c718d}{Is\+Horizontal}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a58444c1e0db9838445654d85a3405741}{Is\+Layer\+Assigned}} ()
+\item 
+\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ \mbox{\hyperlink{classCWire_a98ece8df0778eb16cf0690c4aa5352f0}{Get\+Parent}} ()
+\item 
+\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCWire_a828800be53e43a40999877e9a56f8c20}{Get\+Layer}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a063474510062c4cd858fb5bfc04daffb}{Get\+Length}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a737e918e2752d29ef32db9bc4648cb90}{Get\+Direction}} ()
+\item 
+void \mbox{\hyperlink{classCWire_a4799d4eeedb42ab2961ca93f25740368}{Get\+Points}} (vector$<$ \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ $>$ $\ast$p\+Points)
+\item 
+void \mbox{\hyperlink{classCWire_a6d114fa68a8539380b0231f5d2d1a10a}{Assign\+Layer}} (int i\+Layer)
+\item 
+virtual void \mbox{\hyperlink{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}{Print}} (F\+I\+LE $\ast$p\+File, int Mode)
+\item 
+bool \mbox{\hyperlink{classCWire_a683449c62b5625b17a78f12274d4a601}{Compare\+Length}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classCWire_afab000638f87557894a8588f16ad0df4}{Get\+Segment\+List}} (int i\+Index)
+\item 
+void \mbox{\hyperlink{classCWire_a1d2f3795ad3fb276a22eaf5a10b89a36}{Clear\+Segment\+List}} ()
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ \mbox{\hyperlink{classCWire_a5d543b640c15704e505c6b8c952f9f5d}{Bend}} (int iZ)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ \mbox{\hyperlink{classCWire_ae0e5ba6466563b569c4a958f8d716b99}{Bend}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, int i\+Z1, int i\+Z2)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ \mbox{\hyperlink{classCWire_a1eb748fc072c27d1f1da942efe109823}{Bend}} (int iX, int iY, int i\+Z1, int i\+Z2)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ \mbox{\hyperlink{classCWire_a5e7f3f872777c728db89921f49bef82c}{Bend}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point1, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point2, int i\+Z1, int i\+Z2, int i\+Z3)
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ \mbox{\hyperlink{classCWire_a1ffc3243c96850451394c2b121705585}{Bend}} (int i\+X1, int i\+Y1, int i\+X2, int i\+Y2, int i\+Z1, int i\+Z2, int i\+Z3)
+\item 
+int \mbox{\hyperlink{classCWire_a715cef9442c9cc6b45259c7291b84209}{Get\+Num\+Segment\+List}} ()
+\item 
+void \mbox{\hyperlink{classCWire_a4e6880d10696889c8f5f65bc628984c5}{Add\+Segment\+List}} (vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ Segment)
+\item 
+void \mbox{\hyperlink{classCWire_a2f7cf29379c4f0a57e0c08e321cb25a2}{Update\+Boundary}} (int i\+Mode)
+\item 
+void \mbox{\hyperlink{classCWire_a5eecb0e93a2609930901b265ed4fc3de}{Set\+Parent}} (\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$p\+Parent)
+\item 
+void \mbox{\hyperlink{classCWire_a6ed15ca71f29273eed927d88c87535b0}{Create\+Key}} ()
+\item 
+int \mbox{\hyperlink{classCWire_a94140b0fd930f03e8a4a5a2988469987}{Is\+Flat}} ()
+\item 
+void \mbox{\hyperlink{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}{Set\+State}} (int i\+State)
+\item 
+void \mbox{\hyperlink{classCWire_ab32c9734c1bb70f9aecb90be922d63fe}{Initialize}} (int i\+X1, int i\+Y1, int i\+X2, int i\+Y2, int iZ)
+\item 
+\mbox{\hyperlink{classCWire_aaedab9ea265619eef584b208c675fdd3}{C\+Wire}} ()
+\item 
+virtual \mbox{\hyperlink{classCWire_add9cbb4215373042a505db6330fbcb6c}{$\sim$\+C\+Wire}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCWire_ad3c0d423ef6dc81227d3e16803b1cf17}{New}} ()
+\item 
+static double \mbox{\hyperlink{classCWire_a1ae9fcc1cce6786baafc20dd4adb27c0}{Get\+Segment\+List\+Cost}} (vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$p\+Segment\+List)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classCWire_aa9057c6d278c38fd01241ee802427243}{m\+\_\+p\+Routed\+Segment\+List}}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $>$ \mbox{\hyperlink{classCWire_ab9e216e49ec590f52cc9a8b45cdf6445}{m\+\_\+\+Segment\+List}}
+\item 
+\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ \mbox{\hyperlink{classCWire_a8d68a6a04afcb64c8447d17b8eb8a890}{m\+\_\+p\+PointE}}
+\item 
+\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ \mbox{\hyperlink{classCWire_a1e90e0849093c7533aaa1b73deae66e2}{m\+\_\+p\+PointS}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperlink{classCWire_ad95e3e57c6513cb487f4bbb6d0fceb60}{m\+\_\+\+Instance\+Pool}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCWire_aaedab9ea265619eef584b208c675fdd3}\label{classCWire_aaedab9ea265619eef584b208c675fdd3}} 
+\index{CWire@{CWire}!CWire@{CWire}}
+\index{CWire@{CWire}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{CWire()}{CWire()}}
+{\footnotesize\ttfamily C\+Wire\+::\+C\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_add9cbb4215373042a505db6330fbcb6c}\label{classCWire_add9cbb4215373042a505db6330fbcb6c}} 
+\index{CWire@{CWire}!````~CWire@{$\sim$CWire}}
+\index{````~CWire@{$\sim$CWire}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{$\sim$CWire()}{~CWire()}}
+{\footnotesize\ttfamily C\+Wire\+::$\sim$\+C\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCWire_a4e6880d10696889c8f5f65bc628984c5}\label{classCWire_a4e6880d10696889c8f5f65bc628984c5}} 
+\index{CWire@{CWire}!AddSegmentList@{AddSegmentList}}
+\index{AddSegmentList@{AddSegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{AddSegmentList()}{AddSegmentList()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Add\+Segment\+List (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$}]{Segment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a36dd73e309fe16428df29220bc161d0e}\label{classCWire_a36dd73e309fe16428df29220bc161d0e}} 
+\index{CWire@{CWire}!AdjustBoundary@{AdjustBoundary}}
+\index{AdjustBoundary@{AdjustBoundary}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{AdjustBoundary()}{AdjustBoundary()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Adjust\+Boundary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$}]{p\+Layer,  }\item[{int}]{i\+Blocakge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a164104850603ca31076daf202401b77b}\label{classCWire_a164104850603ca31076daf202401b77b}} 
+\index{CWire@{CWire}!AdjustByBoundary@{AdjustByBoundary}}
+\index{AdjustByBoundary@{AdjustByBoundary}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{AdjustByBoundary()}{AdjustByBoundary()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ C\+Wire\+::\+Adjust\+By\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a6d114fa68a8539380b0231f5d2d1a10a}\label{classCWire_a6d114fa68a8539380b0231f5d2d1a10a}} 
+\index{CWire@{CWire}!AssignLayer@{AssignLayer}}
+\index{AssignLayer@{AssignLayer}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{AssignLayer()}{AssignLayer()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Assign\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a5d543b640c15704e505c6b8c952f9f5d}\label{classCWire_a5d543b640c15704e505c6b8c952f9f5d}} 
+\index{CWire@{CWire}!Bend@{Bend}}
+\index{Bend@{Bend}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ C\+Wire\+::\+Bend (\begin{DoxyParamCaption}\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_ae0e5ba6466563b569c4a958f8d716b99}\label{classCWire_ae0e5ba6466563b569c4a958f8d716b99}} 
+\index{CWire@{CWire}!Bend@{Bend}}
+\index{Bend@{Bend}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ C\+Wire\+::\+Bend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+Z2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a1eb748fc072c27d1f1da942efe109823}\label{classCWire_a1eb748fc072c27d1f1da942efe109823}} 
+\index{CWire@{CWire}!Bend@{Bend}}
+\index{Bend@{Bend}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ C\+Wire\+::\+Bend (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+Z2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a5e7f3f872777c728db89921f49bef82c}\label{classCWire_a5e7f3f872777c728db89921f49bef82c}} 
+\index{CWire@{CWire}!Bend@{Bend}}
+\index{Bend@{Bend}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ C\+Wire\+::\+Bend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point1,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point2,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+Z2,  }\item[{int}]{i\+Z3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a1ffc3243c96850451394c2b121705585}\label{classCWire_a1ffc3243c96850451394c2b121705585}} 
+\index{CWire@{CWire}!Bend@{Bend}}
+\index{Bend@{Bend}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ C\+Wire\+::\+Bend (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+Z2,  }\item[{int}]{i\+Z3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a1d2f3795ad3fb276a22eaf5a10b89a36}\label{classCWire_a1d2f3795ad3fb276a22eaf5a10b89a36}} 
+\index{CWire@{CWire}!ClearSegmentList@{ClearSegmentList}}
+\index{ClearSegmentList@{ClearSegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{ClearSegmentList()}{ClearSegmentList()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Clear\+Segment\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a79a2ddae76fd8d2e0a96309077d5a550}\label{classCWire_a79a2ddae76fd8d2e0a96309077d5a550}} 
+\index{CWire@{CWire}!Clone@{Clone}}
+\index{Clone@{Clone}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Wire\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a683449c62b5625b17a78f12274d4a601}\label{classCWire_a683449c62b5625b17a78f12274d4a601}} 
+\index{CWire@{CWire}!CompareLength@{CompareLength}}
+\index{CompareLength@{CompareLength}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{CompareLength()}{CompareLength()}}
+{\footnotesize\ttfamily bool C\+Wire\+::\+Compare\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a6ed15ca71f29273eed927d88c87535b0}\label{classCWire_a6ed15ca71f29273eed927d88c87535b0}} 
+\index{CWire@{CWire}!CreateKey@{CreateKey}}
+\index{CreateKey@{CreateKey}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{CreateKey()}{CreateKey()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Create\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}\label{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}} 
+\index{CWire@{CWire}!Delete@{Delete}}
+\index{Delete@{Delete}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_aa9ee88d6fd7117d3029c5a910c7957af}\label{classCWire_aa9ee88d6fd7117d3029c5a910c7957af}} 
+\index{CWire@{CWire}!Enumerate@{Enumerate}}
+\index{Enumerate@{Enumerate}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Enumerate()}{Enumerate()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Enumerate (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a737e918e2752d29ef32db9bc4648cb90}\label{classCWire_a737e918e2752d29ef32db9bc4648cb90}} 
+\index{CWire@{CWire}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a828800be53e43a40999877e9a56f8c20}\label{classCWire_a828800be53e43a40999877e9a56f8c20}} 
+\index{CWire@{CWire}!GetLayer@{GetLayer}}
+\index{GetLayer@{GetLayer}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetLayer()}{GetLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ C\+Wire\+::\+Get\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a063474510062c4cd858fb5bfc04daffb}\label{classCWire_a063474510062c4cd858fb5bfc04daffb}} 
+\index{CWire@{CWire}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a54f754e7404cb275e2eed0e8b281817f}\label{classCWire_a54f754e7404cb275e2eed0e8b281817f}} 
+\index{CWire@{CWire}!GetLength2D@{GetLength2D}}
+\index{GetLength2D@{GetLength2D}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetLength2D()}{GetLength2D()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Length2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a095a9358f9fe790d5010fef23a8a209e}\label{classCWire_a095a9358f9fe790d5010fef23a8a209e}} 
+\index{CWire@{CWire}!GetNumPinOn@{GetNumPinOn}}
+\index{GetNumPinOn@{GetNumPinOn}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetNumPinOn()}{GetNumPinOn()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Num\+Pin\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a715cef9442c9cc6b45259c7291b84209}\label{classCWire_a715cef9442c9cc6b45259c7291b84209}} 
+\index{CWire@{CWire}!GetNumSegmentList@{GetNumSegmentList}}
+\index{GetNumSegmentList@{GetNumSegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetNumSegmentList()}{GetNumSegmentList()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Num\+Segment\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a98ece8df0778eb16cf0690c4aa5352f0}\label{classCWire_a98ece8df0778eb16cf0690c4aa5352f0}} 
+\index{CWire@{CWire}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ C\+Wire\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCWire_a4799d4eeedb42ab2961ca93f25740368}\label{classCWire_a4799d4eeedb42ab2961ca93f25740368}} 
+\index{CWire@{CWire}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetPoints()}{GetPoints()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Get\+Points (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ $>$ $\ast$}]{p\+Points }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_af22afb5379acf1aa890692416c00b8e4}\label{classCWire_af22afb5379acf1aa890692416c00b8e4}} 
+\index{CWire@{CWire}!GetRoutableLength@{GetRoutableLength}}
+\index{GetRoutableLength@{GetRoutableLength}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetRoutableLength()}{GetRoutableLength()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Get\+Routable\+Length (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_afab000638f87557894a8588f16ad0df4}\label{classCWire_afab000638f87557894a8588f16ad0df4}} 
+\index{CWire@{CWire}!GetSegmentList@{GetSegmentList}}
+\index{GetSegmentList@{GetSegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetSegmentList()}{GetSegmentList()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$ C\+Wire\+::\+Get\+Segment\+List (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a1ae9fcc1cce6786baafc20dd4adb27c0}\label{classCWire_a1ae9fcc1cce6786baafc20dd4adb27c0}} 
+\index{CWire@{CWire}!GetSegmentListCost@{GetSegmentListCost}}
+\index{GetSegmentListCost@{GetSegmentListCost}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{GetSegmentListCost()}{GetSegmentListCost()}}
+{\footnotesize\ttfamily double C\+Wire\+::\+Get\+Segment\+List\+Cost (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCSegment}{C\+Segment}} $\ast$ $>$ $\ast$}]{p\+Segment\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCWire_a32e6d904a2f532d7b6d489d8ffe4884f}\label{classCWire_a32e6d904a2f532d7b6d489d8ffe4884f}} 
+\index{CWire@{CWire}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+Z1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2,  }\item[{int}]{i\+Z2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_abda250d5147d4fcf3721d4d89d238606}\label{classCWire_abda250d5147d4fcf3721d4d89d238606}} 
+\index{CWire@{CWire}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2,  }\item[{int}]{iZ,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCWire_ab32c9734c1bb70f9aecb90be922d63fe}\label{classCWire_ab32c9734c1bb70f9aecb90be922d63fe}} 
+\index{CWire@{CWire}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+X1,  }\item[{int}]{i\+Y1,  }\item[{int}]{i\+X2,  }\item[{int}]{i\+Y2,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a1b37fb9ea32af4a838620a368b9f3824}\label{classCWire_a1b37fb9ea32af4a838620a368b9f3824}} 
+\index{CWire@{CWire}!IsCompleted@{IsCompleted}}
+\index{IsCompleted@{IsCompleted}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsCompleted()}{IsCompleted()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a961f580e533277ae6c618f52f4c105e0}\label{classCWire_a961f580e533277ae6c618f52f4c105e0}} 
+\index{CWire@{CWire}!IsCrossing@{IsCrossing}}
+\index{IsCrossing@{IsCrossing}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsCrossing()}{IsCrossing()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Crossing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a94140b0fd930f03e8a4a5a2988469987}\label{classCWire_a94140b0fd930f03e8a4a5a2988469987}} 
+\index{CWire@{CWire}!IsFlat@{IsFlat}}
+\index{IsFlat@{IsFlat}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsFlat()}{IsFlat()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Flat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a24f10d80a124f5929fcca8fb026c718d}\label{classCWire_a24f10d80a124f5929fcca8fb026c718d}} 
+\index{CWire@{CWire}!IsHorizontal@{IsHorizontal}}
+\index{IsHorizontal@{IsHorizontal}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsHorizontal()}{IsHorizontal()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a58444c1e0db9838445654d85a3405741}\label{classCWire_a58444c1e0db9838445654d85a3405741}} 
+\index{CWire@{CWire}!IsLayerAssigned@{IsLayerAssigned}}
+\index{IsLayerAssigned@{IsLayerAssigned}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsLayerAssigned()}{IsLayerAssigned()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Layer\+Assigned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_aa0addc021fd850f888ec7c703ffe91d7}\label{classCWire_aa0addc021fd850f888ec7c703ffe91d7}} 
+\index{CWire@{CWire}!IsOn2D@{IsOn2D}}
+\index{IsOn2D@{IsOn2D}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsOn2D()}{IsOn2D()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+On2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a4f6c29e13aad894c7bb57e59ae555421}\label{classCWire_a4f6c29e13aad894c7bb57e59ae555421}} 
+\index{CWire@{CWire}!IsOn3D@{IsOn3D}}
+\index{IsOn3D@{IsOn3D}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsOn3D()}{IsOn3D()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+On3D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_aa724c8a82464a69ae346ca284f166754}\label{classCWire_aa724c8a82464a69ae346ca284f166754}} 
+\index{CWire@{CWire}!IsPerpendicular@{IsPerpendicular}}
+\index{IsPerpendicular@{IsPerpendicular}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsPerpendicular()}{IsPerpendicular()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Perpendicular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a47047894df3b85fb3f5af6755002b4f6}\label{classCWire_a47047894df3b85fb3f5af6755002b4f6}} 
+\index{CWire@{CWire}!IsPoint@{IsPoint}}
+\index{IsPoint@{IsPoint}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsPoint()}{IsPoint()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a3db1c3578cdf422a84a1f796460a9f9e}\label{classCWire_a3db1c3578cdf422a84a1f796460a9f9e}} 
+\index{CWire@{CWire}!IsRoutable@{IsRoutable}}
+\index{IsRoutable@{IsRoutable}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsRoutable()}{IsRoutable()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Routable (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a8edc31661e3d037da712ad64cd7b8b5b}\label{classCWire_a8edc31661e3d037da712ad64cd7b8b5b}} 
+\index{CWire@{CWire}!IsRouted@{IsRouted}}
+\index{IsRouted@{IsRouted}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsRouted()}{IsRouted()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Routed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCWire_a5459f08bfd3912aae672915a05bcfb38}\label{classCWire_a5459f08bfd3912aae672915a05bcfb38}} 
+\index{CWire@{CWire}!IsVertical@{IsVertical}}
+\index{IsVertical@{IsVertical}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{IsVertical()}{IsVertical()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Is\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a89b640e7c8363910006273372e84effa}\label{classCWire_a89b640e7c8363910006273372e84effa}} 
+\index{CWire@{CWire}!MakeRouted@{MakeRouted}}
+\index{MakeRouted@{MakeRouted}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{MakeRouted()}{MakeRouted()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Make\+Routed (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_ac285ab926f7318d97773bbf31e00d4be}\label{classCWire_ac285ab926f7318d97773bbf31e00d4be}} 
+\index{CWire@{CWire}!MergeWire@{MergeWire}}
+\index{MergeWire@{MergeWire}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{MergeWire()}{MergeWire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Wire\+::\+Merge\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_ad3c0d423ef6dc81227d3e16803b1cf17}\label{classCWire_ad3c0d423ef6dc81227d3e16803b1cf17}} 
+\index{CWire@{CWire}!New@{New}}
+\index{New@{New}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Wire\+::\+New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}\label{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}} 
+\index{CWire@{CWire}!Print@{Print}}
+\index{Print@{Print}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+\mbox{\Hypertarget{classCWire_afc0e5cf89e354b121793c11ac460aa52}\label{classCWire_afc0e5cf89e354b121793c11ac460aa52}} 
+\index{CWire@{CWire}!Pupate@{Pupate}}
+\index{Pupate@{Pupate}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{Pupate()}{Pupate()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Pupate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a5eecb0e93a2609930901b265ed4fc3de}\label{classCWire_a5eecb0e93a2609930901b265ed4fc3de}} 
+\index{CWire@{CWire}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}\label{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}} 
+\index{CWire@{CWire}!SetState@{SetState}}
+\index{SetState@{SetState}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Set\+State (\begin{DoxyParamCaption}\item[{int}]{i\+State }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a16b47186198867b019f35eac02b6c52e}\label{classCWire_a16b47186198867b019f35eac02b6c52e}} 
+\index{CWire@{CWire}!SplitWire@{SplitWire}}
+\index{SplitWire@{SplitWire}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{SplitWire()}{SplitWire()}}
+{\footnotesize\ttfamily int C\+Wire\+::\+Split\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$$\ast$}]{pp\+WireS = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}},  }\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$$\ast$}]{pp\+WireE = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCWire_a2f7cf29379c4f0a57e0c08e321cb25a2}\label{classCWire_a2f7cf29379c4f0a57e0c08e321cb25a2}} 
+\index{CWire@{CWire}!UpdateBoundary@{UpdateBoundary}}
+\index{UpdateBoundary@{UpdateBoundary}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{UpdateBoundary()}{UpdateBoundary()}}
+{\footnotesize\ttfamily void C\+Wire\+::\+Update\+Boundary (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCWire_ad95e3e57c6513cb487f4bbb6d0fceb60}\label{classCWire_ad95e3e57c6513cb487f4bbb6d0fceb60}} 
+\index{CWire@{CWire}!m\_InstancePool@{m\_InstancePool}}
+\index{m\_InstancePool@{m\_InstancePool}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{m\_InstancePool}{m\_InstancePool}}
+{\footnotesize\ttfamily stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ C\+Wire\+::m\+\_\+\+Instance\+Pool\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCWire_a8d68a6a04afcb64c8447d17b8eb8a890}\label{classCWire_a8d68a6a04afcb64c8447d17b8eb8a890}} 
+\index{CWire@{CWire}!m\_pPointE@{m\_pPointE}}
+\index{m\_pPointE@{m\_pPointE}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{m\_pPointE}{m\_pPointE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPoint}{C\+Point}}$\ast$ C\+Wire\+::m\+\_\+p\+PointE}
+
+\mbox{\Hypertarget{classCWire_a1e90e0849093c7533aaa1b73deae66e2}\label{classCWire_a1e90e0849093c7533aaa1b73deae66e2}} 
+\index{CWire@{CWire}!m\_pPointS@{m\_pPointS}}
+\index{m\_pPointS@{m\_pPointS}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{m\_pPointS}{m\_pPointS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPoint}{C\+Point}}$\ast$ C\+Wire\+::m\+\_\+p\+PointS}
+
+\mbox{\Hypertarget{classCWire_aa9057c6d278c38fd01241ee802427243}\label{classCWire_aa9057c6d278c38fd01241ee802427243}} 
+\index{CWire@{CWire}!m\_pRoutedSegmentList@{m\_pRoutedSegmentList}}
+\index{m\_pRoutedSegmentList@{m\_pRoutedSegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{m\_pRoutedSegmentList}{m\_pRoutedSegmentList}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCSegment}{C\+Segment}}$\ast$$>$$\ast$ C\+Wire\+::m\+\_\+p\+Routed\+Segment\+List}
+
+\mbox{\Hypertarget{classCWire_ab9e216e49ec590f52cc9a8b45cdf6445}\label{classCWire_ab9e216e49ec590f52cc9a8b45cdf6445}} 
+\index{CWire@{CWire}!m\_SegmentList@{m\_SegmentList}}
+\index{m\_SegmentList@{m\_SegmentList}!CWire@{CWire}}
+\subsubsection{\texorpdfstring{m\_SegmentList}{m\_SegmentList}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{classCSegment}{C\+Segment}}$\ast$$>$ $>$ C\+Wire\+::m\+\_\+\+Segment\+List}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Wire_8h}{Wire.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Wire_8cpp}{Wire.\+cpp}}\end{DoxyCompactItemize}

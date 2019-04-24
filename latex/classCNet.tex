@@ -1,0 +1,382 @@
+\hypertarget{classCNet}{}\section{C\+Net Class Reference}
+\label{classCNet}\index{CNet@{CNet}}
+
+
+{\ttfamily \#include $<$Net.\+h$>$}
+
+Inheritance diagram for C\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCNet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCNet_a390a24e0f9ac1ac082746d09ebb35d23}{Get\+Wire\+In\+Direction}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, int i\+Pos, int i\+Direction, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCNet_aafeb3181372a95390373d89b287c7e70}{Is\+Pre\+Routed}} ()
+\item 
+\mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ \mbox{\hyperlink{classCNet_ad0f4f9b80de19edb6731cda71fd450a7}{Get\+Pin}} (int iX, int iY)
+\item 
+\mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ \mbox{\hyperlink{classCNet_a3af1e1df7ab2044f1ad50bc460e84f9c}{Get\+Pin}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, int $\ast$p\+Index=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+int \mbox{\hyperlink{classCNet_a4ceed5e43d69020526e5dd084024baa6}{Is\+Flat}} ()
+\item 
+void \mbox{\hyperlink{classCNet_aa8ae0a7361da9afc30dab5b36a9a6c7d}{Get\+Via\+Bucket}} (multimap$<$ \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}, int $>$ $\ast$p\+Via\+Bucket)
+\item 
+void \mbox{\hyperlink{classCNet_a14518e3935990afad52bbaf4a257614c}{Check}} ()
+\item 
+void \mbox{\hyperlink{classCNet_a3af5b7987a5fb73488a8381a2fb21336}{Update\+B\+Box}} ()
+\item 
+void \mbox{\hyperlink{classCNet_a071afaff38f473f16963a9f81c39528a}{Merge\+Wire}} ()
+\item 
+\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCNet_a5441cfbbf2201282ce1b3e402a488473}{Merge\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+void \mbox{\hyperlink{classCNet_a26430ae6a0d001620b267e1456d290a1}{Split\+Wire}} ()
+\item 
+int \mbox{\hyperlink{classCNet_a7bc0cfc0aa81625c0d4e36add2585262}{Is\+Shortest}} (int i\+Margin=0)
+\item 
+int \mbox{\hyperlink{classCNet_af4f036ca5e1729d4d85130547b7d0e85}{Is\+Optimal}} (int i\+Margin=0)
+\item 
+int \mbox{\hyperlink{classCNet_adcd99220d0eb0a6c4f64577ff57a010e}{Is\+Optimal2}} (int i\+Margin=0)
+\item 
+int \mbox{\hyperlink{classCNet_a911d486b626482b3893076ec39c312e6}{Is\+Connected}} (\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point1, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point2)
+\item 
+void \mbox{\hyperlink{classCNet_ab63bb6fcabe98cabe6c02f525c937aec}{Refine}} ()
+\item 
+void \mbox{\hyperlink{classCNet_a5836b8ada69984cf346e6a41bd536b86}{Del\+Wires}} ()
+\item 
+int \mbox{\hyperlink{classCNet_abd9060bc972528e75eb26cabeceba261}{Get\+Num\+Via}} ()
+\item 
+virtual void \mbox{\hyperlink{classCNet_a94a51f1ccadf689a3bcfa167f37e12f5}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
+\item 
+\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ \mbox{\hyperlink{classCNet_a4181ad889db799bacf35c59e96890311}{Is\+Found}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+int \mbox{\hyperlink{classCNet_a8c0924224990fa0de1c90a8d94c046e0}{Get\+Wires3D}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wires, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, int i\+Mode, int i\+Value)
+\item 
+int \mbox{\hyperlink{classCNet_aa70dfc4170e25b64e56a85ef95691b86}{Get\+Wires2D}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wires, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, int i\+Mode, int i\+Value)
+\item 
+int \mbox{\hyperlink{classCNet_a72e98de5efdbafd034130d0711de4951}{Get\+Points}} (vector$<$ \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ $>$ $\ast$p\+Points, \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$p\+Point, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED}})
+\item 
+int \mbox{\hyperlink{classCNet_a885207dedf1b08d52638bda17ba12227}{Get\+Wire\+In\+B\+Box}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+State=\mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCNet_a2d8665848d2b21b355753866f872af45}{Is\+Local}} ()
+\item 
+int \mbox{\hyperlink{classCNet_a0c25ee386b4a476bee6a6d86da9959d9}{Is\+Routed}} ()
+\item 
+int \mbox{\hyperlink{classCNet_a26f0aadddc16f2e5ec33a3b2e5f4e97a}{Del\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a2675adf9c4b7c477e4a85507b9a1f23a}{D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+R\+M\+AP}})
+\item 
+void \mbox{\hyperlink{classCNet_adecbdeeb33f6ef0a4f9cada16ffac585}{Set\+State}} (int i\+State)
+\item 
+int \mbox{\hyperlink{classCNet_ae194cdbb585414b5eb533d0d097944b3}{Get\+Num\+Wire}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
+\item 
+int \mbox{\hyperlink{classCNet_a95e5735a7449f7d54fe97c335a65fccc}{Add\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
+\item 
+int \mbox{\hyperlink{classCNet_a8712e8f595e036e1e5c693100d071e38}{Get\+Length}} (int i\+Mode, int i\+Value)
+\item 
+\mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ \mbox{\hyperlink{classCNet_afa01af65ac2f23050bab801b844034ce}{Get\+Pin}} (int i\+Index)
+\item 
+void \mbox{\hyperlink{classCNet_a6fbe191b6e69b29fb54d409779caf776}{Add\+Pin}} (vector$<$ \mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ $>$ $\ast$p\+Pin\+List)
+\item 
+int \mbox{\hyperlink{classCNet_a709f7e9718fa62118a55d8def2fd4e41}{Get\+Num\+Pin}} ()
+\item 
+\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ \mbox{\hyperlink{classCNet_a920188d5e3abdca198ad85d4299ea10d}{Get\+Parent}} ()
+\item 
+virtual void \mbox{\hyperlink{classCNet_aa9584e96f1e2aa7701ec11f40686db23}{Initialize}} (int i\+Index, \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$p\+Parent)
+\item 
+\mbox{\hyperlink{classCNet_aafe21b654acdaa4118d359766dc30d18}{C\+Net}} ()
+\item 
+virtual \mbox{\hyperlink{classCNet_a7cca1940642bf76e663685f011f20067}{$\sim$\+C\+Net}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCNet_aa62350e3739f116eab0ddae6ac241977}{m\+\_\+i\+Min\+WL}}
+\item 
+vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperlink{classCNet_ac281ee8db817b1e7119790fac1e1ba52}{m\+\_\+\+Wire}}
+\item 
+\mbox{\hyperlink{classCBBox}{C\+B\+Box}} \mbox{\hyperlink{classCNet_ab13d4169f4cf723e4750dac55f5da3ad}{m\+\_\+\+B\+Box}}
+\item 
+short \mbox{\hyperlink{classCNet_a61a76d767c5d9fc96337e5c962010765}{m\+\_\+i\+Num\+Pin}}
+\item 
+\mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$$\ast$ \mbox{\hyperlink{classCNet_ad10615408ef536cbbf834a644f15f574}{m\+\_\+pp\+Pin}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCNet_aafe21b654acdaa4118d359766dc30d18}\label{classCNet_aafe21b654acdaa4118d359766dc30d18}} 
+\index{CNet@{CNet}!CNet@{CNet}}
+\index{CNet@{CNet}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{CNet()}{CNet()}}
+{\footnotesize\ttfamily C\+Net\+::\+C\+Net (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a7cca1940642bf76e663685f011f20067}\label{classCNet_a7cca1940642bf76e663685f011f20067}} 
+\index{CNet@{CNet}!````~CNet@{$\sim$CNet}}
+\index{````~CNet@{$\sim$CNet}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{$\sim$CNet()}{~CNet()}}
+{\footnotesize\ttfamily C\+Net\+::$\sim$\+C\+Net (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCNet_a6fbe191b6e69b29fb54d409779caf776}\label{classCNet_a6fbe191b6e69b29fb54d409779caf776}} 
+\index{CNet@{CNet}!AddPin@{AddPin}}
+\index{AddPin@{AddPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{AddPin()}{AddPin()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Add\+Pin (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ $>$ $\ast$}]{p\+Pin\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a95e5735a7449f7d54fe97c335a65fccc}\label{classCNet_a95e5735a7449f7d54fe97c335a65fccc}} 
+\index{CNet@{CNet}!AddWire@{AddWire}}
+\index{AddWire@{AddWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{AddWire()}{AddWire()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Add\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a14518e3935990afad52bbaf4a257614c}\label{classCNet_a14518e3935990afad52bbaf4a257614c}} 
+\index{CNet@{CNet}!Check@{Check}}
+\index{Check@{Check}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a26f0aadddc16f2e5ec33a3b2e5f4e97a}\label{classCNet_a26f0aadddc16f2e5ec33a3b2e5f4e97a}} 
+\index{CNet@{CNet}!DelWire@{DelWire}}
+\index{DelWire@{DelWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{DelWire()}{DelWire()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Del\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a2675adf9c4b7c477e4a85507b9a1f23a}{D\+E\+L\+W\+I\+R\+E\+\_\+\+M\+O\+D\+E\+\_\+\+F\+R\+M\+AP}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a5836b8ada69984cf346e6a41bd536b86}\label{classCNet_a5836b8ada69984cf346e6a41bd536b86}} 
+\index{CNet@{CNet}!DelWires@{DelWires}}
+\index{DelWires@{DelWires}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{DelWires()}{DelWires()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Del\+Wires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a8712e8f595e036e1e5c693100d071e38}\label{classCNet_a8712e8f595e036e1e5c693100d071e38}} 
+\index{CNet@{CNet}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Length (\begin{DoxyParamCaption}\item[{int}]{i\+Mode,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a709f7e9718fa62118a55d8def2fd4e41}\label{classCNet_a709f7e9718fa62118a55d8def2fd4e41}} 
+\index{CNet@{CNet}!GetNumPin@{GetNumPin}}
+\index{GetNumPin@{GetNumPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetNumPin()}{GetNumPin()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Num\+Pin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_abd9060bc972528e75eb26cabeceba261}\label{classCNet_abd9060bc972528e75eb26cabeceba261}} 
+\index{CNet@{CNet}!GetNumVia@{GetNumVia}}
+\index{GetNumVia@{GetNumVia}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetNumVia()}{GetNumVia()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Num\+Via (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_ae194cdbb585414b5eb533d0d097944b3}\label{classCNet_ae194cdbb585414b5eb533d0d097944b3}} 
+\index{CNet@{CNet}!GetNumWire@{GetNumWire}}
+\index{GetNumWire@{GetNumWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetNumWire()}{GetNumWire()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Num\+Wire (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a920188d5e3abdca198ad85d4299ea10d}\label{classCNet_a920188d5e3abdca198ad85d4299ea10d}} 
+\index{CNet@{CNet}!GetParent@{GetParent}}
+\index{GetParent@{GetParent}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetParent()}{GetParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$ C\+Net\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_ad0f4f9b80de19edb6731cda71fd450a7}\label{classCNet_ad0f4f9b80de19edb6731cda71fd450a7}} 
+\index{CNet@{CNet}!GetPin@{GetPin}}
+\index{GetPin@{GetPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetPin()}{GetPin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ C\+Net\+::\+Get\+Pin (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a3af1e1df7ab2044f1ad50bc460e84f9c}\label{classCNet_a3af1e1df7ab2044f1ad50bc460e84f9c}} 
+\index{CNet@{CNet}!GetPin@{GetPin}}
+\index{GetPin@{GetPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetPin()}{GetPin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ C\+Net\+::\+Get\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{int $\ast$}]{p\+Index = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_afa01af65ac2f23050bab801b844034ce}\label{classCNet_afa01af65ac2f23050bab801b844034ce}} 
+\index{CNet@{CNet}!GetPin@{GetPin}}
+\index{GetPin@{GetPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetPin()}{GetPin()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPin}{C\+Pin}} $\ast$ C\+Net\+::\+Get\+Pin (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a72e98de5efdbafd034130d0711de4951}\label{classCNet_a72e98de5efdbafd034130d0711de4951}} 
+\index{CNet@{CNet}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetPoints()}{GetPoints()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Points (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$ $>$ $\ast$}]{p\+Points,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a4bee041256f62f94c8f451efa0aaabf9}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+R\+O\+U\+T\+ED}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_aa8ae0a7361da9afc30dab5b36a9a6c7d}\label{classCNet_aa8ae0a7361da9afc30dab5b36a9a6c7d}} 
+\index{CNet@{CNet}!GetViaBucket@{GetViaBucket}}
+\index{GetViaBucket@{GetViaBucket}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetViaBucket()}{GetViaBucket()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Get\+Via\+Bucket (\begin{DoxyParamCaption}\item[{multimap$<$ \mbox{\hyperlink{res2dmp_8cpp_a8ae9d53f33f46cfcfcb9736e6351452a}{K\+EY}}, int $>$ $\ast$}]{p\+Via\+Bucket }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a885207dedf1b08d52638bda17ba12227}\label{classCNet_a885207dedf1b08d52638bda17ba12227}} 
+\index{CNet@{CNet}!GetWireInBBox@{GetWireInBBox}}
+\index{GetWireInBBox@{GetWireInBBox}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetWireInBBox()}{GetWireInBBox()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Wire\+In\+B\+Box (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+State = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a390a24e0f9ac1ac082746d09ebb35d23}\label{classCNet_a390a24e0f9ac1ac082746d09ebb35d23}} 
+\index{CNet@{CNet}!GetWireInDirection@{GetWireInDirection}}
+\index{GetWireInDirection@{GetWireInDirection}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetWireInDirection()}{GetWireInDirection()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Wire\+In\+Direction (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{int}]{i\+Pos,  }\item[{int}]{i\+Direction,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a678c4c2628bee05b15999bb00ded44d3}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a3190814b5494277cd30ff3d03c8d4058}{P\+R\+O\+P\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_aa70dfc4170e25b64e56a85ef95691b86}\label{classCNet_aa70dfc4170e25b64e56a85ef95691b86}} 
+\index{CNet@{CNet}!GetWires2D@{GetWires2D}}
+\index{GetWires2D@{GetWires2D}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetWires2D()}{GetWires2D()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Wires2D (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wires,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{int}]{i\+Mode,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a8c0924224990fa0de1c90a8d94c046e0}\label{classCNet_a8c0924224990fa0de1c90a8d94c046e0}} 
+\index{CNet@{CNet}!GetWires3D@{GetWires3D}}
+\index{GetWires3D@{GetWires3D}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{GetWires3D()}{GetWires3D()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Get\+Wires3D (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wires,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point,  }\item[{int}]{i\+Mode,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_aa9584e96f1e2aa7701ec11f40686db23}\label{classCNet_aa9584e96f1e2aa7701ec11f40686db23}} 
+\index{CNet@{CNet}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Initialize (\begin{DoxyParamCaption}\item[{int}]{i\+Index,  }\item[{\mbox{\hyperlink{classCDesign}{C\+Design}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCNet_a911d486b626482b3893076ec39c312e6}\label{classCNet_a911d486b626482b3893076ec39c312e6}} 
+\index{CNet@{CNet}!IsConnected@{IsConnected}}
+\index{IsConnected@{IsConnected}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsConnected()}{IsConnected()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Connected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point1,  }\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a4ceed5e43d69020526e5dd084024baa6}\label{classCNet_a4ceed5e43d69020526e5dd084024baa6}} 
+\index{CNet@{CNet}!IsFlat@{IsFlat}}
+\index{IsFlat@{IsFlat}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsFlat()}{IsFlat()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Flat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a4181ad889db799bacf35c59e96890311}\label{classCNet_a4181ad889db799bacf35c59e96890311}} 
+\index{CNet@{CNet}!IsFound@{IsFound}}
+\index{IsFound@{IsFound}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsFound()}{IsFound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Net\+::\+Is\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a2d8665848d2b21b355753866f872af45}\label{classCNet_a2d8665848d2b21b355753866f872af45}} 
+\index{CNet@{CNet}!IsLocal@{IsLocal}}
+\index{IsLocal@{IsLocal}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsLocal()}{IsLocal()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_af4f036ca5e1729d4d85130547b7d0e85}\label{classCNet_af4f036ca5e1729d4d85130547b7d0e85}} 
+\index{CNet@{CNet}!IsOptimal@{IsOptimal}}
+\index{IsOptimal@{IsOptimal}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsOptimal()}{IsOptimal()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Optimal (\begin{DoxyParamCaption}\item[{int}]{i\+Margin = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_adcd99220d0eb0a6c4f64577ff57a010e}\label{classCNet_adcd99220d0eb0a6c4f64577ff57a010e}} 
+\index{CNet@{CNet}!IsOptimal2@{IsOptimal2}}
+\index{IsOptimal2@{IsOptimal2}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsOptimal2()}{IsOptimal2()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Optimal2 (\begin{DoxyParamCaption}\item[{int}]{i\+Margin = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_aafeb3181372a95390373d89b287c7e70}\label{classCNet_aafeb3181372a95390373d89b287c7e70}} 
+\index{CNet@{CNet}!IsPreRouted@{IsPreRouted}}
+\index{IsPreRouted@{IsPreRouted}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsPreRouted()}{IsPreRouted()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Pre\+Routed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a0c25ee386b4a476bee6a6d86da9959d9}\label{classCNet_a0c25ee386b4a476bee6a6d86da9959d9}} 
+\index{CNet@{CNet}!IsRouted@{IsRouted}}
+\index{IsRouted@{IsRouted}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsRouted()}{IsRouted()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Routed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a7bc0cfc0aa81625c0d4e36add2585262}\label{classCNet_a7bc0cfc0aa81625c0d4e36add2585262}} 
+\index{CNet@{CNet}!IsShortest@{IsShortest}}
+\index{IsShortest@{IsShortest}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{IsShortest()}{IsShortest()}}
+{\footnotesize\ttfamily int C\+Net\+::\+Is\+Shortest (\begin{DoxyParamCaption}\item[{int}]{i\+Margin = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a071afaff38f473f16963a9f81c39528a}\label{classCNet_a071afaff38f473f16963a9f81c39528a}} 
+\index{CNet@{CNet}!MergeWire@{MergeWire}}
+\index{MergeWire@{MergeWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{MergeWire()}{MergeWire()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Net\+::\+Merge\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a5441cfbbf2201282ce1b3e402a488473}\label{classCNet_a5441cfbbf2201282ce1b3e402a488473}} 
+\index{CNet@{CNet}!MergeWire@{MergeWire}}
+\index{MergeWire@{MergeWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{MergeWire()}{MergeWire()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Net\+::\+Merge\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a94a51f1ccadf689a3bcfa167f37e12f5}\label{classCNet_a94a51f1ccadf689a3bcfa167f37e12f5}} 
+\index{CNet@{CNet}!Print@{Print}}
+\index{Print@{Print}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a389}{C\+Object}}.
+
+\mbox{\Hypertarget{classCNet_ab63bb6fcabe98cabe6c02f525c937aec}\label{classCNet_ab63bb6fcabe98cabe6c02f525c937aec}} 
+\index{CNet@{CNet}!Refine@{Refine}}
+\index{Refine@{Refine}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{Refine()}{Refine()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Refine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_adecbdeeb33f6ef0a4f9cada16ffac585}\label{classCNet_adecbdeeb33f6ef0a4f9cada16ffac585}} 
+\index{CNet@{CNet}!SetState@{SetState}}
+\index{SetState@{SetState}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Set\+State (\begin{DoxyParamCaption}\item[{int}]{i\+State }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a26430ae6a0d001620b267e1456d290a1}\label{classCNet_a26430ae6a0d001620b267e1456d290a1}} 
+\index{CNet@{CNet}!SplitWire@{SplitWire}}
+\index{SplitWire@{SplitWire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{SplitWire()}{SplitWire()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Split\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCNet_a3af5b7987a5fb73488a8381a2fb21336}\label{classCNet_a3af5b7987a5fb73488a8381a2fb21336}} 
+\index{CNet@{CNet}!UpdateBBox@{UpdateBBox}}
+\index{UpdateBBox@{UpdateBBox}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{UpdateBBox()}{UpdateBBox()}}
+{\footnotesize\ttfamily void C\+Net\+::\+Update\+B\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCNet_ab13d4169f4cf723e4750dac55f5da3ad}\label{classCNet_ab13d4169f4cf723e4750dac55f5da3ad}} 
+\index{CNet@{CNet}!m\_BBox@{m\_BBox}}
+\index{m\_BBox@{m\_BBox}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{m\_BBox}{m\_BBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCBBox}{C\+B\+Box}} C\+Net\+::m\+\_\+\+B\+Box}
+
+\mbox{\Hypertarget{classCNet_aa62350e3739f116eab0ddae6ac241977}\label{classCNet_aa62350e3739f116eab0ddae6ac241977}} 
+\index{CNet@{CNet}!m\_iMinWL@{m\_iMinWL}}
+\index{m\_iMinWL@{m\_iMinWL}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{m\_iMinWL}{m\_iMinWL}}
+{\footnotesize\ttfamily int C\+Net\+::m\+\_\+i\+Min\+WL}
+
+\mbox{\Hypertarget{classCNet_a61a76d767c5d9fc96337e5c962010765}\label{classCNet_a61a76d767c5d9fc96337e5c962010765}} 
+\index{CNet@{CNet}!m\_iNumPin@{m\_iNumPin}}
+\index{m\_iNumPin@{m\_iNumPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{m\_iNumPin}{m\_iNumPin}}
+{\footnotesize\ttfamily short C\+Net\+::m\+\_\+i\+Num\+Pin}
+
+\mbox{\Hypertarget{classCNet_ad10615408ef536cbbf834a644f15f574}\label{classCNet_ad10615408ef536cbbf834a644f15f574}} 
+\index{CNet@{CNet}!m\_ppPin@{m\_ppPin}}
+\index{m\_ppPin@{m\_ppPin}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{m\_ppPin}{m\_ppPin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCPin}{C\+Pin}}$\ast$$\ast$ C\+Net\+::m\+\_\+pp\+Pin}
+
+\mbox{\Hypertarget{classCNet_ac281ee8db817b1e7119790fac1e1ba52}\label{classCNet_ac281ee8db817b1e7119790fac1e1ba52}} 
+\index{CNet@{CNet}!m\_Wire@{m\_Wire}}
+\index{m\_Wire@{m\_Wire}!CNet@{CNet}}
+\subsubsection{\texorpdfstring{m\_Wire}{m\_Wire}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCWire}{C\+Wire}}$\ast$$>$ C\+Net\+::m\+\_\+\+Wire}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Net_8h}{Net.\+h}}\item 
+br\+\_\+64bit\+\_\+release/\mbox{\hyperlink{Net_8cpp}{Net.\+cpp}}\end{DoxyCompactItemize}
