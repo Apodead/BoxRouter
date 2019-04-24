@@ -63,12 +63,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_POINT_H__B41B235A_77C1_4664_8252_91A2B6D879EC__INCLUDED_)
-#define AFX_POINT_H__B41B235A_77C1_4664_8252_91A2B6D879EC__INCLUDED_
+#ifndef POINT_H
+#define POINT_H
 
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
 
 #include "Object.h"
 //#include "RealPoint.h"	// Added by ClassView
@@ -117,16 +114,19 @@ protected:
 	char				m_cZ;
 };
 
+// get m_iX;
 inline int CPoint::X()
 {
 	return	m_iX;
 }
 
+// get m_iY;
 inline int CPoint::Y()
 {
 	return	m_iY;
 }
 
+// get m_cZ;
 inline int CPoint::Z()
 {
 	return	m_cZ;

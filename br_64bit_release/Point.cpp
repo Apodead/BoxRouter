@@ -70,6 +70,8 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
+// default value:
+// m_iX = m_iY = m_cZ = -1
 CPoint::CPoint()
 {
 	m_iX		=	-1;
@@ -82,6 +84,9 @@ CPoint::~CPoint()
 
 }
 
+
+// set XYZ in m_iX, m_iY and m_cZ
+// this function would not call CPoint::CreateKey.
 void CPoint::SetXYZ(int iX, int iY, int iZ)
 {
 	m_iX	=	iX;
@@ -89,61 +94,74 @@ void CPoint::SetXYZ(int iX, int iY, int iZ)
 	m_cZ	=	iZ;
 }
 
+// get parent.
 CWire* CPoint::GetParent()
 {
 	return	(CWire*)m_pParent;
 }
 
+// get Manhattan Distance with given point. 3D version.
 int CPoint::GetMDistance(CPoint *pPoint)
 {
 	return abs(X()-pPoint->X())+abs(Y()-pPoint->Y())+abs(Z()-pPoint->Z());
 }
 
+// get Manhattan Distance with given position. 2D version.
 int CPoint::GetMDistance2D(CPoint *pPoint)
 {
 	return abs(X()-pPoint->X())+abs(Y()-pPoint->Y());
 }
 
+// compare with given point. 2D version.
 int CPoint::IsSame2D(CPoint *pPoint)
 {
 	return	IsSame2D(pPoint->X(),pPoint->Y());
 }
 
+// compare with given position. 2D version.
 int CPoint::IsSame2D(int iX, int iY)
 {
 	return	(X()==iX&&Y()==iY);
 }
 
+// compare with given point. 3D version.
 int CPoint::IsSame3D(CPoint *pPoint)
 {
 	return	IsSame3D(pPoint->X(),pPoint->Y(),pPoint->Z());
 }
 
+// compare with given position. 3D version.
 int CPoint::IsSame3D(int iX, int iY, int iZ)
 {
 	return	(X()==iX&&Y()==iY&&Z()==iZ);
 }
 
+// IsVertical || IsHorizontal
 int CPoint::IsFlat(CPoint *pPoint)
 {
 	return	IsVertical(pPoint)||IsHorizontal(pPoint);
 }
 
+// If has same X and Z but different Y
 int CPoint::IsVertical(CPoint *pPoint)
 {
 	return	Z()==pPoint->Z()&&X()==pPoint->X()&&Y()!=pPoint->Y();
 }
 
+// If has same Y and Z but different X
 int CPoint::IsHorizontal(CPoint *pPoint)
 {
 	return	Z()==pPoint->Z()&&X()!=pPoint->X()&&Y()==pPoint->Y();
 }
 
+// If has same X and Y but different Z
 int CPoint::IsPerpendicular(CPoint *pPoint)
 {
 	return	Z()!=pPoint->Z()&&X()==pPoint->X()&&Y()==pPoint->Y();
 }
 
+// Initialize this point;
+// call CPoint::SetXYZ and CPoint::CreatKey.
 void CPoint::Initialize(int iX, int iY, int iZ, CWire *pParent)
 {
 	SetXYZ(iX,iY,iZ);
@@ -153,6 +171,8 @@ void CPoint::Initialize(int iX, int iY, int iZ, CWire *pParent)
 	CreateKey();
 }
 
+// Set Z value in m_cZ.
+// This function would call CPoint::CreateKey.
 void CPoint::SetZ(int iZ)
 {
 	m_cZ	=	iZ;
@@ -160,12 +180,14 @@ void CPoint::SetZ(int iZ)
 	CreateKey();
 }
 
-
+// Generate this object's key with its position.
+// from lowest bit, 1 - 8 is Z, 9 - 20 is Y, 21 - 32 is X.
 KEY CPoint::MakeKey(int iX, int iY, int iZ)
 {
 	return	iX<<20 | iY<<8 | iZ;
 }
 
+// call CPoint::MakeKey and store key in m_Key.
 void CPoint::CreateKey()
 {
 	//thyeros- key [6/16/2006]
@@ -173,21 +195,26 @@ void CPoint::CreateKey()
 	m_Key = MakeKey(X(),Y(),Z());
 }
 
+// get X position from m_Key
 int CPoint::X(KEY Key)
 {
 	return	0xFFF & (Key>>20);
 }
 
+// get Y position from m_Key
 int CPoint::Y(KEY Key)
 {
 	return	0xFFF & (Key>>8);
 }
 
+// get Z position from m_Key
 int CPoint::Z(KEY Key)
 {
 	return	0xFF & (Key);
 }
 
+// get the direction of given point.
+// return DIR_HORIZONTAL or DIR_VERTICAL or DIR_PERPENDICULAR or DIR_DIAGONAL
 int CPoint::GetDirection(CPoint *pPoint)
 {
 	if (IsHorizontal(pPoint))		return	DIR_HORIZONTAL;
@@ -197,6 +224,8 @@ int CPoint::GetDirection(CPoint *pPoint)
 	return	DIR_DIAGONAL;
 }
 
+// Set X value in m_iX.
+// This function would call CPoint::CreateKey.
 void CPoint::SetX(int iX)
 {
 	m_iX	=	iX;
@@ -204,6 +233,8 @@ void CPoint::SetX(int iX)
 	CreateKey();
 }
 
+// Set Y value in m_iY.
+// This function would call CPoint::CreateKey.
 void CPoint::SetY(int iY)
 {
 	m_iY	=	iY;
@@ -211,6 +242,8 @@ void CPoint::SetY(int iY)
 	CreateKey();
 }
 
+// Search the net which this point belong to, 
+// and compare each pin with the point.
 int CPoint::IsPin()
 {
 	assert(GetParent());
@@ -227,6 +260,9 @@ int CPoint::IsPin()
 }
 
 
+// Print information of this point to pFile.
+// iMode: PRINT_MODE_GNUPLOT | PRINT_MODE_GNUPLOT3D |
+// PRINT_MODE_MATLAB | PRINT_MODE_MATLAB3D | PRINT_MODE_TEXT
 void CPoint::Print(FILE *pFile, int iMode)
 {
 	if(pFile==NULL)	return;
