@@ -82,6 +82,9 @@ CGRouter::~CGRouter()
 	
 }
 
+/*!
+ * Main process of box expand
+ */
 void CGRouter::BoxRouting(CDesign *pDesign, CBBox *pBBoxS, CBBox* pBBoxE)
 {
 #define MAX_ILP_CONSTRAINT	20000
@@ -136,7 +139,7 @@ void CGRouter::BoxRouting(CDesign *pDesign, CBBox *pBBoxS, CBBox* pBBoxE)
 
 			if(pDesign->m_Param.GetProp()&PROP_PARAM_BOXR_ILP)
 			{
-				if(pDesign->m_Param.GetProp()&PROP_PARAM_BOXR_ILPMIN)		CObject::PrintMsg2(" i-routing.");
+				if(pDesign->m_Param.GetProp()&PROP_PARAM_BOXR_ILPMIN)		CObject::PrintMsg2(_T" i-routing.");
 				else if(pDesign->m_Param.GetProp()&PROP_PARAM_BOXR_ILPMAX)	CObject::PrintMsg2(" x-routing.");
 				else if(pDesign->m_Param.GetProp()&PROP_PARAM_BOXR_ILPHYD)	CObject::PrintMsg2(" h-routing.");
 

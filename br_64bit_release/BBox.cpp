@@ -90,21 +90,34 @@ void CBBox::Initialize(CPoint* pPointS, CPoint* pPointE)
 	Initialize(pPointS->X(),pPointS->Y(),pPointS->Z(),pPointE->X(),pPointE->Y(),pPointE->Z());
 }
 
+/*! 
+ * judge if given point is in this box
+ */
 int CBBox::IsInside(int iX, int iY)
 {
 	return	iX>=m_iMinX&&iX<=m_iMaxX&&iY>=m_iMinY&&iY<=m_iMaxY;
 }
 
+/*! 
+ * judge if given point is in this box. 3D version.
+ */
 int CBBox::IsInside(int iX, int iY, int iZ)
 {
 	return	iX>=m_iMinX&&iX<=m_iMaxX&&iY>=m_iMinY&&iY<=m_iMaxY&&iZ>=m_cMinZ&&iZ<=m_cMaxZ;
 }
 
+/*! 
+ * judge if given point is in this box
+ */
 int CBBox::IsInside(CPoint *pPoint)
 {
 	return	IsInside(pPoint->X(),pPoint->Y());
 }
 
+/*!
+ * Expand recent box by iStep in available area.
+ * If an edge has reached the limit, it would'n be changed.
+ */
 void CBBox::Expand(int iMaxX, int iMaxY, int iStep)
 {
 	m_iMinX	=	MAX(0,m_iMinX-iStep);
@@ -123,6 +136,9 @@ void CBBox::Initialize(int iX1, int iY1, int iZ1, int iX2, int iY2, int iZ2)
 	m_cMinZ	=	MIN(iZ1,iZ2);
 }
 
+/*!
+ * judge if given box is in this box
+ */
 int CBBox::IsInside(CBBox *pBBox)
 {
 	return	X()<=pBBox->X()&&Y()<=pBBox->Y()&&Z()<=pBBox->Z()
@@ -131,6 +147,9 @@ int CBBox::IsInside(CBBox *pBBox)
 			&&m_cMaxZ>=pBBox->m_cMaxZ;
 }
 
+/*!
+ * judge if this box has the same range with given box
+ */
 int CBBox::IsOverlapped(CBBox *pBBox)
 {
 	if(IsInside(pBBox)||pBBox->IsInside(this))	return	TRUE;
@@ -144,6 +163,9 @@ int CBBox::IsOverlapped(CBBox *pBBox)
 	return	FALSE;
 }
 
+/*!
+ * This function make no sense. Maybe it's unfinished.
+ */
 int CBBox::IsOverlapped(CWire* pWire)
 {
 	if((pWire->m_pPointS->X()<=m_iMinX&&pWire->m_pPointE->X()<=m_iMinX)||
@@ -156,6 +178,9 @@ int CBBox::IsOverlapped(CWire* pWire)
 	return	TRUE;
 }
 
+/*!
+ * get the center point of the box.(Round down)
+ */
 CPoint CBBox::GetCenter()
 {
 	int	iX	=	(m_iMinX+m_iMaxX)/2;
@@ -168,6 +193,10 @@ CPoint CBBox::GetCenter()
 	return	Ret;
 }
 
+/*!
+ * Expand recent box(if necessary) to include given point.
+ * Do nothing if the point has been included.
+ */
 void CBBox::AddPoint(int iX, int iY, int iZ)
 {
 	m_iMaxX	=	MAX(m_iMaxX,iX);
@@ -178,11 +207,17 @@ void CBBox::AddPoint(int iX, int iY, int iZ)
 	m_cMinZ	=	MIN(m_cMinZ,iZ);
 }
 
+/*!
+ * call CBBox::AddPoint(pPoint->X(),pPoint->Y(),pPoint->Z());
+ */
 void CBBox::AddPoint(CPoint* pPoint)
 {
 	AddPoint(pPoint->X(),pPoint->Y(),pPoint->Z());
 }
 
+/*!
+ * calculate the shortest distance from given point to the box's egdes.
+ */
 int CBBox::Distance(CPoint *pPoint)
 {
 	if(pPoint->X()<=m_iMaxX&&pPoint->X()>=m_iMinX)
