@@ -1,8 +1,8 @@
-CC	= g++-3.4
+CC	= clang
 
-CFLAGS	= -O3 -Wno-deprecated -DNDEBUG  -pthread -I./stlport
+CFLAGS	= -O3 -Wno-deprecated -DNDEBUG  -pthread -I../include -L../lib
 
-SRCS	= BBox.cpp Boundary.cpp BoxRouter.cpp Design.cpp flute.cpp Grid.cpp GRouter.cpp ILPSolver.cpp Layer.cpp Net.cpp Object.cpp Param.cpp Pin.cpp Point.cpp Segment.cpp Util.cpp Wire.cpp MazeHeap.cpp
+SRCS	= BBox.cpp Boundary.cpp BoxRouter.cpp Design.cpp Grid.cpp GRouter.cpp ILPSolver.cpp Layer.cpp Net.cpp Object.cpp Param.cpp Pin.cpp Point.cpp Segment.cpp Util.cpp Wire.cpp MazeHeap.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -11,7 +11,7 @@ EXE	= br_ispd07.x
 .SUFFIXES: .cc .cpp .o .x
 
 $(EXE): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $(OBJS) -L. -lglpk -lstlport -lcurses
+	$(CC) $(CFLAGS) -o $@ $(OBJS) -L. -lglpk -lcurses -lflute
 
 .cpp.o:
 	$(CC) $(CFLAGS) -c $<
