@@ -655,7 +655,7 @@ void CWire::Print(FILE *pFile, int Mode)
 			}
 			else
 			{
-				Key		=	m_pPointS->GetKey()&0xFFFFFF00;
+				Ky		=	m_pPointS->GetKey()&0xFFFFFF00;
 				if(!fwrite(&Key,1,sizeof(KEY),pFile))	Display(DISPLAY_MODE_ERRO,"print a wire(S) in net(id:%d)\n",(int)GetParent()->GetKey());
 
 				Key		=	m_pPointE->GetKey()&0xFFFFFF00;
@@ -1457,6 +1457,10 @@ void CWire::AdjustBoundary(CLayer* pLayer, int iBlocakge)
 	}
 }
 
+/*!
+ * return if this wire shorter than given length
+ * It seems does something magical when two wire has the same length.
+ */
 bool CWire::CompareLength(CWire* pWire)
 {
 	//return	((CWire*)pL)->GetLength()<((CWire*)pR)->GetLength();
@@ -1475,6 +1479,7 @@ bool CWire::CompareLength(CWire* pWire)
 
 }
 
+//! return	CWire::IsRouted() && CWire::IsLayerAssigned() ;
 int	CWire::IsCompleted()
 {
 	return	IsRouted()&&IsLayerAssigned();
