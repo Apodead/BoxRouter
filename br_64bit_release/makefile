@@ -1,6 +1,6 @@
 CC	= clang
 
-CFLAGS	= -O3 -Wno-deprecated -DNDEBUG  -pthread -I../include -L../lib
+CFLAGS	= -O3 -Wno-deprecated -DNDEBUG  -pthread -I../include/ -L../lib 
 
 SRCS	= BBox.cpp Boundary.cpp BoxRouter.cpp Design.cpp Grid.cpp GRouter.cpp ILPSolver.cpp Layer.cpp Net.cpp Object.cpp Param.cpp Pin.cpp Point.cpp Segment.cpp Util.cpp Wire.cpp MazeHeap.cpp
 

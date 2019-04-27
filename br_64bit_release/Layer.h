@@ -77,6 +77,7 @@
 #include "Grid.h"
 #include "Boundary.h"
 #include "BBox.h"
+using __gnu_cxx::hash_map;
 
 class CDesign;
 class CBoundary;

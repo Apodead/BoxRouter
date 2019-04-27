@@ -73,10 +73,12 @@
 #include "Layer.h"
 #include "BBox.h"
 #include "Param.h"
+using __gnu_cxx::hash_map;
 
 #define WIRE_WIDTH_SPACE	(2)
 
 class CLayer;
+class CBoundary;
 
 class CDesign : public CObject, public CBBox
 {
@@ -165,5 +167,5 @@ protected:
 	int 				IsLUTup;
 };		
 		
-#endif // !defined(AFX_DESIGN_H__E7845521_5E53_493A_8CC5_F1DF684C22CB__INCLUDED_)
+#endif // ifndef DESIGN_H
 

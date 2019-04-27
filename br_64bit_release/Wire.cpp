@@ -589,6 +589,10 @@ int CWire::GetNumSegmentList()
 	return	m_SegmentList.size();
 }
 
+/*!
+ * get new empty object from instance pool
+ * or alloc a new one if pool is empty.
+ */
 CWire*	CWire::New()
 {
 	CWire*	pWire	=	NULL;
@@ -603,6 +607,8 @@ CWire*	CWire::New()
 	return	pWire;
 }
 
+/*!
+ */
 void CWire::Delete()
 {
 	assert(m_pParent==NULL);
@@ -655,7 +661,7 @@ void CWire::Print(FILE *pFile, int Mode)
 			}
 			else
 			{
-				Ky		=	m_pPointS->GetKey()&0xFFFFFF00;
+				Key		=	m_pPointS->GetKey()&0xFFFFFF00;
 				if(!fwrite(&Key,1,sizeof(KEY),pFile))	Display(DISPLAY_MODE_ERRO,"print a wire(S) in net(id:%d)\n",(int)GetParent()->GetKey());
 
 				Key		=	m_pPointE->GetKey()&0xFFFFFF00;
