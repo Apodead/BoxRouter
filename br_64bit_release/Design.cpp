@@ -1034,6 +1034,9 @@ int	CDesign::Initialize(char* pName)
 	return	TRUE;
 }
 
+/*!
+ * Get the layer specified by iLayer.
+ */
 CLayer* CDesign::GetLayer(int iLayer)
 {
 #ifdef _DEBUG
@@ -1047,6 +1050,10 @@ CLayer* CDesign::GetLayer(int iLayer)
 	return	&m_pLayer[iLayer-LAYER_METAL1];
 }
 
+/*!
+ * Initialize the memory for layers.
+ * Just new but no delete.
+ */
 void CDesign::CreateLayer()
 {
 	//initialize the memory for layers
@@ -1055,6 +1062,12 @@ void CDesign::CreateLayer()
 	assert(m_pLayer);
 }
 
+/*!
+ * Initialize the memory for Nets by iNumNet.
+ *
+ * If some moemory has been allocated to nets in the past,
+ * it will be copied to new memory area and safely deleted.
+ */
 void CDesign::CreateNet(int	iNumNet)
 {
 	m_iNumNet	=	iNumNet;
@@ -1076,6 +1089,12 @@ void CDesign::CreateNet(int	iNumNet)
 	}
 }
 
+/*!
+ * Initialize nets with pNetList.
+ *
+ * It will new enough memory, and copy nets in pNetList 
+ * to to m_ppNet;
+ */
 void CDesign::CreateNet(vector<CNet*>*	pNetList)
 {
 	m_iNumNet	=	pNetList->size();
@@ -1094,11 +1113,20 @@ void CDesign::CreateNet(vector<CNet*>*	pNetList)
 	}	
 }
 
+/*!
+ * get net specified by iIndex
+ */
 CNet* CDesign::GetNet(int iIndex)
 {
 	return	m_ppNet[iIndex];
 }
 
+/*!
+ * Count the nets which has iValue as the property or
+ * count the nets which has iValue as the state.
+ *
+ * iMode: GET_MODE_PROP | GET_MODE_STATE .
+ */
 int CDesign::GetNumNet(int iMode, int iValue)
 {
 	if(iValue==STATE_NET_ANY||iValue==PROP_NET_ANY)	return	m_iNumNet;
@@ -1119,6 +1147,9 @@ int CDesign::GetNumNet(int iMode, int iValue)
 	return	iNum;
 }
 
+/*!
+ * Print details about this design.
+ */
 void CDesign::Print(FILE *pFile, int iMode)
 {
 	if(pFile==NULL)	return;
@@ -1279,6 +1310,12 @@ int CDesign::GetNumWire(int iMode, int iValue)
 	return	iNumWire;
 }
 
+/*!
+ * Get times of overflow happended totally in all layers
+ * or the maximum times in one layer.
+ * 
+ * iMode: GET_MODE_MAX | GET_MODE_SUM .
+ */
 int CDesign::GetOverFlow(int iMode)
 {
 	int	iOverFlow		=	0;
@@ -1295,6 +1332,11 @@ int CDesign::GetOverFlow(int iMode)
 	return	iOverFlow;
 }
 
+/*!
+ * Get total wire length.
+ *
+ * iMode: STATE_WIRE_ASSGNED | STATE_WIRE_ANY .
+ */
 int CDesign::GetLength(int iMode, int iValue)
 {
 	int	iLength	=	0;
@@ -1312,6 +1354,14 @@ int CDesign::GetLength(int iMode, int iValue)
 	return	iLength;
 }
 
+/*!
+ * origin comments:
+ * compute the starting point of box expansion, based on the # of pins
+ * it also can be done any congestion analysis.
+ *
+ * Get start box from each layer and create a large cube
+ * to include all of them.
+ */
 CBBox CDesign::GetStartBox(int* pNumEdge)
 {
 	//compute the starting point of box expansion, based on the # of pins
@@ -1345,6 +1395,9 @@ CBBox CDesign::GetStartBox(int* pNumEdge)
 	return	BBox;
 }
 
+/*!
+ * Get congested box from each layer.
+ */
 CBBox CDesign::GetCongestedBox()
 {
 	CBBox	BBox;
@@ -1354,6 +1407,12 @@ CBBox CDesign::GetCongestedBox()
 	return	BBox;
 }
 
+/*!
+ * collect the all nets within the give box.
+ * 
+ * It was designed to satisfying the given condition when collect nets,
+ * but obviously this feature is not implemented.
+ */
 int CDesign::GetNetInBBox(vector<CNet*>* pNetList, CBBox* pBBox/*, int iMode, int iValue*/)
 {
 	//collect the all nets within the give box, satisfying the given condition (property/state)
@@ -1392,7 +1451,10 @@ int CDesign::GetNetInBBox(vector<CNet*>* pNetList, CBBox* pBBox/*, int iMode, in
 	
 	return	iNumNet;
 }
-//
+
+/*!
+ * Add penalty to each layer and return the max one.
+ */
 int CDesign::AddPenalty(int iPenalty)
 {
 	int	iMaxPenalty	=	0;
@@ -1402,6 +1464,9 @@ int CDesign::AddPenalty(int iPenalty)
 	return	iMaxPenalty;
 }
 
+/*!
+ * calculate how much wires are in overflow boundary totally.
+ */
 int CDesign::GetWireInOverFlowBoundary(hash_map<ADDRESS,int>* pWireList)
 {
 	for (int i=LAYER_METAL1;i<=T();++i)	GetLayer(i)->GetWireInOverFlowBoundary(pWireList);
@@ -1409,6 +1474,9 @@ int CDesign::GetWireInOverFlowBoundary(hash_map<ADDRESS,int>* pWireList)
 	return	pWireList->size();
 }
 
+/*!
+ * calculate how much nets are in overflow boundary totally.
+ */
 int CDesign::GetNetInOverFlowBoundary(hash_map<ADDRESS,int>* pNetList)
 {
 	for (int i=LAYER_METAL1;i<=T();++i)	GetLayer(i)->GetNetInOverFlowBoundary(pNetList);
@@ -1416,7 +1484,9 @@ int CDesign::GetNetInOverFlowBoundary(hash_map<ADDRESS,int>* pNetList)
 	return	pNetList->size();
 }
 
-
+/*!
+ * calculate how much boundaries is overflow.
+ */
 int	CDesign::GetOverFlowBoundary(vector<CBoundary*>* pBoundaryList)
 {
 	for (int i=LAYER_METAL1;i<=T();++i)	GetLayer(i)->GetOverFlowBoundary(pBoundaryList);
@@ -1425,6 +1495,9 @@ int	CDesign::GetOverFlowBoundary(vector<CBoundary*>* pBoundaryList)
 }
 
 
+/*!
+ * calculate the number of all wires within the give box, satisfying the given condition (property/state)
+ */
 int CDesign::GetWireInBBox(vector<CWire*>* pWireList, CBBox* pBBox, int iMode, int iValue)
 {
 	//collect the all wires within the give box, satisfying the given condition (property/state)
@@ -1467,9 +1540,10 @@ int CDesign::GetNumVia()
 	return	iNumVia;
 }
 
+//! need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros]
 void CDesign::DelNets()
 {
-	// need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros]
+	//! need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros]
 	for (int i=0;i<m_iNumNet;++i)	SAFE_DEL(m_ppNet[i]);	
 
 	SAFE_DELA(m_ppNet);
@@ -1742,6 +1816,10 @@ double CDesign::GetCongestion(int iMode)
 	return	-1;
 }
 
+/*!
+ * Warning: this function return too early so it does nothing except 
+ * print some messages.
+ */
 void CDesign::UpdateSteinerTree()
 {
 	char	cName[MAX_BUFFER_STR];

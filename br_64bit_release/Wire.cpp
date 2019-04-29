@@ -229,6 +229,10 @@ int CWire::IsFlat()
 }
 
 
+/*!
+ * calculate the manhattan distance from start 
+ * point to end point.
+ */
 int CWire::GetLength()
 {
 	if(IsPoint())	return	0;
@@ -236,6 +240,10 @@ int CWire::GetLength()
 	return	m_pPointS->GetMDistance(m_pPointE);
 }
 
+/*!
+ * calculate the manhattan distance from start 
+ * point to end point.
+ */
 int CWire::GetLength2D()
 {
 	if(IsPoint())	return	0;
@@ -243,6 +251,9 @@ int CWire::GetLength2D()
 	return	m_pPointS->GetMDistance2D(m_pPointE);
 }
 
+/*!
+ * Change the layer which this wire is in.
+ */
 void CWire::AssignLayer(int iLayer)
 {
 	if(IsRouted())
@@ -273,10 +284,18 @@ void CWire::AssignLayer(int iLayer)
 		//m_pPointS->SetZ(iLayer);
 		//m_pPointE->SetZ(iLayer);
 		
-		CreateKey();	
+		CreateKey();
 	}
 }
 
+/*!
+ * Creat KEY of this wire. High 32 bit is from start point,
+ * low 32 bit is from end point. And Z positions of both points
+ * are ignored.
+ *
+ * for wire, we don't need Z as a part of KEY [6/30/2006 thyeros]
+ * the same wire, but with different Z is not allowed [6/30/2006 thyeros]
+ */
 void CWire::CreateKey()
 {
 	// for wire, we don't need Z as a part of KEY [6/30/2006 thyeros]
@@ -288,6 +307,9 @@ void CWire::CreateKey()
 
 }
 
+/*! 
+ * set m_pParent
+ */
 void CWire::SetParent(CNet *pParent)
 {
 	m_pParent	=	(CObject*)pParent;
