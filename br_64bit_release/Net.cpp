@@ -509,6 +509,12 @@ void CNet::Refine()
 	assert(m_Wire.size());
 }
 
+/**
+ * @brief count wires, satisfying the given condition.
+ * @param iMode GET_MODE_PROP | GET_MODE_STATE | GET_MODE_LAYER
+ * @return total of conditional wires
+ * @sa CWire, CWire::GetProp(), CWire::GetState()
+ */
 int CNet::GetNumWire(int iMode, int iValue)
 {
 	int	iNum	=	0;

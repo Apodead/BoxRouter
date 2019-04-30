@@ -490,7 +490,9 @@ void CDesign::ReadParam(char* pName)
 }
 
 /**
- * Initialize the design.
+ * @brief Initialize the design.
+ * @param pName the filename of param file
+ *
  * Read input file and collect all params.
  * From input file build steiner tree * (use flute),
  * or read pre-build steiner tree from '.stt' file.
@@ -631,8 +633,10 @@ int	CDesign::Initialize(char* pName)
 			if(pToken)	m_iSizeZ	=	max(2,atoi(pToken));		// multilayer routing [1/31/2007 thyeros]
 			else		m_iSizeZ	=	2;							// planar routing [1/31/2007 thyeros]
 
+            ///@sa CBBox::Initialize()
 			CBBox::Initialize(0,0,0,m_iSizeX,m_iSizeY,m_iSizeZ);
 
+            ///@sa CreateLayer()
 			CreateLayer();
 		}
 		else if(STRICMP(pToken,"vertical")==0&&strtok(NULL," \t\n"))
@@ -644,6 +648,7 @@ int	CDesign::Initialize(char* pName)
 				if(iCapacity)
 				{
 					for(;GetLayer(iIndex)->GetKey();iIndex++);	
+                    ///@sa CLayer::Configure()
 					GetLayer(iIndex)->Configure(iIndex,iCapacity,DIR_VERTICAL,0,0,0,this);
 				}
 
@@ -703,6 +708,7 @@ int	CDesign::Initialize(char* pName)
 			pToken			=	strtok(NULL," \t\n");
 			if(STRICMP(pToken,"net")==0)
 			{
+                ///@sa CreatNet()
 				CreateNet(atoi(strtok(NULL," \t\n")));
 
 				for (int i=LAYER_METAL1;i<=T();++i)	
@@ -720,11 +726,14 @@ int	CDesign::Initialize(char* pName)
 						pLayer->Configure(i,0,iDirection,0,0,0,this);
 					}
 
+                    ///@sa CLayer::Initialize()
 					pLayer->Initialize();
 					m_iMaxCapacity		=	MAX(m_iMaxCapacity,pLayer->GetCapacity(GET_MODE_MAX));
 				}
 
+				///@sa SetHighestRoutableLayer()
 				SetHighestRoutableLayer(T());
+				///@sa SetLowestRoutableLayer()
 				SetLowestRoutableLayer(LAYER_METAL1);
 
 				break;
@@ -768,6 +777,7 @@ int	CDesign::Initialize(char* pName)
 		assert(m_ppNet[iNetIndex]);
 
 		CNet*	pNet			=	GetNet(iNetIndex);
+        ///@sa CNet
 		pNet->Initialize(iNetID,/*iWidth,*/this);
 
 		if(iNumPin>1000)
@@ -1035,7 +1045,7 @@ int	CDesign::Initialize(char* pName)
 }
 
 /*!
- * Get the layer specified by iLayer.
+ * @brief Get the layer specified by iLayer.
  */
 CLayer* CDesign::GetLayer(int iLayer)
 {
@@ -1046,12 +1056,13 @@ CLayer* CDesign::GetLayer(int iLayer)
 	}
 #endif
 	assert(iLayer<=T()&&iLayer>=LAYER_METAL1);
-	//thyeros- iLayer start from ONE (M1), but array index starts from ZERO [6/16/2006]
+	//!thyeros- iLayer start from ONE (M1), but array index starts from ZERO [6/16/2006]
 	return	&m_pLayer[iLayer-LAYER_METAL1];
 }
 
 /*!
- * Initialize the memory for layers.
+ * @Initialize the memory for layers.
+ *
  * Just new but no delete.
  */
 void CDesign::CreateLayer()
@@ -1063,10 +1074,12 @@ void CDesign::CreateLayer()
 }
 
 /*!
- * Initialize the memory for Nets by iNumNet.
+ * @brief Initialize the memory for Nets by iNumNet.
  *
  * If some moemory has been allocated to nets in the past,
  * it will be copied to new memory area and safely deleted.
+ * 
+ * @ref m_iNumNet will be set to iNumNet.
  */
 void CDesign::CreateNet(int	iNumNet)
 {
@@ -1090,7 +1103,9 @@ void CDesign::CreateNet(int	iNumNet)
 }
 
 /*!
- * Initialize nets with pNetList.
+ * @brief Initialize nets with pNetList.
+ * @param pNetList every element in the list will be copied to new list.
+ * @sa m_iNumNet
  *
  * It will new enough memory, and copy nets in pNetList 
  * to to m_ppNet;
@@ -1114,7 +1129,7 @@ void CDesign::CreateNet(vector<CNet*>*	pNetList)
 }
 
 /*!
- * get net specified by iIndex
+ * @brief get net specified by iIndex
  */
 CNet* CDesign::GetNet(int iIndex)
 {
@@ -1122,10 +1137,10 @@ CNet* CDesign::GetNet(int iIndex)
 }
 
 /*!
- * Count the nets which has iValue as the property or
- * count the nets which has iValue as the state.
- *
- * iMode: GET_MODE_PROP | GET_MODE_STATE .
+ * @brief Count the nets, satisfying the given condition.
+ * @param iMode GET_MODE_PROP | GET_MODE_STATE .
+ * @param iValue condition.
+ * @sa CNet::GetProp(), CNet::GetState()
  */
 int CDesign::GetNumNet(int iMode, int iValue)
 {
@@ -1148,7 +1163,7 @@ int CDesign::GetNumNet(int iMode, int iValue)
 }
 
 /*!
- * Print details about this design.
+ * @brief Print details about this design.
  */
 void CDesign::Print(FILE *pFile, int iMode)
 {
@@ -1302,6 +1317,12 @@ void CDesign::Print(FILE *pFile, int iMode)
 	fflush(pFile);
 }
 
+/**
+ * @brief Get the total number of wires, satisfying the given condition.
+ * @param iMode pass to CNet::GetNumWire()
+ * @param iValue pass to CNet::GetNumWire()
+ * @sa CNet::GetNumWire()
+ */
 int CDesign::GetNumWire(int iMode, int iValue)
 {
 	int	iNumWire	=	0;
@@ -1311,10 +1332,12 @@ int CDesign::GetNumWire(int iMode, int iValue)
 }
 
 /*!
- * Get times of overflow happended totally in all layers
+ * @brief Get times of overflow happended totally in all layers
  * or the maximum times in one layer.
  * 
- * iMode: GET_MODE_MAX | GET_MODE_SUM .
+ * @param iMode GET_MODE_MAX | GET_MODE_SUM .
+ *
+ * @sa CLayer::GetOverFlow()
  */
 int CDesign::GetOverFlow(int iMode)
 {
@@ -1333,9 +1356,13 @@ int CDesign::GetOverFlow(int iMode)
 }
 
 /*!
- * Get total wire length.
+ * @brief Get total wire length.
  *
- * iMode: STATE_WIRE_ASSGNED | STATE_WIRE_ANY .
+ * @param iMode STATE_WIRE_ASSGNED | STATE_WIRE_ANY .
+ *
+ * @return the summary of length
+ *
+ * @sa CLayer::GetLength(), CNet::GetLength()
  */
 int CDesign::GetLength(int iMode, int iValue)
 {
@@ -1355,17 +1382,15 @@ int CDesign::GetLength(int iMode, int iValue)
 }
 
 /*!
- * origin comments:
- * compute the starting point of box expansion, based on the # of pins
- * it also can be done any congestion analysis.
- *
- * Get start box from each layer and create a large cube
+ * @brief Get start box from each layer and create a large cube
  * to include all of them.
+ *
+ * @sa CLayer::GetStartBox(), CBBox::Initialize()
  */
 CBBox CDesign::GetStartBox(int* pNumEdge)
 {
-	//compute the starting point of box expansion, based on the # of pins
-	//it also can be done any congestion analysis
+	//!compute the starting point of box expansion, based on the # of pins.
+	//!it also can be done any congestion analysis.
 
 	vector<int>	X;
 	vector<int>	Y;
@@ -1396,7 +1421,8 @@ CBBox CDesign::GetStartBox(int* pNumEdge)
 }
 
 /*!
- * Get congested box from each layer.
+ * @brief Get congested box from each layer.
+ * @sa CLayer::GetCongestedBox()
  */
 CBBox CDesign::GetCongestedBox()
 {
@@ -1408,7 +1434,7 @@ CBBox CDesign::GetCongestedBox()
 }
 
 /*!
- * collect the all nets within the give box.
+ * @brief collect the all nets within the give box.
  * 
  * It was designed to satisfying the given condition when collect nets,
  * but obviously this feature is not implemented.
@@ -1453,7 +1479,8 @@ int CDesign::GetNetInBBox(vector<CNet*>* pNetList, CBBox* pBBox/*, int iMode, in
 }
 
 /*!
- * Add penalty to each layer and return the max one.
+ * @brief Add penalty to each layer and return the max one.
+ * @sa CLayer::AddPenalty()
  */
 int CDesign::AddPenalty(int iPenalty)
 {
@@ -1465,7 +1492,8 @@ int CDesign::AddPenalty(int iPenalty)
 }
 
 /*!
- * calculate how much wires are in overflow boundary totally.
+ * @brief calculate how much wires are in overflow boundary totally.
+ * @sa CLayer::GetWireInOverFlowBoundary()
  */
 int CDesign::GetWireInOverFlowBoundary(hash_map<ADDRESS,int>* pWireList)
 {
@@ -1475,7 +1503,8 @@ int CDesign::GetWireInOverFlowBoundary(hash_map<ADDRESS,int>* pWireList)
 }
 
 /*!
- * calculate how much nets are in overflow boundary totally.
+ * @brief calculate how much nets are in overflow boundary totally.
+ * @sa CLayer::GetNetInOverFlowBoundary()
  */
 int CDesign::GetNetInOverFlowBoundary(hash_map<ADDRESS,int>* pNetList)
 {
@@ -1485,7 +1514,9 @@ int CDesign::GetNetInOverFlowBoundary(hash_map<ADDRESS,int>* pNetList)
 }
 
 /*!
- * calculate how much boundaries is overflow.
+ * @brief calculate how much boundaries is overflow.
+ * @param pBoundaryList pass to CLayer::GetOverFlowBoundary()
+ * @sa CLayer::GetOverFlowBoundary()
  */
 int	CDesign::GetOverFlowBoundary(vector<CBoundary*>* pBoundaryList)
 {
@@ -1495,12 +1526,13 @@ int	CDesign::GetOverFlowBoundary(vector<CBoundary*>* pBoundaryList)
 }
 
 
-/*!
- * calculate the number of all wires within the give box, satisfying the given condition (property/state)
+/**
+ * @brief calculate the number of all wires within the give box, satisfying the given condition (property/state)
+ * @sa CNet::GetWireInBBox()
  */
 int CDesign::GetWireInBBox(vector<CWire*>* pWireList, CBBox* pBBox, int iMode, int iValue)
 {
-	//collect the all wires within the give box, satisfying the given condition (property/state)
+	//!collect the all wires within the give box, satisfying the given condition (property/state)
 	assert(pWireList!=NULL);//||pWireList->size()==0);
 
 	int	iNumWire	=	0;
@@ -1509,6 +1541,12 @@ int CDesign::GetWireInBBox(vector<CWire*>* pWireList, CBBox* pBBox, int iMode, i
 	return	iNumWire;
 }
 
+/// Get total capacity of all layers.
+/**
+ * @param iMode GET_MODE_ACAP | GET_MODE_OCAP | GET_MODE_MAX
+ * @return summary of capacity of every layers
+ * @sa CLayer::GetCapacity()
+ */
 int CDesign::GetCapacity(int iMode)
 {
 	switch(iMode){
@@ -1532,6 +1570,12 @@ int CDesign::GetCapacity(int iMode)
 	return	-1;
 }
 
+/// calculate total number of via.
+/**
+ * @return the summary of every nets' number of via
+ * @sa CNet::GetNumVia()
+ * 
+ */
 int CDesign::GetNumVia()
 {
 	int	iNumVia	=	0;
@@ -1540,7 +1584,6 @@ int CDesign::GetNumVia()
 	return	iNumVia;
 }
 
-//! need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros]
 void CDesign::DelNets()
 {
 	//! need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros]
@@ -1550,6 +1593,12 @@ void CDesign::DelNets()
 	m_iNumNet	=	0;
 }
 
+/// Copy output file to dump file
+/**
+ * Output file is specified with m_Param.m_cOutput_File, 
+ * and dump file is specified with m_Param.m_cDump_File.
+ *
+ */
 void CDesign::WriteDump()
 {
 	if(strlen(m_Param.m_cDump_File))
@@ -1560,6 +1609,12 @@ void CDesign::WriteDump()
 	}
 }
 
+/// Copy output file to rel file
+/**
+ * Output file is specified with m_Param.m_cOutput_File, 
+ * and rel file is specified with m_Param.m_cRel_File.
+ *
+ */
 void CDesign::WriteRel()
 {
 	if(strlen(m_Param.m_cRel_File))
@@ -1570,7 +1625,11 @@ void CDesign::WriteRel()
 	}
 }
 
-
+/// Read dump file
+/**
+ * @param pName dump file's filename
+ * @return An integer as boolean mean if successful read the dump file.
+ */
 int CDesign::ReadDump(char* pName)
 {
 	if(strlen(pName))
@@ -1706,6 +1765,14 @@ void CDesign::PrintResult()
 	}
 }
 
+/// Set the state of this design
+/**
+ * @param iState STATE_DESN_STUCK | STATE_DESN_COMPLETED | STATE_DESN_SUCCESS
+ * | STATE_DESN_ROUTED | STATE_DESN_ROUTING | STATE_DESN_REROUTED
+ * | STATE_DESN_REROUTING | STATE_DESN_OVERFLOW
+ *
+ * Specially OVERFLOW and STUCK can be unset while others can't.
+ */
 void CDesign::SetState(int iState)
 {
 	switch(iState){
@@ -1770,6 +1837,10 @@ void CDesign::SetLowestRoutableLayer(int iLayer)
 	m_iLowestRoutableLayer	=	MAX(LAYER_METAL1,iLayer);
 }
 
+/// Get highest or lowest routable layer.
+/**
+ * @param iMode GET_MODE_MAX | GET_MODE_MIN
+ */
 int	CDesign::GetRoutableLayer(int iMode)
 {
 	switch(iMode){
@@ -1788,6 +1859,11 @@ int	CDesign::GetRoutableLayer(int iMode)
 //	m_dTargetCongestion	=	dTargetCongestion;
 //}
 
+/// Get maximum or average congestion of layers.
+/**
+ * @param iMode GET_MODE_MAX | GET_MODE_AVG
+ * @sa CLayer::GetCongestion()
+ */
 double CDesign::GetCongestion(int iMode)
 {
 	switch(iMode){
@@ -1816,10 +1892,6 @@ double CDesign::GetCongestion(int iMode)
 	return	-1;
 }
 
-/*!
- * Warning: this function return too early so it does nothing except 
- * print some messages.
- */
 void CDesign::UpdateSteinerTree()
 {
 	char	cName[MAX_BUFFER_STR];
@@ -1837,6 +1909,10 @@ void CDesign::UpdateSteinerTree()
 	SAFE_FCLOSE(pFile);
 
 	return;
+/*!
+ * Warning: this function return too early so it does nothing except 
+ * print some messages.
+ */
 
 	char	cCmd[MAX_BUFFER_STR];
 	sprintf(cCmd,"cflute_ispd07 -x %s %s.nst",cName,m_Param.m_cInput_File);
