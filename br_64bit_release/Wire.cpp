@@ -86,7 +86,7 @@ int CWire::Debug()
 
 #endif
 
-stack<CWire*> CWire::m_InstancePool;
+stack<CWire*> CWire::m_InstancePool;    ///< store allocated but unused instances of \ref CWire.
 CWire::CWire()
 {
 	m_pRoutedSegmentList	=	NULL;
@@ -99,9 +99,12 @@ CWire::CWire()
 #endif
 }
 
+/**
+ * @sa ClearSegmentList();
+ */
 CWire::~CWire()
 {
-	//thyeros- make sure that this doesn't belong to any NET [6/16/2006]
+	///thyeros- make sure that this doesn't belong to any NET [6/16/2006]
 	assert(m_pParent==NULL);
 
 	ClearSegmentList();
@@ -112,6 +115,9 @@ CWire::~CWire()
 #endif
 }
 
+/**
+ * @brief Initialize wire in 2D plane, and copy the state and parent from another one.
+ */
 void CWire::Initialize(int iX1, int iY1, int iX2, int iY2, int iZ, CWire *pWire)
 {
 	Initialize(iX1,iY1,iX2,iY2,iZ);
@@ -122,6 +128,9 @@ void CWire::Initialize(int iX1, int iY1, int iX2, int iY2, int iZ, CWire *pWire)
 	m_iState	=	pWire->m_iState;
 }
 
+/**
+ * @brief Initialize wire in 3D space.
+ */
 void CWire::Initialize(int iX1, int iY1, int iZ1, int iX2, int iY2, int iZ2)
 {
 	m_iProp	=	PROP_INVALID;
@@ -153,16 +162,27 @@ void CWire::Initialize(int iX1, int iY1, int iZ1, int iX2, int iY2, int iZ2)
 
 //	m_BBox.Initialize(&m_PointS,&m_PointE);
 
+    /// Wire state will be set to \ref STATE_WIRE_UNROUTED|\ref STATE_WIRE_NOTASSGNED .
 	SetState(STATE_WIRE_UNROUTED|STATE_WIRE_NOTASSGNED);
 
+    /// And key will be created.
 	CreateKey();
 }
 
+/**
+ * @brief Initialize wire in 2D space.
+ */
 void CWire::Initialize(int iX1, int iY1, int iX2, int iY2, int iZ)
 {
 	Initialize(iX1,iY1,iZ,iX2,iY2,iZ);
 }
 
+/**
+ * @param iState \ref STATE_WIRE_ROUTED , \ref STATE_WIRE_REROUTED ,
+ * \ref STATE_WIRE_UNROUTED , \ref STATE_WIRE_ASSGNED , \ref 
+ * STATE_WIRE_NOTASSGNED, \ref STATE_WIRE_UNROUTED|\ref STATE_WIRE_NOTASSGNED,
+ * \ref STATE_WIRE_ROUTED|\ref STATE_WIRE_ASSGNED
+ */
 void CWire::SetState(int iState)
 {
 	switch(iState) {
@@ -203,26 +223,31 @@ void CWire::SetState(int iState)
 	}
 }
 
+/// Check property
 int CWire::IsPerpendicular()
 {
 	return	m_iProp&PROP_WIRE_PERPENDICULAR;
 }
 
+/// Check property
 int CWire::IsHorizontal()
 {
 	return	m_iProp&PROP_WIRE_HORIZONTAL;
 }
 
+/// Check property
 int CWire::IsVertical()
 {
 	return	m_iProp&PROP_WIRE_VERTICAL;
 }
 
+/// Check property
 int CWire::IsPoint()
 {
 	return	m_iProp&PROP_WIRE_POINT;
 }
 
+/// Check property
 int CWire::IsFlat()
 {
 	return	m_iProp&PROP_WIRE_FLAT;
@@ -230,8 +255,9 @@ int CWire::IsFlat()
 
 
 /*!
- * calculate the manhattan distance from start 
+ * @brief calculate the manhattan distance from start 
  * point to end point.
+ * @return manhattan distance
  */
 int CWire::GetLength()
 {
@@ -241,8 +267,9 @@ int CWire::GetLength()
 }
 
 /*!
- * calculate the manhattan distance from start 
+ * @brief calculate the manhattan distance from start 
  * point to end point.
+ * @return manhattan distance
  */
 int CWire::GetLength2D()
 {
@@ -252,7 +279,8 @@ int CWire::GetLength2D()
 }
 
 /*!
- * Change the layer which this wire is in.
+ * @brief Change the layer which this wire is in.
+ * @param iLayer the position of target layer
  */
 void CWire::AssignLayer(int iLayer)
 {
@@ -289,17 +317,18 @@ void CWire::AssignLayer(int iLayer)
 }
 
 /*!
- * Creat KEY of this wire. High 32 bit is from start point,
+ * @brief Creat KEY of this wire. 
+ *
+ * High 32 bit is from start point,
  * low 32 bit is from end point. And Z positions of both points
  * are ignored.
  *
- * for wire, we don't need Z as a part of KEY [6/30/2006 thyeros]
- * the same wire, but with different Z is not allowed [6/30/2006 thyeros]
+ * @sa m_Key
  */
 void CWire::CreateKey()
 {
-	// for wire, we don't need Z as a part of KEY [6/30/2006 thyeros]
-	// the same wire, but with different Z is not allowed [6/30/2006 thyeros]
+	/// for wire, we don't need Z as a part of KEY [6/30/2006 thyeros]
+	/// the same wire, but with different Z is not allowed [6/30/2006 thyeros]
 	KEY S	=	m_pPointS->GetKey()&0xFFFFFF00;
 	KEY	E	=	m_pPointE->GetKey()&0xFFFFFF00;
 
@@ -308,18 +337,30 @@ void CWire::CreateKey()
 }
 
 /*! 
- * set m_pParent
+ * @brief Set \ref m_pParent.
  */
 void CWire::SetParent(CNet *pParent)
 {
 	m_pParent	=	(CObject*)pParent;
 }
 
+/// Check wire state.
 int CWire::IsLayerAssigned()
 {
 	return	GetState()&STATE_WIRE_ASSGNED;
 }
 
+/** 
+ * @brief Adjust this wire.
+ * @return vector of wires after adjust. If nothing need to do, the vector
+ * contains a copy of origin wire; if the same wire has been adjust, the 
+ * vector will be empty.
+ * 
+ * Afert adjust, this instance will be delete,
+ * and all of results will be return.
+ * 
+ * TODO : further learn needed
+ */
 vector<CWire*> CWire::AdjustByBoundary()
 {
 	assert(IsRouted());
