@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: CDesign Class Reference</title>
+<title>BoxRouter 2.0: CDesign Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BoxRouter 2.0
    </div>
   </td>
  </tr>
@@ -97,72 +97,99 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cbed390d0e0c05776aed59c16f7982c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a0cbed390d0e0c05776aed59c16f7982c">Report</a> (char *pName)</td></tr>
 <tr class="separator:a0cbed390d0e0c05776aed59c16f7982c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea51597e843c1f8f25dbfa4f4d4fa17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBBox.html">CBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a0ea51597e843c1f8f25dbfa4f4d4fa17">GetCongestedBox</a> ()</td></tr>
+<tr class="memdesc:a0ea51597e843c1f8f25dbfa4f4d4fa17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get congested box from each layer.  <a href="#a0ea51597e843c1f8f25dbfa4f4d4fa17">More...</a><br /></td></tr>
 <tr class="separator:a0ea51597e843c1f8f25dbfa4f4d4fa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9571bf3353ab819782f0162867e525dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a9571bf3353ab819782f0162867e525dc">UpdateSteinerTree</a> ()</td></tr>
 <tr class="separator:a9571bf3353ab819782f0162867e525dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2909717e3b6947c6d685e13088be6d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a9a2909717e3b6947c6d685e13088be6d">Initialize</a> (char *pName)</td></tr>
+<tr class="memdesc:a9a2909717e3b6947c6d685e13088be6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the design.  <a href="#a9a2909717e3b6947c6d685e13088be6d">More...</a><br /></td></tr>
 <tr class="separator:a9a2909717e3b6947c6d685e13088be6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a844b18267aad1895dc66e3208b36d21b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a844b18267aad1895dc66e3208b36d21b">CreateNet</a> (int iNumNet)</td></tr>
+<tr class="memdesc:a844b18267aad1895dc66e3208b36d21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the memory for Nets by iNumNet.  <a href="#a844b18267aad1895dc66e3208b36d21b">More...</a><br /></td></tr>
 <tr class="separator:a844b18267aad1895dc66e3208b36d21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961dbd6912b3ef52ff673b60342f51a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a961dbd6912b3ef52ff673b60342f51a6">CreateNet</a> (vector&lt; <a class="el" href="classCNet.html">CNet</a> * &gt; *pNetList)</td></tr>
+<tr class="memdesc:a961dbd6912b3ef52ff673b60342f51a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize nets with pNetList.  <a href="#a961dbd6912b3ef52ff673b60342f51a6">More...</a><br /></td></tr>
 <tr class="separator:a961dbd6912b3ef52ff673b60342f51a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af116ba8573daa936d633b5ea0b005637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#af116ba8573daa936d633b5ea0b005637">CreateLayer</a> ()</td></tr>
 <tr class="separator:af116ba8573daa936d633b5ea0b005637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af264117726c361d0404dcd97c6da2c35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#af264117726c361d0404dcd97c6da2c35">GetOverFlowBoundary</a> (vector&lt; <a class="el" href="classCBoundary.html">CBoundary</a> * &gt; *pBoundaryList)</td></tr>
+<tr class="memdesc:af264117726c361d0404dcd97c6da2c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate how much boundaries is overflow.  <a href="#af264117726c361d0404dcd97c6da2c35">More...</a><br /></td></tr>
 <tr class="separator:af264117726c361d0404dcd97c6da2c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3fcdbedca2a1f107507ec6bd7f4677a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#ab3fcdbedca2a1f107507ec6bd7f4677a">GetNetInOverFlowBoundary</a> (hash_map&lt; <a class="el" href="BoxRouter_8h.html#a280feb883e9d4a7edcc69c8bcb9f38f2">ADDRESS</a>, int &gt; *pNetList)</td></tr>
+<tr class="memdesc:ab3fcdbedca2a1f107507ec6bd7f4677a"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate how much nets are in overflow boundary totally.  <a href="#ab3fcdbedca2a1f107507ec6bd7f4677a">More...</a><br /></td></tr>
 <tr class="separator:ab3fcdbedca2a1f107507ec6bd7f4677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4fc20284f55855b4e88d89cc03b058"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#acd4fc20284f55855b4e88d89cc03b058">GetWireInOverFlowBoundary</a> (hash_map&lt; <a class="el" href="BoxRouter_8h.html#a280feb883e9d4a7edcc69c8bcb9f38f2">ADDRESS</a>, int &gt; *pWireList)</td></tr>
+<tr class="memdesc:acd4fc20284f55855b4e88d89cc03b058"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate how much wires are in overflow boundary totally.  <a href="#acd4fc20284f55855b4e88d89cc03b058">More...</a><br /></td></tr>
 <tr class="separator:acd4fc20284f55855b4e88d89cc03b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984162e6e0b47da02f4a34e176f0a569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a984162e6e0b47da02f4a34e176f0a569">WriteDump</a> ()</td></tr>
+<tr class="memdesc:a984162e6e0b47da02f4a34e176f0a569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy output file to dump file.  <a href="#a984162e6e0b47da02f4a34e176f0a569">More...</a><br /></td></tr>
 <tr class="separator:a984162e6e0b47da02f4a34e176f0a569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b246b26e9ce4c4edbf74065529b89f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a69b246b26e9ce4c4edbf74065529b89f">WriteRel</a> ()</td></tr>
+<tr class="memdesc:a69b246b26e9ce4c4edbf74065529b89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy output file to rel file.  <a href="#a69b246b26e9ce4c4edbf74065529b89f">More...</a><br /></td></tr>
 <tr class="separator:a69b246b26e9ce4c4edbf74065529b89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add678d74b22a8bd58dec921656454bdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#add678d74b22a8bd58dec921656454bdd">ReadDump</a> (char *pName)</td></tr>
+<tr class="memdesc:add678d74b22a8bd58dec921656454bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read dump file.  <a href="#add678d74b22a8bd58dec921656454bdd">More...</a><br /></td></tr>
 <tr class="separator:add678d74b22a8bd58dec921656454bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91266987b4edb768fb3187e92a9cfbbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a91266987b4edb768fb3187e92a9cfbbd">ReadParam</a> (char *pName)</td></tr>
+<tr class="memdesc:a91266987b4edb768fb3187e92a9cfbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">read in parameter file and store the parameters [1/31/2007 thyeros]  <a href="#a91266987b4edb768fb3187e92a9cfbbd">More...</a><br /></td></tr>
 <tr class="separator:a91266987b4edb768fb3187e92a9cfbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02442687ac58142d9e5b0a5886ee8285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a02442687ac58142d9e5b0a5886ee8285">DelNets</a> ()</td></tr>
 <tr class="separator:a02442687ac58142d9e5b0a5886ee8285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc3a5c7e4453c76a44eec25c38c72135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#afc3a5c7e4453c76a44eec25c38c72135">SetProp</a> (int iProp)</td></tr>
 <tr class="separator:afc3a5c7e4453c76a44eec25c38c72135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda7bcca7062f58a27baa043bd315bfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#adda7bcca7062f58a27baa043bd315bfd">SetState</a> (int iState)</td></tr>
+<tr class="memdesc:adda7bcca7062f58a27baa043bd315bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the state of this design.  <a href="#adda7bcca7062f58a27baa043bd315bfd">More...</a><br /></td></tr>
 <tr class="separator:adda7bcca7062f58a27baa043bd315bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f1b5262fb9420660bd768cb7ae613e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#ae6f1b5262fb9420660bd768cb7ae613e">Print</a> (FILE *pFile, int iMode)</td></tr>
+<tr class="memdesc:ae6f1b5262fb9420660bd768cb7ae613e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print details about this design.  <a href="#ae6f1b5262fb9420660bd768cb7ae613e">More...</a><br /></td></tr>
 <tr class="separator:ae6f1b5262fb9420660bd768cb7ae613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1fc7df15f389d8051d74c7867d3d6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#af1fc7df15f389d8051d74c7867d3d6be">PrintResult</a> ()</td></tr>
 <tr class="separator:af1fc7df15f389d8051d74c7867d3d6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc3b0b72b0991118a2141e11cbdab6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#affc3b0b72b0991118a2141e11cbdab6e">GetOverFlow</a> (int iMode)</td></tr>
+<tr class="memdesc:affc3b0b72b0991118a2141e11cbdab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get times of overflow happended totally in all layers or the maximum times in one layer.  <a href="#affc3b0b72b0991118a2141e11cbdab6e">More...</a><br /></td></tr>
 <tr class="separator:affc3b0b72b0991118a2141e11cbdab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0612a39d1690b74618229f2b88a8ccb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a0612a39d1690b74618229f2b88a8ccb0">GetRoutableLayer</a> (int iMode)</td></tr>
+<tr class="memdesc:a0612a39d1690b74618229f2b88a8ccb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get highest or lowest routable layer.  <a href="#a0612a39d1690b74618229f2b88a8ccb0">More...</a><br /></td></tr>
 <tr class="separator:a0612a39d1690b74618229f2b88a8ccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dda519df38cb104e804522f76d826fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a4dda519df38cb104e804522f76d826fe">SetHighestRoutableLayer</a> (int iLayer)</td></tr>
 <tr class="separator:a4dda519df38cb104e804522f76d826fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d386170d501eb471b63b2f663690b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#af7d386170d501eb471b63b2f663690b0">SetLowestRoutableLayer</a> (int iLayer)</td></tr>
 <tr class="separator:af7d386170d501eb471b63b2f663690b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d8a50b50adf87e7d53b52757f5a04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCNet.html">CNet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a88d8a50b50adf87e7d53b52757f5a04c">GetNet</a> (int iIndex)</td></tr>
+<tr class="memdesc:a88d8a50b50adf87e7d53b52757f5a04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get net specified by iIndex  <a href="#a88d8a50b50adf87e7d53b52757f5a04c">More...</a><br /></td></tr>
 <tr class="separator:a88d8a50b50adf87e7d53b52757f5a04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e73f8a75aa2198ff498f7f67633e9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCLayer.html">CLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a33e73f8a75aa2198ff498f7f67633e9a">GetLayer</a> (int iLayer)</td></tr>
+<tr class="memdesc:a33e73f8a75aa2198ff498f7f67633e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the layer specified by iLayer.  <a href="#a33e73f8a75aa2198ff498f7f67633e9a">More...</a><br /></td></tr>
 <tr class="separator:a33e73f8a75aa2198ff498f7f67633e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8890c8bb8e27692b75d0a68eaa28b885"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCBBox.html">CBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a8890c8bb8e27692b75d0a68eaa28b885">GetStartBox</a> (int *pNumEdge=<a class="el" href="BoxRouter_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td></tr>
+<tr class="memdesc:a8890c8bb8e27692b75d0a68eaa28b885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get start box from each layer and create a large cube to include all of them.  <a href="#a8890c8bb8e27692b75d0a68eaa28b885">More...</a><br /></td></tr>
 <tr class="separator:a8890c8bb8e27692b75d0a68eaa28b885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab5f93449266153a28914c319626289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a5ab5f93449266153a28914c319626289">GetNetInBBox</a> (vector&lt; <a class="el" href="classCNet.html">CNet</a> * &gt; *pNetList, <a class="el" href="classCBBox.html">CBBox</a> *pBBox)</td></tr>
+<tr class="memdesc:a5ab5f93449266153a28914c319626289"><td class="mdescLeft">&#160;</td><td class="mdescRight">collect the all nets within the give box.  <a href="#a5ab5f93449266153a28914c319626289">More...</a><br /></td></tr>
 <tr class="separator:a5ab5f93449266153a28914c319626289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c52d3fa7d4b688303cc6b1410c6bc2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a8c52d3fa7d4b688303cc6b1410c6bc2a">GetWireInBBox</a> (vector&lt; <a class="el" href="classCWire.html">CWire</a> * &gt; *pWireList, <a class="el" href="classCBBox.html">CBBox</a> *pBBox, int iMode=<a class="el" href="BoxRouter_8h.html#a6f72f2cc9dd31793dd832ccfb2547de4">GET_MODE_STATE</a>, int iValue=<a class="el" href="BoxRouter_8h.html#a853da9235ff1dc45acb5ca9556530d21">STATE_WIRE_UNROUTED</a>)</td></tr>
+<tr class="memdesc:a8c52d3fa7d4b688303cc6b1410c6bc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate the number of all wires within the give box, satisfying the given condition (property/state)  <a href="#a8c52d3fa7d4b688303cc6b1410c6bc2a">More...</a><br /></td></tr>
 <tr class="separator:a8c52d3fa7d4b688303cc6b1410c6bc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4221f754cb8ba12ac6344df3ca31d26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#ac4221f754cb8ba12ac6344df3ca31d26">GetNumNet</a> (int iMode=<a class="el" href="BoxRouter_8h.html#a6f72f2cc9dd31793dd832ccfb2547de4">GET_MODE_STATE</a>, int iValue=<a class="el" href="BoxRouter_8h.html#a048013954c49608419bca2bcccad5b17">STATE_NET_ANY</a>)</td></tr>
+<tr class="memdesc:ac4221f754cb8ba12ac6344df3ca31d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the nets, satisfying the given condition.  <a href="#ac4221f754cb8ba12ac6344df3ca31d26">More...</a><br /></td></tr>
 <tr class="separator:ac4221f754cb8ba12ac6344df3ca31d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a75e3e7df767d33c08f31076570ecb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a8a75e3e7df767d33c08f31076570ecb8">GetNumWire</a> (int iMode=<a class="el" href="BoxRouter_8h.html#a6f72f2cc9dd31793dd832ccfb2547de4">GET_MODE_STATE</a>, int iValue=<a class="el" href="BoxRouter_8h.html#a1b285251edd87e1423189470586cc719">STATE_WIRE_ANY</a>)</td></tr>
+<tr class="memdesc:a8a75e3e7df767d33c08f31076570ecb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of wires, satisfying the given condition.  <a href="#a8a75e3e7df767d33c08f31076570ecb8">More...</a><br /></td></tr>
 <tr class="separator:a8a75e3e7df767d33c08f31076570ecb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff679a94a04886d69604e7d6820830b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a2ff679a94a04886d69604e7d6820830b">GetLength</a> (int iMode, int iValue)</td></tr>
+<tr class="memdesc:a2ff679a94a04886d69604e7d6820830b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total wire length.  <a href="#a2ff679a94a04886d69604e7d6820830b">More...</a><br /></td></tr>
 <tr class="separator:a2ff679a94a04886d69604e7d6820830b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c4e077c911fbe9259d3ade4b91898d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a28c4e077c911fbe9259d3ade4b91898d">GetNumVia</a> ()</td></tr>
+<tr class="memdesc:a28c4e077c911fbe9259d3ade4b91898d"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate total number of via.  <a href="#a28c4e077c911fbe9259d3ade4b91898d">More...</a><br /></td></tr>
 <tr class="separator:a28c4e077c911fbe9259d3ade4b91898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0487c3ffd7edf494d4b5d049bd9a3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#acd0487c3ffd7edf494d4b5d049bd9a3f">AddPenalty</a> (int iPenalty)</td></tr>
+<tr class="memdesc:acd0487c3ffd7edf494d4b5d049bd9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add penalty to each layer and return the max one.  <a href="#acd0487c3ffd7edf494d4b5d049bd9a3f">More...</a><br /></td></tr>
 <tr class="separator:acd0487c3ffd7edf494d4b5d049bd9a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5167e124564fd469dbcfbae344c1f6f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a5167e124564fd469dbcfbae344c1f6f9">GetCapacity</a> (int iMode)</td></tr>
+<tr class="memdesc:a5167e124564fd469dbcfbae344c1f6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total capacity of all layers.  <a href="#a5167e124564fd469dbcfbae344c1f6f9">More...</a><br /></td></tr>
 <tr class="separator:a5167e124564fd469dbcfbae344c1f6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f8be6fd29a69a897bc98c5e4b880b6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDesign.html#a18f8be6fd29a69a897bc98c5e4b880b6">GetCongestion</a> (int iMode)</td></tr>
+<tr class="memdesc:a18f8be6fd29a69a897bc98c5e4b880b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum or average congestion of layers.  <a href="#a18f8be6fd29a69a897bc98c5e4b880b6">More...</a><br /></td></tr>
 <tr class="separator:a18f8be6fd29a69a897bc98c5e4b880b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCObject.html">CObject</a></td></tr>
 <tr class="memitem:ac44111d5ac75248a616df61b038c4153 inherit pub_methods_classCObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCObject.html#ac44111d5ac75248a616df61b038c4153">CObject</a> ()</td></tr>
@@ -397,6 +424,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add penalty to each layer and return the max one. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a47bb48736ac93a95148807e67ec279f1">CLayer::AddPenalty()</a> </dd></dl>
+
 </div>
 </div>
 <a id="af116ba8573daa936d633b5ea0b005637"></a>
@@ -413,6 +443,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>@Initialize the memory for layers.</p>
+<p>Just new but no delete. </p>
 
 </div>
 </div>
@@ -432,6 +464,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize the memory for Nets by iNumNet. </p>
+<p>If some moemory has been allocated to nets in the past, it will be copied to new memory area and safely deleted.</p>
+<p><a class="el" href="classCDesign.html#a8fb5c76e3b7a96e341bbab3083839fed">m_iNumNet</a> will be set to iNumNet. </p>
+
 </div>
 </div>
 <a id="a961dbd6912b3ef52ff673b60342f51a6"></a>
@@ -450,6 +486,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize nets with pNetList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pNetList</td><td>every element in the list will be copied to new list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCDesign.html#a8fb5c76e3b7a96e341bbab3083839fed">m_iNumNet</a></dd></dl>
+<p>It will new enough memory, and copy nets in pNetList to to m_ppNet; </p>
+
 </div>
 </div>
 <a id="a02442687ac58142d9e5b0a5886ee8285"></a>
@@ -466,6 +512,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>need to delete Net before Layer (Boundary management issue) [6/18/2006 thyeros] </p>
 
 </div>
 </div>
@@ -485,6 +532,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get total capacity of all layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>GET_MODE_ACAP | GET_MODE_OCAP | GET_MODE_MAX </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>summary of capacity of every layers </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a7e041ae4b69adbf606236ce0cd4f35a6">CLayer::GetCapacity()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a0ea51597e843c1f8f25dbfa4f4d4fa17"></a>
@@ -501,6 +558,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get congested box from each layer. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#aa4c718690f42ddb1adb4ace397264efc">CLayer::GetCongestedBox()</a> </dd></dl>
 
 </div>
 </div>
@@ -520,6 +580,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get maximum or average congestion of layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>GET_MODE_MAX | GET_MODE_AVG </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a1cf9df5ef7dbe809239709f04e0a0cad">CLayer::GetCongestion()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a33e73f8a75aa2198ff498f7f67633e9a"></a>
@@ -537,6 +606,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the layer specified by iLayer. </p>
+<p>thyeros- iLayer start from ONE (M1), but array index starts from ZERO [6/16/2006] </p>
 
 </div>
 </div>
@@ -566,6 +638,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get total wire length. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>STATE_WIRE_ASSGNED | STATE_WIRE_ANY .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the summary of length</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a4e139423a04a8dd850ded7e9185c0a89">CLayer::GetLength()</a>, <a class="el" href="classCNet.html#a8712e8f595e036e1e5c693100d071e38">CNet::GetLength()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a88d8a50b50adf87e7d53b52757f5a04c"></a>
@@ -583,6 +665,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>get net specified by iIndex </p>
 
 </div>
 </div>
@@ -612,6 +696,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>collect the all nets within the give box. </p>
+<p>It was designed to satisfying the given condition when collect nets, but obviously this feature is not implemented. </p>
+
 </div>
 </div>
 <a id="ab3fcdbedca2a1f107507ec6bd7f4677a"></a>
@@ -629,6 +716,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>calculate how much nets are in overflow boundary totally. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a4d36fe6154f539a253380daf5ed0bedc">CLayer::GetNetInOverFlowBoundary()</a> </dd></dl>
 
 </div>
 </div>
@@ -658,6 +748,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Count the nets, satisfying the given condition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>GET_MODE_PROP | GET_MODE_STATE . </td></tr>
+    <tr><td class="paramname">iValue</td><td>condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCObject.html#afc32a8e7c4450a95c2a6333d7e3319b4">CNet::GetProp()</a>, <a class="el" href="classCObject.html#a94f72fd4b4155dc18decb9d53f42dc99">CNet::GetState()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a28c4e077c911fbe9259d3ade4b91898d"></a>
@@ -674,6 +774,10 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>calculate total number of via. </p>
+<dl class="section return"><dt>Returns</dt><dd>the summary of every nets' number of via </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCNet.html#abd9060bc972528e75eb26cabeceba261">CNet::GetNumVia()</a> </dd></dl>
 
 </div>
 </div>
@@ -703,6 +807,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the total number of wires, satisfying the given condition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>pass to <a class="el" href="classCNet.html#ae194cdbb585414b5eb533d0d097944b3" title="count wires, satisfying the given condition.">CNet::GetNumWire()</a> </td></tr>
+    <tr><td class="paramname">iValue</td><td>pass to <a class="el" href="classCNet.html#ae194cdbb585414b5eb533d0d097944b3" title="count wires, satisfying the given condition.">CNet::GetNumWire()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCNet.html#ae194cdbb585414b5eb533d0d097944b3" title="count wires, satisfying the given condition.">CNet::GetNumWire()</a> </dd></dl>
+
 </div>
 </div>
 <a id="affc3b0b72b0991118a2141e11cbdab6e"></a>
@@ -720,6 +834,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get times of overflow happended totally in all layers or the maximum times in one layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>GET_MODE_MAX | GET_MODE_SUM .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#aef7ab8aa370e9133096e2a66788b7ead">CLayer::GetOverFlow()</a> </dd></dl>
 
 </div>
 </div>
@@ -739,6 +862,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>calculate how much boundaries is overflow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBoundaryList</td><td>pass to <a class="el" href="classCLayer.html#aae29339458f6708296c4c05a36924760">CLayer::GetOverFlowBoundary()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#aae29339458f6708296c4c05a36924760">CLayer::GetOverFlowBoundary()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a0612a39d1690b74618229f2b88a8ccb0"></a>
@@ -757,6 +889,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get highest or lowest routable layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iMode</td><td>GET_MODE_MAX | GET_MODE_MIN </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8890c8bb8e27692b75d0a68eaa28b885"></a>
@@ -774,6 +914,10 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get start box from each layer and create a large cube to include all of them. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#a4b4499ed47902f08d9100e2c22d09144">CLayer::GetStartBox()</a>, <a class="el" href="classCBBox.html#a60eff894d9a143099e91277312a8eb4d">CBBox::Initialize()</a> </dd></dl>
+<p>compute the starting point of box expansion, based on the # of pins. it also can be done any congestion analysis. </p>
 
 </div>
 </div>
@@ -814,6 +958,10 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>calculate the number of all wires within the give box, satisfying the given condition (property/state) </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCNet.html#a885207dedf1b08d52638bda17ba12227">CNet::GetWireInBBox()</a> </dd></dl>
+<p>collect the all wires within the give box, satisfying the given condition (property/state) </p>
 
 </div>
 </div>
@@ -931,6 +1079,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>calculate how much wires are in overflow boundary totally. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCLayer.html#aa24a4614c4584721a8d10e43952c5af2">CLayer::GetWireInOverFlowBoundary()</a> </dd></dl>
+
 </div>
 </div>
 <a id="a9a2909717e3b6947c6d685e13088be6d"></a>
@@ -956,6 +1107,32 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize the design. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>the filename of param file</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Read input file and collect all params. From input file build steiner tree * (use flute), or read pre-build steiner tree from '.stt' file.</p>
+<p>It will resolve input datafile format.</p>
+<p>It will also initialize nets and layers and BBox class. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classCBBox.html#a60eff894d9a143099e91277312a8eb4d">CBBox::Initialize()</a></dd>
+<dd>
+<a class="el" href="classCDesign.html#af116ba8573daa936d633b5ea0b005637">CreateLayer()</a></dd>
+<dd>
+<a class="el" href="classCLayer.html#a3d0413e4f025d57639ae6bbd6d34955f">CLayer::Configure()</a></dd>
+<dd>
+CreatNet()</dd>
+<dd>
+<a class="el" href="classCLayer.html#af987bec19614f92ca98bb9e492aecac0">CLayer::Initialize()</a></dd>
+<dd>
+<a class="el" href="classCDesign.html#a4dda519df38cb104e804522f76d826fe">SetHighestRoutableLayer()</a></dd>
+<dd>
+<a class="el" href="classCDesign.html#af7d386170d501eb471b63b2f663690b0">SetLowestRoutableLayer()</a></dd>
+<dd>
+<a class="el" href="classCNet.html">CNet</a> </dd></dl>
 
 </div>
 </div>
@@ -992,6 +1169,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Print details about this design. </p>
 
 <p>Reimplemented from <a class="el" href="classCObject.html#a75afd905b2d14ed374c75d90f079a389">CObject</a>.</p>
 
@@ -1030,6 +1209,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Read dump file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>dump file's filename </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer as boolean mean if successful read the dump file. </dd></dl>
+
 </div>
 </div>
 <a id="a91266987b4edb768fb3187e92a9cfbbd"></a>
@@ -1047,6 +1235,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>read in parameter file and store the parameters [1/31/2007 thyeros] </p>
 
 </div>
 </div>
@@ -1138,6 +1328,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the state of this design. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iState</td><td>STATE_DESN_STUCK | STATE_DESN_COMPLETED | STATE_DESN_SUCCESS | STATE_DESN_ROUTED | STATE_DESN_ROUTING | STATE_DESN_REROUTED | STATE_DESN_REROUTING | STATE_DESN_OVERFLOW</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Specially OVERFLOW and STUCK can be unset while others can't. </p>
+
 </div>
 </div>
 <a id="a9571bf3353ab819782f0162867e525dc"></a>
@@ -1154,6 +1353,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Warning: this function return too early so it does nothing except print some messages.</p>
 
 </div>
 </div>
@@ -1172,6 +1372,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy output file to dump file. </p>
+<p>Output file is specified with m_Param.m_cOutput_File, and dump file is specified with m_Param.m_cDump_File. </p>
+
 </div>
 </div>
 <a id="a69b246b26e9ce4c4edbf74065529b89f"></a>
@@ -1188,6 +1391,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy output file to rel file. </p>
+<p>Output file is specified with m_Param.m_cOutput_File, and rel file is specified with m_Param.m_cRel_File. </p>
 
 </div>
 </div>

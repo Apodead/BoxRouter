@@ -16,7 +16,7 @@ Inheritance diagram for C\+Wire\+:\begin{figure}[H]
 void \mbox{\hyperlink{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}{Delete}} ()
 \item 
 int \mbox{\hyperlink{classCWire_a1b37fb9ea32af4a838620a368b9f3824}{Is\+Completed}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em return \mbox{\hyperlink{classCWire_a8edc31661e3d037da712ad64cd7b8b5b}{C\+Wire\+::\+Is\+Routed()}} \&\& \mbox{\hyperlink{classCWire_a58444c1e0db9838445654d85a3405741}{C\+Wire\+::\+Is\+Layer\+Assigned()}} ; \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCWire_af22afb5379acf1aa890692416c00b8e4}{Get\+Routable\+Length}} (int i\+Layer)
 \item 
 void \mbox{\hyperlink{classCWire_a36dd73e309fe16428df29220bc161d0e}{Adjust\+Boundary}} (\mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$p\+Layer, int i\+Blocakge)
@@ -179,7 +179,7 @@ static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperli
 \subsubsection{\texorpdfstring{AssignLayer()}{AssignLayer()}}
 {\footnotesize\ttfamily void C\+Wire\+::\+Assign\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_a5d543b640c15704e505c6b8c952f9f5d}\label{classCWire_a5d543b640c15704e505c6b8c952f9f5d}} 
+Change the layer which this wire is in. \mbox{\Hypertarget{classCWire_a5d543b640c15704e505c6b8c952f9f5d}\label{classCWire_a5d543b640c15704e505c6b8c952f9f5d}} 
 \index{CWire@{CWire}!Bend@{Bend}}
 \index{Bend@{Bend}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{Bend()}{Bend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
@@ -227,13 +227,15 @@ static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperli
 \subsubsection{\texorpdfstring{CompareLength()}{CompareLength()}}
 {\footnotesize\ttfamily bool C\+Wire\+::\+Compare\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_a6ed15ca71f29273eed927d88c87535b0}\label{classCWire_a6ed15ca71f29273eed927d88c87535b0}} 
+return if this wire shorter than given length It seems does something magical when two wire has the same length. \mbox{\Hypertarget{classCWire_a6ed15ca71f29273eed927d88c87535b0}\label{classCWire_a6ed15ca71f29273eed927d88c87535b0}} 
 \index{CWire@{CWire}!CreateKey@{CreateKey}}
 \index{CreateKey@{CreateKey}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{CreateKey()}{CreateKey()}}
 {\footnotesize\ttfamily void C\+Wire\+::\+Create\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}\label{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}} 
+Creat K\+EY of this wire. High 32 bit is from start point, low 32 bit is from end point. And Z positions of both points are ignored.
+
+for wire, we don\textquotesingle{}t need Z as a part of K\+EY \mbox{[}6/30/2006 thyeros\mbox{]} the same wire, but with different Z is not allowed \mbox{[}6/30/2006 thyeros\mbox{]} \mbox{\Hypertarget{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}\label{classCWire_abbcbc22230d8e5a87ac4de9cbf990022}} 
 \index{CWire@{CWire}!Delete@{Delete}}
 \index{Delete@{Delete}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{Delete()}{Delete()}}
@@ -263,13 +265,13 @@ static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperli
 \subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
 {\footnotesize\ttfamily int C\+Wire\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_a54f754e7404cb275e2eed0e8b281817f}\label{classCWire_a54f754e7404cb275e2eed0e8b281817f}} 
+calculate the manhattan distance from start point to end point. \mbox{\Hypertarget{classCWire_a54f754e7404cb275e2eed0e8b281817f}\label{classCWire_a54f754e7404cb275e2eed0e8b281817f}} 
 \index{CWire@{CWire}!GetLength2D@{GetLength2D}}
 \index{GetLength2D@{GetLength2D}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{GetLength2D()}{GetLength2D()}}
 {\footnotesize\ttfamily int C\+Wire\+::\+Get\+Length2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_a095a9358f9fe790d5010fef23a8a209e}\label{classCWire_a095a9358f9fe790d5010fef23a8a209e}} 
+calculate the manhattan distance from start point to end point. \mbox{\Hypertarget{classCWire_a095a9358f9fe790d5010fef23a8a209e}\label{classCWire_a095a9358f9fe790d5010fef23a8a209e}} 
 \index{CWire@{CWire}!GetNumPinOn@{GetNumPinOn}}
 \index{GetNumPinOn@{GetNumPinOn}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{GetNumPinOn()}{GetNumPinOn()}}
@@ -334,6 +336,10 @@ static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperli
 \index{IsCompleted@{IsCompleted}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{IsCompleted()}{IsCompleted()}}
 {\footnotesize\ttfamily int C\+Wire\+::\+Is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return \mbox{\hyperlink{classCWire_a8edc31661e3d037da712ad64cd7b8b5b}{C\+Wire\+::\+Is\+Routed()}} \&\& \mbox{\hyperlink{classCWire_a58444c1e0db9838445654d85a3405741}{C\+Wire\+::\+Is\+Layer\+Assigned()}} ; 
 
 \mbox{\Hypertarget{classCWire_a961f580e533277ae6c618f52f4c105e0}\label{classCWire_a961f580e533277ae6c618f52f4c105e0}} 
 \index{CWire@{CWire}!IsCrossing@{IsCrossing}}
@@ -419,7 +425,7 @@ static stack$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ \mbox{\hyperli
 \subsubsection{\texorpdfstring{New()}{New()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ C\+Wire\+::\+New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}\label{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}} 
+get new empty object from instance pool or alloc a new one if pool is empty. \mbox{\Hypertarget{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}\label{classCWire_a76b2e23a425ddd51f02f41ba2caf3134}} 
 \index{CWire@{CWire}!Print@{Print}}
 \index{Print@{Print}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{Print()}{Print()}}
@@ -441,7 +447,7 @@ Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a3
 \subsubsection{\texorpdfstring{SetParent()}{SetParent()}}
 {\footnotesize\ttfamily void C\+Wire\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCNet}{C\+Net}} $\ast$}]{p\+Parent }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}\label{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}} 
+set m\+\_\+p\+Parent \mbox{\Hypertarget{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}\label{classCWire_aa21e8506c023f4c32481eaccdfeccc2e}} 
 \index{CWire@{CWire}!SetState@{SetState}}
 \index{SetState@{SetState}!CWire@{CWire}}
 \subsubsection{\texorpdfstring{SetState()}{SetState()}}

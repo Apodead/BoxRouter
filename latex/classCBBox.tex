@@ -106,31 +106,31 @@ char \mbox{\hyperlink{classCBBox_a07308cfb95c86172b4d6d530f885ae1d}{m\+\_\+c\+Ma
 \subsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void C\+B\+Box\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a7051785c6750497f2b09d04a7aee82bd}\label{classCBBox_a7051785c6750497f2b09d04a7aee82bd}} 
+call \mbox{\hyperlink{classCBBox_a270d6116bfea826678ad54c2ab256a6c}{C\+B\+Box\+::\+Add\+Point}}(p\+Point-\/$>$\mbox{\hyperlink{classCBBox_a437bb0692398b1bb83d662b68beb0f3e}{X()}},p\+Point-\/$>$\mbox{\hyperlink{classCBBox_a5199b3a785f2bd06a53d8cd961c5a749}{Y()}},p\+Point-\/$>$\mbox{\hyperlink{classCBBox_a10a28f06a871f587524102491b9ae566}{Z()}}); \mbox{\Hypertarget{classCBBox_a7051785c6750497f2b09d04a7aee82bd}\label{classCBBox_a7051785c6750497f2b09d04a7aee82bd}} 
 \index{CBBox@{CBBox}!AddPoint@{AddPoint}}
 \index{AddPoint@{AddPoint}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+B\+Box\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}\label{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}} 
+Expand recent box(if necessary) to include given point. Do nothing if the point has been included. \mbox{\Hypertarget{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}\label{classCBBox_a010e8dd4f397c7d12e4d3a28f4952acf}} 
 \index{CBBox@{CBBox}!Distance@{Distance}}
 \index{Distance@{Distance}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{Distance()}{Distance()}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a21b22d3678d267b74b7e49e751edd711}\label{classCBBox_a21b22d3678d267b74b7e49e751edd711}} 
+calculate the shortest distance from given point to the box\textquotesingle{}s egdes. \mbox{\Hypertarget{classCBBox_a21b22d3678d267b74b7e49e751edd711}\label{classCBBox_a21b22d3678d267b74b7e49e751edd711}} 
 \index{CBBox@{CBBox}!Expand@{Expand}}
 \index{Expand@{Expand}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{Expand()}{Expand()}}
 {\footnotesize\ttfamily void C\+B\+Box\+::\+Expand (\begin{DoxyParamCaption}\item[{int}]{i\+MaxX,  }\item[{int}]{i\+MaxY,  }\item[{int}]{i\+Step = {\ttfamily 1} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a08398476b46cfe26e2c825df2acc29ad}\label{classCBBox_a08398476b46cfe26e2c825df2acc29ad}} 
+Expand recent box by i\+Step in available area. If an edge has reached the limit, it would\textquotesingle{}n be changed. \mbox{\Hypertarget{classCBBox_a08398476b46cfe26e2c825df2acc29ad}\label{classCBBox_a08398476b46cfe26e2c825df2acc29ad}} 
 \index{CBBox@{CBBox}!GetCenter@{GetCenter}}
 \index{GetCenter@{GetCenter}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{GetCenter()}{GetCenter()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCPoint}{C\+Point}} C\+B\+Box\+::\+Get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a4224d61560438a2febb4e7e7323e2b08}\label{classCBBox_a4224d61560438a2febb4e7e7323e2b08}} 
+get the center point of the box.(Round down) \mbox{\Hypertarget{classCBBox_a4224d61560438a2febb4e7e7323e2b08}\label{classCBBox_a4224d61560438a2febb4e7e7323e2b08}} 
 \index{CBBox@{CBBox}!H@{H}}
 \index{H@{H}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{H()}{H()}}
@@ -154,37 +154,37 @@ char \mbox{\hyperlink{classCBBox_a07308cfb95c86172b4d6d530f885ae1d}{m\+\_\+c\+Ma
 \subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCPoint}{C\+Point}} $\ast$}]{p\+Point }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}\label{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}} 
+judge if given point is in this box \mbox{\Hypertarget{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}\label{classCBBox_ab8c8772201f6864c1fdf7a4bb78bdd50}} 
 \index{CBBox@{CBBox}!IsInside@{IsInside}}
 \index{IsInside@{IsInside}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY,  }\item[{int}]{iZ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}\label{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}} 
+judge if given point is in this box. 3D version. \mbox{\Hypertarget{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}\label{classCBBox_a06176ef2a9c66bd680fe01ec001a7830}} 
 \index{CBBox@{CBBox}!IsInside@{IsInside}}
 \index{IsInside@{IsInside}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{int}]{iX,  }\item[{int}]{iY }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}\label{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}} 
+judge if given point is in this box \mbox{\Hypertarget{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}\label{classCBBox_ad00a75c0330ee8138ea4a46b45eb1acb}} 
 \index{CBBox@{CBBox}!IsInside@{IsInside}}
 \index{IsInside@{IsInside}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{IsInside()}{IsInside()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_ae38173ceac641fb233a941299764f519}\label{classCBBox_ae38173ceac641fb233a941299764f519}} 
+judge if given box is in this box \mbox{\Hypertarget{classCBBox_ae38173ceac641fb233a941299764f519}\label{classCBBox_ae38173ceac641fb233a941299764f519}} 
 \index{CBBox@{CBBox}!IsOverlapped@{IsOverlapped}}
 \index{IsOverlapped@{IsOverlapped}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{IsOverlapped()}{IsOverlapped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Overlapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$}]{p\+Wire }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_afbd0200a17c5610ec613482020213970}\label{classCBBox_afbd0200a17c5610ec613482020213970}} 
+This function make no sense. Maybe it\textquotesingle{}s unfinished. \mbox{\Hypertarget{classCBBox_afbd0200a17c5610ec613482020213970}\label{classCBBox_afbd0200a17c5610ec613482020213970}} 
 \index{CBBox@{CBBox}!IsOverlapped@{IsOverlapped}}
 \index{IsOverlapped@{IsOverlapped}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{IsOverlapped()}{IsOverlapped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily int C\+B\+Box\+::\+Is\+Overlapped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}\label{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}} 
+judge if this box has the same range with given box \mbox{\Hypertarget{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}\label{classCBBox_a8dbcaa755e35418d1c90b1ab3748c0d8}} 
 \index{CBBox@{CBBox}!L@{L}}
 \index{L@{L}!CBBox@{CBBox}}
 \subsubsection{\texorpdfstring{L()}{L()}}

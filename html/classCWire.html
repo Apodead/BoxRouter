@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: CWire Class Reference</title>
+<title>BoxRouter 2.0: CWire Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BoxRouter 2.0
    </div>
   </td>
  </tr>
@@ -88,6 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbcbc22230d8e5a87ac4de9cbf990022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWire.html#abbcbc22230d8e5a87ac4de9cbf990022">Delete</a> ()</td></tr>
 <tr class="separator:abbcbc22230d8e5a87ac4de9cbf990022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b37fb9ea32af4a838620a368b9f3824"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWire.html#a1b37fb9ea32af4a838620a368b9f3824">IsCompleted</a> ()</td></tr>
+<tr class="memdesc:a1b37fb9ea32af4a838620a368b9f3824"><td class="mdescLeft">&#160;</td><td class="mdescRight">return <a class="el" href="classCWire.html#a8edc31661e3d037da712ad64cd7b8b5b">CWire::IsRouted()</a> &amp;&amp; <a class="el" href="classCWire.html#a58444c1e0db9838445654d85a3405741">CWire::IsLayerAssigned()</a> ;  <a href="#a1b37fb9ea32af4a838620a368b9f3824">More...</a><br /></td></tr>
 <tr class="separator:a1b37fb9ea32af4a838620a368b9f3824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af22afb5379acf1aa890692416c00b8e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCWire.html#af22afb5379acf1aa890692416c00b8e4">GetRoutableLength</a> (int iLayer)</td></tr>
 <tr class="separator:af22afb5379acf1aa890692416c00b8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -378,6 +379,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Change the layer which this wire is in. </p>
 
 </div>
 </div>
@@ -626,6 +628,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>return if this wire shorter than given length It seems does something magical when two wire has the same length. </p>
 
 </div>
 </div>
@@ -643,6 +646,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Creat KEY of this wire. High 32 bit is from start point, low 32 bit is from end point. And Z positions of both points are ignored.</p>
+<p>for wire, we don't need Z as a part of KEY [6/30/2006 thyeros] the same wire, but with different Z is not allowed [6/30/2006 thyeros] </p>
 
 </div>
 </div>
@@ -729,6 +734,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>calculate the manhattan distance from start point to end point. </p>
 
 </div>
 </div>
@@ -746,6 +752,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>calculate the manhattan distance from start point to end point. </p>
 
 </div>
 </div>
@@ -1061,6 +1068,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>return <a class="el" href="classCWire.html#a8edc31661e3d037da712ad64cd7b8b5b">CWire::IsRouted()</a> &amp;&amp; <a class="el" href="classCWire.html#a58444c1e0db9838445654d85a3405741">CWire::IsLayerAssigned()</a> ; </p>
+
 </div>
 </div>
 <a id="a961f580e533277ae6c618f52f4c105e0"></a>
@@ -1340,6 +1349,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>get new empty object from instance pool or alloc a new one if pool is empty. </p>
 
 </div>
 </div>
@@ -1413,6 +1423,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>set m_pParent </p>
 
 </div>
 </div>

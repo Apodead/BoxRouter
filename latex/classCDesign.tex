@@ -24,73 +24,73 @@ int \mbox{\hyperlink{classCDesign_a569c1b0aa4defe50ebb89a5a4054631c}{Get\+Wire\+
 void \mbox{\hyperlink{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}{Report}} (char $\ast$p\+Name)
 \item 
 \mbox{\hyperlink{classCBBox}{C\+B\+Box}} \mbox{\hyperlink{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}{Get\+Congested\+Box}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get congested box from each layer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a9571bf3353ab819782f0162867e525dc}{Update\+Steiner\+Tree}} ()
 \item 
 virtual int \mbox{\hyperlink{classCDesign_a9a2909717e3b6947c6d685e13088be6d}{Initialize}} (char $\ast$p\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize the design. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a844b18267aad1895dc66e3208b36d21b}{Create\+Net}} (int i\+Num\+Net)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize the memory for Nets by i\+Num\+Net. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}{Create\+Net}} (vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize nets with p\+Net\+List. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_af116ba8573daa936d633b5ea0b005637}{Create\+Layer}} ()
 \item 
 int \mbox{\hyperlink{classCDesign_af264117726c361d0404dcd97c6da2c35}{Get\+Over\+Flow\+Boundary}} (vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$p\+Boundary\+List)
-\item 
+\begin{DoxyCompactList}\small\item\em calculate how much boundaries is overflow. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}{Get\+Net\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Net\+List)
-\item 
+\begin{DoxyCompactList}\small\item\em calculate how much nets are in overflow boundary totally. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_acd4fc20284f55855b4e88d89cc03b058}{Get\+Wire\+In\+Over\+Flow\+Boundary}} (hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$p\+Wire\+List)
-\item 
+\begin{DoxyCompactList}\small\item\em calculate how much wires are in overflow boundary totally. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a984162e6e0b47da02f4a34e176f0a569}{Write\+Dump}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Copy output file to dump file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}{Write\+Rel}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Copy output file to rel file. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_add678d74b22a8bd58dec921656454bdd}{Read\+Dump}} (char $\ast$p\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Read dump file. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}{Read\+Param}} (char $\ast$p\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em read in parameter file and store the parameters \mbox{[}1/31/2007 thyeros\mbox{]} \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a02442687ac58142d9e5b0a5886ee8285}{Del\+Nets}} ()
 \item 
 void \mbox{\hyperlink{classCDesign_afc3a5c7e4453c76a44eec25c38c72135}{Set\+Prop}} (int i\+Prop)
 \item 
 void \mbox{\hyperlink{classCDesign_adda7bcca7062f58a27baa043bd315bfd}{Set\+State}} (int i\+State)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the state of this design. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
-\item 
+\begin{DoxyCompactList}\small\item\em Print details about this design. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_af1fc7df15f389d8051d74c7867d3d6be}{Print\+Result}} ()
 \item 
 int \mbox{\hyperlink{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}{Get\+Over\+Flow}} (int i\+Mode)
-\item 
+\begin{DoxyCompactList}\small\item\em Get times of overflow happended totally in all layers or the maximum times in one layer. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}{Get\+Routable\+Layer}} (int i\+Mode)
-\item 
+\begin{DoxyCompactList}\small\item\em Get highest or lowest routable layer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCDesign_a4dda519df38cb104e804522f76d826fe}{Set\+Highest\+Routable\+Layer}} (int i\+Layer)
 \item 
 void \mbox{\hyperlink{classCDesign_af7d386170d501eb471b63b2f663690b0}{Set\+Lowest\+Routable\+Layer}} (int i\+Layer)
 \item 
 \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ \mbox{\hyperlink{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}{Get\+Net}} (int i\+Index)
-\item 
+\begin{DoxyCompactList}\small\item\em get net specified by i\+Index \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ \mbox{\hyperlink{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}{Get\+Layer}} (int i\+Layer)
-\item 
+\begin{DoxyCompactList}\small\item\em Get the layer specified by i\+Layer. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCBBox}{C\+B\+Box}} \mbox{\hyperlink{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}{Get\+Start\+Box}} (int $\ast$p\+Num\+Edge=\mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
-\item 
+\begin{DoxyCompactList}\small\item\em Get start box from each layer and create a large cube to include all of them. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a5ab5f93449266153a28914c319626289}{Get\+Net\+In\+B\+Box}} (vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$p\+Net\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box)
-\item 
+\begin{DoxyCompactList}\small\item\em collect the all nets within the give box. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}{Get\+Wire\+In\+B\+Box}} (vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$p\+Wire\+List, \mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$p\+B\+Box, int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}})
-\item 
+\begin{DoxyCompactList}\small\item\em calculate the number of all wires within the give box, satisfying the given condition (property/state) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}{Get\+Num\+Net}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY}})
-\item 
+\begin{DoxyCompactList}\small\item\em Count the nets, satisfying the given condition. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}{Get\+Num\+Wire}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
-\item 
+\begin{DoxyCompactList}\small\item\em Get the total number of wires, satisfying the given condition. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a2ff679a94a04886d69604e7d6820830b}{Get\+Length}} (int i\+Mode, int i\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Get total wire length. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}{Get\+Num\+Via}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em calculate total number of via. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_acd0487c3ffd7edf494d4b5d049bd9a3f}{Add\+Penalty}} (int i\+Penalty)
-\item 
+\begin{DoxyCompactList}\small\item\em Add penalty to each layer and return the max one. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}{Get\+Capacity}} (int i\+Mode)
-\item 
+\begin{DoxyCompactList}\small\item\em Get total capacity of all layers. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}{Get\+Congestion}} (int i\+Mode)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get maximum or average congestion of layers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -179,65 +179,149 @@ class \mbox{\hyperlink{classCDesign_aab1ae13155639bc23234a972a3296244}{C\+Bounda
 \subsubsection{\texorpdfstring{AddPenalty()}{AddPenalty()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Add\+Penalty (\begin{DoxyParamCaption}\item[{int}]{i\+Penalty }\end{DoxyParamCaption})}
 
+
+
+Add penalty to each layer and return the max one. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a47bb48736ac93a95148807e67ec279f1}{C\+Layer\+::\+Add\+Penalty()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_af116ba8573daa936d633b5ea0b005637}\label{classCDesign_af116ba8573daa936d633b5ea0b005637}} 
 \index{CDesign@{CDesign}!CreateLayer@{CreateLayer}}
 \index{CreateLayer@{CreateLayer}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{CreateLayer()}{CreateLayer()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Create\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a844b18267aad1895dc66e3208b36d21b}\label{classCDesign_a844b18267aad1895dc66e3208b36d21b}} 
+@\+Initialize the memory for layers.
+
+Just new but no delete. \mbox{\Hypertarget{classCDesign_a844b18267aad1895dc66e3208b36d21b}\label{classCDesign_a844b18267aad1895dc66e3208b36d21b}} 
 \index{CDesign@{CDesign}!CreateNet@{CreateNet}}
 \index{CreateNet@{CreateNet}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{CreateNet()}{CreateNet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void C\+Design\+::\+Create\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Num\+Net }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}\label{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}} 
+
+
+Initialize the memory for Nets by i\+Num\+Net. 
+
+If some moemory has been allocated to nets in the past, it will be copied to new memory area and safely deleted.
+
+\mbox{\hyperlink{classCDesign_a8fb5c76e3b7a96e341bbab3083839fed}{m\+\_\+i\+Num\+Net}} will be set to i\+Num\+Net. \mbox{\Hypertarget{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}\label{classCDesign_a961dbd6912b3ef52ff673b60342f51a6}} 
 \index{CDesign@{CDesign}!CreateNet@{CreateNet}}
 \index{CreateNet@{CreateNet}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{CreateNet()}{CreateNet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void C\+Design\+::\+Create\+Net (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a02442687ac58142d9e5b0a5886ee8285}\label{classCDesign_a02442687ac58142d9e5b0a5886ee8285}} 
+
+
+Initialize nets with p\+Net\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Net\+List} & every element in the list will be copied to new list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCDesign_a8fb5c76e3b7a96e341bbab3083839fed}{m\+\_\+i\+Num\+Net}}
+\end{DoxySeeAlso}
+It will new enough memory, and copy nets in p\+Net\+List to to m\+\_\+pp\+Net; \mbox{\Hypertarget{classCDesign_a02442687ac58142d9e5b0a5886ee8285}\label{classCDesign_a02442687ac58142d9e5b0a5886ee8285}} 
 \index{CDesign@{CDesign}!DelNets@{DelNets}}
 \index{DelNets@{DelNets}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{DelNets()}{DelNets()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Del\+Nets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}\label{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}} 
+need to delete Net before Layer (Boundary management issue) \mbox{[}6/18/2006 thyeros\mbox{]} \mbox{\Hypertarget{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}\label{classCDesign_a5167e124564fd469dbcfbae344c1f6f9}} 
 \index{CDesign@{CDesign}!GetCapacity@{GetCapacity}}
 \index{GetCapacity@{GetCapacity}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
 
+
+
+Get total capacity of all layers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+C\+AP $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+C\+AP $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+summary of capacity of every layers 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a7e041ae4b69adbf606236ce0cd4f35a6}{C\+Layer\+::\+Get\+Capacity()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}\label{classCDesign_a0ea51597e843c1f8f25dbfa4f4d4fa17}} 
 \index{CDesign@{CDesign}!GetCongestedBox@{GetCongestedBox}}
 \index{GetCongestedBox@{GetCongestedBox}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetCongestedBox()}{GetCongestedBox()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCBBox}{C\+B\+Box}} C\+Design\+::\+Get\+Congested\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Get congested box from each layer. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_aa4c718690f42ddb1adb4ace397264efc}{C\+Layer\+::\+Get\+Congested\+Box()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}\label{classCDesign_a18f8be6fd29a69a897bc98c5e4b880b6}} 
 \index{CDesign@{CDesign}!GetCongestion@{GetCongestion}}
 \index{GetCongestion@{GetCongestion}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetCongestion()}{GetCongestion()}}
 {\footnotesize\ttfamily double C\+Design\+::\+Get\+Congestion (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
 
+
+
+Get maximum or average congestion of layers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+A\+VG \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a1cf9df5ef7dbe809239709f04e0a0cad}{C\+Layer\+::\+Get\+Congestion()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}\label{classCDesign_a33e73f8a75aa2198ff498f7f67633e9a}} 
 \index{CDesign@{CDesign}!GetLayer@{GetLayer}}
 \index{GetLayer@{GetLayer}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetLayer()}{GetLayer()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCLayer}{C\+Layer}} $\ast$ C\+Design\+::\+Get\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Layer }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a2ff679a94a04886d69604e7d6820830b}\label{classCDesign_a2ff679a94a04886d69604e7d6820830b}} 
+
+
+Get the layer specified by i\+Layer. 
+
+thyeros-\/ i\+Layer start from O\+NE (M1), but array index starts from Z\+E\+RO \mbox{[}6/16/2006\mbox{]} \mbox{\Hypertarget{classCDesign_a2ff679a94a04886d69604e7d6820830b}\label{classCDesign_a2ff679a94a04886d69604e7d6820830b}} 
 \index{CDesign@{CDesign}!GetLength@{GetLength}}
 \index{GetLength@{GetLength}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Length (\begin{DoxyParamCaption}\item[{int}]{i\+Mode,  }\item[{int}]{i\+Value }\end{DoxyParamCaption})}
 
+
+
+Get total wire length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+S\+S\+G\+N\+ED $\vert$ S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the summary of length
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a4e139423a04a8dd850ded7e9185c0a89}{C\+Layer\+::\+Get\+Length()}}, \mbox{\hyperlink{classCNet_a8712e8f595e036e1e5c693100d071e38}{C\+Net\+::\+Get\+Length()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}\label{classCDesign_a88d8a50b50adf87e7d53b52757f5a04c}} 
 \index{CDesign@{CDesign}!GetNet@{GetNet}}
 \index{GetNet@{GetNet}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetNet()}{GetNet()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ C\+Design\+::\+Get\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+get net specified by i\+Index 
 
 \mbox{\Hypertarget{classCDesign_a5ab5f93449266153a28914c319626289}\label{classCDesign_a5ab5f93449266153a28914c319626289}} 
 \index{CDesign@{CDesign}!GetNetInBBox@{GetNetInBBox}}
@@ -245,61 +329,157 @@ class \mbox{\hyperlink{classCDesign_aab1ae13155639bc23234a972a3296244}{C\+Bounda
 \subsubsection{\texorpdfstring{GetNetInBBox()}{GetNetInBBox()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Net\+In\+B\+Box (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCNet}{C\+Net}} $\ast$ $>$ $\ast$}]{p\+Net\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}\label{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}} 
+
+
+collect the all nets within the give box. 
+
+It was designed to satisfying the given condition when collect nets, but obviously this feature is not implemented. \mbox{\Hypertarget{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}\label{classCDesign_ab3fcdbedca2a1f107507ec6bd7f4677a}} 
 \index{CDesign@{CDesign}!GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}}
 \index{GetNetInOverFlowBoundary@{GetNetInOverFlowBoundary}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetNetInOverFlowBoundary()}{GetNetInOverFlowBoundary()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Net\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Net\+List }\end{DoxyParamCaption})}
 
+
+
+calculate how much nets are in overflow boundary totally. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a4d36fe6154f539a253380daf5ed0bedc}{C\+Layer\+::\+Get\+Net\+In\+Over\+Flow\+Boundary()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}\label{classCDesign_ac4221f754cb8ba12ac6344df3ca31d26}} 
 \index{CDesign@{CDesign}!GetNumNet@{GetNumNet}}
 \index{GetNumNet@{GetNumNet}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetNumNet()}{GetNumNet()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Net (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a048013954c49608419bca2bcccad5b17}{S\+T\+A\+T\+E\+\_\+\+N\+E\+T\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
 
+
+
+Count the nets, satisfying the given condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE . \\
+\hline
+{\em i\+Value} & condition. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCObject_afc32a8e7c4450a95c2a6333d7e3319b4}{C\+Net\+::\+Get\+Prop()}}, \mbox{\hyperlink{classCObject_a94f72fd4b4155dc18decb9d53f42dc99}{C\+Net\+::\+Get\+State()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}\label{classCDesign_a28c4e077c911fbe9259d3ade4b91898d}} 
 \index{CDesign@{CDesign}!GetNumVia@{GetNumVia}}
 \index{GetNumVia@{GetNumVia}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetNumVia()}{GetNumVia()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Via (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+calculate total number of via. 
+
+\begin{DoxyReturn}{Returns}
+the summary of every nets\textquotesingle{} number of via 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCNet_abd9060bc972528e75eb26cabeceba261}{C\+Net\+::\+Get\+Num\+Via()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}\label{classCDesign_a8a75e3e7df767d33c08f31076570ecb8}} 
 \index{CDesign@{CDesign}!GetNumWire@{GetNumWire}}
 \index{GetNumWire@{GetNumWire}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetNumWire()}{GetNumWire()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Num\+Wire (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
 
+
+
+Get the total number of wires, satisfying the given condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & pass to \mbox{\hyperlink{classCNet_ae194cdbb585414b5eb533d0d097944b3}{C\+Net\+::\+Get\+Num\+Wire()}} \\
+\hline
+{\em i\+Value} & pass to \mbox{\hyperlink{classCNet_ae194cdbb585414b5eb533d0d097944b3}{C\+Net\+::\+Get\+Num\+Wire()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCNet_ae194cdbb585414b5eb533d0d097944b3}{C\+Net\+::\+Get\+Num\+Wire()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}\label{classCDesign_affc3b0b72b0991118a2141e11cbdab6e}} 
 \index{CDesign@{CDesign}!GetOverFlow@{GetOverFlow}}
 \index{GetOverFlow@{GetOverFlow}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetOverFlow()}{GetOverFlow()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Over\+Flow (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
 
+
+
+Get times of overflow happended totally in all layers or the maximum times in one layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+UM .\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_aef7ab8aa370e9133096e2a66788b7ead}{C\+Layer\+::\+Get\+Over\+Flow()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_af264117726c361d0404dcd97c6da2c35}\label{classCDesign_af264117726c361d0404dcd97c6da2c35}} 
 \index{CDesign@{CDesign}!GetOverFlowBoundary@{GetOverFlowBoundary}}
 \index{GetOverFlowBoundary@{GetOverFlowBoundary}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetOverFlowBoundary()}{GetOverFlowBoundary()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCBoundary}{C\+Boundary}} $\ast$ $>$ $\ast$}]{p\+Boundary\+List }\end{DoxyParamCaption})}
 
+
+
+calculate how much boundaries is overflow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Boundary\+List} & pass to \mbox{\hyperlink{classCLayer_aae29339458f6708296c4c05a36924760}{C\+Layer\+::\+Get\+Over\+Flow\+Boundary()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_aae29339458f6708296c4c05a36924760}{C\+Layer\+::\+Get\+Over\+Flow\+Boundary()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}\label{classCDesign_a0612a39d1690b74618229f2b88a8ccb0}} 
 \index{CDesign@{CDesign}!GetRoutableLayer@{GetRoutableLayer}}
 \index{GetRoutableLayer@{GetRoutableLayer}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetRoutableLayer()}{GetRoutableLayer()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Routable\+Layer (\begin{DoxyParamCaption}\item[{int}]{i\+Mode }\end{DoxyParamCaption})}
 
+
+
+Get highest or lowest routable layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+AX $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+M\+IN \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}\label{classCDesign_a8890c8bb8e27692b75d0a68eaa28b885}} 
 \index{CDesign@{CDesign}!GetStartBox@{GetStartBox}}
 \index{GetStartBox@{GetStartBox}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetStartBox()}{GetStartBox()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCBBox}{C\+B\+Box}} C\+Design\+::\+Get\+Start\+Box (\begin{DoxyParamCaption}\item[{int $\ast$}]{p\+Num\+Edge = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}\label{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}} 
+
+
+Get start box from each layer and create a large cube to include all of them. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_a4b4499ed47902f08d9100e2c22d09144}{C\+Layer\+::\+Get\+Start\+Box()}}, \mbox{\hyperlink{classCBBox_a60eff894d9a143099e91277312a8eb4d}{C\+B\+Box\+::\+Initialize()}} 
+\end{DoxySeeAlso}
+compute the starting point of box expansion, based on the \# of pins. it also can be done any congestion analysis. \mbox{\Hypertarget{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}\label{classCDesign_a8c52d3fa7d4b688303cc6b1410c6bc2a}} 
 \index{CDesign@{CDesign}!GetWireInBBox@{GetWireInBBox}}
 \index{GetWireInBBox@{GetWireInBBox}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetWireInBBox()}{GetWireInBBox()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+B\+Box (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$ $>$ $\ast$}]{p\+Wire\+List,  }\item[{\mbox{\hyperlink{classCBBox}{C\+B\+Box}} $\ast$}]{p\+B\+Box,  }\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a853da9235ff1dc45acb5ca9556530d21}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+U\+N\+R\+O\+U\+T\+ED}}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}\label{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}} 
+
+
+calculate the number of all wires within the give box, satisfying the given condition (property/state) 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCNet_a885207dedf1b08d52638bda17ba12227}{C\+Net\+::\+Get\+Wire\+In\+B\+Box()}} 
+\end{DoxySeeAlso}
+collect the all wires within the give box, satisfying the given condition (property/state) \mbox{\Hypertarget{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}\label{classCDesign_a0b7936130fc4fb79009bfaf1df97e76e}} 
 \index{CDesign@{CDesign}!GetWireInDirection@{GetWireInDirection}}
 \index{GetWireInDirection@{GetWireInDirection}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{GetWireInDirection()}{GetWireInDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -317,17 +497,58 @@ class \mbox{\hyperlink{classCDesign_aab1ae13155639bc23234a972a3296244}{C\+Bounda
 \subsubsection{\texorpdfstring{GetWireInOverFlowBoundary()}{GetWireInOverFlowBoundary()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Get\+Wire\+In\+Over\+Flow\+Boundary (\begin{DoxyParamCaption}\item[{hash\+\_\+map$<$ \mbox{\hyperlink{BoxRouter_8h_a280feb883e9d4a7edcc69c8bcb9f38f2}{A\+D\+D\+R\+E\+SS}}, int $>$ $\ast$}]{p\+Wire\+List }\end{DoxyParamCaption})}
 
+
+
+calculate how much wires are in overflow boundary totally. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCLayer_aa24a4614c4584721a8d10e43952c5af2}{C\+Layer\+::\+Get\+Wire\+In\+Over\+Flow\+Boundary()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_a9a2909717e3b6947c6d685e13088be6d}\label{classCDesign_a9a2909717e3b6947c6d685e13088be6d}} 
 \index{CDesign@{CDesign}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Initialize (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Initialize the design. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Name} & the filename of param file\\
+\hline
+\end{DoxyParams}
+Read input file and collect all params. From input file build steiner tree $\ast$ (use flute), or read pre-\/build steiner tree from \textquotesingle{}.stt\textquotesingle{} file.
+
+It will resolve input datafile format.
+
+It will also initialize nets and layers and B\+Box class. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCBBox_a60eff894d9a143099e91277312a8eb4d}{C\+B\+Box\+::\+Initialize()}}
+
+\mbox{\hyperlink{classCDesign_af116ba8573daa936d633b5ea0b005637}{Create\+Layer()}}
+
+\mbox{\hyperlink{classCLayer_a3d0413e4f025d57639ae6bbd6d34955f}{C\+Layer\+::\+Configure()}}
+
+Creat\+Net()
+
+\mbox{\hyperlink{classCLayer_af987bec19614f92ca98bb9e492aecac0}{C\+Layer\+::\+Initialize()}}
+
+\mbox{\hyperlink{classCDesign_a4dda519df38cb104e804522f76d826fe}{Set\+Highest\+Routable\+Layer()}}
+
+\mbox{\hyperlink{classCDesign_af7d386170d501eb471b63b2f663690b0}{Set\+Lowest\+Routable\+Layer()}}
+
+\mbox{\hyperlink{classCNet}{C\+Net}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}\label{classCDesign_ae6f1b5262fb9420660bd768cb7ae613e}} 
 \index{CDesign@{CDesign}!Print@{Print}}
 \index{Print@{Print}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{Print()}{Print()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{p\+File,  }\item[{int}]{i\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print details about this design. 
 
 
 
@@ -345,11 +566,27 @@ Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a3
 \subsubsection{\texorpdfstring{ReadDump()}{ReadDump()}}
 {\footnotesize\ttfamily int C\+Design\+::\+Read\+Dump (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})}
 
+
+
+Read dump file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Name} & dump file\textquotesingle{}s filename \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer as boolean mean if successful read the dump file. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}\label{classCDesign_a91266987b4edb768fb3187e92a9cfbbd}} 
 \index{CDesign@{CDesign}!ReadParam@{ReadParam}}
 \index{ReadParam@{ReadParam}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{ReadParam()}{ReadParam()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Read\+Param (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Name }\end{DoxyParamCaption})}
+
+
+
+read in parameter file and store the parameters \mbox{[}1/31/2007 thyeros\mbox{]} 
 
 \mbox{\Hypertarget{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}\label{classCDesign_a0cbed390d0e0c05776aed59c16f7982c}} 
 \index{CDesign@{CDesign}!Report@{Report}}
@@ -381,25 +618,42 @@ Reimplemented from \mbox{\hyperlink{classCObject_a75afd905b2d14ed374c75d90f079a3
 \subsubsection{\texorpdfstring{SetState()}{SetState()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Set\+State (\begin{DoxyParamCaption}\item[{int}]{i\+State }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a9571bf3353ab819782f0162867e525dc}\label{classCDesign_a9571bf3353ab819782f0162867e525dc}} 
+
+
+Set the state of this design. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+State} & S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+T\+U\+CK $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+S\+U\+C\+C\+E\+SS $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+ED $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+O\+U\+T\+I\+NG $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+ED $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+R\+E\+R\+O\+U\+T\+I\+NG $\vert$ S\+T\+A\+T\+E\+\_\+\+D\+E\+S\+N\+\_\+\+O\+V\+E\+R\+F\+L\+OW\\
+\hline
+\end{DoxyParams}
+Specially O\+V\+E\+R\+F\+L\+OW and S\+T\+U\+CK can be unset while others can\textquotesingle{}t. \mbox{\Hypertarget{classCDesign_a9571bf3353ab819782f0162867e525dc}\label{classCDesign_a9571bf3353ab819782f0162867e525dc}} 
 \index{CDesign@{CDesign}!UpdateSteinerTree@{UpdateSteinerTree}}
 \index{UpdateSteinerTree@{UpdateSteinerTree}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{UpdateSteinerTree()}{UpdateSteinerTree()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Update\+Steiner\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a984162e6e0b47da02f4a34e176f0a569}\label{classCDesign_a984162e6e0b47da02f4a34e176f0a569}} 
+Warning\+: this function return too early so it does nothing except print some messages.\mbox{\Hypertarget{classCDesign_a984162e6e0b47da02f4a34e176f0a569}\label{classCDesign_a984162e6e0b47da02f4a34e176f0a569}} 
 \index{CDesign@{CDesign}!WriteDump@{WriteDump}}
 \index{WriteDump@{WriteDump}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{WriteDump()}{WriteDump()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Write\+Dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}\label{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}} 
+
+
+Copy output file to dump file. 
+
+Output file is specified with m\+\_\+\+Param.\+m\+\_\+c\+Output\+\_\+\+File, and dump file is specified with m\+\_\+\+Param.\+m\+\_\+c\+Dump\+\_\+\+File. \mbox{\Hypertarget{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}\label{classCDesign_a69b246b26e9ce4c4edbf74065529b89f}} 
 \index{CDesign@{CDesign}!WriteRel@{WriteRel}}
 \index{WriteRel@{WriteRel}!CDesign@{CDesign}}
 \subsubsection{\texorpdfstring{WriteRel()}{WriteRel()}}
 {\footnotesize\ttfamily void C\+Design\+::\+Write\+Rel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Copy output file to rel file. 
+
+Output file is specified with m\+\_\+\+Param.\+m\+\_\+c\+Output\+\_\+\+File, and rel file is specified with m\+\_\+\+Param.\+m\+\_\+c\+Rel\+\_\+\+File. 
 
 \subsection{Friends And Related Function Documentation}
 \mbox{\Hypertarget{classCDesign_aab1ae13155639bc23234a972a3296244}\label{classCDesign_aab1ae13155639bc23234a972a3296244}} 

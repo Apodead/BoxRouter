@@ -50,11 +50,11 @@ void \mbox{\hyperlink{classCPoint_adff246311a759e9c7eaa5f5374dd3643}{Create\+Key
 void \mbox{\hyperlink{classCPoint_a1610463f19b7ff508ed229791dd6335d}{Print}} (F\+I\+LE $\ast$p\+File, int i\+Mode)
 \item 
 int \mbox{\hyperlink{classCPoint_aeb92159e1d1045ceab79eea735d22af2}{X}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get m\+\_\+iX; \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCPoint_a6d03d17763a148af852d10a9a410167e}{Z}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get m\+\_\+cZ; \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCPoint_a8543d7ba2b9d1f9ec3373bd8258a66d0}{Y}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get m\+\_\+iY; \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCPoint_ac9557dddaefffd4c7cc0a20090ef5324}{SetX}} (int iX)
 \item 
 void \mbox{\hyperlink{classCPoint_a984d81a6620d3bcf3df8dc14c42f2a1d}{SetY}} (int iY)
@@ -78,13 +78,16 @@ static int \mbox{\hyperlink{classCPoint_a896823777dbcd50cceec722a9fee6ddb}{Z}} (
 \begin{DoxyCompactItemize}
 \item 
 short \mbox{\hyperlink{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}{m\+\_\+iY}}
-\item 
+\begin{DoxyCompactList}\small\item\em Y position of this point. \end{DoxyCompactList}\item 
 short \mbox{\hyperlink{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}{m\+\_\+iX}}
-\item 
+\begin{DoxyCompactList}\small\item\em X position of this point. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{classCPoint_af5bd6bd96c41a2f050fe2f5f2d6595de}{m\+\_\+cZ}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Z position of this point. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classCPoint}{C\+Point}} 类实现了布线网络中“点”的基本属性和方法。 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classCPoint_afce98ba89f4a9283c9d1c94571ca70f2}\label{classCPoint_afce98ba89f4a9283c9d1c94571ca70f2}} 
@@ -286,6 +289,10 @@ Set Z value in m\+\_\+cZ. This function would call \mbox{\hyperlink{classCPoint_
 \subsubsection{\texorpdfstring{X()}{X()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int C\+Point\+::X (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+get m\+\_\+iX; 
+
 \mbox{\Hypertarget{classCPoint_aa748e36b6641c6259ca45e1cb7017f58}\label{classCPoint_aa748e36b6641c6259ca45e1cb7017f58}} 
 \index{CPoint@{CPoint}!X@{X}}
 \index{X@{X}!CPoint@{CPoint}}
@@ -302,6 +309,10 @@ get X position from given Key
 \subsubsection{\texorpdfstring{Y()}{Y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int C\+Point\+::Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+get m\+\_\+iY; 
+
 \mbox{\Hypertarget{classCPoint_a2760f11ef7f482c28c0385ef402faa9f}\label{classCPoint_a2760f11ef7f482c28c0385ef402faa9f}} 
 \index{CPoint@{CPoint}!Y@{Y}}
 \index{Y@{Y}!CPoint@{CPoint}}
@@ -317,6 +328,10 @@ get Y position from given Key
 \index{Z@{Z}!CPoint@{CPoint}}
 \subsubsection{\texorpdfstring{Z()}{Z()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int C\+Point\+::Z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get m\+\_\+cZ; 
 
 \mbox{\Hypertarget{classCPoint_a896823777dbcd50cceec722a9fee6ddb}\label{classCPoint_a896823777dbcd50cceec722a9fee6ddb}} 
 \index{CPoint@{CPoint}!Z@{Z}}
@@ -337,17 +352,29 @@ get Z position from given Key
 \subsubsection{\texorpdfstring{m\_cZ}{m\_cZ}}
 {\footnotesize\ttfamily char C\+Point\+::m\+\_\+cZ\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+Z position of this point. 
+
 \mbox{\Hypertarget{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}\label{classCPoint_ac9057a0b88c5ef9904b6b1e0f8f6ef33}} 
 \index{CPoint@{CPoint}!m\_iX@{m\_iX}}
 \index{m\_iX@{m\_iX}!CPoint@{CPoint}}
 \subsubsection{\texorpdfstring{m\_iX}{m\_iX}}
 {\footnotesize\ttfamily short C\+Point\+::m\+\_\+iX\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+X position of this point. 
+
 \mbox{\Hypertarget{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}\label{classCPoint_a9b44115b3f3268f92c695e58bf8f910d}} 
 \index{CPoint@{CPoint}!m\_iY@{m\_iY}}
 \index{m\_iY@{m\_iY}!CPoint@{CPoint}}
 \subsubsection{\texorpdfstring{m\_iY}{m\_iY}}
 {\footnotesize\ttfamily short C\+Point\+::m\+\_\+iY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Y position of this point. 
 
 
 

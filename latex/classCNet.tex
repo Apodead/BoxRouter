@@ -70,7 +70,7 @@ int \mbox{\hyperlink{classCNet_a26f0aadddc16f2e5ec33a3b2e5f4e97a}{Del\+Wire}} (\
 void \mbox{\hyperlink{classCNet_adecbdeeb33f6ef0a4f9cada16ffac585}{Set\+State}} (int i\+State)
 \item 
 int \mbox{\hyperlink{classCNet_ae194cdbb585414b5eb533d0d097944b3}{Get\+Num\+Wire}} (int i\+Mode=\mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}, int i\+Value=\mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}})
-\item 
+\begin{DoxyCompactList}\small\item\em count wires, satisfying the given condition. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCNet_a95e5735a7449f7d54fe97c335a65fccc}{Add\+Wire}} (\mbox{\hyperlink{classCWire}{C\+Wire}} $\ast$p\+Wire)
 \item 
 int \mbox{\hyperlink{classCNet_a8712e8f595e036e1e5c693100d071e38}{Get\+Length}} (int i\+Mode, int i\+Value)
@@ -175,6 +175,21 @@ short \mbox{\hyperlink{classCNet_a61a76d767c5d9fc96337e5c962010765}{m\+\_\+i\+Nu
 \subsubsection{\texorpdfstring{GetNumWire()}{GetNumWire()}}
 {\footnotesize\ttfamily int C\+Net\+::\+Get\+Num\+Wire (\begin{DoxyParamCaption}\item[{int}]{i\+Mode = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a6f72f2cc9dd31793dd832ccfb2547de4}{G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE}}},  }\item[{int}]{i\+Value = {\ttfamily \mbox{\hyperlink{BoxRouter_8h_a1b285251edd87e1423189470586cc719}{S\+T\+A\+T\+E\+\_\+\+W\+I\+R\+E\+\_\+\+A\+NY}}} }\end{DoxyParamCaption})}
 
+
+
+count wires, satisfying the given condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Mode} & G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+OP $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+A\+TE $\vert$ G\+E\+T\+\_\+\+M\+O\+D\+E\+\_\+\+L\+A\+Y\+ER \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+total of conditional wires 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classCWire}{C\+Wire}}, \mbox{\hyperlink{classCObject_afc32a8e7c4450a95c2a6333d7e3319b4}{C\+Wire\+::\+Get\+Prop()}}, \mbox{\hyperlink{classCObject_a94f72fd4b4155dc18decb9d53f42dc99}{C\+Wire\+::\+Get\+State()}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classCNet_a920188d5e3abdca198ad85d4299ea10d}\label{classCNet_a920188d5e3abdca198ad85d4299ea10d}} 
 \index{CNet@{CNet}!GetParent@{GetParent}}
 \index{GetParent@{GetParent}!CNet@{CNet}}
