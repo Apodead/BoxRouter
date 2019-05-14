@@ -102,6 +102,13 @@ void CBoundary::Initialize(int iX, int iY, int iZ, CLayer* pParent)
 	m_Wire.reserve(m_iNumACap/2);
 }
 
+/**
+ * @brief Increase used capacity of boundary.
+ * @param iBlockage the number that capacity occupied(negative 
+ * if some capacity become available).
+ * @return The number of occupied capacity.
+ * @sa CDesign::TrackCongestion();
+ */
 int	CBoundary::AdjustCapacity(int iBlockage)
 {
 	//save old congestion number for TrackCongestion
@@ -119,9 +126,14 @@ int	CBoundary::AdjustCapacity(int iBlockage)
 	return	m_iNumOCap;
 }
 
+/**
+ * @brief Add wire to boundary.
+ * @param pWire Point of the wire to add. Must a wire didn't contain before.
+ * @return @ref TRUE if success.
+ */
 int CBoundary::AddWire(CWire *pWire)
 {
-	//this is called from CNet::Addwire when a new *ROUTED* wire is added
+	//!this is called from CNet::Addwire when a new *ROUTED* wire is added
 	assert(pWire->GetParent());
 	assert(pWire->IsRouted());
 	assert(pWire->IsFlat());
@@ -137,6 +149,7 @@ int CBoundary::AddWire(CWire *pWire)
 
 	assert(IsFound(pWire));
 
+    //! Notice: Did the same thing with @ref AdjustCapacity()
 	// update occupied capacity [2/9/2007 thyeros]
 	m_iNumOCap		+=	WIRE_WIDTH_SPACE;//(pWire->GetParent()->GetWidth()+GetParent()->GetDesignRule(GET_DR_MIN_WIR_SPACING));
 	m_iNumACap		-=	WIRE_WIDTH_SPACE;//GetParent()->GetCapacity(GET_MODE_MAX)-m_iNumOCap;
@@ -148,6 +161,9 @@ int CBoundary::AddWire(CWire *pWire)
 	return	TRUE;
 }
 
+/*
+ * @brief Delete a wire from boundary.
+ */
 void CBoundary::DelWire(CWire *pWire)
 {
 	//this is called from CNet::DelWire when an existing  *ROUTED* wire is deleted
@@ -169,6 +185,7 @@ void CBoundary::DelWire(CWire *pWire)
 
 	assert(!IsFound(pWire));
 
+    //! Notice: Did the same thing with @ref AdjustCapacity()
 	// update occupied capacity [2/9/2007 thyeros]
 	m_iNumOCap		-=	WIRE_WIDTH_SPACE;//(pWire->GetParent()->GetWidth()+GetParent()->GetDesignRule(GET_DR_MIN_WIR_SPACING));
 	m_iNumACap		+=	WIRE_WIDTH_SPACE;//GetParent()->GetCapacity(GET_MODE_MAX)-m_iNumOCap;

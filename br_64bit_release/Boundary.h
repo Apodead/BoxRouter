@@ -105,9 +105,9 @@ public:
 
 	virtual void		Print(FILE* pFile, int iMode);
 	CLayer*				GetParent();
-	short							m_iNumOCap;
-	short							m_iNumACap;
-	short							m_iCongestion;
+	short							m_iNumOCap;     ///< Occupied Capacity
+	short							m_iNumACap;     ///< Available Capacity
+	short							m_iCongestion;  ///< Congestion rate.
 
 protected:
 
