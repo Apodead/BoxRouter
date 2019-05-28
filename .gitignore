@@ -2,3 +2,4 @@
 *.ipch
 *.o
 *.x
+./cmake-build-debug

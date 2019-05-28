@@ -13,16 +13,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4805ec63-1c85-4afb-9484-8c356ef36459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Router-clion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/br_64bit_release/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flute/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br_64bit_release/Design.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/br_64bit_release/Design.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br_64bit_release/Net.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/br_64bit_release/Net.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="4805ec63-1c85-4afb-9484-8c356ef36459" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,12 +242,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558954701658</updated>
-      <workItem from="1558954704163" duration="13237000" />
+      <workItem from="1558954704163" duration="13498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13237000" />
+    <option name="totallyTimeSpent" value="13498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,10 +262,10 @@
     <frame x="52" y="0" width="1876" height="1088" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.18314607" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.18314607" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.18314607" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.3290398" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3290398" />
       <window_info anchor="bottom" id="Messages" sideWeight="0.4994382" weight="0.2740047" />
       <window_info anchor="bottom" id="Terminal" weight="0.3290398" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5005618" side_tool="true" weight="0.3290398" />
