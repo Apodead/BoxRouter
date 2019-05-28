@@ -1,1 +1,0 @@
-/usr/bin/clang++  -g   CMakeFiles/BoxRouter.dir/br_64bit_release/BBox.cpp.o  -o BoxRouter  -L/home/apodead/dev/Router-clion/lib  -L/home/apodead/dev/Router-clion/lib/def  -L/home/apodead/dev/Router-clion/lib/lef -Wl,-rpath,/home/apodead/dev/Router-clion/lib:/home/apodead/dev/Router-clion/lib/def:/home/apodead/dev/Router-clion/lib/lef flute/libflute.a -lglpk -lcurses -lpthread 

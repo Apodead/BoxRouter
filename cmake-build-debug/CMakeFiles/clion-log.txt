@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/apodead/dev/Router-clion
--- Configuring done
--- Generating done
--- Build files have been written to: /home/apodead/dev/Router-clion/cmake-build-debug
