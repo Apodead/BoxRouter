@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/apodead/dev/Router-clion/flute/dl.h
+string.h
+-
+stdlib.h
+-
+
+/home/apodead/dev/Router-clion/flute/flute.h
+
+/home/apodead/dev/Router-clion/flute/flute_mst.c
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+math.h
+-
+string.h
+-
+assert.h
+-
+dl.h
+/home/apodead/dev/Router-clion/flute/dl.h
+flute.h
+/home/apodead/dev/Router-clion/flute/flute.h
+mst2.h
+/home/apodead/dev/Router-clion/flute/mst2.h
+
+/home/apodead/dev/Router-clion/flute/global.h
+stdio.h
+-
+
+/home/apodead/dev/Router-clion/flute/mst2.h
+global.h
+/home/apodead/dev/Router-clion/flute/global.h
+

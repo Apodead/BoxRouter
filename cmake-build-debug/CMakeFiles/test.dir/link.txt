@@ -1,0 +1,1 @@
+/usr/bin/clang++  -g   CMakeFiles/test.dir/test/testReader.cpp.o  -o test  -L/home/apodead/dev/Router-clion/lib  -L/home/apodead/dev/Router-clion/lib/def  -L/home/apodead/dev/Router-clion/lib/lef -Wl,-rpath,/home/apodead/dev/Router-clion/lib:/home/apodead/dev/Router-clion/lib/def:/home/apodead/dev/Router-clion/lib/lef -llef -ldef 

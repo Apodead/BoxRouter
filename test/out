@@ -1,0 +1,1293 @@
+Input file:input1.lef
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+XOR2X1
+CORE
+
+XOR2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+SEDFFHQX2
+CORE
+
+SEDFFHQX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+SEDFFHQX1
+CORE
+
+SEDFFHQX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+SDFFHQX4
+CORE
+
+SDFFHQX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+SDFFHQX2
+CORE
+
+SDFFHQX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR4X4
+CORE
+
+OR4X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR4X2
+CORE
+
+OR4X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR4X1
+CORE
+
+OR4X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR3X4
+CORE
+
+OR3X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR3X1
+CORE
+
+OR3X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR2X4
+CORE
+
+OR2X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR2X2
+CORE
+
+OR2X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OR2X1
+CORE
+
+OR2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OAI2BB1X1
+CORE
+
+OAI2BB1X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OAI22XL
+CORE
+
+OAI22XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OAI22X2
+CORE
+
+OAI22X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OAI22X1
+CORE
+
+OAI22X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+OAI221X1
+CORE
+
+OAI221X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR4BBX2
+CORE
+
+NOR4BBX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR4XL
+CORE
+
+NOR4XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR4X4
+CORE
+
+NOR4X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR4X2
+CORE
+
+NOR4X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR4X1
+CORE
+
+NOR4X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR3BX4
+CORE
+
+NOR3BX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR3BX1
+CORE
+
+NOR3BX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR3X4
+CORE
+
+NOR3X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR3X2
+CORE
+
+NOR3X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR3X1
+CORE
+
+NOR3X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2BX4
+CORE
+
+NOR2BX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2BX1
+CORE
+
+NOR2BX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2XL
+CORE
+
+NOR2XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2X4
+CORE
+
+NOR2X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2X2
+CORE
+
+NOR2X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NOR2X1
+CORE
+
+NOR2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4BX4
+CORE
+
+NAND4BX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4BX2
+CORE
+
+NAND4BX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4BX1
+CORE
+
+NAND4BX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4X4
+CORE
+
+NAND4X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4X2
+CORE
+
+NAND4X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND4X1
+CORE
+
+NAND4X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND3BX2
+CORE
+
+NAND3BX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND3X4
+CORE
+
+NAND3X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND3X2
+CORE
+
+NAND3X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND3X1
+CORE
+
+NAND3X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2BXL
+CORE
+
+NAND2BXL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2BX2
+CORE
+
+NAND2BX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2BX1
+CORE
+
+NAND2BX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2X4
+CORE
+
+NAND2X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2X2
+CORE
+
+NAND2X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+NAND2X1
+CORE
+
+NAND2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+MXI2XL
+CORE
+
+MXI2XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+MX2XL
+CORE
+
+MX2XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVXL
+CORE
+
+INVXL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX8
+CORE
+
+INVX8
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX4
+CORE
+
+INVX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX3
+CORE
+
+INVX3
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX2
+CORE
+
+INVX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX1
+CORE
+
+INVX1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+INVX12
+CORE
+
+INVX12
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+DLY4X1
+CORE
+
+DLY4X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+DLY3X1
+CORE
+
+DLY3X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+DLY2X1
+CORE
+
+DLY2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+DLY1X1
+CORE
+
+DLY1X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX8
+CORE
+
+BUFX8
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX4
+CORE
+
+BUFX4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX3
+CORE
+
+BUFX3
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX2
+CORE
+
+BUFX2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX20
+CORE
+
+BUFX20
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX16
+CORE
+
+BUFX16
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX12
+CORE
+
+BUFX12
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI22XL
+CORE
+
+AOI22XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI22X4
+CORE
+
+AOI22X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI22X2
+CORE
+
+AOI22X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI22X1
+CORE
+
+AOI22X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI222X4
+CORE
+
+AOI222X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI222X2
+CORE
+
+AOI222X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI222X1
+CORE
+
+AOI222X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI221X4
+CORE
+
+AOI221X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI221X2
+CORE
+
+AOI221X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI221X1
+CORE
+
+AOI221X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI21XL
+CORE
+
+AOI21XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI21X4
+CORE
+
+AOI21X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AOI21X1
+CORE
+
+AOI21X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND4XL
+CORE
+
+AND4XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND4X4
+CORE
+
+AND4X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND4X2
+CORE
+
+AND4X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND4X1
+CORE
+
+AND4X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND3XL
+CORE
+
+AND3XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND2XL
+CORE
+
+AND2XL
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND2X4
+CORE
+
+AND2X4
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND2X2
+CORE
+
+AND2X2
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+AND2X1
+CORE
+
+AND2X1
+
+1
+Call Pin
+Call Pin
+Call Pin
+Call Pin
+Call test
+type22
+BUFX6
+CORE
+
+BUFX6
+
+1

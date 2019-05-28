@@ -1,0 +1,7 @@
+/home/apodead/dev/Router-clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/CMakeFiles/Router.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/CMakeFiles/test.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/flute/CMakeFiles/rebuild_cache.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/flute/CMakeFiles/flute.dir
+/home/apodead/dev/Router-clion/cmake-build-debug/flute/CMakeFiles/edit_cache.dir
